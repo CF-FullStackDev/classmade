@@ -116,7 +116,20 @@
                     <button type="button" class="question-icon"></button>
                     <button type="button" class="edit-icon open-modal" data-modal="#modal-highlight"></button>
                 </div>
-                <img src="{{asset('img/highlight-data.png')}}">
+                <div class="highlight-photo-slick">
+                    <div class='highlight-image-container'>
+                        <img src="{{asset('img/highlight-data.png')}}">
+                    </div>
+                    <div class='highlight-image-container'>
+                        <img src="{{asset('img/highlight-data.png')}}">
+                    </div>
+                    <div class='highlight-image-container'>
+                        <img src="{{asset('img/highlight-data.png')}}">
+                    </div>
+                    <div class='highlight-image-container'>
+                        <img src="{{asset('img/highlight-data.png')}}">
+                    </div>
+                </div>
             </div>
         </div>
         <!-- End of Highlight -->

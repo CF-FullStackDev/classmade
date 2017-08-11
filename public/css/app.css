@@ -3984,6 +3984,172 @@ body#app-home footer ul > li:last-child:after {
   color: #fff;
 }
 
+.profile-glance .profile-avatar:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: 0.3s ease-out all;
+}
+
+.profile-glance .profile-avatar .profile-hover {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  transition: 0.3s ease-out all;
+  transition-delay: 0.1s;
+}
+
+.profile-glance .profile-avatar:hover:after {
+  opacity: 1.0;
+}
+
+.profile-glance .profile-avatar:hover .profile-hover {
+  opacity: 1.0;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+#profile-background-container:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 460px;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: 0.3s ease-out all;
+}
+
+#profile-background-container .profile-background-hover {
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  transition: 0.3s ease-out all;
+  transition-delay: 0.1s;
+}
+
+#profile-background-container:hover:after {
+  opacity: 1.0;
+}
+
+#profile-background-container:hover .profile-background-hover {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1.0;
+}
+
+.highlight-data-container .panel-buttons {
+  z-index: 3;
+  opacity: 0;
+  transition: 0.3s ease-out all;
+  top: 0px;
+}
+
+.highlight-data-container .panel-buttons:hover {
+  opacity: 1.0;
+}
+
+.highlight-data-container:before {
+  content: '';
+  transition: 0.3s ease-out all;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: transparent;
+}
+
+.highlight-data-container .highlight-photo-slick .slick-prev {
+  z-index: 2;
+  left: 0px;
+  opacity: 0;
+  transition: 0.3s ease-out all;
+}
+
+.highlight-data-container .highlight-photo-slick .slick-prev:before {
+  color: white;
+  content: '\f053';
+  opacity: 1.0;
+  display: inline-block;
+  z-index: 2;
+  font-family: 'FontAwesome';
+}
+
+.highlight-data-container .highlight-photo-slick .slick-next {
+  z-index: 2;
+  right: 0px;
+  opacity: 0;
+  transition: 0.3s ease-out all;
+}
+
+.highlight-data-container .highlight-photo-slick .slick-next:before {
+  color: white;
+  content: '\f054';
+  opacity: 1.0;
+  display: inline-block;
+  z-index: 2;
+  font-family: 'FontAwesome';
+}
+
+.highlight-data-container .highlight-photo-slick .slick-dots {
+  bottom: 25px;
+  z-index: 2;
+}
+
+.highlight-data-container .highlight-photo-slick .slick-dots li {
+  margin: 0px 0px;
+}
+
+.highlight-data-container .highlight-photo-slick .slick-dots li button:before {
+  transition: 0.2s ease-out all;
+  color: #fff;
+  font-size: 12px;
+  opacity: 1.0;
+}
+
+.highlight-data-container .highlight-photo-slick .slick-dots li button:hover:before {
+  color: #F18448;
+}
+
+.highlight-data-container .highlight-photo-slick .slick-dots li.slick-active button:before {
+  color: #F18448;
+  font-size: 17px;
+}
+
+.highlight-data-container:hover:before {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.highlight-data-container:hover .panel-buttons {
+  top: 30px;
+  opacity: 1.0;
+}
+
+.highlight-data-container:hover .highlight-photo-slick .slick-prev {
+  opacity: 1.0;
+  left: 25px;
+}
+
+.highlight-data-container:hover .highlight-photo-slick .slick-next {
+  opacity: 1.0;
+  right: 25px;
+}
+
 @media only screen and (max-device-width: 1024px) {
   .login-bg {
     background-attachment: scroll;

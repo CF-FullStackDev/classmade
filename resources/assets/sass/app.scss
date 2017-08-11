@@ -4133,6 +4133,203 @@ body {
         }
     }
 }
+
+.profile-glance{
+
+    .profile-avatar{
+
+        &:after{
+            content:'';
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            background: rgba(0,0,0,0.4);
+            opacity: 0;
+            transition:0.3s ease-out all;
+        }
+
+        .profile-hover{
+            position: absolute;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition:0.3s ease-out all;
+            transition-delay: 0.1s;
+        }
+
+        &:hover{
+            &:after{
+                opacity: 1.0;
+            }
+            .profile-hover{
+                opacity: 1.0;
+                transform: translateY(0px);
+            }
+        }
+
+    }
+}
+
+#profile-background-container{
+
+    &:after{
+            content:'';
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            height: 460px;
+            top: 0px;
+            left: 0px;
+            background: rgba(0,0,0,0.3);
+            opacity: 0;            
+            transition:0.3s ease-out all;
+    }
+
+    .profile-background-hover{
+        position: absolute;
+        opacity: 0;
+        z-index: 2;
+        transform: translateY(-20px);
+        transition:0.3s ease-out all;
+        transition-delay: 0.1s;
+    }
+
+    &:hover{
+        &:after{
+            opacity: 1.0;
+        }
+        .profile-background-hover{
+            transform: translateY(0px);
+            opacity: 1.0;
+        }
+    }
+}
+
+.highlight-data-container{
+
+    .panel-buttons{
+        z-index: 3;
+        opacity: 0;
+        transition:0.3s ease-out all;
+        top: 0px;
+
+        &:hover{
+            opacity: 1.0;
+        }
+    }
+
+    &:before{
+            content:'';
+            transition:0.3s ease-out all;
+            display: inline-block;
+            position: absolute;
+            z-index: 2;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background: rgba(0,0,0,0);
+    }
+
+    .highlight-photo-slick{
+
+        .slick-prev{
+            z-index: 2;
+            left: 0px;
+            opacity: 0;
+            transition:0.3s ease-out all;
+
+
+            &:before{
+                color: white;
+                content:'\f053';
+                opacity: 1.0;
+                display: inline-block;
+                z-index: 2;
+                font-family: 'FontAwesome';
+            }
+        }
+
+        .slick-next{
+            z-index: 2;
+            right: 0px;
+            opacity: 0;
+            transition:0.3s ease-out all;
+
+            &:before{
+                color: white;
+                content:'\f054';
+                opacity: 1.0;
+                display: inline-block;
+                z-index: 2;
+                font-family: 'FontAwesome';
+            }
+        }
+
+        .slick-dots{
+            bottom: 25px;
+            z-index: 2;
+
+            li{
+                margin: 0px 0px;
+
+                button{
+                    &:before{
+                        transition: 0.2s ease-out all;
+                        color: #fff;
+                        font-size: 12px;
+                        opacity: 1.0;
+                    }
+
+                    &:hover{
+                        &:before{
+                            color: $primary-color;
+                        }
+                    }
+                }
+
+                &.slick-active{
+                    button{
+                        &:before{
+                            color: $primary-color;
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover{
+
+        &:before{
+            background: rgba(0,0,0,0.2);
+        }
+
+        .panel-buttons{
+            top: 30px;
+            opacity: 1.0;
+        }
+
+        .highlight-photo-slick{
+
+            .slick-prev{
+                opacity: 1.0;
+                left: 25px;
+            }
+
+            .slick-next{
+                opacity: 1.0;
+                right: 25px;
+            }
+        }
+    }
+}
+
+
 // End of angelo
 
 @media only screen and (max-device-width: 1024px) {

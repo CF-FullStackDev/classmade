@@ -219,4 +219,13 @@ $(function(){
         $('.transcript-section'+data).show();
     });
 
+    // ANGELO JS
+
+    $('.highlight-photo-slick').slick({
+        arrows: true,
+        dots: true
+    });
+
+    // END OF ANGELO JS
+
 });
