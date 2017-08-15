@@ -1302,7 +1302,7 @@
                                 <input type="text" id="Title" name="Title">
                                 <label>Description</label>
                                 <textarea name="description"></textarea>
-                                <span class="word-count">300</span>
+                                <span class="word-count">3000</span>
                             </form>
                         </div>
 

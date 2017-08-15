@@ -95,7 +95,7 @@ a {
   text-align: center;
 }
 
-.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .journey-form {
+.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .journey-form, .highlight-placeholder img {
   display: block;
   margin: 0 auto;
 }
@@ -738,27 +738,26 @@ body.modal-open {
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container {
-  margin-top: 81px;
+  margin-top: 22px;
   margin-bottom: 84px;
   height: 526px;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload {
-  display: inline-block;
-  float: left;
+  display: block;
   height: 100%;
-  width: 320px;
   margin-right: 40px;
   cursor: pointer;
-  height: 260px;
-  margin-top: 16%;
+  height: 120px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img {
-  height: 38px;
-  width: 50px;
-  margin-bottom: 24px;
-  margin-top: 30%;
+  height: 30px;
+  width: 39px;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload span {
@@ -770,7 +769,8 @@ body.modal-open {
   display: inline-block;
   float: left;
   height: 100%;
-  width: 396px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .upload-placeholder {
@@ -783,17 +783,15 @@ body.modal-open {
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-row {
   position: relative;
-  border-bottom: 1px solid #979797;
   padding-bottom: 39px;
   padding-top: 39px;
-}
-
-.modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-row:first-child {
-  padding-top: 0px;
+  padding: 21px 42px 21px 42px;
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-row .image-file {
-  top: 69px;
+  top: 71px;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-row .close {
@@ -804,9 +802,8 @@ body.modal-open {
   top: 59px;
 }
 
-.modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images:last-child {
-  padding-bottom: 0px;
-  border-bottom: none;
+.modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-row:hover {
+  border-color: #EEF2F3;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-uploaded {
@@ -832,7 +829,7 @@ body.modal-open {
   color: #898787;
   position: absolute;
   top: 108px;
-  left: 133px;
+  left: 180px;
   font-weight: 600;
 }
 
@@ -845,16 +842,16 @@ body.modal-open {
   color: #F18448;
   font-size: 14px;
   position: absolute;
-  right: 0px;
+  right: 39px;
   top: 76px;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .progress-bar {
   background-color: #D8D8D8;
   border-radius: 20px;
-  width: 270px;
+  width: 73%;
   position: absolute;
-  left: 130px;
+  left: 180px;
   top: 98px;
   height: 7px;
 }
@@ -867,7 +864,7 @@ body.modal-open {
 }
 
 .modal-body.profile-highlight .content .highlight-photo-button {
-  padding-top: 69px;
+  padding-top: 145px;
   margin-bottom: 15px;
   text-align: right;
 }
@@ -4112,7 +4109,7 @@ body#app-home footer ul > li:last-child:after {
 }
 
 .highlight-data-container .highlight-photo-slick .slick-dots li {
-  margin: 0px 0px;
+  margin: 0px -2px;
 }
 
 .highlight-data-container .highlight-photo-slick .slick-dots li button:before {
@@ -4148,6 +4145,82 @@ body#app-home footer ul > li:last-child:after {
 .highlight-data-container:hover .highlight-photo-slick .slick-next {
   opacity: 1.0;
   right: 25px;
+}
+
+.file-upload {
+  margin: 0px !important;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  height: 102% !important;
+  width: 102% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.highlight-placeholder {
+  min-height: 500px;
+}
+
+.highlight-placeholder img {
+  margin-top: 25%;
+  margin-bottom: 15px;
+}
+
+.highlight-placeholder span {
+  text-align: center;
+  display: block;
+  color: #a1a1a1;
+}
+
+.achievement-horizontal {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.achievement-horizontal .achievement-row {
+  height: 110px;
+  overflow: hidden;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #D8DADD;
+  margin-bottom: 50px;
+}
+
+.achievement-horizontal .achievement-row:last-child {
+  padding-bottom: 0px;
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+
+.achievement-horizontal .achievement-row img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 44px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.achievement-horizontal .achievement-row .content {
+  width: 560px;
+  display: inline-block;
+}
+
+.achievement-horizontal .achievement-row .content .title {
+  font-size: 14px;
+  color: #7E7C7C;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.achievement-horizontal .achievement-row .content .info {
+  font-size: 12px;
+  color: #A1A1A1;
+  margin-bottom: 10px;
+}
+
+.achievement-horizontal .achievement-row .content .description {
+  font-size: 12px;
+  color: #A1A1A1;
 }
 
 @media only screen and (max-device-width: 1024px) {

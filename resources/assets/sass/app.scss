@@ -792,26 +792,25 @@ body.modal-open {
                 display: none;
 
                 .highlight-photo-upload-container{
-                    margin-top: 81px;
+                    margin-top: 22px;
                     margin-bottom: 84px;
                     height: 526px;
 
                     .highlight-photo-upload{
-                        display: inline-block;
-                        float: left;
+                        display: block;
                         height: 100%;
-                        width: 320px;
                         margin-right: 40px;
                         cursor: pointer;
-                        height: 260px;
-                        margin-top: 16%;
+                        height: 120px;
+                        width: 100%;
+                        box-sizing: border-box;
 
                         img{
                             @extend .center;
-                            height: 38px;
-                            width: 50px;
-                            margin-bottom: 24px;
-                            margin-top: 30%;
+                            height: 30px;
+                            width: 39px;
+                            margin-bottom: 12px;
+                            margin-top: 12px;
                         }
 
                         span{
@@ -824,7 +823,8 @@ body.modal-open {
                         display: inline-block;
                         float: left;
                         height: 100%;
-                        width: 396px;
+                        width: 100%;
+                        box-sizing:border-box;
 
                         .upload-placeholder{
                             display: block;
@@ -836,16 +836,14 @@ body.modal-open {
 
                         .image-row{
                             position: relative;
-                            border-bottom: 1px solid #979797;
                             padding-bottom: 39px;
                             padding-top: 39px;
-
-                                 &:first-child{
-                                    padding-top: 0px;
-                                }
+                            padding: 21px 42px 21px 42px;
+                            border: 1px solid transparent;
+                            border-radius: 5px;
 
                                 .image-file{
-                                    top: 69px;
+                                    top: 71px;
                                 }
 
                                 .close{
@@ -855,11 +853,10 @@ body.modal-open {
                                 .progress-bar{
                                     top: 59px;
                                 }
-                            }
 
-                            &:last-child{
-                                padding-bottom: 0px;
-                                border-bottom: none;
+                                &:hover{
+                                    border-color: #EEF2F3;
+                                }
                             }
 
                             .image-file-uploaded{
@@ -887,7 +884,7 @@ body.modal-open {
                                 color: #898787;
                                 position: absolute;
                                 top: 108px;
-                                left: 133px;
+                                left: 180px;
                                 font-weight: 600;
                             }
 
@@ -900,7 +897,7 @@ body.modal-open {
                                 color: $primary-color;
                                 font-size: 14px;
                                 position: absolute;
-                                right: 0px;
+                                right: 39px;
                                 top: 76px;
                             }
 
@@ -908,9 +905,9 @@ body.modal-open {
 
                                 background-color: #D8D8D8;
                                 border-radius: 20px;
-                                width: 270px;
+                                width: 73%;
                                 position: absolute;
-                                left: 130px;
+                                left: 180px;
                                 top: 98px;
                                 height: 7px;
 
@@ -926,7 +923,7 @@ body.modal-open {
                 }
 
                 .highlight-photo-button {
-                    padding-top: 69px;
+                    padding-top: 145px;
                     margin-bottom: 15px;
                     text-align: right;
 
@@ -4274,7 +4271,7 @@ body {
             z-index: 2;
 
             li{
-                margin: 0px 0px;
+                margin: 0px -2px;
 
                 button{
                     &:before{
@@ -4329,6 +4326,82 @@ body {
     }
 }
 
+.file-upload{
+    margin: 0px !important;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    height: 102% !important;
+    width: 102% !important;
+    object-fit:cover;
+}
+
+.highlight-placeholder{
+    min-height: 500px;
+
+    img{
+        @extend .center;
+        margin-top: 25%;
+        margin-bottom: 15px;
+    }
+
+    span{
+        text-align: center;
+        display: block;
+        color: #a1a1a1;
+    }
+}
+
+.achievement-horizontal{
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .achievement-row{
+        height: 110px;
+        overflow: hidden;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #D8DADD;
+        margin-bottom: 50px;
+
+        &:last-child{
+            padding-bottom: 0px;
+            border-bottom: none;
+            margin-bottom: 10px;
+        }
+
+        img{
+            object-fit:cover;
+            margin-right: 44px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .content{
+            width: 560px;
+            display: inline-block;
+
+            .title{
+                font-size: 14px;
+                color: #7E7C7C;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+
+            .info{
+                font-size: 12px;
+                color: #A1A1A1;
+                margin-bottom: 10px;
+
+            }
+
+            .description{
+                font-size: 12px;
+                color: #A1A1A1;
+            }
+
+        }
+    }
+}
 
 // End of angelo
 
