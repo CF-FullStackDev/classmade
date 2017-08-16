@@ -95,7 +95,7 @@ a {
   text-align: center;
 }
 
-.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .journey-form {
+.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .journey-form, .highlight-placeholder img {
   display: block;
   margin: 0 auto;
 }
@@ -748,27 +748,26 @@ body.modal-open {
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container {
-  margin-top: 81px;
+  margin-top: 22px;
   margin-bottom: 84px;
   height: 526px;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload {
-  display: inline-block;
-  float: left;
+  display: block;
   height: 100%;
-  width: 320px;
   margin-right: 40px;
   cursor: pointer;
-  height: 260px;
-  margin-top: 16%;
+  height: 120px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img {
-  height: 38px;
-  width: 50px;
-  margin-bottom: 24px;
-  margin-top: 30%;
+  height: 30px;
+  width: 39px;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload span {
@@ -780,7 +779,8 @@ body.modal-open {
   display: inline-block;
   float: left;
   height: 100%;
-  width: 396px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .upload-placeholder {
@@ -793,17 +793,15 @@ body.modal-open {
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-row {
   position: relative;
-  border-bottom: 1px solid #979797;
   padding-bottom: 39px;
   padding-top: 39px;
-}
-
-.modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-row:first-child {
-  padding-top: 0px;
+  padding: 21px 42px 21px 42px;
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-row .image-file {
-  top: 69px;
+  top: 71px;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-row .close {
@@ -814,9 +812,8 @@ body.modal-open {
   top: 59px;
 }
 
-.modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images:last-child {
-  padding-bottom: 0px;
-  border-bottom: none;
+.modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-row:hover {
+  border-color: #EEF2F3;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-uploaded {
@@ -842,7 +839,7 @@ body.modal-open {
   color: #898787;
   position: absolute;
   top: 108px;
-  left: 133px;
+  left: 180px;
   font-weight: 600;
 }
 
@@ -855,16 +852,16 @@ body.modal-open {
   color: #F18448;
   font-size: 14px;
   position: absolute;
-  right: 0px;
+  right: 39px;
   top: 76px;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .progress-bar {
   background-color: #D8D8D8;
   border-radius: 20px;
-  width: 270px;
+  width: 73%;
   position: absolute;
-  left: 130px;
+  left: 180px;
   top: 98px;
   height: 7px;
 }
@@ -877,7 +874,7 @@ body.modal-open {
 }
 
 .modal-body.profile-highlight .content .highlight-photo-button {
-  padding-top: 69px;
+  padding-top: 20px;
   margin-bottom: 15px;
   text-align: right;
 }
@@ -1133,7 +1130,7 @@ body.modal-open {
   padding: 0;
   box-shadow: 0 0 4px 0 #D6D6D6;
   border-radius: 3px;
-  width: 900px;
+  width: 960px;
   height: 500px;
 }
 
@@ -1157,7 +1154,7 @@ body.modal-open {
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo {
   float: left;
   display: inline-block;
-  height: 270px;
+  height: 262px;
   width: 263px;
   cursor: pointer;
   position: relative;
@@ -1191,9 +1188,9 @@ body.modal-open {
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-form {
   display: inline-block;
   margin-left: 25px;
-  width: 480px;
+  width: 551px;
   height: 270px;
-  padding-bottom: 105px;
+  padding-bottom: 140px;
 }
 
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal label {
@@ -1207,13 +1204,37 @@ body.modal-open {
   padding: 0px 15px 0px 15px;
   height: 28px;
   font-size: 14px;
+  width: 212px;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal input#Month {
+  width: 69px !important;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 0px 5px 0px 5px;
+  text-align: center;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal input#Day {
+  width: 23px !important;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 0px 5px 0px 5px;
+  text-align: center;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal input#Year {
+  width: 44px !important;
+  display: inline-block;
+  padding: 0px 5px 0px 5px;
+  text-align: center;
 }
 
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal textarea {
   display: inline-block;
   width: 100%;
   border: 1px solid #DAD2D2;
-  height: 154px;
+  height: 100px;
   resize: none;
   border-radius: 5px;
   padding: 10px;
@@ -1283,7 +1304,7 @@ body.modal-open {
   display: inline-block;
   float: left;
   margin-bottom: 25px;
-  border: 1px solid #979797;
+  border: 1px dashed #979797;
 }
 
 .modal-body.profile-journey .content .journey-modal-container .journey-container:nth-child(2n) {
@@ -1344,6 +1365,7 @@ body.modal-open {
 .modal-body.profile-journey .content .request-school {
   margin-top: 0px;
   margin-left: 5%;
+  color: #F18448;
 }
 
 .modal-body.profile-portfolio {
@@ -1672,51 +1694,297 @@ body.modal-open {
   font-size: 13px;
 }
 
-.modal-body.profile-review .content .review-content {
+.modal-body.profile-achievement-info {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  padding: 0;
+  box-shadow: 0 0 4px 0 #D6D6D6;
+  border-radius: 3px;
+  width: 591px;
+  height: 300px;
+}
+
+.modal-body.profile-achievement-info .content {
+  display: inline;
+}
+
+.modal-body.profile-achievement-info .content .panel-header {
+  padding: 30px 4% 0px 4%;
+  box-sizing: border-box;
+}
+
+.modal-body.profile-achievement-info .content .panel-header .title {
+  color: #7E7C7C;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+}
+
+.modal-body.profile-achievement-info .content .panel-header .info {
+  color: #A1A1A1;
+  font-size: 12px;
+}
+
+.modal-body.profile-achievement-info .content .panel-header:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #f2f2f2;
+}
+
+.modal-body.profile-achievement-info .content .achievement-info img {
+  width: 192px;
+  height: 117px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 13px;
+  float: left;
+}
+
+.modal-body.profile-achievement-info .content .achievement-info .description {
+  display: inline-block;
+  font-size: 12px;
+  color: #A1A1A1;
+  width: 300px;
+}
+
+.modal-body .review-content {
   text-align: left;
   border-top: 2px solid #F2F2F2;
   padding-top: 20px;
   margin-bottom: 20px;
 }
 
-.modal-body.profile-review .content .review-content span {
+.modal-body .review-content span {
   display: block;
 }
 
-.modal-body.profile-review .content .review-content span.review-type {
+.modal-body .review-content span.review-type {
   font-size: 12px;
   color: #7E7C7C;
   font-weight: 500;
   margin-bottom: 5px;
 }
 
-.modal-body.profile-review .content .review-content span.review-date {
+.modal-body .review-content span.review-date {
   font-size: 12px;
   color: #7E7C7C;
   margin-bottom: 5px;
 }
 
-.modal-body.profile-review .content .review-content > div {
+.modal-body .review-content > div {
   font-size: 12px;
   color: #A1A1A1;
   text-align: justify;
   margin-bottom: 5px;
 }
 
-.modal-body.profile-review .content .review-content a {
+.modal-body .review-content a {
   display: block;
   font-size: 14px;
   color: #F18448;
   text-align: right;
 }
 
-.modal-body.profile-review a.close-modal {
+.modal-body a.close-modal {
   position: absolute;
   top: 0;
   right: 7px;
   -webkit-transform: rotate(315deg);
           transform: rotate(315deg);
   font-size: 25px;
+  color: #F18448;
+}
+
+.modal-body.profile-classmade-profile {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  padding: 0;
+  box-shadow: 0 0 4px 0 #D6D6D6;
+  border-radius: 3px;
+  width: 900px;
+  height: 500px;
+}
+
+.modal-body.profile-classmade-profile .content .panel-header {
+  padding: 30px 4% 0px 4%;
+  box-sizing: border-box;
+}
+
+.modal-body.profile-classmade-profile .content .panel-header:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #f2f2f2;
+}
+
+.modal-body.profile-classmade-profile .content .cover-template {
+  margin-top: 42px;
+}
+
+.modal-body.profile-classmade-profile .content .cover-template span {
+  color: #7E7C7C;
+  font-size: 14px;
+}
+
+.modal-body.profile-classmade-profile .content .cover-template .menu {
+  float: right;
+  list-style: none;
+}
+
+.modal-body.profile-classmade-profile .content .cover-template .menu li {
+  display: inline-block;
+  border-right: 1px solid #7E7C7C;
+}
+
+.modal-body.profile-classmade-profile .content .cover-template .menu li a {
+  color: #7E7C7C;
+  margin-right: 17px;
+  margin-left: 17px;
+  font-size: 14px;
+}
+
+.modal-body.profile-classmade-profile .content .cover-template .menu li a:hover {
+  color: #F18448;
+}
+
+.modal-body.profile-classmade-profile .content .cover-template .menu li:last-child {
+  border-right: none;
+}
+
+.modal-body.profile-classmade-profile .content .cover-template .menu li:last-child a {
+  margin-right: 17px;
+}
+
+.modal-body.profile-classmade-profile .content .cover-template .menu li:first-child a {
+  margin-left: 0px;
+}
+
+.modal-body.profile-classmade-profile .content .template-images {
+  margin-top: 22px;
+}
+
+.modal-body.profile-classmade-profile .content .template-images .image-container {
+  width: 23.5%;
+  height: 180px;
+  display: inline-block;
+  margin-right: 1.3%;
+  cursor: pointer;
+}
+
+.modal-body.profile-classmade-profile .content .template-images .image-container:last-child {
+  margin-right: 0px;
+}
+
+.modal-body.profile-classmade-profile .content .template-images .image-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-body.profile-classmade-profile .content .link-container {
+  position: relative;
+  margin-top: 57px;
+}
+
+.modal-body.profile-classmade-profile .content .link-container span {
+  font-size: 14px;
+  color: #7E7C7C;
+}
+
+.modal-body.profile-classmade-profile .content .link-container .checkbox-group {
+  position: absolute;
+  top: 0px;
+}
+
+.modal-body.profile-classmade-profile .content .link-container .checkbox-group input[type="checkbox"] {
+  float: left;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #DAD2D2;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 3px;
+  margin-right: 12px;
+}
+
+.modal-body.profile-classmade-profile .content .link-container .checkbox-group label {
+  font-size: 14px;
+  color: #7E7C7C;
+  font-weight: 500;
+}
+
+.modal-body.profile-classmade-profile .content .link-container .checkbox-group.portfolio-checkbox {
+  left: 250px;
+}
+
+.modal-body.profile-classmade-profile .content .link-container .checkbox-group.review-checkbox {
+  left: 350px;
+}
+
+.modal-body.profile-classmade-profile .content .link-container .checkbox-group.transcript-checkbox {
+  left: 450px;
+}
+
+.modal-body.profile-classmade-profile .content .link-container .input-group {
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 35px;
+}
+
+.modal-body.profile-classmade-profile .content .link-container .input-group input {
+  width: 530px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #F18448;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.modal-body.profile-classmade-profile .content .link-container .input-group input::-webkit-input-placeholder {
+  color: #D6D6D6;
+}
+
+.modal-body.profile-classmade-profile .content .link-container .input-group input:-ms-input-placeholder {
+  color: #D6D6D6;
+}
+
+.modal-body.profile-classmade-profile .content .link-container .input-group input::placeholder {
+  color: #D6D6D6;
+}
+
+.modal-body.profile-classmade-profile .content .link-container .input-group button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 51px;
+  font-size: 14px;
+}
+
+.modal-body.profile-classmade-profile .content .button-right {
+  margin-top: 110px;
+  text-align: right;
+}
+
+.modal-body.profile-classmade-profile .content .button-right button {
+  height: 30px;
+  min-width: 88px;
+}
+
+.modal-body.profile-classmade-profile .content .button-right button[type="reset"] {
+  background: #fff;
   color: #F18448;
 }
 
@@ -4522,6 +4790,273 @@ body#app-home footer ul > li:last-child:after {
 .form-horizontal .personal-statement-button button[type="reset"]:hover {
   background-color: #F09A69;
   color: #fff;
+}
+
+.profile-glance .profile-avatar:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: 0.3s ease-out all;
+}
+
+.profile-glance .profile-avatar .profile-hover {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  transition: 0.3s ease-out all;
+  transition-delay: 0.1s;
+}
+
+.profile-glance .profile-avatar:hover:after {
+  opacity: 1.0;
+}
+
+.profile-glance .profile-avatar:hover .profile-hover {
+  opacity: 1.0;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+#profile-background-container:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 460px;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: 0.3s ease-out all;
+}
+
+#profile-background-container .profile-background-hover {
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  transition: 0.3s ease-out all;
+  transition-delay: 0.1s;
+}
+
+#profile-background-container:hover:after {
+  opacity: 1.0;
+}
+
+#profile-background-container:hover .profile-background-hover {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1.0;
+}
+
+.highlight-data-container .panel-buttons {
+  z-index: 3;
+  opacity: 0;
+  transition: 0.3s ease-out all;
+  top: 0px;
+}
+
+.highlight-data-container .panel-buttons:hover {
+  opacity: 1.0;
+}
+
+.highlight-data-container:before {
+  content: '';
+  transition: 0.3s ease-out all;
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: transparent;
+}
+
+.highlight-data-container .highlight-photo-slick .slick-prev {
+  z-index: 2;
+  left: 0px;
+  opacity: 0;
+  transition: 0.3s ease-out all;
+}
+
+.highlight-data-container .highlight-photo-slick .slick-prev:before {
+  color: white;
+  content: '\f053';
+  opacity: 1.0;
+  display: inline-block;
+  z-index: 2;
+  font-family: 'FontAwesome';
+}
+
+.highlight-data-container .highlight-photo-slick .slick-next {
+  z-index: 2;
+  right: 0px;
+  opacity: 0;
+  transition: 0.3s ease-out all;
+}
+
+.highlight-data-container .highlight-photo-slick .slick-next:before {
+  color: white;
+  content: '\f054';
+  opacity: 1.0;
+  display: inline-block;
+  z-index: 2;
+  font-family: 'FontAwesome';
+}
+
+.highlight-data-container .highlight-photo-slick .slick-dots {
+  bottom: 25px;
+  z-index: 2;
+}
+
+.highlight-data-container .highlight-photo-slick .slick-dots li {
+  margin: 0px -2px;
+}
+
+.highlight-data-container .highlight-photo-slick .slick-dots li button:before {
+  transition: 0.2s ease-out all;
+  color: #fff;
+  font-size: 12px;
+  opacity: 1.0;
+}
+
+.highlight-data-container .highlight-photo-slick .slick-dots li button:hover:before {
+  color: #F18448;
+}
+
+.highlight-data-container .highlight-photo-slick .slick-dots li.slick-active button:before {
+  color: #F18448;
+  font-size: 17px;
+}
+
+.highlight-data-container:hover:before {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.highlight-data-container:hover .panel-buttons {
+  top: 30px;
+  opacity: 1.0;
+}
+
+.highlight-data-container:hover .highlight-photo-slick .slick-prev {
+  opacity: 1.0;
+  left: 25px;
+}
+
+.highlight-data-container:hover .highlight-photo-slick .slick-next {
+  opacity: 1.0;
+  right: 25px;
+}
+
+.file-upload {
+  margin: 0px !important;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  height: 102% !important;
+  width: 102% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.highlight-placeholder {
+  min-height: 500px;
+}
+
+.highlight-placeholder img {
+  margin-top: 25%;
+  margin-bottom: 15px;
+}
+
+.highlight-placeholder span {
+  text-align: center;
+  display: block;
+  color: #a1a1a1;
+}
+
+.achievement-horizontal {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.achievement-horizontal .achievement-row {
+  height: 110px;
+  overflow: hidden;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #D8DADD;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.achievement-horizontal .achievement-row:last-child {
+  padding-bottom: 0px;
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+
+.achievement-horizontal .achievement-row img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 44px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.achievement-horizontal .achievement-row .edit-icon {
+  border: none;
+  position: absolute;
+  right: 0px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.achievement-horizontal .achievement-row .content {
+  width: 560px;
+  display: inline-block;
+}
+
+.achievement-horizontal .achievement-row .content .title {
+  font-size: 14px;
+  color: #7E7C7C;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.achievement-horizontal .achievement-row .content .info {
+  font-size: 12px;
+  color: #A1A1A1;
+  margin-bottom: 10px;
+}
+
+.achievement-horizontal .achievement-row .content .description {
+  font-size: 12px;
+  color: #A1A1A1;
+}
+
+.form-horizontal .input-row .input-group-half {
+  width: 45%;
+  margin-right: 3%;
+  float: left;
+}
+
+.form-horizontal .input-row .input-group-half:nth-child(2) {
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+.form-horizontal .input-row .input-group-half input {
+  width: 85% !important;
 }
 
 @media only screen and (max-device-width: 1024px) {

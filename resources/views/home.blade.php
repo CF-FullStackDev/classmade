@@ -97,12 +97,12 @@
                     <div class="highlight-empty-data">
                         <div class="highlight-container">
                             <img src="{{asset('img/highlight-photo.png')}}">
-                            <button type="button" class="btn btn-primary-outline">Upload Photo</button>
+                            <button type="button" id="highlight-photo-button" class="btn btn-primary-outline open-modal" data-modal="#modal-highlight">Upload Photo</button>
                         </div>
                         <span class="divider">OR</span>
                         <div class="highlight-container">
                             <img src="{{asset('img/highlight-video.png')}}">
-                            <button type="button" class="btn btn-primary-outline">Upload Video</button>
+                            <button type="button" id="highlight-video-button" class="btn btn-primary-outline open-modal" data-modal="#modal-highlight">Upload Video</button>
                         </div>
                     </div>
 
@@ -116,7 +116,20 @@
                     <button type="button" class="question-icon"></button>
                     <button type="button" class="edit-icon open-modal" data-modal="#modal-highlight"></button>
                 </div>
-                <img src="{{asset('img/highlight-data.png')}}">
+                <div class="highlight-photo-slick">
+                    <div class='highlight-image-container'>
+                        <img src="{{asset('img/highlight-data.png')}}">
+                    </div>
+                    <div class='highlight-image-container'>
+                        <img src="{{asset('img/highlight-data.png')}}">
+                    </div>
+                    <div class='highlight-image-container'>
+                        <img src="{{asset('img/highlight-data.png')}}">
+                    </div>
+                    <div class='highlight-image-container'>
+                        <img src="{{asset('img/highlight-data.png')}}">
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -322,6 +335,58 @@
                             <span class="title">Cutie Awardee</span>
                             <span class="date">Feb 2018</span>
                             <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court this is a sample to overflow the container.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel section-one">
+            <div class="panel-header">
+                <div>
+                    <p class="bell-icon"></p><span>Achievement</span>
+                    <div class="panel-buttons">
+                        <button type="button" class="question-icon"></button>
+                        <button type="button" class="add-icon open-modal" data-modal="#modal-achievement"></button>
+                    </div>
+                    <div class="panel-tabs">
+                        <div>
+                            <ul>
+                                <li>Draft</li>
+                                <li class="active">Publish</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <div class="achievement-horizontal">
+                    <div class="achievement-row">
+                        <img src="{{asset('img/achievement_thumb.png')}}" class="open-modal" data-modal="#modal-achievement-info">
+                        <button type="button" class="edit-icon open-modal" data-modal="#modal-achievement"></button>
+                        <div class="content">
+                            <div class="title">Academic Excellence Awards</div>
+                            <div class="info">May 2012 PLDT-Smart Foundation</div>
+                            <div class="description">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax progress Junk MTV quic graced by fox whelps. Bawds jog, flick quartz, vex nymph</div>
+                        </div>
+                    </div>
+                    <div class="achievement-row">
+                        <img src="{{asset('img/achievement_thumb.png')}}" class="open-modal" data-modal="#modal-achievement-info">
+                        <button type="button" class="edit-icon open-modal" data-modal="#modal-achievement"></button>
+                        <div class="content">
+                            <div class="title">Academic Excellence Awards</div>
+                            <div class="info">May 2012 PLDT-Smart Foundation</div>
+                            <div class="description">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax progress Junk MTV quic graced by fox whelps. Bawds jog, flick quartz, vex nymph</div>
+                        </div>
+                    </div>
+                    <div class="achievement-row">
+                        <img src="{{asset('img/achievement_thumb.png')}}" class="open-modal" data-modal="#modal-achievement-info">
+                        <button type="button" class="edit-icon open-modal" data-modal="#modal-achievement"></button>
+                        <div class="content">
+                            <div class="title">Academic Excellence Awards</div>
+                            <div class="info">May 2012 PLDT-Smart Foundation</div>
+                            <div class="description">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax progress Junk MTV quic graced by fox whelps. Bawds jog, flick quartz, vex nymph</div>
                         </div>
                     </div>
                 </div>
@@ -744,6 +809,8 @@
                 </div>
             </div>
         </div>
+
+        <button class="open-modal btn btn-primary" data-modal="#modal-classmade-profile">Save Classmade Profile</button>
         <!-- End of Review -->
 
         <!-- Connections -->
@@ -861,7 +928,7 @@
                                 <img class="large-image" src="{{asset('img/icons/image_icon.png')}}">
                             </div>
                             <div class="button-right">
-                                <button type="reset" class="btn btn-primary">Discard</button>
+                                <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-avatar">Discard</button>
                                 <button type="submit" class="btn btn-primary">Save</button>
                             </div>
                         </div>
@@ -923,7 +990,7 @@
                                 <img class="large-image" src="{{asset('img/icons/image_icon.png')}}">
                             </div>
                             <div class="button-right">
-                                <button type="reset" class="btn btn-primary">Cancel</button>
+                                <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-cover">Cancel</button>
                                 <button type="submit" class="btn btn-primary">Choose</button>
                             </div>
                         </div>
@@ -965,7 +1032,7 @@
                                     <input type="" name="" placeholder="https://www.youtube.com/watch?v=SqMjxAWfTe4">
                                 </div>
                                 <div class="button-right highlight-video-button">
-                                    <button type="reset" class="btn btn-primary">Discard</button>
+                                    <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-highlight">Discard</button>
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </div>
                             </form>
@@ -983,8 +1050,7 @@
                                 <div class="highlight-photo-upload-container">
                                     <div class="highlight-photo-upload dashed-container">
                                         <img src="{{asset('img/icons/camera_icon.png')}}">
-                                        <span class="text-center">Click to Upload</span>
-                                        <span class="text-center">(max of 4 photos only)</span>
+                                        <span class="text-center">Click to Upload (max of 4 photos only)</span>
                                     </div>
                                     <div class="uploading-images">
                                         <div class="image-row">
@@ -1024,9 +1090,13 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- div class="highlight-placeholder">
+                                        <img src="{{asset('img/uploadhighlight.png')}}">
+                                        <span>Photos will appear here once you upload</span>
+                                    </div> -->
                                 </div>
                                 <div class="button-right highlight-photo-button">
-                                    <button type="reset" class="btn btn-primary">Discard</button>
+                                    <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-highlight">Discard</button>
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </div>
                             </form>
@@ -1096,7 +1166,7 @@
                                     </div>
                                     <span class="chatmade-link"><a href="#" class="pro-link">Send melancholy symphatize discretion led. <br> Proofread with Chatmade</a></span>
                                     <div class="button-right personal-statement-button">
-                                        <button type="reset" class="btn btn-primary">Discard</button>
+                                        <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-personal">Discard</button>
                                         <button type="submit" class="btn btn-primary">Save</button>
                                     </div>
                                 </form>
@@ -1127,7 +1197,7 @@
                                     </div>
                                     <span class="chatmade-link"><a href="#">Send melancholy symphatize discretion led. <br> Proofread with Chatmade</a></span>
                                     <div class="button-right personal-statement-button">
-                                        <button type="reset" class="btn btn-primary">Discard</button>
+                                        <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-personal">Discard</button>
                                         <button type="submit" class="btn btn-primary">Save</button>
                                     </div>
                                 </form>
@@ -1204,7 +1274,7 @@
                                     <span class="text-limit">1000</span>
                                     <span class="chatmade-link"><a href="#" class="pro-link">Send melancholy symphatize discretion led. <br> Proofread with Chatmade</a></span>
                                     <div class="button-right personal-statement-button">
-                                        <button type="reset" class="btn btn-primary">Discard</button>
+                                        <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-personal">Discard</button>
                                         <button type="submit" class="btn btn-primary">Save</button>
                                     </div>
                                 </form>
@@ -1230,23 +1300,35 @@
                             When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.
                         </div>
                         <div class="achievement-modal-container">
-                            <div class="dashed-container achievement-photo">
+                            <div class="dashed-container achievement-photo upload-image" id="achievement-photo-fileto" data-input="#achievement-photo-file">
                                 <img src="{{asset('img/icons/camera_icon.png')}}">
                                 <span>Click to Add Photo</span>
                             </div>
                             <div class="achievement-form">
                                 <form class="form-horizontal">
-                                    <input type="file" class="form-hidden" id="achievement-photo-file" name="">
-                                    <label>Title</label>
-                                    <input type="text" id="Title" name="Title">
+                                    <input type="file" class="form-hidden upload-image-input" id="achievement-photo-file" name="" data-container=".achievement-photo" accept=".png,.jpg,.jpeg">
+                                    <div class="input-row">
+                                        <div class="input-group-half">
+                                            <label>Title</label>
+                                            <input type="text" id="Title" name="Title">
+                                        </div>
+                                        <div class="input-group-half">
+                                            <label>Date Received</label>
+                                            <input type="text" id="Month" name="Month" placeholder="January">
+                                            <input type="text" id="Day" name="Day" placeholder="01">
+                                            <input type="text" id="Year" name="Year" placeholder="2000">
+                                        </div>
+                                    </div>
+                                    <label>Issuer</label>
+                                    <input type="text" id="Issuer" name="Issuer">
                                     <label>Description</label>
-                                    <textarea name="description"></textarea>
-                                    <span class="word-count">300</span>
+                                    <textarea maxlength="300" class='word-count-input' name="description" data-count="#achievement-count"></textarea>
+                                    <span id="achievement-count" class="word-count" data-length="300">300</span>
                                 </form>
                             </div>
 
                         <div class="button-right achievement-button">
-                            <button type="reset" class="btn btn-primary">Discard</button>
+                            <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-achievement">Discard</button>
                             <button type="submit" class="btn btn-primary">Save</button>
                         </div>
                         </div>
@@ -1312,7 +1394,7 @@
                         </div>
                         <a class="request-school" href="#">Click to Request School</a>
                         <div class="button-right highlight-video-button">
-                            <button type="reset" class="btn btn-primary">Discard</button>
+                            <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-journey">Discard</button>
                             <button type="submit" class="btn btn-primary">Save</button>
                         </div>
                     </div>
@@ -1372,7 +1454,7 @@
                                     </div>
                                 </div>
                                 <div class="button-right highlight-video-button">
-                                    <button type="reset" class="btn btn-primary">Discard</button>
+                                    <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-portfolio">Discard</button>
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </div>
                             </form>
@@ -1427,8 +1509,98 @@
                 </div>
             </div>
             <a class="btn close-modal" data-modal="#modal-review" href="javascript:;">+</a>
+        <div class="modal-body profile-achievement-info" id="modal-achievement-info">
+            <div class="content">
+                <div class="panel">
+                    <div class="panel-header">
+                        <span class="title">Academic Excellence Awards</span>
+                        <span class="info">May 2012 PLDT-Smart Foundation</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="achievement-info">
+                            <img src="{{asset('img/achievement-view-pic.png')}}">
+                            <div class="description">
+                                The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quic progres Junk MTV quic graced by fox whelps. Bawds jog, flick quartz, vex nymphver a lazy dog. 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-dialog">
+        <div class="modal-body profile-classmade-profile" id="modal-classmade-profile">
+            <div class="content">
+                <div class="panel">
+                    <div class="panel-header">
+                        <span class="title"><i class="bell-icon"></i>Save Classmade Profile</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="dashed-tips-container">
+                            <div class="icon"><span>i</span></div>
+                            <div class="title">Some Tips</div>
+                            <div class="content">
+                                Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
+                            </div>
+                        </div>
+                        <div class="cover-photo">
+                            <div class="cover-template">
+                                <span>Choose from below:</span>
+                                <ul class="menu">
+                                    <li><a href="#">Art</a></li>
+                                    <li><a href="#">Sports</a></li>
+                                    <li><a href="#">Math</a></li>
+                                    <li><a href="#">Academic</a></li>
+                                    <li><a href="#">Science</a></li>
+                                    <li><a href="#">Lifestyle</a></li>
+                                </ul>
+                                <div class="template-images">
+                                    <div class="image-container">
+                                        <img src="{{asset('img/profile-background-sample.png')}}">
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="{{asset('img/profile-background-sample.png')}}">
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="{{asset('img/profile-background-sample.png')}}">
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="{{asset('img/profile-background-sample.png')}}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-container">
+                                <span>Profile page also include:</span>
+                                <div class="checkbox-group portfolio-checkbox">
+                                    <input type="checkbox" name="">
+                                    <label>Portfolio</label>
+                                </div>
+                                <div class="checkbox-group review-checkbox">
+                                    <input type="checkbox" name="">
+                                    <label>Reviews</label>
+                                </div>
+                                <div class="checkbox-group transcript-checkbox">
+                                    <input type="checkbox" name="">
+                                    <label>Transcript</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" name="" placeholder="https://invis.io/JYCMPUWZG">
+                                    <button class="btn btn-primary">Copy Link</button>
+                                </div>
+                            </div>
+                            <div class="button-right">
+                                <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-classmade-profile">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Choose</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+>>>>>>> branch/angelo
         </div>
     </div>
 
 </div>
 @endsection
+

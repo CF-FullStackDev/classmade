@@ -164,15 +164,22 @@ $(function(){
         $(".change-video").show();
     }
 
-    $(".change-video").click(function(){
+    $(document).on('click',".change-video",function(){
         showHighlightVideo();
     });
 
-    $(".change-photo").click(function(){
+    $(document).on('click','.change-photo',function(){
         showHighlightPhoto();
     });
 
-    $("#rookie-link").click(function(e){
+    $(document).on('click','#highlight-photo-button',function(){
+        showHighlightPhoto();
+    });
+    $(document).on('click','#highlight-video-button',function(){
+        showHighlightVideo();
+    });
+
+    $(document).on('click',"#rookie-link",function(e){
         e.preventDefault();
         $("#rookie-link").addClass('active');
         $("#intermediate-link").removeClass('active');
@@ -186,7 +193,7 @@ $(function(){
         $(".menu-line").css('width',$(this).css('width'));
     });
 
-    $("#intermediate-link").click(function(e){
+    $(document).on('click','#intermediate-link',function(e){
         e.preventDefault();
         $("#rookie-link").removeClass('active');
         $("#intermediate-link").addClass('active');
@@ -196,11 +203,11 @@ $(function(){
         $(".intermediate-section").css('display','block');
         $(".pro-section").css('display','none');
 
-        $(".menu-line").css('left','345px');
+        $(".menu-line").css('left','349px');
         $(".menu-line").css('width',$(this).css('width'));
     });
 
-    $("#pro-link").click(function(e){
+    $(document).on('click','#pro-link',function(e){
         e.preventDefault();
         $("#rookie-link").removeClass('active');
         $("#intermediate-link").removeClass('active');
@@ -210,7 +217,7 @@ $(function(){
         $(".intermediate-section").css('display','none');
         $(".pro-section").css('display','block');
 
-        $(".menu-line").css('left','680px');
+        $(".menu-line").css('left','695px');
         $(".menu-line").css('width',$(this).css('width'));
     });
     //End of Angelo
@@ -227,5 +234,67 @@ $(function(){
         $('.transcript-section1, .transcript-section2').hide();
         $('.transcript-section'+data).show();
     });
+
+    //NEW ANGELO JS
+
+    $('.highlight-photo-slick').slick({
+        arrows: true,
+        dots: true
+    });
+
+    function readURL(input, tar) {
+        if (input.files && input.files[0]) { // got sth
+
+
+        // Clear image container
+        $("." + tar).removeAttr('src');
+
+        $.each(input.files, function(index, ff) // loop each image 
+            {
+
+            var reader = new FileReader();
+
+            // Put image in created image tags
+            reader.onload = function(e) {
+                $('.' + tar).attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(ff);
+
+            });
+        }
+    }
+
+    $(document).on('click', '.upload-image', function(){
+        var input = $(this).data('input');
+        $(input).click();
+    });
+
+    $('input[type="file"]').change(function(){
+        var input = this;
+        if ($(input).hasClass('upload-image-input')){
+            var container = $(input).data('container');
+            $(container).html('<img class="file-upload">');
+            readURL(input,'file-upload');
+        }
+    });
+
+    $(document).on('keydown',".word-count-input",function(){
+        var input = this;
+        var label = $(this).data('count');
+        var length = $(input).val().length;
+        var limit = $(label).data('length');
+        $(label).html(parseInt(limit) - parseInt(length));
+    });
+
+    $(document).on('keyup',".word-count-input",function(){
+        var input = this;
+        var label = $(this).data('count');
+        var length = $(input).val().length;
+        var limit = $(label).data('length');
+        $(label).html(parseInt(limit) - parseInt(length));
+    });
+
+    // END OF NEW ANGELO JS
 
 });
