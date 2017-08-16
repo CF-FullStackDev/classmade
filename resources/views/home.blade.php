@@ -1509,6 +1509,9 @@
                 </div>
             </div>
             <a class="btn close-modal" data-modal="#modal-review" href="javascript:;">+</a>
+    </div>
+
+    <div class="modal-dialog">
         <div class="modal-body profile-achievement-info" id="modal-achievement-info">
             <div class="content">
                 <div class="panel">
@@ -1597,7 +1600,6 @@
                     </div>
                 </div>
             </div>
->>>>>>> branch/angelo
         </div>
     </div>
 
