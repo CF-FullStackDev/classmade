@@ -119,6 +119,28 @@
                 <img src="{{asset('img/highlight-data.png')}}">
             </div>
         </div>
+
+        <div class="panel section-one">
+            <div class="panel-body highlight-data-container">
+                <div class="panel-buttons">
+                    <button type="button" class="question-icon"></button>
+                    <button type="button" class="edit-icon open-modal" data-modal="#modal-highlight"></button>
+                </div>
+                <iframe width="960" height="420" src="http://youtube.com/embed/yOfT6mlbw30" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="panel section-one">
+            <div class="panel-body highlight-data-container">
+                <div class="panel-buttons">
+                    <button type="button" class="question-icon"></button>
+                    <button type="button" class="edit-icon open-modal" data-modal="#modal-highlight"></button>
+                </div>
+                <video preload controls>
+                    <source src="{{asset('img/achievement-video.mp4')}}" type="video/mp4"/>
+                </video>
+            </div>
+        </div>
         <!-- End of Highlight -->
 
         <!-- Personal Statement -->
@@ -557,7 +579,7 @@
                             <ul>
                                 <li class="active">General</li>
                                 <li>Projects</li>
-                                <li>Pending</li>
+                                <li><a href="{{ url('/review') }}">Pending</a></li>
                             </ul>
                         </div>
                     </div>
@@ -567,6 +589,7 @@
                 <div class="profile-review">
                     <span class="sub-header">Top 4</span>
 
+                    <!-- Review Data -->
                     <div class="review-container">
                         <div class="review-avatar">
                             <div>
@@ -585,9 +608,10 @@
                             <img src="{{asset('img/badge/organised.png')}}">
                             <img src="{{asset('img/badge/problem-solving.png')}}">
                             <img src="{{asset('img/badge/trustworthy.png')}}">
-                            <a href="">Unfavorite</a>
+                            <a href="javascript:;">Unfavorite</a>
                         </div>
                     </div>
+
                     <div class="review-container">
                         <div class="review-avatar">
                             <div>
@@ -603,32 +627,74 @@
                         </div>
                         <div class="review-badge">
                             <img src="{{asset('img/badge/trustworthy.png')}}">
-                            <a href="">Unfavorite</a>
+                            <a href="javascript:;">Unfavorite</a>
                         </div>
                     </div>
+                    <!-- End of Review -->
+
+                    <!-- Empty Data -->
+                    <div class="review-empty-container">
+                        <img src="{{asset('img/review-top-empty.png')}}">
+                        <span>Your top reviews will be shown here. select your top reviews<br>from different classmate reviews</span>
+                    </div>
+                    <!-- End of Empty -->
 
                     <span class="sub-header">Other Reviews</span>
 
-                    <div class="review-container">
-                        <div class="review-avatar">
-                            <div>
-                                <img src="{{asset('img/profile-avatar.png')}}">
+                    <div class="review-other-panel">
+
+                        <!-- Review Data -->
+                        <div class="review-other-container">
+                            <img src="{{asset('img/profile-avatar.png')}}" class="review-avatar">
+                            <span class="review-name">Ollie Harris</span>
+                            <span class="review-date">Aug 2018</span>
+                            <div class="review-badge">
+                                <img src="{{asset('img/badge/self-motivated.png')}}">
+                                <img src="{{asset('img/badge/organised.png')}}">
+                                <img src="{{asset('img/badge/problem-solving.png')}}">
+                                <img src="{{asset('img/badge/trustworthy.png')}}">
                             </div>
+                            <span class="review-title">Personal Statement</span>
+                            <span class="review-comment">When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.</span>
+                            <a href="javascript:;">Favorite</a>
                         </div>
-                        <div class="review-content">
-                            <span>Ollie Harris</span>
-                            <span>Profile</span>
-                            <span>Aug 2018</span>
-                            <span>Portfolio</span>
-                            <span>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.</span>
+
+                        <div class="review-other-container">
+                            <img src="{{asset('img/profile-avatar.png')}}" class="review-avatar">
+                            <span class="review-name">Ollie Harris</span>
+                            <span class="review-date">Multiple Review</span>
+                            <div class="review-badge-multiple">
+                                <div>
+                                    <img src="{{asset('img/badge/self-motivated.png')}}">
+                                    <span>2</span>
+                                </div>
+                                <div>
+                                    <img src="{{asset('img/badge/organised.png')}}">
+                                    <span>1</span>
+                                </div>
+                                <div>
+                                    <img src="{{asset('img/badge/problem-solving.png')}}">
+                                    <span>3</span>
+                                </div>
+                                <div>
+                                    <img src="{{asset('img/badge/trustworthy.png')}}">
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <a href="javascript:;" class="review-all open-modal" data-modal="#modal-review">See all reviews</a>
+                            <a href="javascript:;">Favorite</a>
                         </div>
-                        <div class="review-badge">
-                            <img src="{{asset('img/badge/self-motivated.png')}}">
-                            <img src="{{asset('img/badge/organised.png')}}">
-                            <img src="{{asset('img/badge/problem-solving.png')}}">
-                            <img src="{{asset('img/badge/trustworthy.png')}}">
+                        <!-- End of Review -->
+
+                        <!-- Empty Data -->
+                        <div class="review-empty-container">
+                            <img src="{{asset('img/review-empty.png')}}">
+                            <span>Your reviews will be shown here. Tell your classmates to review <br> you as a person so people will know how great you are bimb.</span>
                         </div>
+                        <!-- End of Empty -->
+
                     </div>
+
                 </div>
             </div>
         </div>
@@ -685,8 +751,15 @@
             <div class="panel-header">
                 <div>
                     <p class="bell-icon"></p><span>Connections</span>
+                    <div class="panel-buttons connection">
+                        <div class="input-search">
+                            <input type="text" name="" placeholder="search within connection">
+                            <div class="input-icon-search"></div>
+                        </div>
+                        <a href="{{ url('/connection') }}">Invitation</a>
+                    </div>
                     <div class="panel-tabs">
-                        <div>
+                        <div class="profile-left">
                             <ul>
                                 <li>Classmade</li>
                                 <li class="active">Recently Added</li>
@@ -697,6 +770,8 @@
             </div>
             <div class="panel-body">
                 <div class="profile-connection">
+
+                    <!-- Connections Data -->
                     <div class="connection-container">
                         <div class="connection-background-wrapper">
                             <img src="{{asset('img/profile-background.jpg')}}" class="connection-image">
@@ -708,6 +783,7 @@
                         <div class="connection-content">
                             <img class="connection-profile-image" src="{{asset('img/profile-avatar.png')}}">
                             <div class="connection-button-group">
+                                <i class="btn-favorite"></i>
                                 <button class="btn btn-primary-outline">Classmade</button>
                             </div>
                         </div>
@@ -728,10 +804,20 @@
                         <div class="connection-content">
                             <img class="connection-profile-image" src="{{asset('img/profile-avatar.png')}}">
                             <div class="connection-button-group">
-                                <button class="btn btn-primary">Delete</button>
+                                <i class="btn-favorite favorite"></i>
+                                <button class="btn btn-primary">Remove</button>
                             </div>
                         </div>
                     </div>
+                    <!-- End of Connections -->
+
+                    <!-- Connections Empty -->
+                    <div class="connection-empty-container">
+                        <img src="{{asset('img/journey.png')}}">
+                        <span>You have no connection yet. You have no connection.<br> Add your classmates by searching them in the search within connection bar.</span>
+                    </div>
+                    <!-- End of Empty -->
+
                 </div>
             </div>
         </div>
@@ -1294,6 +1380,53 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="modal-dialog">
+        <div class="modal-body profile-review" id="modal-review">
+            <div class="content">
+                <img src="{{asset('img/profile-avatar.png')}}" class="review-avatar">
+                <span class="review-name">Clifford Tran</span>
+                <span class="review-sub-title">Multiple Reviews</span>
+                <div class="review-badge-multiple">
+                    <div>
+                        <img src="{{asset('img/badge/self-motivated.png')}}">
+                        <span>2</span>
+                    </div>
+                    <div>
+                        <img src="{{asset('img/badge/organised.png')}}">
+                        <span>1</span>
+                    </div>
+                    <div>
+                        <img src="{{asset('img/badge/problem-solving.png')}}">
+                        <span>3</span>
+                    </div>
+                    <div>
+                        <img src="{{asset('img/badge/trustworthy.png')}}">
+                        <span>4</span>
+                    </div>
+                </div>
+
+                <div class="review-content">
+                    <span class="review-type">Personal Statement</span>
+                    <span class="review-date">Aug 2018</span>
+                    <div>
+                        One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly.
+                    </div>
+                    <a href="javascript:;">Favorite</a>
+                </div>
+
+                <div class="review-content">
+                    <span class="review-type">Personal Statement</span>
+                    <span class="review-date">Aug 2018</span>
+                    <div>
+                        One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly.
+                    </div>
+                    <a href="javascript:;">Favorite</a>
+                </div>
+            </div>
+            <a class="btn close-modal" data-modal="#modal-review" href="javascript:;">+</a>
         </div>
     </div>
 

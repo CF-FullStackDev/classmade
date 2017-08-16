@@ -822,7 +822,7 @@ $(function () {
         modal_show();
     }
 
-    $('li.dropdown > a').on('click', function (e) {
+    $(document).on('click', 'li.dropdown > a', function (e) {
         e.preventDefault();
         $(this).parent().find('ul').first().toggle();
         $(this).parent().siblings().find('ul').hide(200);
@@ -835,7 +835,7 @@ $(function () {
         });
     });
 
-    $('ul.account-tabs li').click(function () {
+    $(document).on('click', 'ul.account-tabs li', function () {
         var tab = $(this).attr('data-tab');
 
         $('ul.account-tabs li').removeClass('current');
@@ -845,7 +845,7 @@ $(function () {
         $("#" + tab).addClass('current');
     });
 
-    $(".open-modal").on('click', function (e) {
+    $(document).on('click', '.open-modal', function (e) {
         e.preventDefault();
         e.stopImmediatePropagation;
 
@@ -873,7 +873,7 @@ $(function () {
         });
     });
 
-    $(".close-modal").on('click', function (e) {
+    $(document).on('click', '.close-modal', function (e) {
         e.preventDefault();
         e.stopImmediatePropagation;
 
@@ -887,15 +887,15 @@ $(function () {
         }, 350);
     });
 
-    $(".transcript-upload").click(function () {
+    $(document).on('click', '.transcript-upload', function () {
         $("#transcript-file").click();
     });
 
-    $("#signup-container .upload-default").click(function () {
+    $(document).on('click', '#signup-container .upload-default', function () {
         $("#profile-file-id").click();
     });
 
-    $("#authentication-select").change(function () {
+    $(document).on('click', '#authentication-select', function () {
         var selected = $("select option:selected").text();
         if (selected == 'Personal Email') {
             $('.auth-options').removeClass('selected');
@@ -907,6 +907,15 @@ $(function () {
             $('.auth-options').removeClass('selected');
         }
     });
+
+    // var target1 = true;
+    // $(window).scroll(function() {
+    //     var offset1 = $("#target").offset().top;
+    //     if ($(window).scrollTop() + $(window).height() >= offset1 && target1 == true) {
+    //         target1 = false;
+    //         alert('Personal Statement');
+    //     }
+    // });
 
     //Angelo
     function showHighlightVideo() {

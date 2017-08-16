@@ -127,7 +127,7 @@ a {
   background-size: cover;
 }
 
-.btn-filled, .btn.btn-primary, .btn.btn-primary-outline {
+.btn-filled, .btn.btn-primary, .btn.btn-primary-outline, .btn.btn-primary-ghost {
   cursor: pointer;
   color: #FFFFFF;
   border: none;
@@ -160,6 +160,16 @@ a {
 .btn.btn-primary-outline:hover {
   color: #FFFFFF;
   background-color: #F18448;
+  transition: all 0.3s ease-in;
+}
+
+.btn.btn-primary-ghost {
+  color: #7E7C7C;
+  background-color: #FFFFFF;
+}
+
+.btn.btn-primary-ghost:hover {
+  color: #F18448;
   transition: all 0.3s ease-in;
 }
 
@@ -1586,6 +1596,130 @@ body.modal-open {
   color: #F18448;
 }
 
+.modal-body.profile-review {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  padding: 0;
+  box-shadow: 0 0 4px 0 #D6D6D6;
+  border-radius: 3px;
+  width: 391px;
+}
+
+.modal-body.profile-review .content {
+  margin-top: 10px;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.modal-body.profile-review .content img.review-avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.modal-body.profile-review .content span {
+  display: block;
+}
+
+.modal-body.profile-review .content span.review-name {
+  font-size: 16px;
+  color: #7E7C7C;
+}
+
+.modal-body.profile-review .content span.review-sub-title {
+  font-size: 12px;
+  color: #7E7C7C;
+}
+
+.modal-body.profile-review .content .review-badge-multiple {
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.modal-body.profile-review .content .review-badge-multiple > div {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+.modal-body.profile-review .content .review-badge-multiple > div:last-child {
+  margin-right: 0;
+}
+
+.modal-body.profile-review .content .review-badge-multiple > div img {
+  height: 85px;
+}
+
+.modal-body.profile-review .content .review-badge-multiple > div span {
+  background: #F54B5E;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  right: -9px;
+  color: #FFFFFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+}
+
+.modal-body.profile-review .content .review-content {
+  text-align: left;
+  border-top: 2px solid #F2F2F2;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-body.profile-review .content .review-content span {
+  display: block;
+}
+
+.modal-body.profile-review .content .review-content span.review-type {
+  font-size: 12px;
+  color: #7E7C7C;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.modal-body.profile-review .content .review-content span.review-date {
+  font-size: 12px;
+  color: #7E7C7C;
+  margin-bottom: 5px;
+}
+
+.modal-body.profile-review .content .review-content > div {
+  font-size: 12px;
+  color: #A1A1A1;
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+.modal-body.profile-review .content .review-content a {
+  display: block;
+  font-size: 14px;
+  color: #F18448;
+  text-align: right;
+}
+
+.modal-body.profile-review a.close-modal {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  font-size: 25px;
+  color: #F18448;
+}
+
 .panel.profile-tabs {
   height: 48px;
 }
@@ -2550,6 +2684,57 @@ body#app-home footer ul > li:last-child:after {
   cursor: pointer;
 }
 
+#container .panel .panel-header > div .panel-buttons.connection .input-search {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-top: 1px;
+}
+
+#container .panel .panel-header > div .panel-buttons.connection .input-search .input-icon-search {
+  background: url(../img/icons/search_icon_default.png) no-repeat center;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 25px;
+  top: 5px;
+}
+
+#container .panel .panel-header > div .panel-buttons.connection input {
+  padding: 0 15px;
+  background-color: #FFFFFF;
+  border: 1px solid #A1A1A1;
+  width: 190px;
+  height: 30px;
+  border-radius: 20px;
+  margin-top: 0px;
+  margin-right: 13px;
+  font-size: 12px;
+  outline: 0;
+  padding-right: 35px;
+}
+
+#container .panel .panel-header > div .panel-buttons.connection input::-webkit-input-placeholder {
+  color: #A1A1A1;
+}
+
+#container .panel .panel-header > div .panel-buttons.connection input:-ms-input-placeholder {
+  color: #A1A1A1;
+}
+
+#container .panel .panel-header > div .panel-buttons.connection input::placeholder {
+  color: #A1A1A1;
+}
+
+#container .panel .panel-header > div .panel-buttons.connection a {
+  color: #F18448;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 8px;
+}
+
 #container .panel .panel-header > div .panel-option {
   float: right;
 }
@@ -2560,10 +2745,23 @@ body#app-home footer ul > li:last-child:after {
   min-width: 157px;
 }
 
+#container .panel .panel-header > div .panel-option a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #F18448;
+  margin-top: 3px;
+  display: block;
+}
+
 #container .panel .panel-header > div .panel-tabs {
   border-bottom: 2px solid #F2F2F2;
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+#container .panel .panel-header > div .panel-tabs > div.profile-left {
+  text-align: left;
+  margin-left: 10px;
 }
 
 #container .panel .panel-header > div .panel-tabs > div {
@@ -2794,6 +2992,13 @@ body#app-home footer ul > li:last-child:after {
      object-fit: cover;
   height: 420px;
   width: 960px;
+}
+
+.highlight-data-container video {
+  width: 960px;
+  height: 420px;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .profile-highlight .highlight-empty-container {
@@ -3061,6 +3266,17 @@ body#app-home footer ul > li:last-child:after {
   display: block;
 }
 
+.profile-connection .connection-empty-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.profile-connection .connection-empty-container span {
+  font-size: 12px;
+  color: #8F8F8E;
+  display: block;
+}
+
 .profile-connection .connection-container {
   width: 412px;
   height: 176px;
@@ -3134,14 +3350,43 @@ body#app-home footer ul > li:last-child:after {
 .profile-connection .connection-container .connection-content .connection-button-group {
   float: right;
   margin-right: 19px;
-  margin-top: 17px;
+  margin-top: 25px;
 }
 
 .profile-connection .connection-container .connection-content .connection-button-group button {
   min-width: 100px;
-  height: 40px;
+  height: 30px;
   font-size: 14px;
   margin-bottom: 0;
+  vertical-align: top;
+}
+
+.profile-connection .connection-container .connection-content .connection-button-group .btn-favorite {
+  cursor: pointer;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  background: url(../img/icons/heartline_icon.png) no-repeat center;
+  background-size: contain;
+  transition: background 0.3s ease-out;
+}
+
+.profile-connection .connection-container .connection-content .connection-button-group .btn-favorite:hover {
+  background: url(../img/icons/heart_icon.png) no-repeat center;
+  transition: all 0.3s ease-in;
+}
+
+.profile-connection .connection-container .connection-content .connection-button-group .btn-favorite.favorite {
+  background: url(../img/icons/heart_icon.png) no-repeat center;
+  transition: all 0.3s ease-out;
+}
+
+.profile-connection .connection-container .connection-content .connection-button-group .btn-favorite.favorite:hover {
+  background: url(../img/icons/heartline_icon.png) no-repeat center;
+  transition: all 0.3s ease-in;
 }
 
 .profile-review-summary .review-summary-container-one {
@@ -3282,6 +3527,18 @@ body#app-home footer ul > li:last-child:after {
   padding-bottom: 20px;
 }
 
+.profile-review .review-empty-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.profile-review .review-empty-container span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #A1A1A1;
+  display: block;
+}
+
 .profile-review .review-container {
   box-shadow: 0 0 4px 0 #D6D6D6;
   height: 223px;
@@ -3360,6 +3617,289 @@ body#app-home footer ul > li:last-child:after {
   font-size: 14px;
   margin-top: 80px;
   display: block;
+}
+
+.profile-review .review-other-panel .review-other-container {
+  box-shadow: 0 0 4px 0 #D6D6D6;
+  width: 400px;
+  height: 354px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 37px;
+  margin-bottom: 74px;
+}
+
+.profile-review .review-other-panel .review-other-container:nth-child(2n) {
+  margin-right: 0;
+  margin-left: 37px;
+}
+
+.profile-review .review-other-panel .review-other-container img.review-avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.profile-review .review-other-panel .review-other-container span.review-name {
+  color: #7E7C7C;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+}
+
+.profile-review .review-other-panel .review-other-container span.review-date {
+  color: #7E7C7C;
+  font-size: 12px;
+  display: block;
+}
+
+.profile-review .review-other-panel .review-other-container span.review-title {
+  color: #7E7C7C;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.profile-review .review-other-panel .review-other-container span.review-comment {
+  color: #A1A1A1;
+  font-size: 12px;
+  display: block;
+  text-align: justify;
+  height: 85px;
+}
+
+.profile-review .review-other-panel .review-other-container .review-badge {
+  margin: 15px 0;
+}
+
+.profile-review .review-other-panel .review-other-container .review-badge img {
+  height: 50px;
+  margin-right: 5px;
+}
+
+.profile-review .review-other-panel .review-other-container .review-badge img:last-child {
+  margin-right: 0;
+}
+
+.profile-review .review-other-panel .review-other-container .review-badge-multiple {
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.profile-review .review-other-panel .review-other-container .review-badge-multiple > div {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+.profile-review .review-other-panel .review-other-container .review-badge-multiple > div:last-child {
+  margin-right: 0;
+}
+
+.profile-review .review-other-panel .review-other-container .review-badge-multiple > div img {
+  height: 85px;
+}
+
+.profile-review .review-other-panel .review-other-container .review-badge-multiple > div span {
+  background: #F54B5E;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  right: -9px;
+  color: #FFFFFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+}
+
+.profile-review .review-other-panel .review-other-container a {
+  color: #F18448;
+  font-size: 14px;
+  display: block;
+}
+
+.profile-review .review-other-panel .review-other-container a.review-all {
+  margin-bottom: 35px;
+}
+
+.profile-connection-container {
+  padding-top: 0px !important;
+}
+
+.profile-connection-container ul.list-pending {
+  list-style: none;
+}
+
+.profile-connection-container ul.list-pending > li {
+  padding: 20px;
+  border-bottom: 1px solid #D6D6D6;
+}
+
+.profile-connection-container ul.list-pending > li:last-child {
+  border-bottom: none;
+}
+
+.profile-connection-container ul.list-pending > li img {
+  height: 86px;
+  width: 86px;
+  border: 2px solid #F18448;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.profile-connection-container ul.list-pending > li .list-content {
+  display: inline-block;
+  vertical-align: top;
+  width: 490px;
+  margin-right: 20px;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+.profile-connection-container ul.list-pending > li .list-content span {
+  display: block;
+}
+
+.profile-connection-container ul.list-pending > li .list-content span:nth-child(1) {
+  font-size: 14px;
+  color: #5A5353;
+}
+
+.profile-connection-container ul.list-pending > li .list-content span:nth-child(2) {
+  color: #5A5353;
+  font-size: 12px;
+}
+
+.profile-connection-container ul.list-pending > li .list-buttons {
+  display: inline-block;
+  vertical-align: top;
+  padding: 25px 0;
+  box-sizing: border-box;
+  float: right;
+}
+
+.profile-connection-container ul.list-pending > li .list-buttons button {
+  min-width: 100px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.profile-review-container .profile-review-empty {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.profile-review-container .profile-review-empty img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile-review-container .profile-review-empty span {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #A1A1A1;
+}
+
+.profile-review-container .profile-review-panel {
+  box-shadow: 0 0 4px 0 #D6D6D6;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.profile-review-container .profile-review-panel .media-left {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.profile-review-container .profile-review-panel .media-left img {
+  height: 101px;
+  border-radius: 50%;
+}
+
+.profile-review-container .profile-review-panel .media-body {
+  display: inline-block;
+  vertical-align: top;
+  width: 510px;
+  margin-right: 15px;
+}
+
+.profile-review-container .profile-review-panel .media-body span {
+  display: block;
+}
+
+.profile-review-container .profile-review-panel .media-body span:nth-child(1) {
+  font-size: 16px;
+  color: #7E7C7C;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.profile-review-container .profile-review-panel .media-body span:nth-child(2) {
+  font-size: 12px;
+  color: #7E7C7C;
+  margin-bottom: 5px;
+}
+
+.profile-review-container .profile-review-panel .media-body span:nth-child(3) {
+  font-size: 14px;
+  color: #7E7C7C;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.profile-review-container .profile-review-panel .media-body .review-comment {
+  color: #9B9B9B;
+  font-size: 12px;
+  margin-bottom: 5px;
+  height: 60px;
+  text-align: justify;
+}
+
+.profile-review-container .profile-review-panel .media-body .review-badge span {
+  display: block;
+  color: #7E7C7C;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.profile-review-container .profile-review-panel .media-body .review-badge img {
+  height: 56px;
+  margin-right: 5px;
+}
+
+.profile-review-container .profile-review-panel .media-body .review-badge img:last-child {
+  margin-right: 0;
+}
+
+.profile-review-container .profile-review-panel .media-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.profile-review-container .profile-review-panel .media-right button {
+  height: 30px;
+  min-width: 87px;
+  font-size: 14px;
 }
 
 .profile-transcript {

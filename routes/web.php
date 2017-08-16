@@ -19,6 +19,14 @@ Route::get('/account_settings', function () {
     return view('account_settings');
 });
 
+Route::get('/review', function () {
+    return view('review');
+});
+
+Route::get('/connection', function () {
+    return view('connection');
+});
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('/');
