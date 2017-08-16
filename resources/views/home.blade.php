@@ -341,7 +341,8 @@
             <div class="panel-body">
                 <div class="achievement-horizontal">
                     <div class="achievement-row">
-                        <img src="{{asset('img/achievement_thumb.png')}}">
+                        <img src="{{asset('img/achievement_thumb.png')}}" class="open-modal" data-modal="#modal-achievement-info">
+                        <button type="button" class="edit-icon open-modal" data-modal="#modal-achievement"></button>
                         <div class="content">
                             <div class="title">Academic Excellence Awards</div>
                             <div class="info">May 2012 PLDT-Smart Foundation</div>
@@ -349,7 +350,8 @@
                         </div>
                     </div>
                     <div class="achievement-row">
-                        <img src="{{asset('img/achievement_thumb.png')}}">
+                        <img src="{{asset('img/achievement_thumb.png')}}" class="open-modal" data-modal="#modal-achievement-info">
+                        <button type="button" class="edit-icon open-modal" data-modal="#modal-achievement"></button>
                         <div class="content">
                             <div class="title">Academic Excellence Awards</div>
                             <div class="info">May 2012 PLDT-Smart Foundation</div>
@@ -357,7 +359,8 @@
                         </div>
                     </div>
                     <div class="achievement-row">
-                        <img src="{{asset('img/achievement_thumb.png')}}">
+                        <img src="{{asset('img/achievement_thumb.png')}}" class="open-modal" data-modal="#modal-achievement-info">
+                        <button type="button" class="edit-icon open-modal" data-modal="#modal-achievement"></button>
                         <div class="content">
                             <div class="title">Academic Excellence Awards</div>
                             <div class="info">May 2012 PLDT-Smart Foundation</div>
@@ -740,6 +743,8 @@
                 </div>
             </div>
         </div>
+
+        <button class="open-modal btn btn-primary" data-modal="#modal-classmade-profile">Save Classmade Profile</button>
         <!-- End of Review -->
 
         <!-- Connections -->
@@ -1215,9 +1220,21 @@
                             </div>
                             <div class="achievement-form">
                                 <form class="form-horizontal">
-                                    <input type="file" class="form-hidden upload-image-input" id="achievement-photo-file" name="" data-container="#achievement-photo">
-                                    <label>Title</label>
-                                    <input type="text" id="Title" name="Title">
+                                    <input type="file" class="form-hidden upload-image-input" id="achievement-photo-file" name="" data-container=".achievement-photo" accept=".png,.jpg,.jpeg">
+                                    <div class="input-row">
+                                        <div class="input-group-half">
+                                            <label>Title</label>
+                                            <input type="text" id="Title" name="Title">
+                                        </div>
+                                        <div class="input-group-half">
+                                            <label>Date Received</label>
+                                            <input type="text" id="Month" name="Month" placeholder="January">
+                                            <input type="text" id="Day" name="Day" placeholder="01">
+                                            <input type="text" id="Year" name="Year" placeholder="2000">
+                                        </div>
+                                    </div>
+                                    <label>Issuer</label>
+                                    <input type="text" id="Issuer" name="Issuer">
                                     <label>Description</label>
                                     <textarea maxlength="300" class='word-count-input' name="description" data-count="#achievement-count"></textarea>
                                     <span id="achievement-count" class="word-count" data-length="300">300</span>
@@ -1362,5 +1379,98 @@
         </div>
     </div>
 
+    <div class="modal-dialog">
+        <div class="modal-body profile-achievement-info" id="modal-achievement-info">
+            <div class="content">
+                <div class="panel">
+                    <div class="panel-header">
+                        <span class="title">Academic Excellence Awards</span>
+                        <span class="info">May 2012 PLDT-Smart Foundation</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="achievement-info">
+                            <img src="{{asset('img/achievement-view-pic.png')}}">
+                            <div class="description">
+                                The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quic progres Junk MTV quic graced by fox whelps. Bawds jog, flick quartz, vex nymphver a lazy dog. 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-dialog">
+        <div class="modal-body profile-classmade-profile" id="modal-classmade-profile">
+            <div class="content">
+                <div class="panel">
+                    <div class="panel-header">
+                        <span class="title"><i class="bell-icon"></i>Save Classmade Profile</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="dashed-tips-container">
+                            <div class="icon"><span>i</span></div>
+                            <div class="title">Some Tips</div>
+                            <div class="content">
+                                Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
+                            </div>
+                        </div>
+                        <div class="cover-photo">
+                            <div class="cover-template">
+                                <span>Choose from below:</span>
+                                <ul class="menu">
+                                    <li><a href="#">Art</a></li>
+                                    <li><a href="#">Sports</a></li>
+                                    <li><a href="#">Math</a></li>
+                                    <li><a href="#">Academic</a></li>
+                                    <li><a href="#">Science</a></li>
+                                    <li><a href="#">Lifestyle</a></li>
+                                </ul>
+                                <div class="template-images">
+                                    <div class="image-container">
+                                        <img src="{{asset('img/profile-background-sample.png')}}">
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="{{asset('img/profile-background-sample.png')}}">
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="{{asset('img/profile-background-sample.png')}}">
+                                    </div>
+                                    <div class="image-container">
+                                        <img src="{{asset('img/profile-background-sample.png')}}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-container">
+                                <span>Profile page also include:</span>
+                                <div class="checkbox-group portfolio-checkbox">
+                                    <input type="checkbox" name="">
+                                    <label>Portfolio</label>
+                                </div>
+                                <div class="checkbox-group review-checkbox">
+                                    <input type="checkbox" name="">
+                                    <label>Reviews</label>
+                                </div>
+                                <div class="checkbox-group transcript-checkbox">
+                                    <input type="checkbox" name="">
+                                    <label>Transcript</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" name="" placeholder="https://invis.io/JYCMPUWZG">
+                                    <button class="btn btn-primary">Copy Link</button>
+                                </div>
+                            </div>
+                            <div class="button-right">
+                                <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-classmade-profile">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Choose</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 @endsection
+

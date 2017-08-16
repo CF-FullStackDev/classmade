@@ -194,7 +194,7 @@ $(function(){
         $(".intermediate-section").css('display','block');
         $(".pro-section").css('display','none');
 
-        $(".menu-line").css('left','345px');
+        $(".menu-line").css('left','349px');
         $(".menu-line").css('width',$(this).css('width'));
     });
 
@@ -208,7 +208,7 @@ $(function(){
         $(".intermediate-section").css('display','none');
         $(".pro-section").css('display','block');
 
-        $(".menu-line").css('left','680px');
+        $(".menu-line").css('left','695px');
         $(".menu-line").css('width',$(this).css('width'));
     });
     //End of Angelo
@@ -265,7 +265,6 @@ $(function(){
         var input = this;
         if ($(input).hasClass('upload-image-input')){
             var container = $(input).data('container');
-            alert(container);
             $(container).html('<img class="file-upload">');
             readURL(input,'file-upload');
         }
