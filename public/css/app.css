@@ -685,6 +685,9 @@ body.modal-open {
 }
 
 .modal-body.profile-highlight .content .highlight-video .highlight-video-upload {
+  background-color: #f2f2f2;
+  min-height: 207px;
+  box-sizing: border-box;
   margin-top: 66px;
   padding-top: 63px;
   padding-bottom: 63px;
@@ -4958,6 +4961,10 @@ body#app-home footer ul > li:last-child:after {
   right: 25px;
 }
 
+.highlight-data-container-video:hover:before {
+  display: none !important;
+}
+
 .file-upload {
   margin: 0px !important;
   position: absolute;
@@ -5010,6 +5017,8 @@ body#app-home footer ul > li:last-child:after {
   margin-right: 44px;
   border-radius: 5px;
   cursor: pointer;
+  width: 50px;
+  height: 50px;
 }
 
 .achievement-horizontal .achievement-row .edit-icon {
@@ -5057,6 +5066,56 @@ body#app-home footer ul > li:last-child:after {
 
 .form-horizontal .input-row .input-group-half input {
   width: 85% !important;
+}
+
+.video-uploading {
+  position: relative;
+}
+
+.video-uploading .close {
+  background: url(../img/icons/close.png) no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  color: #F18448;
+  font-size: 14px;
+  position: absolute;
+  right: 224px;
+}
+
+.video-uploading .filename {
+  font-size: 12px !important;
+  color: #A1A1A1 !important;
+  font-weight: 500;
+  position: absolute;
+  top: 42px;
+  left: 238px;
+}
+
+.video-uploading .progress-bar {
+  background-color: #D8D8D8;
+  border-radius: 20px;
+  width: 325px;
+  position: absolute;
+  left: 238px;
+  top: 28px;
+  height: 7px;
+}
+
+.video-uploading .progress-bar .progress {
+  background-color: #F18448;
+  height: 7px;
+  position: relative;
+  border-radius: 20px;
+}
+
+.video-uploading a {
+  position: absolute;
+  bottom: -110px;
+  left: 270px;
+  font-size: 14px;
+  color: #A1A1A1;
 }
 
 @media only screen and (max-device-width: 1024px) {

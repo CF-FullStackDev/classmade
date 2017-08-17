@@ -265,6 +265,10 @@ $(function(){
         }
     }
 
+    function tabActive(tab){
+        $(tab).addClass('active');
+    }
+
     $(document).on('click', '.upload-image', function(){
         var input = $(this).data('input');
         $(input).click();

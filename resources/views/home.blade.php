@@ -134,7 +134,7 @@
         </div>
 
         <div class="panel section-one">
-            <div class="panel-body highlight-data-container">
+            <div class="panel-body highlight-data-container highlight-data-container-video">
                 <div class="panel-buttons">
                     <button type="button" class="question-icon"></button>
                     <button type="button" class="edit-icon open-modal" data-modal="#modal-highlight"></button>
@@ -144,7 +144,7 @@
         </div>
 
         <div class="panel section-one">
-            <div class="panel-body highlight-data-container">
+            <div class="panel-body highlight-data-container highlight-data-container-video">
                 <div class="panel-buttons">
                     <button type="button" class="question-icon"></button>
                     <button type="button" class="edit-icon open-modal" data-modal="#modal-highlight"></button>
@@ -1022,9 +1022,21 @@
                                         Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
                                     </div>
                                 </div>
-                                <div class="dashed-container highlight-video-upload">
+                                 <div class="dashed-container highlight-video-upload">
                                     <img src="{{asset('img/icons/video_icon.png')}}">
                                     <span>Click to Upload</span>
+                                </div>
+                                <div class="highlight-video-upload">
+                                    <!-- <img src="{{asset('img/icons/video_icon.png')}}">
+                                    <span>Click to Upload</span> -->
+                                    <div class="video-uploading">
+                                        <span class="close"></span>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 50%;"></div>
+                                        </div>
+                                        <span class="filename">video of my cat.mp4</span>
+                                        <a href="javascript:;">Click publish to make your video live</a>
+                                    </div>
                                 </div>
                                 <span class="span-or">OR</span>
                                 <div class="youtube-url">
@@ -1509,6 +1521,7 @@
                 </div>
             </div>
             <a class="btn close-modal" data-modal="#modal-review" href="javascript:;">+</a>
+        </div>
     </div>
 
     <div class="modal-dialog">
