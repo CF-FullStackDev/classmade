@@ -159,7 +159,7 @@
                     <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
                     <button type="button" class="edit-icon button-dropdown"></button>
                     <ul class="button-dropdown-menu">
-                        <li class="open-modal" da;a-modal="#modal-highlight">Edit</li>
+                        <li class="open-modal" data-modal="#modal-highlight">Edit</li>
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
