@@ -85,7 +85,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Highlight</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -113,8 +113,13 @@
         <div class="panel section-one">
             <div class="panel-body highlight-data-container">
                 <div class="panel-buttons">
-                    <button type="button" class="question-icon"></button>
-                    <button type="button" class="edit-icon open-modal" data-modal="#modal-highlight"></button>
+                    <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                    <button type="button" class="edit-icon button-dropdown"></button>
+                    <ul class="button-dropdown-menu">
+                        <li class="open-modal" data-modal="#modal-highlight">Edit</li>
+                        <li class="divider"></li>
+                        <li>Unpublish</li>
+                    </ul>
                 </div>
                 <div class="highlight-photo-slick">
                     <div class='highlight-image-container'>
@@ -136,8 +141,13 @@
         <div class="panel section-one">
             <div class="panel-body highlight-data-container highlight-data-container-video">
                 <div class="panel-buttons">
-                    <button type="button" class="question-icon"></button>
-                    <button type="button" class="edit-icon open-modal" data-modal="#modal-highlight"></button>
+                    <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                    <button type="button" class="edit-icon button-dropdown"></button>
+                    <ul class="button-dropdown-menu">
+                        <li class="open-modal" data-modal="#modal-highlight">Edit</li>
+                        <li class="divider"></li>
+                        <li>Unpublish</li>
+                    </ul>
                 </div>
                 <iframe width="960" height="420" src="http://youtube.com/embed/yOfT6mlbw30" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -146,8 +156,13 @@
         <div class="panel section-one">
             <div class="panel-body highlight-data-container highlight-data-container-video">
                 <div class="panel-buttons">
-                    <button type="button" class="question-icon"></button>
-                    <button type="button" class="edit-icon open-modal" data-modal="#modal-highlight"></button>
+                    <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                    <button type="button" class="edit-icon button-dropdown"></button>
+                    <ul class="button-dropdown-menu">
+                        <li class="open-modal" da;a-modal="#modal-highlight">Edit</li>
+                        <li class="divider"></li>
+                        <li>Unpublish</li>
+                    </ul>
                 </div>
                 <video preload controls>
                     <source src="{{asset('img/achievement-video.mp4')}}" type="video/mp4"/>
@@ -182,7 +197,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Personal Statement</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -205,8 +220,13 @@
                 <div>
                     <p class="bell-icon"></p><span>Personal Statement</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon"></button>
-                        <button type="button" class="edit-icon open-modal" data-modal="#modal-personal"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="edit-icon button-dropdown"></button>
+                        <ul class="button-dropdown-menu">
+                            <li class="open-modal" data-modal="#modal-personal">Edit</li>
+                            <li class="divider"></li>
+                            <li>Unpublish</li>
+                        </ul>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -251,7 +271,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Achievement</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -274,7 +294,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Achievement</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
                         <button type="button" class="add-icon open-modal" data-modal="#modal-achievement"></button>
                     </div>
                     <div class="panel-tabs">
@@ -346,7 +366,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Achievement</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
                         <button type="button" class="add-icon open-modal" data-modal="#modal-achievement"></button>
                     </div>
                     <div class="panel-tabs">
@@ -364,7 +384,14 @@
                 <div class="achievement-horizontal">
                     <div class="achievement-row">
                         <img src="{{asset('img/achievement_thumb.png')}}" class="open-modal" data-modal="#modal-achievement-info">
-                        <button type="button" class="edit-icon open-modal" data-modal="#modal-achievement"></button>
+                        <button type="button" class="edit-icon button-dropdown"></button>
+                        <ul class="button-dropdown-menu">
+                            <li class="open-modal" data-modal="#modal-achievement">Edit</li>
+                            <li class="divider"></li>
+                            <li>Delete</li>
+                            <li class="divider"></li>
+                            <li>Unpublish</li>
+                        </ul>
                         <div class="content">
                             <div class="title">Academic Excellence Awards</div>
                             <div class="info">May 2012 PLDT-Smart Foundation</div>
@@ -419,7 +446,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Journey</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -442,7 +469,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Journey</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
                         <button type="button" class="add-icon open-modal" data-modal="#modal-journey"></button>
                     </div>
                     <div class="panel-tabs">
@@ -516,7 +543,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Porfolio</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
                         <button type="button" class="add-icon open-modal" data-modal="#modal-portfolio"></button>
                     </div>
                     <div class="panel-tabs">
@@ -851,7 +878,7 @@
                             <img class="connection-profile-image" src="{{asset('img/profile-avatar.png')}}">
                             <div class="connection-button-group">
                                 <i class="btn-favorite"></i>
-                                <button class="btn btn-primary-outline">Classmade</button>
+                                <button class="btn btn-primary-outline connected-button">Classmade</button>
                             </div>
                         </div>
                     </div>
@@ -1102,7 +1129,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- div class="highlight-placeholder">
+                                    <!-- <div class="highlight-placeholder">
                                         <img src="{{asset('img/uploadhighlight.png')}}">
                                         <span>Photos will appear here once you upload</span>
                                     </div> -->

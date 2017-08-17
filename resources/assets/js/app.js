@@ -299,6 +299,40 @@ $(function(){
         $(label).html(parseInt(limit) - parseInt(length));
     });
 
+    $(".tooltip").each(function(){
+        var text = $(this).data('tooltip');
+        $(this).after('<span class="details">' + text + '</span>');
+    });
+
+    $(document).on('mouseover','.tooltip',function(){
+        $(this).addClass('active');
+    });
+
+    $(document).on('mouseleave','.tooltip',function(){
+        $(this).removeClass('active');
+    });
+
+
+    $(document).on('click','.button-dropdown',function(){
+        $(this).siblings('.button-dropdown-menu').toggleClass('active');
+    });
+
+    $(document).on('click','body',function(e){
+        if (!$(e.target).hasClass('button-dropdown')){
+            $('.button-dropdown-menu').each(function(){
+                $(this).removeClass('active');
+            });
+        }
+    });
+
+    $(document).on('mouseover','.connected-button',function(e){
+        $(this).html('Remove  ');
+    });
+
+    $(document).on('mouseleave','.connected-button',function(e){
+        $(this).html('Connected');
+    });
+
     // END OF NEW ANGELO JS
 
 });
