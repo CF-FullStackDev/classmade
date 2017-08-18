@@ -95,7 +95,7 @@ a {
   text-align: center;
 }
 
-.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .journey-form, .highlight-placeholder img {
+.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .journey-form, .highlight-placeholder img {
   display: block;
   margin: 0 auto;
 }
@@ -1755,54 +1755,6 @@ body.modal-open {
   width: 300px;
 }
 
-.modal-body .review-content {
-  text-align: left;
-  border-top: 2px solid #F2F2F2;
-  padding-top: 20px;
-  margin-bottom: 20px;
-}
-
-.modal-body .review-content span {
-  display: block;
-}
-
-.modal-body .review-content span.review-type {
-  font-size: 12px;
-  color: #7E7C7C;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.modal-body .review-content span.review-date {
-  font-size: 12px;
-  color: #7E7C7C;
-  margin-bottom: 5px;
-}
-
-.modal-body .review-content > div {
-  font-size: 12px;
-  color: #A1A1A1;
-  text-align: justify;
-  margin-bottom: 5px;
-}
-
-.modal-body .review-content a {
-  display: block;
-  font-size: 14px;
-  color: #F18448;
-  text-align: right;
-}
-
-.modal-body a.close-modal {
-  position: absolute;
-  top: 0;
-  right: 7px;
-  -webkit-transform: rotate(315deg);
-          transform: rotate(315deg);
-  font-size: 25px;
-  color: #F18448;
-}
-
 .modal-body.profile-classmade-profile {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -1987,6 +1939,195 @@ body.modal-open {
 }
 
 .modal-body.profile-classmade-profile .content .button-right button[type="reset"] {
+  background: #fff;
+  color: #F18448;
+}
+
+.modal-body .review-content {
+  text-align: left;
+  border-top: 2px solid #F2F2F2;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-body .review-content span {
+  display: block;
+}
+
+.modal-body .review-content span.review-type {
+  font-size: 12px;
+  color: #7E7C7C;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.modal-body .review-content span.review-date {
+  font-size: 12px;
+  color: #7E7C7C;
+  margin-bottom: 5px;
+}
+
+.modal-body .review-content > div {
+  font-size: 12px;
+  color: #A1A1A1;
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+.modal-body .review-content a {
+  display: block;
+  font-size: 14px;
+  color: #F18448;
+  text-align: right;
+}
+
+.modal-body a.close-modal {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  font-size: 25px;
+  color: #F18448;
+}
+
+.modal-body.profile-portfolio-view {
+  box-shadow: none !important;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  padding: 0;
+  box-shadow: 0 0 4px 0 #D6D6D6;
+  border-radius: 3px;
+  width: 900px;
+  height: 803px;
+  background: none;
+  border-radius: 5px;
+}
+
+.modal-body.profile-portfolio-view .content {
+  border-radius: 5px;
+}
+
+.modal-body.profile-portfolio-view .content .panel {
+  background-color: none !important;
+  border-radius: 5px;
+}
+
+.modal-body.profile-portfolio-view .content .panel-header {
+  padding: 89px 25px 89px 25px;
+  display: inline-block !important;
+  box-sizing: border-box;
+  position: relative !important;
+  left: 0px;
+  top: 0px;
+  height: 449px !important;
+  width: 226px !important;
+  background-color: #fff;
+  float: left;
+  display: inline-block;
+}
+
+.modal-body.profile-portfolio-view .content .panel-header .title {
+  padding: 0px !important;
+  font-size: 18px;
+  font-weight: 600;
+  color: #7E7C7C;
+  margin-bottom: 5px;
+  display: block !important;
+}
+
+.modal-body.profile-portfolio-view .content .panel-header .info {
+  padding: 0px !important;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 13px;
+  display: block;
+}
+
+.modal-body.profile-portfolio-view .content .panel-header .description {
+  padding: 0px !important;
+  color: #A1A1A1;
+  width: 211px;
+  font-size: 12px;
+}
+
+.modal-body.profile-portfolio-view .content .panel-header .description:after {
+  content: '';
+  display: inline-block;
+  height: 2px;
+  background-color: #F2F2F2;
+  width: 190px;
+  left: 0px;
+  top: 27px;
+  position: relative;
+}
+
+.modal-body.profile-portfolio-view .content .panel-header .button-group {
+  display: block !important;
+  position: relative;
+  top: 62px;
+}
+
+.modal-body.profile-portfolio-view .content .panel-header .button-group button {
+  font-size: 12px;
+  display: inline-block;
+  position: absolute;
+  min-width: 62px;
+  height: 30px;
+}
+
+.modal-body.profile-portfolio-view .content .panel-header .button-group .unpublish {
+  color: #F18448;
+  background-color: #fff;
+  top: 0px;
+  left: 0px;
+}
+
+.modal-body.profile-portfolio-view .content .panel-header .button-group .edit {
+  border: 1px solid #F18448;
+  color: #F18448;
+  background-color: #fff;
+  top: 0px;
+  left: 100px;
+}
+
+.modal-body.profile-portfolio-view .content .panel-body {
+  float: left;
+  display: inline-block;
+  width: 594px;
+  background: #000;
+}
+
+.modal-body.profile-portfolio-view .content .panel-body .portfolio-container {
+  margin-bottom: 64px;
+}
+
+.modal-body.profile-portfolio-view .content .panel-body .portfolio-container img {
+  max-width: 100%;
+  max-height: 318px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 31px;
+}
+
+.modal-body.profile-portfolio-view .content .panel-body .portfolio-container .description {
+  color: #fff;
+  font-size: 12px;
+  max-width: 577px;
+}
+
+.modal-body.profile-portfolio-view .content .button-right {
+  margin-top: 110px;
+  text-align: right;
+}
+
+.modal-body.profile-portfolio-view .content .button-right button {
+  height: 30px;
+  min-width: 88px;
+}
+
+.modal-body.profile-portfolio-view .content .button-right button[type="reset"] {
   background: #fff;
   color: #F18448;
 }
@@ -5232,6 +5373,72 @@ body#app-home footer ul > li:last-child:after {
   min-width: none;
   width: 110px;
   transition: 0.3s ease-out all !important;
+}
+
+.skill-container {
+  margin-top: 15px;
+  width: 450px;
+  display: inline-block;
+}
+
+.skill-container .skill {
+  float: left;
+  display: inline-block;
+  border: 1px solid #D6D6D6;
+  font-size: 14px;
+  min-width: 85px;
+  height: 25px;
+  padding: 4px 10px 4px 10px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  border-radius: 20px;
+  color: #A1A1A1;
+  margin-bottom: 10px;
+}
+
+.skill-container .skill:last-child {
+  margin-right: 0px;
+}
+
+.skill-edit {
+  float: right;
+  border: none;
+  top: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.language-container {
+  margin-top: 15px;
+  width: 450px;
+  display: inline-block;
+}
+
+.language-container .language {
+  float: left;
+  display: inline-block;
+  border: 1px solid #D6D6D6;
+  font-size: 14px;
+  min-width: 85px;
+  height: 25px;
+  padding: 4px 10px 4px 10px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  border-radius: 20px;
+  color: #A1A1A1;
+  margin-bottom: 10px;
+}
+
+.language-container .language:last-child {
+  margin-right: 0px;
+}
+
+.language-edit {
+  float: right;
+  border: none;
+  top: 10px;
+  position: relative;
+  cursor: pointer;
 }
 
 @media only screen and (max-device-width: 1024px) {

@@ -1081,6 +1081,9 @@ $(function () {
     });
 
     $(document).on('click', '.button-dropdown', function () {
+        $('.button-dropdown-menu').each(function () {
+            $(this).removeClass('active');
+        });
         $(this).siblings('.button-dropdown-menu').toggleClass('active');
     });
 
@@ -1093,13 +1096,18 @@ $(function () {
     });
 
     $(document).on('mouseover', '.connected-button', function (e) {
-        $(this).html('Remove  ');
+        $(this).html('Remove');
     });
 
     $(document).on('mouseleave', '.connected-button', function (e) {
         $(this).html('Connected');
     });
 
+    $(document).on('mouseleave', '.highlight-data-container-video', function (e) {
+        $('.button-dropdown-menu').each(function () {
+            $(this).removeClass('active');
+        });
+    });
     // END OF NEW ANGELO JS
 });
 

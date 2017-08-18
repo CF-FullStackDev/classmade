@@ -85,7 +85,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Highlight</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -113,7 +113,7 @@
         <div class="panel section-one">
             <div class="panel-body highlight-data-container">
                 <div class="panel-buttons">
-                    <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                    <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
                     <button type="button" class="edit-icon button-dropdown"></button>
                     <ul class="button-dropdown-menu">
                         <li class="open-modal" data-modal="#modal-highlight">Edit</li>
@@ -141,7 +141,7 @@
         <div class="panel section-one">
             <div class="panel-body highlight-data-container highlight-data-container-video">
                 <div class="panel-buttons">
-                    <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                    <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
                     <button type="button" class="edit-icon button-dropdown"></button>
                     <ul class="button-dropdown-menu">
                         <li class="open-modal" data-modal="#modal-highlight">Edit</li>
@@ -156,7 +156,7 @@
         <div class="panel section-one">
             <div class="panel-body highlight-data-container highlight-data-container-video">
                 <div class="panel-buttons">
-                    <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                    <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
                     <button type="button" class="edit-icon button-dropdown"></button>
                     <ul class="button-dropdown-menu">
                         <li class="open-modal" data-modal="#modal-highlight">Edit</li>
@@ -197,7 +197,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Personal Statement</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Personal Statement is a way to express yourself, your skills and abilities, academic journey, extra-curricular activities, experiences, career plans, goals and passion"></button>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -220,7 +220,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Personal Statement</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Personal Statement is a way to express yourself, your skills and abilities, academic journey, extra-curricular activities, experiences, career plans, goals and passion"></button>
                         <button type="button" class="edit-icon button-dropdown"></button>
                         <ul class="button-dropdown-menu">
                             <li class="open-modal" data-modal="#modal-personal">Edit</li>
@@ -271,7 +271,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Achievement</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Achievement can be an academic award and an extracurricular accomplishment that showcases your skills, distinct personality, and chosen passion."></button>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -294,7 +294,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Achievement</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Achievement can be an academic award and an extracurricular accomplishment that showcases your skills, distinct personality, and chosen passion."></button>
                         <button type="button" class="add-icon open-modal" data-modal="#modal-achievement"></button>
                     </div>
                     <div class="panel-tabs">
@@ -366,7 +366,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Achievement</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Achievement can be an academic award and an extracurricular accomplishment that showcases your skills, distinct personality, and chosen passion."></button>
                         <button type="button" class="add-icon open-modal" data-modal="#modal-achievement"></button>
                     </div>
                     <div class="panel-tabs">
@@ -400,7 +400,14 @@
                     </div>
                     <div class="achievement-row">
                         <img src="{{asset('img/achievement_thumb.png')}}" class="open-modal" data-modal="#modal-achievement-info">
-                        <button type="button" class="edit-icon open-modal" data-modal="#modal-achievement"></button>
+                        <button type="button" class="edit-icon button-dropdown"></button>
+                        <ul class="button-dropdown-menu">
+                            <li class="open-modal" data-modal="#modal-achievement">Edit</li>
+                            <li class="divider"></li>
+                            <li>Delete</li>
+                            <li class="divider"></li>
+                            <li>Unpublish</li>
+                        </ul>
                         <div class="content">
                             <div class="title">Academic Excellence Awards</div>
                             <div class="info">May 2012 PLDT-Smart Foundation</div>
@@ -409,7 +416,14 @@
                     </div>
                     <div class="achievement-row">
                         <img src="{{asset('img/achievement_thumb.png')}}" class="open-modal" data-modal="#modal-achievement-info">
-                        <button type="button" class="edit-icon open-modal" data-modal="#modal-achievement"></button>
+                        <button type="button" class="edit-icon button-dropdown"></button>
+                        <ul class="button-dropdown-menu">
+                            <li class="open-modal" data-modal="#modal-achievement">Edit</li>
+                            <li class="divider"></li>
+                            <li>Delete</li>
+                            <li class="divider"></li>
+                            <li>Unpublish</li>
+                        </ul>
                         <div class="content">
                             <div class="title">Academic Excellence Awards</div>
                             <div class="info">May 2012 PLDT-Smart Foundation</div>
@@ -446,7 +460,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Journey</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Journey highlights your educational attainment and serves as an exposure of your aacademic and extracurricular development"></button>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -469,7 +483,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Journey</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Journey highlights your educational attainment and serves as an exposure of your aacademic and extracurricular development"></button>
                         <button type="button" class="add-icon open-modal" data-modal="#modal-journey"></button>
                     </div>
                     <div class="panel-tabs">
@@ -543,7 +557,7 @@
                 <div>
                     <p class="bell-icon"></p><span>Porfolio</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Portfolio is a compilation of your creativity, skills and experiences that provides your fellow Classmades an insight of your character and abilities."></button>
                         <button type="button" class="add-icon open-modal" data-modal="#modal-portfolio"></button>
                     </div>
                     <div class="panel-tabs">
@@ -563,7 +577,7 @@
                             <img src="{{asset('img/achievement-placeholder.png')}}">
                         </div>
                         <div class="portfolio-content">
-                            <button class="portfolio-edit-button"></button>
+                            <button class="portfolio-edit-button open-modal"  data-modal="#modal-portfolio-view"></button>
                             <span class="title">Spanish Poster</span>
                             <span class="date">Feb 2018</span>
                             <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court.When be draw drew ye</span>
@@ -575,7 +589,7 @@
                             <img src="{{asset('img/achievement-placeholder.png')}}">
                         </div>
                         <div class="portfolio-content">
-                            <button class="portfolio-edit-button"></button>
+                            <button class="portfolio-edit-button open-modal"  data-modal="#modal-portfolio-view"></button>
                             <span class="title">Spanish Poster</span>
                             <span class="date">Feb 2018</span>
                             <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court.When be draw drew ye</span>
@@ -1643,6 +1657,37 @@
         </div>
     </div>
 
+    <div class="modal-dialog">
+        <div class="modal-body profile-portfolio-view" id="modal-portfolio-view">
+            <div class="content">
+                <div class="panel">
+                    <div class="panel-header">
+                        <div class="title">Portfolio</div>
+                        <span class="info">Aug 2018</span>
+                        <div class="description">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quic progres Junk MTV quic graced by fox whelps. Bawds jog, flick quartz, vex nymphver a lazy dog. </div>
+                        <div class="button-group">
+                            <button class="btn btn-primary unpublish">Unpublish</button>
+                            <button class="btn btn-primary edit">Edit</button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="portfolio-container">
+                            <img src="{{asset('img/portfolio-img1.png')}}">
+                            <div class="description">
+                                When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.
+                            </div>
+                        </div>
+                        <div class="portfolio-container">
+                            <img src="{{asset('img/portfolio-img2.png')}}">
+                            <div class="description">
+                                When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 @endsection
 

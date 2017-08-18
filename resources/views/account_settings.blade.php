@@ -138,22 +138,6 @@
                                         <span>Click to add Photo</span>
                                     </div>
 
-                                    <span class="header">Skill</span>
-                                    <label>Add Skill</label>
-                                    <div class="account-select" style="width:245px;">
-                                        <select name="">
-                                            <option value="">-</option>
-                                        </select>
-                                    </div>
-
-                                    <span class="header">Language</span>
-                                    <label>Add Language</label>
-                                    <div class="account-select" style="width:245px;">
-                                        <select name="">
-                                            <option value="">-</option>
-                                        </select>
-                                    </div>
-
                                     <span class="header">Personal Information</span>
                                     <label>Last Name</label>
                                     <input type="text" name="" required>
@@ -189,6 +173,37 @@
                                             <option value="">-</option>
                                         </select>
                                     </div>
+
+                                    <span class="header">Skill</span>
+                                    <label>Add Skill</label>
+                                    <div class="account-select" style="width:245px;">
+                                        <select name="">
+                                            <option value="">-</option>
+                                        </select>
+                                    </div>
+                                    <div class="skill-container">
+                                        <div class="skill">Insert Skill</div>
+                                        <div class="skill">Another Skill</div>
+                                        <div class="skill">Long Name Skill</div>
+                                        
+                                    </div>
+                                    <a class="skill-edit edit-icon"></a>
+
+                                    <span class="header">Language</span>
+                                    <label>Add Language</label>
+                                    <div class="account-select" style="width:245px;">
+                                        <select name="">
+                                            <option value="">-</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="language-container">
+                                        <div class="language">Insert Skill</div>
+                                        <div class="language">Another Skill</div>
+                                        <div class="language">Long Name Skill</div>
+                                        
+                                    </div>
+                                    <a class="language-edit edit-icon"></a>
 
                                     <div class="btn-panel">
                                         <button type="submit" class="btn btn-primary">Save</button>
