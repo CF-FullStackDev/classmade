@@ -33,7 +33,7 @@ a {
   color: inherit;
 }
 
-.icon, .bell-icon, .notif-icon, .chat-icon, .add-icon, .edit-icon, .question-icon, .heart-icon, .plus-icon {
+.icon, .bell-icon, .notif-icon, .chat-icon, .add-icon, .edit-icon, .edit-icon-transparent, .question-icon, .heart-icon, .plus-icon {
   height: 35px;
   width: 35px;
   display: inline-block;
@@ -61,6 +61,11 @@ a {
 
 .edit-icon {
   background: url(../img/icons/icon-edit.png) no-repeat center;
+  background-size: contain;
+}
+
+.edit-icon-transparent {
+  background: url(../img/icons/edit.png) no-repeat center;
   background-size: contain;
 }
 
@@ -361,6 +366,7 @@ body.modal-open {
   margin-right: 17px;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 
 .modal-body.profile-avatar .content .profile-photo .staff-pick-samples-container .staff-pick-samples img:last-child {
@@ -753,7 +759,7 @@ body.modal-open {
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container {
   margin-top: 22px;
   margin-bottom: 84px;
-  height: 526px;
+  min-height: 526px;
 }
 
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload {
@@ -965,6 +971,37 @@ body.modal-open {
   bottom: 0px;
   left: 61px;
   min-width: 54px;
+}
+
+.modal-body.profile-personal .content .rookie-section .rookie-menu {
+  height: 50px;
+  width: 100%;
+}
+
+.modal-body.profile-personal .content .rookie-section .rookie-menu .menu {
+  display: inline-block;
+  list-style: none;
+  float: right;
+  margin-top: 8px;
+}
+
+.modal-body.profile-personal .content .rookie-section .rookie-menu .menu li {
+  float: left;
+  margin-right: 25px;
+}
+
+.modal-body.profile-personal .content .rookie-section .rookie-menu .menu li a {
+  color: #A1A1A1;
+  font-size: 16px;
+  transition: 0.2s ease-out all;
+}
+
+.modal-body.profile-personal .content .rookie-section .rookie-menu .menu li a:hover {
+  color: #F18448;
+}
+
+.modal-body.profile-personal .content .rookie-section .rookie-menu .menu li:last-child {
+  margin-right: 0px;
 }
 
 .modal-body.profile-personal .content .rookie-section .rookie-question {
@@ -1941,6 +1978,87 @@ body.modal-open {
 .modal-body.profile-classmade-profile .content .button-right button[type="reset"] {
   background: #fff;
   color: #F18448;
+}
+
+.modal-body.profile-request-school {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  padding: 0;
+  box-shadow: 0 0 4px 0 #D6D6D6;
+  border-radius: 3px;
+  width: 479px;
+  height: 385px;
+}
+
+.modal-body.profile-request-school .content {
+  height: 100%;
+}
+
+.modal-body.profile-request-school .content .panel-header {
+  padding: 30px 4% 0px 4%;
+  box-sizing: border-box;
+}
+
+.modal-body.profile-request-school .content .panel-header:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #f2f2f2;
+}
+
+.modal-body.profile-request-school .content .panel-body .form-horizontal label {
+  display: block;
+  font-size: 14px;
+  color: #7E7C7C;
+  margin-bottom: 23px;
+}
+
+.modal-body.profile-request-school .content .panel-body .form-horizontal input {
+  height: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.modal-body.profile-request-school .content .panel-body .form-horizontal .native-select {
+  width: 100%;
+}
+
+.modal-body.profile-request-school .content .panel-body .form-horizontal .native-select:after {
+  top: 52px;
+}
+
+.modal-body.profile-request-school .content .panel-body .form-horizontal .native-select label {
+  font-weight: 500;
+}
+
+.modal-body.profile-request-school .content .panel-body .form-horizontal .native-select select {
+  width: 100%;
+}
+
+.modal-body.profile-request-school .content .panel-body .form-horizontal .button-right {
+  margin-top: 15px;
+}
+
+.modal-body.profile-request-school .content .button-right {
+  margin-top: 110px;
+  text-align: right;
+}
+
+.modal-body.profile-request-school .content .button-right button {
+  height: 30px;
+  min-width: 88px;
+  border: 1px solid #F18448;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.modal-body.profile-request-school .content .button-right button[type="reset"] {
+  background: #fff;
+  color: #F18448;
+  font-size: 14px;
 }
 
 .modal-body .review-content {
@@ -3576,7 +3694,7 @@ body#app-home footer ul > li:last-child:after {
   cursor: pointer;
 }
 
-.profile-journey .journey-container .journey-image .journey-button .edit-icon {
+.profile-journey .journey-container .journey-image .journey-button .edit-icon-transparent {
   height: 30px;
   width: 30px;
   -webkit-transform: scale(0.6);
@@ -3653,6 +3771,13 @@ body#app-home footer ul > li:last-child:after {
   height: 30px;
   width: 30px;
   cursor: pointer;
+}
+
+.profile-portfolio .portfolio-container .portfolio-content .portfolio-edit-button .edit-icon-transparent {
+  height: 30px;
+  width: 30px;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
 }
 
 .profile-portfolio .portfolio-container .portfolio-content .title {
@@ -4462,7 +4587,7 @@ body#app-home footer ul > li:last-child:after {
   border: 1px dashed #4A90E2;
 }
 
-.dashed-tips-container .icon, .dashed-tips-container .bell-icon, .dashed-tips-container .notif-icon, .dashed-tips-container .chat-icon, .dashed-tips-container .add-icon, .dashed-tips-container .edit-icon, .dashed-tips-container .question-icon, .dashed-tips-container .heart-icon, .dashed-tips-container .plus-icon {
+.dashed-tips-container .icon, .dashed-tips-container .bell-icon, .dashed-tips-container .notif-icon, .dashed-tips-container .chat-icon, .dashed-tips-container .add-icon, .dashed-tips-container .edit-icon, .dashed-tips-container .edit-icon-transparent, .dashed-tips-container .question-icon, .dashed-tips-container .heart-icon, .dashed-tips-container .plus-icon {
   position: absolute;
   border-radius: 50px;
   border: 3px solid #4A90E2;
@@ -4472,7 +4597,7 @@ body#app-home footer ul > li:last-child:after {
   top: 19px;
 }
 
-.dashed-tips-container .icon span, .dashed-tips-container .bell-icon span, .dashed-tips-container .notif-icon span, .dashed-tips-container .chat-icon span, .dashed-tips-container .add-icon span, .dashed-tips-container .edit-icon span, .dashed-tips-container .question-icon span, .dashed-tips-container .heart-icon span, .dashed-tips-container .plus-icon span {
+.dashed-tips-container .icon span, .dashed-tips-container .bell-icon span, .dashed-tips-container .notif-icon span, .dashed-tips-container .chat-icon span, .dashed-tips-container .add-icon span, .dashed-tips-container .edit-icon span, .dashed-tips-container .edit-icon-transparent span, .dashed-tips-container .question-icon span, .dashed-tips-container .heart-icon span, .dashed-tips-container .plus-icon span {
   font-size: 45px;
   display: block;
   text-align: center;
@@ -5439,6 +5564,28 @@ body#app-home footer ul > li:last-child:after {
   top: 10px;
   position: relative;
   cursor: pointer;
+}
+
+form input {
+  transition: 0.2s ease-in all;
+}
+
+form input:focus {
+  border-color: #F18448;
+  outline: none;
+}
+
+form textarea {
+  transition: 0.2s ease-in all;
+}
+
+form textarea:focus {
+  border: 1px solid #F18448 !important;
+  outline: none;
+}
+
+form select option:hover {
+  background-color: #F18448;
 }
 
 @media only screen and (max-device-width: 1024px) {

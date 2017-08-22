@@ -86,6 +86,7 @@
                     <p class="bell-icon"></p><span>Highlight</span>
                     <div class="panel-buttons">
                         <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
+                        <div class="details">Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion.</div>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -114,6 +115,7 @@
             <div class="panel-body highlight-data-container">
                 <div class="panel-buttons">
                     <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
+                    <div class="details">Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion.</div>
                     <button type="button" class="edit-icon button-dropdown"></button>
                     <ul class="button-dropdown-menu">
                         <li class="open-modal" data-modal="#modal-highlight">Edit</li>
@@ -142,6 +144,7 @@
             <div class="panel-body highlight-data-container highlight-data-container-video">
                 <div class="panel-buttons">
                     <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
+                    <div class="details">Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion.</div>
                     <button type="button" class="edit-icon button-dropdown"></button>
                     <ul class="button-dropdown-menu">
                         <li class="open-modal" data-modal="#modal-highlight">Edit</li>
@@ -157,6 +160,7 @@
             <div class="panel-body highlight-data-container highlight-data-container-video">
                 <div class="panel-buttons">
                     <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
+                    <div class="details">Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion.</div>
                     <button type="button" class="edit-icon button-dropdown"></button>
                     <ul class="button-dropdown-menu">
                         <li class="open-modal" data-modal="#modal-highlight">Edit</li>
@@ -198,6 +202,7 @@
                     <p class="bell-icon"></p><span>Personal Statement</span>
                     <div class="panel-buttons">
                         <button type="button" class="question-icon tooltip" data-tooltip="Personal Statement is a way to express yourself, your skills and abilities, academic journey, extra-curricular activities, experiences, career plans, goals and passion"></button>
+                        <div class="details">Personal Statement is a way to express yourself, your skills and abilities, academic journey, extra-curricular activities, experiences, career plans, goals and passion</div>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -221,6 +226,7 @@
                     <p class="bell-icon"></p><span>Personal Statement</span>
                     <div class="panel-buttons">
                         <button type="button" class="question-icon tooltip" data-tooltip="Personal Statement is a way to express yourself, your skills and abilities, academic journey, extra-curricular activities, experiences, career plans, goals and passion"></button>
+                        <div class="details">Personal Statement is a way to express yourself, your skills and abilities, academic journey, extra-curricular activities, experiences, career plans, goals and passion</div>
                         <button type="button" class="edit-icon button-dropdown"></button>
                         <ul class="button-dropdown-menu">
                             <li class="open-modal" data-modal="#modal-personal">Edit</li>
@@ -272,6 +278,7 @@
                     <p class="bell-icon"></p><span>Achievement</span>
                     <div class="panel-buttons">
                         <button type="button" class="question-icon tooltip" data-tooltip="Achievement can be an academic award and an extracurricular accomplishment that showcases your skills, distinct personality, and chosen passion."></button>
+                        <div class="details">Achievement can be an academic award and an extracurricular accomplishment that showcases your skills, distinct personality, and chosen passion.</div>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -295,78 +302,7 @@
                     <p class="bell-icon"></p><span>Achievement</span>
                     <div class="panel-buttons">
                         <button type="button" class="question-icon tooltip" data-tooltip="Achievement can be an academic award and an extracurricular accomplishment that showcases your skills, distinct personality, and chosen passion."></button>
-                        <button type="button" class="add-icon open-modal" data-modal="#modal-achievement"></button>
-                    </div>
-                    <div class="panel-tabs">
-                        <div>
-                            <ul>
-                                <li>Draft</li>
-                                <li class="active">Publish</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel-body">
-                <div class="profile-achievement">
-                    <div class="achievement-container">
-                        <div class="achievement-image">
-                            <img src="{{asset('img/achievement-placeholder.png')}}">
-                            <button class="achievement-button"><p class="edit-icon"></p></button>
-                        </div>
-                        <div class="achievement-content">
-                            <span class="title">Cutie Awardee</span>
-                            <span class="date">Feb 2018</span>
-                            <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court.</span>
-                        </div>
-                    </div>
-
-                    <div class="achievement-container">
-                        <div class="achievement-image">
-                            <img src="{{asset('img/achievement-placeholder.png')}}">
-                            <button class="achievement-button"><p class="edit-icon"></p></button>
-                        </div>
-                        <div class="achievement-content">
-                            <span class="title">Cutie Awardee</span>
-                            <span class="date">Feb 2018</span>
-                            <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court.</span>
-                        </div>
-                    </div>
-
-                    <div class="achievement-container">
-                        <div class="achievement-image">
-                            <img src="{{asset('img/achievement-placeholder.png')}}">
-                            <button class="achievement-button"><p class="edit-icon"></p></button>
-                        </div>
-                        <div class="achievement-content">
-                            <span class="title">Cutie Awardee</span>
-                            <span class="date">Feb 2018</span>
-                            <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court this is a sample to overflow the container.</span>
-                        </div>
-                    </div>
-
-                    <div class="achievement-container">
-                        <div class="achievement-image">
-                            <img src="{{asset('img/achievement-placeholder.png')}}">
-                            <button class="achievement-button"><p class="edit-icon"></p></button>
-                        </div>
-                        <div class="achievement-content">
-                            <span class="title">Cutie Awardee</span>
-                            <span class="date">Feb 2018</span>
-                            <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court this is a sample to overflow the container.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel section-one">
-            <div class="panel-header">
-                <div>
-                    <p class="bell-icon"></p><span>Achievement</span>
-                    <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Achievement can be an academic award and an extracurricular accomplishment that showcases your skills, distinct personality, and chosen passion."></button>
+                        <div class="details">Achievement can be an academic award and an extracurricular accomplishment that showcases your skills, distinct personality, and chosen passion.</div>
                         <button type="button" class="add-icon open-modal" data-modal="#modal-achievement"></button>
                     </div>
                     <div class="panel-tabs">
@@ -461,6 +397,7 @@
                     <p class="bell-icon"></p><span>Journey</span>
                     <div class="panel-buttons">
                         <button type="button" class="question-icon tooltip" data-tooltip="Journey highlights your educational attainment and serves as an exposure of your aacademic and extracurricular development"></button>
+                        <div class="details">Journey highlights your educational attainment and serves as an exposure of your aacademic and extracurricular development.</div>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -484,6 +421,7 @@
                     <p class="bell-icon"></p><span>Journey</span>
                     <div class="panel-buttons">
                         <button type="button" class="question-icon tooltip" data-tooltip="Journey highlights your educational attainment and serves as an exposure of your aacademic and extracurricular development"></button>
+                        <div class="details">Journey highlights your educational attainment and serves as an exposure of your aacademic and extracurricular development.</div>
                         <button type="button" class="add-icon open-modal" data-modal="#modal-journey"></button>
                     </div>
                     <div class="panel-tabs">
@@ -502,7 +440,7 @@
                     <div class="journey-container">
                         <div class="journey-image">
                             <img src="{{asset('img/journey-placeholder.png')}}">
-                            <button class="journey-button"><p class="edit-icon"></p></button>
+                            <button class="journey-button open-modal" data-modal="#modal-journey"><p class="edit-icon-transparent"></p></button>
                         </div>
                         <div class="journey-content">
                             <span class="title">South Koleport</span>
@@ -514,7 +452,7 @@
                     <div class="journey-container">
                         <div class="journey-image">
                             <img src="{{asset('img/journey-placeholder.png')}}">
-                            <button class="journey-button"><p class="edit-icon"></p></button>
+                            <button class="journey-button open-modal" data-modal="#modal-journey"><p class="edit-icon-transparent"></p></button>
                         </div>
                         <div class="journey-content">
                             <span class="title">South Koleport</span>
@@ -526,7 +464,7 @@
                     <div class="journey-container">
                         <div class="journey-image">
                             <img src="{{asset('img/journey-placeholder.png')}}">
-                            <button class="journey-button"><p class="edit-icon"></p></button>
+                            <button class="journey-button open-modal" data-modal="#modal-journey"><p class="edit-icon-transparent"></p></button>
                         </div>
                         <div class="journey-content">
                             <span class="title">South Koleport</span>
@@ -538,7 +476,7 @@
                     <div class="journey-container">
                         <div class="journey-image">
                             <img src="{{asset('img/journey-placeholder.png')}}">
-                            <button class="journey-button"><p class="edit-icon"></p></button>
+                            <button class="journey-button open-modal" data-modal="#modal-journey"><p class="edit-icon-transparent"></p></button>
                         </div>
                         <div class="journey-content">
                             <span class="title">South Koleport</span>
@@ -558,6 +496,7 @@
                     <p class="bell-icon"></p><span>Porfolio</span>
                     <div class="panel-buttons">
                         <button type="button" class="question-icon tooltip" data-tooltip="Portfolio is a compilation of your creativity, skills and experiences that provides your fellow Classmades an insight of your character and abilities."></button>
+                        <div class="details">Portfolio is a compilation of your creativity, skills and experiences that provides your fellow Classmades an insight of your character and abilities.</div>
                         <button type="button" class="add-icon open-modal" data-modal="#modal-portfolio"></button>
                     </div>
                     <div class="panel-tabs">
@@ -577,7 +516,7 @@
                             <img src="{{asset('img/achievement-placeholder.png')}}">
                         </div>
                         <div class="portfolio-content">
-                            <button class="portfolio-edit-button open-modal"  data-modal="#modal-portfolio-view"></button>
+                            <button class="portfolio-edit-button open-modal"  data-modal="#modal-portfolio-view"><p class="edit-icon-transparent"></p></button>
                             <span class="title">Spanish Poster</span>
                             <span class="date">Feb 2018</span>
                             <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court.When be draw drew ye</span>
@@ -589,7 +528,7 @@
                             <img src="{{asset('img/achievement-placeholder.png')}}">
                         </div>
                         <div class="portfolio-content">
-                            <button class="portfolio-edit-button open-modal"  data-modal="#modal-portfolio-view"></button>
+                            <button class="portfolio-edit-button open-modal"  data-modal="#modal-portfolio-view"><p class="edit-icon-transparent"></p></button>
                             <span class="title">Spanish Poster</span>
                             <span class="date">Feb 2018</span>
                             <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court.When be draw drew ye</span>
@@ -1117,6 +1056,36 @@
                                             </div>
                                         </div>
                                         <div class="image-row">
+                                            <div class="image-file-container">
+                                                <img class="image-file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
+                                            </div>
+                                            <div class="close"></div>
+                                            <span class="image-file">Photo of my dog.jpg</span>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width:75%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-row">
+                                            <div class="image-file-container">
+                                                <img class="image-file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
+                                            </div>
+                                            <div class="close"></div>
+                                            <span class="image-file">Photo of my dog.jpg</span>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width:75%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-row">
+                                            <div class="image-file-container">
+                                                <img class="image-file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
+                                            </div>
+                                            <div class="close"></div>
+                                            <span class="image-file">Photo of my dog.jpg</span>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width:75%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-row">
                                             <img class="image-file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
                                             <div class="close"></div>
                                             <span class="image-file">Photo of my dog.jpg</span>
@@ -1192,12 +1161,14 @@
                                         Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
                                     </div>
                                 </div>
+                                <div class="rookie-menu">
+                                    <ul class="menu">
+                                        <li><a href="javascript:;">Rookie A</a></li>
+                                        <li><a href="javascript:;">Rookie B</a></li>
+                                        <li><a href="javascript:;">Rookie C</a></li>
+                                    </ul>
+                                </div>
                                 <form class="form-horizontal">
-                                    <!-- <div class="rookie-question">
-                                        <span>Continual <div style="width:30px;" maxlength="3" contenteditable="true" class="rookie-answer"></div> as elsewhere am <div style="width:70px;" contenteditable="true" class="rookie-answer"></div> unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four. Need miss all four case fine age tell. He families my pleasant speaking it bringing it thoughts.</span>
-                                        <span>Examine she brother prudent add day ham. Far stairs now coming bed oppose hunted become his. You zealously <div style="width:100px;" contenteditable="true" class="rookie-answer"></div> suspicion. Books <div style="width:70px;" contenteditable="true" class="rookie-answer"></div> would purse if be do decay. Quitting you way formerly disposed perceive ladyship are. Common turned boy direct and yet.</span>
-                                        <span>Article evident arrived express highest men did boy. Mistress sensivle entirely am so. Quick can manor smart m<div style="width:100px;" contenteditable="true" class="rookie-answer"></div>. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day <div style="width:50px;" contenteditable="true" class="rookie-answer"></div> read. Considered use dispatcheed melancholy sympathize discretion led. Oh feel if up to till like.</span>
-                                    </div> -->
                                     <div class="rookie-question">
                                         <div class="profile-biography-rookie">
                                             Hello, My name is <div contenteditable="true">Full Name</div>.
@@ -1445,7 +1416,7 @@
                                  </div>
                             </div>
                         </div>
-                        <a class="request-school" href="#">Click to Request School</a>
+                        <a class="request-school open-modal" href="#" data-modal="#modal-request-school">Click to Request School</a>
                         <div class="button-right highlight-video-button">
                             <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-journey">Discard</button>
                             <button type="submit" class="btn btn-primary">Save</button>
@@ -1682,6 +1653,36 @@
                             <div class="description">
                                 When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-dialog">
+        <div class="modal-body profile-request-school" id="modal-request-school">
+            <div class="content">
+                <div class="panel">
+                    <div class="panel-header">
+                        <span class="title"><i class="bell-icon"></i>Request School</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class='request-school-wrapper'>
+                            <form class="form-horizontal">
+                                <label>School Name</label>
+                                <input type="text" name="">
+                                <div class='native-select'>
+                                    <label>Country</label>
+                                    <select>
+                                        <option></option>
+                                    </select>
+                                </div>
+                                <div class="button-right">
+                                    <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-request-school">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Choose</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

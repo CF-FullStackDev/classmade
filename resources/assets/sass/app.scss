@@ -87,6 +87,12 @@ a {
     background-size: contain;
 }
 
+.edit-icon-transparent {
+    @extend .icon;
+    background: url(../img/icons/edit.png) no-repeat center;
+    background-size: contain;
+}
+
 .question-icon {
     @extend .icon;
     background: url(../img/icons/icon-question.png) no-repeat center;
@@ -392,6 +398,7 @@ body.modal-open {
                             width: 65px;
                             margin-right: 17px;
                             object-fit:cover;
+                            cursor: pointer;
 
                             &:last-child{
                                 margin-right: 0px;
@@ -808,7 +815,7 @@ body.modal-open {
                 .highlight-photo-upload-container{
                     margin-top: 22px;
                     margin-bottom: 84px;
-                    height: 526px;
+                    min-height: 526px;
 
                     .highlight-photo-upload{
                         display: block;
@@ -1034,24 +1041,43 @@ body.modal-open {
 
             .rookie-section {
 
+                .rookie-menu{
+                    height: 50px;
+                    width: 100%;
+
+                    .menu{
+                        display: inline-block;
+                        list-style: none;
+                        float: right;
+                        margin-top: 8px;
+
+                        li{
+                            float: left;
+                            margin-right: 25px;
+
+                            a{
+                                color: #A1A1A1;
+                                font-size: 16px;
+                                transition: 0.2s ease-out all;
+
+                                &:hover{
+                                    color: $primary-color;
+                                }
+
+                            }
+
+                            &:last-child{
+                                margin-right: 0px;
+                            }
+                        }
+                    }
+                }
+
                 .rookie-question {
                     color: #a1a1a1;
                     border: 1.5px solid #E8E8E8;
                     padding: 48px 23px 48px 23px;
                     margin-bottom: 15px;
-
-                    // span{
-                    //     display: block;
-                    //     margin-bottom: 15px;
-                    // }
-                    //
-                    // .rookie-answer {
-                    //     border-bottom: 1px solid #000;
-                    //     display: inline-block;
-                    //     overflow: hidden;
-                    //     max-height: 14px;
-                    //     padding-bottom: 2px;
-                    // }
                 }
 
                 .profile-biography-rookie {
@@ -2035,6 +2061,95 @@ body.modal-open {
                 button[type="reset"]{
                     background: #fff;
                     color: $primary-color;
+                }
+            }
+        }
+    }
+
+    &.profile-request-school {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        position: relative;
+        padding: 0;
+        box-shadow: 0 0 4px 0 #D6D6D6;
+        border-radius: 3px;
+        width: 479px;
+        height: 385px;
+
+        .content {
+            height: 100%;
+
+            .panel-header{
+
+                padding: 30px 4% 0px 4%;
+                box-sizing:border-box;
+
+                &:after{
+                    content:'';
+                    display: inline-block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #f2f2f2;
+
+                }
+            }
+
+            .panel-body{
+
+                .form-horizontal{
+                    
+                    label{
+                        display: block;
+                        font-size: 14px;
+                        color: #7E7C7C;
+                        margin-bottom: 23px;
+                    }
+
+                    input{
+                        height: 30px;
+                        padding: 5px;
+                        box-sizing: border-box;
+                        width: 100%;
+                    }
+
+                    .native-select{
+                        width: 100%;
+
+                        &:after{
+                            top: 52px;
+                        }
+
+                        label{
+                            font-weight: 500;
+                        }
+
+                        select{
+                            width: 100%;
+                        }
+                    }
+
+                    .button-right{
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+            .button-right{
+                margin-top: 110px;
+                text-align: right;
+
+                button{
+                    height: 30px;
+                    min-width: 88px;
+                    border: 1px solid $primary-color;
+                    font-size: 14px;
+                    margin-right: 5px;
+                }
+
+                button[type="reset"]{
+                    background: #fff;
+                    color: $primary-color;
+                    font-size: 14px;
                 }
             }
         }
@@ -3679,7 +3794,7 @@ body {
                 box-shadow: 1px 1px 2px #cacaca;
                 cursor: pointer;
 
-                .edit-icon {
+                .edit-icon-transparent {
                     height: 30px;
                     width: 30px;
                     transform: scale(0.6);
@@ -3758,6 +3873,12 @@ body {
                 height: 30px;
                 width: 30px;
                 cursor: pointer;
+
+                .edit-icon-transparent{
+                        height: 30px;
+                        width: 30px;
+                        transform: scale(0.6);
+                }
             }
 
             .title {
@@ -5611,6 +5732,46 @@ body {
 
 
 // End of angelo
+
+// Global Forms CSS
+
+form{
+
+    input{
+        transition: 0.2s ease-in all;
+
+        &:focus{
+            border-color: $primary-color;
+            outline: none;
+        }
+    }
+
+    textarea{
+        transition: 0.2s ease-in all;
+
+        &:focus{
+            border: 1px solid $primary-color !important;
+            outline: none;
+        }
+    }
+
+    input[type="checkbox"]{
+
+    }
+
+    select{
+
+        option{
+
+            &:hover{
+                background-color: $primary-color;
+            }
+        }
+    }
+
+}
+
+// End of Global Forms CSS
 
 @media only screen and (max-device-width: 1024px) {
     .login-bg {

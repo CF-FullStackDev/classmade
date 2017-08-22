@@ -1067,10 +1067,10 @@ $(function () {
         $(label).html(parseInt(limit) - parseInt(length));
     });
 
-    $(".tooltip").each(function () {
-        var text = $(this).data('tooltip');
-        $(this).after('<span class="details">' + text + '</span>');
-    });
+    // $(".tooltip").each(function(){
+    //     var text = $(this).data('tooltip');
+    //     $(this).after('<span class="details">' + text + '</span>');
+    // });
 
     $(document).on('mouseover', '.tooltip', function () {
         $(this).addClass('active');
@@ -1104,9 +1104,11 @@ $(function () {
     });
 
     $(document).on('mouseleave', '.highlight-data-container-video', function (e) {
-        $('.button-dropdown-menu').each(function () {
-            $(this).removeClass('active');
-        });
+        $(this).find('.button-dropdown-menu').removeClass('active');
+    });
+
+    $(document).on('mouseleave', '.highlight-data-container', function (e) {
+        $(this).find('.button-dropdown-menu').removeClass('active');
     });
     // END OF NEW ANGELO JS
 });
