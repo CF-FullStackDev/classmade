@@ -1432,6 +1432,7 @@ body.modal-open {
                             font-size: 14px;
                             margin-bottom: 12px;
                             display: block;
+                            clear: both;
                         }
 
                         .native-select{
@@ -1464,14 +1465,13 @@ body.modal-open {
                                     height: 100%;
                                     width: 109px !important;
                                     display: inline-block;
-                                    margin-right: 10px;
                                     padding: 0px 5px 0px 5px;
                                     text-align: left;
                                     font-size: 14px;
                                 }
 
                                 &:after{
-                                    right: 15px;
+                                    right: 5px;
                                     top: 10px;
                                 }
                             }
@@ -1482,7 +1482,6 @@ body.modal-open {
                                     height: 100%;
                                     width: 51px !important;
                                     display: inline-block;
-                                    margin-right: 10px;
                                     padding: 0px 5px 0px 5px;
                                     text-align: left;
                                     font-size: 14px;
@@ -1490,7 +1489,24 @@ body.modal-open {
 
                                 &:after{
                                     top: 10px;
-                                    right: 13px;
+                                    right: 4px;
+                                }
+                            }
+
+                            &#Year{
+                                
+                                select{
+                                    height: 100%;
+                                    width: 71px !important;
+                                    display: inline-block;
+                                    padding: 0px 5px 0px 5px;
+                                    text-align: left;
+                                    font-size: 14px;
+                                }
+
+                                &:after{
+                                    top: 10px;
+                                    right: 3px;
                                 }
                             }
                         }
@@ -1500,13 +1516,6 @@ body.modal-open {
                             height: 28px;
                             font-size: 14px;
                             width: 212px;
-
-                            &#Year{
-                                width: 44px !important;
-                                display: inline-block;
-                                padding: 0px 5px 0px 5px;
-                                text-align: center;
-                            }
                         }
 
                         textarea{
@@ -5668,7 +5677,7 @@ body {
 
             &:nth-child(2){
                 margin-right: 0px;
-                margin-left: 20px;
+                margin-left: 0px;
             }
 
             input{

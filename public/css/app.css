@@ -1343,6 +1343,7 @@ body.modal-open {
   font-size: 14px;
   margin-bottom: 12px;
   display: block;
+  clear: both;
 }
 
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal .native-select {
@@ -1374,14 +1375,13 @@ body.modal-open {
   height: 100%;
   width: 109px !important;
   display: inline-block;
-  margin-right: 10px;
   padding: 0px 5px 0px 5px;
   text-align: left;
   font-size: 14px;
 }
 
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal .native-select#Month:after {
-  right: 15px;
+  right: 5px;
   top: 10px;
 }
 
@@ -1389,7 +1389,6 @@ body.modal-open {
   height: 100%;
   width: 51px !important;
   display: inline-block;
-  margin-right: 10px;
   padding: 0px 5px 0px 5px;
   text-align: left;
   font-size: 14px;
@@ -1397,7 +1396,21 @@ body.modal-open {
 
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal .native-select#Day:after {
   top: 10px;
-  right: 13px;
+  right: 4px;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal .native-select#Year select {
+  height: 100%;
+  width: 71px !important;
+  display: inline-block;
+  padding: 0px 5px 0px 5px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal .native-select#Year:after {
+  top: 10px;
+  right: 3px;
 }
 
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal input {
@@ -1405,13 +1418,6 @@ body.modal-open {
   height: 28px;
   font-size: 14px;
   width: 212px;
-}
-
-.modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal input#Year {
-  width: 44px !important;
-  display: inline-block;
-  padding: 0px 5px 0px 5px;
-  text-align: center;
 }
 
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal textarea {
@@ -5490,7 +5496,7 @@ body#app-home footer ul > li:last-child:after {
 
 .form-horizontal .input-row .input-group-half:nth-child(2) {
   margin-right: 0px;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 .form-horizontal .input-row .input-group-half input {

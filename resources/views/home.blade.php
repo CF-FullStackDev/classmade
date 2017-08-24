@@ -1467,7 +1467,11 @@
                                                     <option>31</option>
                                                 </select>
                                             </div>
-                                            <input type="text" id="Year" name="Year" placeholder="2000">
+                                            <div class="native-select" id="Year">
+                                                <select name="Year">
+                                                    <option>2014</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                     <label>Issuer</label>
