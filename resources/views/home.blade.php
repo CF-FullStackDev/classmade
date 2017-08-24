@@ -1471,7 +1471,11 @@
                                         </div>
                                     </div>
                                     <label>Issuer</label>
-                                    <input type="text" id="Issuer" name="Issuer">
+                                    <div class="native-select" id="Issuer">
+                                        <select>
+                                            <option>sample</option>
+                                        </select>
+                                    </div>
                                     <label>Description</label>
                                     <textarea maxlength="300" class='word-count-input' name="description" data-count="#achievement-count"></textarea>
                                     <span id="achievement-count" class="word-count" data-length="300">300</span>
