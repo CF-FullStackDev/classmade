@@ -345,4 +345,8 @@ $(function(){
     });
     // END OF NEW ANGELO JS
 
+    $(document).on('mouseover','option',function(e){
+        $(this).css('background','red');
+    });
+
 });

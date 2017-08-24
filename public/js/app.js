@@ -1111,6 +1111,10 @@ $(function () {
         $(this).find('.button-dropdown-menu').removeClass('active');
     });
     // END OF NEW ANGELO JS
+
+    $(document).on('mouseover', 'option', function (e) {
+        $(this).css('background', 'red');
+    });
 });
 
 /***/ }),

@@ -24,7 +24,7 @@
                 </div>
                 <div class="profile-info">
                     <div class="info-container">
-                        <span class="info-name">Estella Rios</span>
+                        <span class="info-name">Estella Rios <p class="check-icon"></p></span>
                         <span class="info-school">Student at Renaissance College | Hong Kong</span>
                         <div class="info-skills">
                             <ul>
@@ -44,6 +44,7 @@
                             <img src="{{asset('img/badge/problem-solving.png')}}">
                             <img src="{{asset('img/badge/trustworthy.png')}}" class="fade">
                         </div>
+                        <p class="chatmade-icon"></p>
                         <button class="btn btn-primary add-classmade">Add Classmade</button>
                     </div>
                 </div>
@@ -440,7 +441,15 @@
                     <div class="journey-container">
                         <div class="journey-image">
                             <img src="{{asset('img/journey-placeholder.png')}}">
-                            <button class="journey-button open-modal" data-modal="#modal-journey"><p class="edit-icon-transparent"></p></button>
+                            <button class="journey-button " ><p class="edit-icon-transparent button-dropdown"></p>
+                                <ul class="button-dropdown-menu">
+                                    <li class="open-modal" data-modal="#modal-journey">Edit</li>
+                                    <li class="divider"></li>
+                                    <li>Delete</li>
+                                    <li class="divider"></li>
+                                    <li>Unpublish</li>
+                                </ul>
+                            </button>
                         </div>
                         <div class="journey-content">
                             <span class="title">South Koleport</span>
@@ -452,7 +461,15 @@
                     <div class="journey-container">
                         <div class="journey-image">
                             <img src="{{asset('img/journey-placeholder.png')}}">
-                            <button class="journey-button open-modal" data-modal="#modal-journey"><p class="edit-icon-transparent"></p></button>
+                            <button class="journey-button " ><p class="edit-icon-transparent button-dropdown"></p>
+                                <ul class="button-dropdown-menu">
+                                    <li class="open-modal" data-modal="#modal-journey">Edit</li>
+                                    <li class="divider"></li>
+                                    <li>Delete</li>
+                                    <li class="divider"></li>
+                                    <li>Unpublish</li>
+                                </ul>
+                            </button>
                         </div>
                         <div class="journey-content">
                             <span class="title">South Koleport</span>
@@ -464,7 +481,15 @@
                     <div class="journey-container">
                         <div class="journey-image">
                             <img src="{{asset('img/journey-placeholder.png')}}">
-                            <button class="journey-button open-modal" data-modal="#modal-journey"><p class="edit-icon-transparent"></p></button>
+                            <button class="journey-button " ><p class="edit-icon-transparent button-dropdown"></p>
+                                <ul class="button-dropdown-menu">
+                                    <li class="open-modal" data-modal="#modal-journey">Edit</li>
+                                    <li class="divider"></li>
+                                    <li>Delete</li>
+                                    <li class="divider"></li>
+                                    <li>Unpublish</li>
+                                </ul>
+                            </button>
                         </div>
                         <div class="journey-content">
                             <span class="title">South Koleport</span>
@@ -476,7 +501,15 @@
                     <div class="journey-container">
                         <div class="journey-image">
                             <img src="{{asset('img/journey-placeholder.png')}}">
-                            <button class="journey-button open-modal" data-modal="#modal-journey"><p class="edit-icon-transparent"></p></button>
+                            <button class="journey-button " ><p class="edit-icon-transparent button-dropdown"></p>
+                                <ul class="button-dropdown-menu">
+                                    <li class="open-modal" data-modal="#modal-journey">Edit</li>
+                                    <li class="divider"></li>
+                                    <li>Delete</li>
+                                    <li class="divider"></li>
+                                    <li>Unpublish</li>
+                                </ul>
+                            </button>
                         </div>
                         <div class="journey-content">
                             <span class="title">South Koleport</span>
@@ -512,11 +545,20 @@
             <div class="panel-body">
                 <div class="profile-portfolio">
                     <div class="portfolio-container">
-                        <div class="portfolio-image">
+                        <div class="portfolio-image open-modal" data-modal="#modal-portfolio-view">
                             <img src="{{asset('img/achievement-placeholder.png')}}">
                         </div>
                         <div class="portfolio-content">
-                            <button class="portfolio-edit-button open-modal"  data-modal="#modal-portfolio-view"><p class="edit-icon-transparent"></p></button>
+                            <button class="portfolio-edit-button">
+                                <p class="edit-icon-transparent button-dropdown"></p>
+                                <ul class="button-dropdown-menu">
+                                    <li class="open-modal" data-modal="#modal-portfolio">Edit</li>
+                                    <li class="divider"></li>
+                                    <li>Delete</li>
+                                    <li class="divider"></li>
+                                    <li>Unpublish</li>
+                                </ul>
+                            </button>
                             <span class="title">Spanish Poster</span>
                             <span class="date">Feb 2018</span>
                             <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court.When be draw drew ye</span>
@@ -524,11 +566,20 @@
                     </div>
 
                     <div class="portfolio-container">
-                        <div class="portfolio-image">
+                        <div class="portfolio-image open-modal" data-modal="#modal-portfolio-view">
                             <img src="{{asset('img/achievement-placeholder.png')}}">
                         </div>
                         <div class="portfolio-content">
-                            <button class="portfolio-edit-button open-modal"  data-modal="#modal-portfolio-view"><p class="edit-icon-transparent"></p></button>
+                            <button class="portfolio-edit-button">
+                                <p class="edit-icon-transparent button-dropdown"></p>
+                                <ul class="button-dropdown-menu">
+                                    <li class="open-modal" data-modal="#modal-portfolio">Edit</li>
+                                    <li class="divider"></li>
+                                    <li>Delete</li>
+                                    <li class="divider"></li>
+                                    <li>Unpublish</li>
+                                </ul>
+                            </button>
                             <span class="title">Spanish Poster</span>
                             <span class="date">Feb 2018</span>
                             <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court.When be draw drew ye</span>
@@ -908,7 +959,7 @@
                                 <img class="large-image" src="{{asset('img/icons/image_icon.png')}}">
                             </div>
                             <div class="button-right">
-                                <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-avatar">Discard</button>
+                                <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-avatar">Discard</button>
                                 <button type="submit" class="btn btn-primary">Save</button>
                             </div>
                         </div>
@@ -970,7 +1021,7 @@
                                 <img class="large-image" src="{{asset('img/icons/image_icon.png')}}">
                             </div>
                             <div class="button-right">
-                                <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-cover">Cancel</button>
+                                <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-cover">Cancel</button>
                                 <button type="submit" class="btn btn-primary">Choose</button>
                             </div>
                         </div>
@@ -1024,7 +1075,7 @@
                                     <input type="" name="" placeholder="https://www.youtube.com/watch?v=SqMjxAWfTe4">
                                 </div>
                                 <div class="button-right highlight-video-button">
-                                    <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-highlight">Discard</button>
+                                    <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-highlight">Discard</button>
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </div>
                             </form>
@@ -1118,7 +1169,7 @@
                                     </div> -->
                                 </div>
                                 <div class="button-right highlight-photo-button">
-                                    <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-highlight">Discard</button>
+                                    <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-highlight">Discard</button>
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </div>
                             </form>
@@ -1190,7 +1241,7 @@
                                     </div>
                                     <span class="chatmade-link"><a href="#" class="pro-link">Send melancholy symphatize discretion led. <br> Proofread with Chatmade</a></span>
                                     <div class="button-right personal-statement-button">
-                                        <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-personal">Discard</button>
+                                        <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-personal">Discard</button>
                                         <button type="submit" class="btn btn-primary">Save</button>
                                     </div>
                                 </form>
@@ -1221,7 +1272,7 @@
                                     </div>
                                     <span class="chatmade-link"><a href="#">Send melancholy symphatize discretion led. <br> Proofread with Chatmade</a></span>
                                     <div class="button-right personal-statement-button">
-                                        <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-personal">Discard</button>
+                                        <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-personal">Discard</button>
                                         <button type="submit" class="btn btn-primary">Save</button>
                                     </div>
                                 </form>
@@ -1298,7 +1349,7 @@
                                     <span class="text-limit">1000</span>
                                     <span class="chatmade-link"><a href="#" class="pro-link">Send melancholy symphatize discretion led. <br> Proofread with Chatmade</a></span>
                                     <div class="button-right personal-statement-button">
-                                        <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-personal">Discard</button>
+                                        <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-personal">Discard</button>
                                         <button type="submit" class="btn btn-primary">Save</button>
                                     </div>
                                 </form>
@@ -1352,7 +1403,7 @@
                             </div>
 
                         <div class="button-right achievement-button">
-                            <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-achievement">Discard</button>
+                            <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-achievement">Discard</button>
                             <button type="submit" class="btn btn-primary">Save</button>
                         </div>
                         </div>
@@ -1386,6 +1437,7 @@
                                         <div class="native-select">
                                             <select class="journey-from" name="journey-from">
                                                 <option>From</option>
+                                                <option>From</option>
                                             </select>
                                         </div>
                                         <div class="native-select">
@@ -1418,7 +1470,7 @@
                         </div>
                         <a class="request-school open-modal" href="#" data-modal="#modal-request-school">Click to Request School</a>
                         <div class="button-right highlight-video-button">
-                            <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-journey">Discard</button>
+                            <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-journey">Discard</button>
                             <button type="submit" class="btn btn-primary">Save</button>
                         </div>
                     </div>
@@ -1478,7 +1530,7 @@
                                     </div>
                                 </div>
                                 <div class="button-right highlight-video-button">
-                                    <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-portfolio">Discard</button>
+                                    <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-portfolio">Discard</button>
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </div>
                             </form>
@@ -1618,7 +1670,7 @@
                                 </div>
                             </div>
                             <div class="button-right">
-                                <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-classmade-profile">Cancel</button>
+                                <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-classmade-profile">Cancel</button>
                                 <button type="submit" class="btn btn-primary">Choose</button>
                             </div>
                         </div>
@@ -1679,7 +1731,7 @@
                                     </select>
                                 </div>
                                 <div class="button-right">
-                                    <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-request-school">Cancel</button>
+                                    <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-request-school">Cancel</button>
                                     <button type="submit" class="btn btn-primary">Choose</button>
                                 </div>
                             </form>
