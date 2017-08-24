@@ -123,6 +123,10 @@ a {
   text-align: right;
 }
 
+.button-right button {
+  font-size: 14px;
+}
+
 .flex-center, nav, .profile-review .review-container .review-avatar > div {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -764,30 +768,57 @@ body.modal-open {
   background: #fff;
   float: left;
   margin-right: 10px;
-  width: 17px;
-  height: 17px;
+  width: 17px !important;
+  height: 17px !important;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border-radius: 50px;
-  padding: 0px;
+  border: 2px solid #D6D6D6;
+  border-radius: 50px !important;
+  outline: 0;
+  padding: 0px !important;
+}
+
+.modal-body.profile-highlight .content .highlight-video .radio-choices .radio-container .radio-group input[type="radio"]:hover {
+  border: 2px solid #A1A1A1;
 }
 
 .modal-body.profile-highlight .content .highlight-video .radio-choices .radio-container .radio-group input[type="radio"]:checked {
-  background: #F18448;
+  border-color: #F18448;
+  background: #fff;
 }
 
 .modal-body.profile-highlight .content .highlight-video .radio-choices .radio-container .radio-group input[type="radio"]:checked:after {
   content: '';
   display: inline-block;
-  height: 9px;
-  width: 9px;
-  border-radius: 50px;
-  background: #fff;
+  height: 9px !important;
+  width: 9px !important;
+  border-radius: 50px !important;
+  background: #F18448;
   margin: 0 auto;
-  position: relative;
-  top: -2px;
-  left: 3px;
+  position: relative !important;
+  top: -3px !important;
+  left: 2px !important;
+}
+
+.modal-body.profile-highlight .content .highlight-video .radio-choices .radio-container .radio-group input[type="radio"]:disabled {
+  border-color: #F2F2F2;
+}
+
+.modal-body.profile-highlight .content .highlight-video .radio-choices .radio-container .radio-group input[type="radio"]:disabled:hover {
+  border-color: #F2F2F2;
+}
+
+.modal-body.profile-highlight .content .highlight-video .radio-choices .radio-container .radio-group input[type="radio"]:disabled:after {
+  content: '';
+  display: none;
+}
+
+@-moz-document url-prefix() {
+  .modal-body.profile-highlight .content .highlight-video .radio-choices .radio-container .radio-group input[type="radio"]:checked:after {
+    top: -6px !important;
+    left: 2px !important;
+  }
 }
 
 .modal-body.profile-highlight .content .highlight-video .radio-choices .radio-container .radio-group label {
@@ -806,12 +837,13 @@ body.modal-open {
 
 .modal-body.profile-highlight .content .highlight-video .highlight-video-button button {
   height: 30px;
+  font-size: 14px;
 }
 
 .modal-body.profile-highlight .content .highlight-video .highlight-video-button button[type="reset"] {
   background: transparent;
   color: #F18448;
-  font-weight: 14px;
+  font-size: 14px;
 }
 
 .modal-body.profile-highlight .content .highlight-photo {
@@ -952,12 +984,13 @@ body.modal-open {
 
 .modal-body.profile-highlight .content .highlight-photo-button button {
   height: 30px;
+  font-size: 14px;
 }
 
 .modal-body.profile-highlight .content .highlight-photo-button button[type="reset"] {
   background: transparent;
   color: #F18448;
-  font-weight: 14px;
+  font-size: 14px;
 }
 
 .modal-body.profile-personal {
@@ -1088,6 +1121,11 @@ body.modal-open {
   display: none;
 }
 
+.modal-body.profile-personal .content .intermediate-section .chatmade-link {
+  margin-top: 15px;
+  display: block;
+}
+
 .modal-body.profile-personal .content .intermediate-question {
   color: #7E7C7C;
 }
@@ -1186,7 +1224,8 @@ body.modal-open {
 }
 
 .modal-body.profile-personal .content .pro-section .staff-picked-profiles .profile-container .staff-picked-view {
-  height: 20px;
+  height: 30px;
+  box-sizing: border-box;
   padding-top: 8px;
   padding-bottom: 8px;
   min-width: 83px;
@@ -4736,7 +4775,7 @@ body#app-home footer ul > li:last-child:after {
 
 .form-horizontal .button-right button {
   min-width: 100px;
-  height: 40px;
+  height: 30px;
   margin-bottom: 0px;
 }
 
@@ -5107,14 +5146,17 @@ body#app-home footer ul > li:last-child:after {
   width: 295px;
 }
 
-.form-horizontal .chatmade-link a {
-  color: #F18448;
+.form-horizontal .chatmade-link img {
+  margin-right: 15px;
   float: left;
-  margin-top: 20px;
 }
 
-.form-horizontal .chatmade-link a.pro-link {
-  margin-top: 0px;
+.form-horizontal .chatmade-link .link-description {
+  font-size: 12px;
+  float: left;
+  display: inline-block;
+  width: 295px;
+  color: #A1A1A1;
 }
 
 .form-horizontal .text-limit {

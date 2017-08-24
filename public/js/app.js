@@ -897,7 +897,7 @@ $(function () {
 
     $(document).on('click', '#authentication-select', function () {
         var selected = $("select option:selected").text();
-        if (selected == 'Personal Email') {
+        if (selected == 'Student ID') {
             $('.auth-options').removeClass('selected');
             $('#auth-personal-email').addClass('selected');
         } else if (selected == 'School Authentication Email') {

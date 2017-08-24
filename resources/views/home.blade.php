@@ -1085,6 +1085,10 @@
                                             <input type="radio" name="video-type">
                                             <label>Uploaded Youtube link</label>
                                         </div>
+                                        <div class="radio-group">
+                                            <input type="radio" name="video-type" disabled>
+                                            <label>Sample Disabled</label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="button-right highlight-video-button">
@@ -1252,7 +1256,10 @@
                                             <br><br>
                                         </div>
                                     </div>
-                                    <span class="chatmade-link"><a href="#" class="pro-link">Send melancholy symphatize discretion led. <br> Proofread with Chatmade</a></span>
+                                    <span class="chatmade-link">
+                                        <img src="{{asset('img/icons/chatmade-logo.png')}}">
+                                        <p class="link-description">Get insights from your fellow Classmade letting them proofread your draft using Chatmade</p>
+                                    </span>
                                     <div class="button-right personal-statement-button">
                                         <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-personal">Discard</button>
                                         <button type="submit" class="btn btn-primary">Save</button>
@@ -1283,7 +1290,10 @@
                                         <div class="content">When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.</div>
                                         <textarea name=""></textarea>
                                     </div>
-                                    <span class="chatmade-link"><a href="#">Send melancholy symphatize discretion led. <br> Proofread with Chatmade</a></span>
+                                    <span class="chatmade-link">
+                                        <img src="{{asset('img/icons/chatmade-logo.png')}}">
+                                        <p class="link-description">Get insights from your fellow Classmade letting them proofread your draft using Chatmade</p>
+                                    </span>
                                     <div class="button-right personal-statement-button">
                                         <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-personal">Discard</button>
                                         <button type="submit" class="btn btn-primary">Save</button>
@@ -1360,7 +1370,10 @@
                                 <form class="form-horizontal">
                                     <textarea class="pro-answer"></textarea>
                                     <span class="text-limit">1000</span>
-                                    <span class="chatmade-link"><a href="#" class="pro-link">Send melancholy symphatize discretion led. <br> Proofread with Chatmade</a></span>
+                                    <span class="chatmade-link">
+                                        <img src="{{asset('img/icons/chatmade-logo.png')}}">
+                                        <p class="link-description">Get insights from your fellow Classmade letting them proofread your draft using Chatmade</p>
+                                    </span>
                                     <div class="button-right personal-statement-button">
                                         <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-personal">Discard</button>
                                         <button type="submit" class="btn btn-primary">Save</button>
