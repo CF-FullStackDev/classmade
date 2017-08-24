@@ -1074,6 +1074,19 @@
                                     <span>Insert/Paste Youtube Video Url:</span>
                                     <input type="" name="" placeholder="https://www.youtube.com/watch?v=SqMjxAWfTe4">
                                 </div>
+                                <div class="radio-choices">
+                                    <span class="title">Select video type to publish:</span>
+                                    <div class="radio-container">
+                                        <div class="radio-group">
+                                            <input type="radio" name="video-type">
+                                            <label>Uploaded Video</label>
+                                        </div>
+                                        <div class="radio-group">
+                                            <input type="radio" name="video-type">
+                                            <label>Uploaded Youtube link</label>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="button-right highlight-video-button">
                                     <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-highlight">Discard</button>
                                     <button type="submit" class="btn btn-primary">Save</button>

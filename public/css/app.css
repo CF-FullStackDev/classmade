@@ -748,8 +748,60 @@ body.modal-open {
   box-sizing: border-box;
 }
 
+.modal-body.profile-highlight .content .highlight-video .radio-choices .title {
+  font-size: 14px;
+  color: #A1A1A1;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.modal-body.profile-highlight .content .highlight-video .radio-choices .radio-container .radio-group {
+  display: inline-block;
+  margin-right: 31px;
+}
+
+.modal-body.profile-highlight .content .highlight-video .radio-choices .radio-container .radio-group input[type="radio"] {
+  background: #fff;
+  float: left;
+  margin-right: 10px;
+  width: 17px;
+  height: 17px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50px;
+  padding: 0px;
+}
+
+.modal-body.profile-highlight .content .highlight-video .radio-choices .radio-container .radio-group input[type="radio"]:checked {
+  background: #F18448;
+}
+
+.modal-body.profile-highlight .content .highlight-video .radio-choices .radio-container .radio-group input[type="radio"]:checked:after {
+  content: '';
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  border-radius: 50px;
+  background: #fff;
+  margin: 0 auto;
+  position: relative;
+  top: -2px;
+  left: 3px;
+}
+
+.modal-body.profile-highlight .content .highlight-video .radio-choices .radio-container .radio-group label {
+  float: left;
+  font-size: 14px;
+  color: #A1A1A1;
+}
+
+.modal-body.profile-highlight .content .highlight-video .radio-choices .radio-container .radio-group:last-child {
+  margin-right: 0px;
+}
+
 .modal-body.profile-highlight .content .highlight-video .highlight-video-button {
-  margin-top: 69px;
+  margin-top: 19px;
 }
 
 .modal-body.profile-highlight .content .highlight-video .highlight-video-button button {
