@@ -919,6 +919,10 @@ body.modal-open {
   border-color: #EEF2F3;
 }
 
+.modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-row:last-child {
+  margin-bottom: 15px;
+}
+
 .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-uploaded {
   width: 105px;
   height: 75px;
@@ -1341,27 +1345,47 @@ body.modal-open {
   display: block;
 }
 
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal .native-select {
+  height: 30px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal .native-select#Month select {
+  height: 100%;
+  width: 109px !important;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 0px 5px 0px 5px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal .native-select#Month:after {
+  right: 15px;
+  top: 10px;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal .native-select#Day select {
+  height: 100%;
+  width: 51px !important;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 0px 5px 0px 5px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal .native-select#Day:after {
+  top: 10px;
+  right: 13px;
+}
+
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal input {
   padding: 0px 15px 0px 15px;
   height: 28px;
   font-size: 14px;
   width: 212px;
-}
-
-.modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal input#Month {
-  width: 69px !important;
-  display: inline-block;
-  margin-right: 10px;
-  padding: 0px 5px 0px 5px;
-  text-align: center;
-}
-
-.modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal input#Day {
-  width: 23px !important;
-  display: inline-block;
-  margin-right: 10px;
-  padding: 0px 5px 0px 5px;
-  text-align: center;
 }
 
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal input#Year {
@@ -5783,6 +5807,11 @@ form select option:after {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.input-error {
+  font-size: 12px;
+  color: #F54B5E;
 }
 
 @media only screen and (max-device-width: 1024px) {
