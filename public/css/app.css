@@ -1658,6 +1658,7 @@ body.modal-open {
   border-radius: 5px;
   padding: 32px 25px;
   color: #A1A1A1;
+  margin-bottom: 34px;
 }
 
 .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .title {
@@ -1729,7 +1730,6 @@ body.modal-open {
 
 .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .or {
   color: #A1A1A1;
-  margin-top: 34px;
   margin-bottom: 34px;
   font-size: 20px;
   font-weight: 600;
@@ -1741,7 +1741,7 @@ body.modal-open {
   border-radius: 5px;
   padding: 32px 25px;
   padding-bottom: 45px;
-  margin-bottom: 52px;
+  margin-bottom: 34px;
 }
 
 .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .title {
