@@ -1412,8 +1412,8 @@
                                     <div class="input-row">
                                         <div class="input-group-half">
                                             <label>Title</label>
-                                            <input type="text" id="Title" name="Title">
-                                            <span class="msg-error">Sample Error</span>
+                                            <input type="text" id="achievement-title" name="Title">
+                                            <span class="msg-error"></span>
                                         </div>
                                         <div class="input-group-half">
                                             <label>Date Received</label>
@@ -1475,7 +1475,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <label>Issuer</label>
+                                    <label class="issuer-label">Issuer</label>
                                     <div class="native-select" id="Issuer">
                                         <select>
                                             <option>sample</option>
@@ -1484,6 +1484,7 @@
                                     <label>Description</label>
                                     <textarea maxlength="300" class='word-count-input' name="description" data-count="#achievement-count"></textarea>
                                     <span id="achievement-count" class="word-count" data-length="300">300</span>
+                                    <span class="msg-error"></span>
                                 </form>
                             </div>
 
@@ -1523,11 +1524,13 @@
                                             <select class="journey-from" name="journey-from">
                                                 <option>From</option>
                                             </select>
+                                            <span class="msg-error">Error!</span>
                                         </div>
                                         <div class="native-select">
                                             <select class="journey-to" name="journey-to">
                                                 <option>To</option>
                                             </select>
+                                            <span class="msg-error">Error!</span>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -1535,6 +1538,7 @@
                                             <select class="school" name="school">
                                                 <option>School</option>
                                             </select>
+                                            <span class="msg-error">Error!</span>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -1542,6 +1546,7 @@
                                             <select class="level" name="level">
                                                 <option>Level</option>
                                             </select>
+                                            <span class="msg-error">Error!</span>
                                         </div>
                                     </div>
                                 </form>
@@ -1557,11 +1562,13 @@
                                             <select class="journey-from" name="journey-from">
                                                 <option>From</option>
                                             </select>
+                                            <span class="msg-error"></span>
                                         </div>
                                         <div class="native-select">
                                             <select class="journey-to" name="journey-to">
                                                 <option>To</option>
                                             </select>
+                                            <span class="msg-error"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -1569,6 +1576,7 @@
                                             <select class="school" name="school">
                                                 <option>School</option>
                                             </select>
+                                            <span class="msg-error"></span>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -1576,6 +1584,7 @@
                                             <select class="level" name="level">
                                                 <option>Level</option>
                                             </select>
+                                            <span class="msg-error"></span>
                                         </div>
                                     </div>
                                 </form>
@@ -1822,6 +1831,7 @@
                         </div>
                     </div>
                     <div class="panel-body">
+                        <a class="btn close-modal" data-modal="#modal-portfolio-view" href="javascript:;">+</a>
                         <div class="portfolio-container">
                             <img src="{{asset('img/portfolio-img1.png')}}">
                             <div class="description">
