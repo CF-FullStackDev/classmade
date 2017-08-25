@@ -1653,6 +1653,7 @@
                                     </div>
                                     <div class="presentation-slide">
                                         <div class="dashed-container">
+                                            <a class="btn remove-slide" href="javascript:;">+</a>
                                             <img class="file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
                                         </div>
                                         <textarea class="word-count-input" maxlength="300" data-count="#portfolio-image-description2" name="" placeholder="Description"></textarea>

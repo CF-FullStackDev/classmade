@@ -1791,6 +1791,18 @@ body.modal-open {
   box-sizing: border-box;
 }
 
+.modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container a.remove-slide {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  font-size: 25px;
+  color: #F18448;
+  z-index: 2;
+  color: #fff;
+}
+
 .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img {
   height: 38px;
   width: 50px;
