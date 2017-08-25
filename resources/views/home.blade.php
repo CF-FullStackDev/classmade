@@ -1636,6 +1636,12 @@
                                         </div>
                                         <textarea name="" placeholder="Description"></textarea>
                                     </div>
+                                    <div class="presentation-slide">
+                                        <div class="dashed-container">
+                                            <img class="file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
+                                        </div>
+                                        <textarea name="" placeholder="Description"></textarea>
+                                    </div>
                                     <div class="add-slide">
                                         <a href="#">Add Another</a>
                                         <div class="add-button"><span class="plus-icon"></span></div>

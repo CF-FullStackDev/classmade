@@ -1845,10 +1845,14 @@ body.modal-open {
 
                         .presentation-slide{
                             color: $primary-color;
+                            position: relative;
+                            margin-bottom: 15px;
 
                             .dashed-container{
                                 padding: 20px;
                                 cursor: pointer;
+                                min-height: 126px;
+                                box-sizing:border-box;
 
                                 img{
 
@@ -1856,6 +1860,15 @@ body.modal-open {
                                     height: 38px;
                                     width: 50px;
                                     margin-bottom: 20px;
+
+                                    &.file-uploaded{
+                                        object-fit:cover;
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 771px;
+                                        height: 126px;
+                                    }
                                 }
 
                                 span{

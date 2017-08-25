@@ -1734,17 +1734,31 @@ body.modal-open {
 
 .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide {
   color: #F18448;
+  position: relative;
+  margin-bottom: 15px;
 }
 
 .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container {
   padding: 20px;
   cursor: pointer;
+  min-height: 126px;
+  box-sizing: border-box;
 }
 
 .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img {
   height: 38px;
   width: 50px;
   margin-bottom: 20px;
+}
+
+.modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img.file-uploaded {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 771px;
+  height: 126px;
 }
 
 .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container span {
