@@ -1513,7 +1513,7 @@
                         <div class="journey-modal-container">
                             <div class="journey-container">
                                 <div class="add-photo">
-                                    <img src="{{asset('img/journey-placeholder.png')}}">
+                                    <img class="file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
                                 </div>
                                 <form class="form-horizontal journey-form">
                                     <input type="file" name="journey-photo" class="form-hidden">
