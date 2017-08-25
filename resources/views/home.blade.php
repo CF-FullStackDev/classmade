@@ -1512,15 +1512,14 @@
                         </div>
                         <div class="journey-modal-container">
                             <div class="journey-container">
-                                <div class=" add-photo">
-
+                                <div class="add-photo">
+                                    <img src="{{asset('img/journey-placeholder.png')}}">
                                 </div>
                                 <form class="form-horizontal journey-form">
                                     <input type="file" name="journey-photo" class="form-hidden">
                                     <div class="form-group">
                                         <div class="native-select">
                                             <select class="journey-from" name="journey-from">
-                                                <option>From</option>
                                                 <option>From</option>
                                             </select>
                                         </div>
@@ -1546,11 +1545,40 @@
                                     </div>
                                 </form>
                              </div>
-                            <div class="journey-container">
-                                 <div class="journey-placeholder">
-                                     Click to add Another Level
-                                 </div>
-                            </div>
+                             <div class="journey-container">
+                                <div class="add-photo">
+                                    
+                                </div>
+                                <form class="form-horizontal journey-form">
+                                    <input type="file" name="journey-photo" class="form-hidden">
+                                    <div class="form-group">
+                                        <div class="native-select">
+                                            <select class="journey-from" name="journey-from">
+                                                <option>From</option>
+                                            </select>
+                                        </div>
+                                        <div class="native-select">
+                                            <select class="journey-to" name="journey-to">
+                                                <option>To</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="native-select">
+                                            <select class="school" name="school">
+                                                <option>School</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                            <div class="native-select">
+                                            <select class="level" name="level">
+                                                <option>Level</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                             </div>
                         </div>
                         <a class="request-school open-modal" href="#" data-modal="#modal-request-school">Click to Request School</a>
                         <div class="button-right highlight-video-button">
