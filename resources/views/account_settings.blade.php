@@ -230,8 +230,37 @@
                             <div id="tab-journey" class="tab-content">
                                 <span class="header">Journey</span>
                                 <form action="">
+                                     <div class="account-journey">
+                                        <div class="school-img-holder">
+                                            
+                                        </div>
+
+                                        <div class="account-select inline1">
+                                            <select name="">
+                                                <option selected="selected">From</option>
+                                            </select>
+                                        </div>
+                                        <div class="account-select inline2">
+                                            <select name="">
+                                                <option selected="selected">To</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="account-select">
+                                            <select name="">
+                                                <option selected="selected">School</option>
+                                            </select>
+                                        </div>
+                                        <div class="account-select">
+                                            <select name="">
+                                                <option selected="selected">Level</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                     <div class="account-journey">
-                                        <div class="school-img-holder"></div>
+                                        <div class="school-img-holder">
+                                            <img class="file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
+                                        </div>
 
                                         <div class="account-select inline1">
                                             <select name="">

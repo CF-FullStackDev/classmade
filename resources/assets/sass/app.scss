@@ -2847,7 +2847,13 @@ ul.dropdown-menu {
                 background-color: #D8DADD;
                 margin: 0 auto;
                 display: block;
-                margin-bottom: 25px
+                margin-bottom: 25px;
+
+                .file-uploaded{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
 
             .account-select {
