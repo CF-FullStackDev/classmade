@@ -1808,7 +1808,10 @@
                         <div class="description">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quic progres Junk MTV quic graced by fox whelps. Bawds jog, flick quartz, vex nymphver a lazy dog. </div>
                         <div class="button-group">
                             <button class="btn btn-primary unpublish">Unpublish</button>
-                            <button class="btn btn-primary edit">Edit</button>
+                            <button class="btn btn-primary ghost-button edit">Edit</button>
+                        </div>
+                        <div class="button-group">
+                            <button class="btn btn-primary ghost-button appreciate">Appreciate</button>
                         </div>
                     </div>
                     <div class="panel-body">

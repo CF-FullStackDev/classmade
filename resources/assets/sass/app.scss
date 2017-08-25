@@ -2461,6 +2461,7 @@ body.modal-open {
                     display: block !important;
                     position: relative;
                     top: 62px;
+                    margin-bottom: 15px;
 
                     button{
                         font-size: 12px;
@@ -2484,6 +2485,10 @@ body.modal-open {
                         background-color: #fff;
                         top: 0px;
                         left: 100px;
+                    }
+
+                    .appreciate{
+                        width: 114px;
                     }
                 }
             }
@@ -6062,6 +6067,10 @@ form{
                 width: 100%;
                 height: 100%;
             }
+        }
+
+        &:focus{
+            border-color: $primary-color;
         }
     }
 
