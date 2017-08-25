@@ -1413,6 +1413,7 @@
                                         <div class="input-group-half">
                                             <label>Title</label>
                                             <input type="text" id="Title" name="Title">
+                                            <span class="msg-error">Sample Error</span>
                                         </div>
                                         <div class="input-group-half">
                                             <label>Date Received</label>
@@ -1597,6 +1598,10 @@
                 <div class="panel">
                     <div class="panel-header">
                         <span class="title"><i class="bell-icon"></i>Portfolio Update</span>
+                        <div class="panel-button-right">
+                            <button class="change-photo-portfolio ghost-button">Change to Photo</button>
+                            <button class="change-file-portfolio ghost-button">Change to File</button>
+                        </div>
                     </div>
                     <div class="panel-body">
                         <div class="dashed-tips-container">
@@ -1610,8 +1615,8 @@
                                     <label>Title</label>
                                     <input type="text" name="title">
                                     <label>Portfolio Description</label>
-                                    <textarea></textarea>
-                                    <span class="word-count">300</span>
+                                    <textarea name="" maxlength="300" class="word-count-input" data-count="#portfolio-description"></textarea>
+                                    <span class="word-count" id="portfolio-description" data-length="300">300</span>
                                 </div>
                                 <div class="add-file-container">
                                     <div class="title">Add File</div>
@@ -1622,8 +1627,8 @@
                                             <span>Upload your presentation here</span>
                                         </div>
                                     </div>
-                                    <textarea class="input-description" placeholder="Description"></textarea>
-                                    <span class="word-count">300</span>
+                                    <textarea class="input-description word-count-input" maxlength="300" data-count="#portfolio-file-description" placeholder="Description"></textarea>
+                                    <span class="word-count" id="portfolio-file-description" data-length="300">300</span>
                                 </div>
                                 <span class="or">Or</span>
                                 <div class="create-presentation-container">
@@ -1634,13 +1639,15 @@
                                             <img src="{{asset('img/icons/camera_icon.png')}}">
                                             <span>Click to Add Photo</span>
                                         </div>
-                                        <textarea name="" placeholder="Description"></textarea>
+                                        <textarea class="word-count-input" maxlength="300" data-count="#portfolio-image-description1" name="" placeholder="Description"></textarea>
+                                        <span class="word-count" id="portfolio-image-description1" data-length="300">300</span>
                                     </div>
                                     <div class="presentation-slide">
                                         <div class="dashed-container">
                                             <img class="file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
                                         </div>
-                                        <textarea name="" placeholder="Description"></textarea>
+                                        <textarea class="word-count-input" maxlength="300" data-count="#portfolio-image-description2" name="" placeholder="Description"></textarea>
+                                        <span class="word-count" id="portfolio-image-description2" data-length="300">300</span>
                                     </div>
                                     <div class="add-slide">
                                         <a href="#">Add Another</a>
