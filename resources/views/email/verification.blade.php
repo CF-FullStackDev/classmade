@@ -22,11 +22,11 @@
             <td align="center" style="border:none">
                 <span style="font-size: 18px;text-align: center;color: #7E7C7C;display: block;;font-weight: 500">Hi Estrella,</span>
                 <span style="font-size: 18px;text-align: center;color: #7E7C7C;margin-top: 18px;display: block;font-weight: 500">Welcome to Classmade!</span>
-                <img style="width: 332px;height:250px;object-fit: contain;max-width: 332px;max-height: 250px" src="{{asset('img/verification.png')}}">
+                <img style="width: 332px;height:250px;object-fit: contain;max-width: 332px;max-height: 250px;margin-top: 15px;border:none" src="{{asset('img/verification.png')}}">
                 <p style="font-size: 12px;color: #7E7C7C;line-height: 14px;font-weight: 500;width: 358px;">Your account has been created. In order to login, please verify your account by clicking the button below</p>
                 <a style="background-color: #F18448;border-radius: 20px;color: #FFFFFF;font-size: 14px;padding: 8px 14px 8px 14px;box-sizing: border-box;text-decoration: none;margin-top: 25px;margin-bottom:25px;display: block;width: 164px;" href="#">Verify my account</a>
                 <p style="color: #A1A1A1;font-size: 12px;margin-bottom: 0px;width: 440px;text-align: center;">If the button doesn't work, verify your account here</p>
-                <a style="color: #F18448;font-size:12px;display: block;margin-bottom: 15px;width: 275px;;text-align: center;word-wrap: break-word;" href="#">http://classmade.com/public/user/activation/kXvZvBbvOYhwzjgMWSpM8ukBa6c1hd</a>
+                <a style="color: #F18448;font-size:12px;display: block;margin-bottom: 15px;width: 275px;;text-align: center;word-wrap: break-word;text-decoration: none" href="#">http://classmade.com/public/user/activation/kXvZvBbvOYhwzjgMWSpM8ukBa6c1hd</a>
                 <span style="font-size: 12px;color: #A1A1A1;">Best regard, <br> The Classmade Team</span>
             </td>
         </tr>
