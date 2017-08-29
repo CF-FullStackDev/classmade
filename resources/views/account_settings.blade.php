@@ -138,6 +138,13 @@
                                         <span>Click to add Photo</span>
                                     </div>
 
+                                    <div class="account-photo account-photo-uploaded">
+                                        <img class="file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
+                                        <img src="{{asset('img/icons/camera_icon.png')}}">
+                                        <span>Click to add Photo</span>
+                                    </div>
+
+
                                     <span class="header">Personal Information</span>
                                     <label>Last Name</label>
                                     <input type="text" name="" required>
