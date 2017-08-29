@@ -27,6 +27,10 @@ Route::get('/connection', function () {
     return view('connection');
 });
 
+Route::get('/email', function () {
+    return view('email/verification');
+});
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('/');
