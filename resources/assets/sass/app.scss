@@ -2931,7 +2931,7 @@ ul.dropdown-menu {
                 &:after{
                     content:'';
                     transition: 0.3s ease-out all;
-                    background: rgba(0,0,0,0.2);
+                    background: linear-gradient(180deg, #353535 0%, #8E4C0D 100%);
                     z-index: 1;
                     display: inline-block;
                     position: absolute;
@@ -2976,7 +2976,7 @@ ul.dropdown-menu {
                 &:hover{
                     
                     &:after{
-                        opacity: 1.0;
+                        opacity: 0.5;
                     }
 
                     img{

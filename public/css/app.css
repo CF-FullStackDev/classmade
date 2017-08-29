@@ -2809,7 +2809,7 @@ ul.dropdown-menu.notification li:not([class='header']) .media .media-right img {
 .panel.account-content .panel-body .account-photo.account-photo-uploaded:after {
   content: '';
   transition: 0.3s ease-out all;
-  background: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(180deg, #353535 0%, #8E4C0D 100%);
   z-index: 1;
   display: inline-block;
   position: absolute;
@@ -2852,7 +2852,7 @@ ul.dropdown-menu.notification li:not([class='header']) .media .media-right img {
 }
 
 .panel.account-content .panel-body .account-photo.account-photo-uploaded:hover:after {
-  opacity: 1.0;
+  opacity: 0.5;
 }
 
 .panel.account-content .panel-body .account-photo.account-photo-uploaded:hover img {
