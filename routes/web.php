@@ -31,6 +31,10 @@ Route::get('/email', function () {
     return view('email/verification');
 });
 
+Route::get('/transcript', function () {
+    return view('email/transcript');
+});
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('/');
