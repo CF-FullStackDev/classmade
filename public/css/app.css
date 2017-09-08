@@ -110,7 +110,7 @@ a {
   text-align: center;
 }
 
-.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .journey-form, .highlight-placeholder img {
+.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .journey-form, .highlight-placeholder img, .portfolio-single #content .panel-body .portfolio-container img {
   display: block;
   margin: 0 auto;
 }
@@ -1791,16 +1791,40 @@ body.modal-open {
   box-sizing: border-box;
 }
 
-.modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container a.remove-slide {
+.modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container.uploaded:after {
+  content: '';
+  transition: 0.3s ease-out all;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.3);
   position: absolute;
-  top: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 126px;
+  opacity: 0;
+}
+
+.modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container.uploaded a.remove-slide {
+  transition: 0.3s ease-out all;
+  position: absolute;
+  top: -8px;
   right: 7px;
   -webkit-transform: rotate(315deg);
           transform: rotate(315deg);
   font-size: 25px;
   color: #F18448;
-  z-index: 2;
+  z-index: 5;
   color: #fff;
+  opacity: 0;
+}
+
+.modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container.uploaded:hover:after {
+  opacity: 1.0;
+}
+
+.modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container.uploaded:hover a.remove-slide {
+  top: 0px;
+  opacity: 1.0;
 }
 
 .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img {
@@ -5914,6 +5938,142 @@ body#app-home footer ul > li:last-child:after {
   top: 10px;
   position: relative;
   cursor: pointer;
+}
+
+.portfolio-single #content {
+  border-radius: 5px;
+}
+
+.portfolio-single #content .panel {
+  background-color: none !important;
+  border-radius: 5px;
+}
+
+.portfolio-single #content .panel-header {
+  padding: 89px 25px 89px 25px;
+  display: inline-block !important;
+  box-sizing: border-box;
+  position: relative !important;
+  left: 0px;
+  top: 0px;
+  height: 449px !important;
+  width: 226px !important;
+  background-color: #fff;
+  float: left;
+  display: inline-block;
+  border-top-left-radius: 5px;
+}
+
+.portfolio-single #content .panel-header .title {
+  padding: 0px !important;
+  font-size: 18px;
+  font-weight: 600;
+  color: #7E7C7C;
+  margin-bottom: 5px;
+  display: block !important;
+}
+
+.portfolio-single #content .panel-header .info {
+  padding: 0px !important;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 13px;
+  display: block;
+}
+
+.portfolio-single #content .panel-header .description {
+  padding: 0px !important;
+  color: #A1A1A1;
+  width: 211px;
+  font-size: 12px;
+}
+
+.portfolio-single #content .panel-header .description:after {
+  content: '';
+  display: inline-block;
+  height: 2px;
+  background-color: #F2F2F2;
+  width: 190px;
+  left: 0px;
+  top: 27px;
+  position: relative;
+}
+
+.portfolio-single #content .panel-header .button-group {
+  display: block !important;
+  position: relative;
+  top: 25px;
+  left: 20px;
+  margin-bottom: 15px;
+}
+
+.portfolio-single #content .panel-header .button-group button {
+  font-size: 12px;
+  display: inline-block;
+  position: absolute;
+  min-width: 62px;
+  height: 30px;
+}
+
+.portfolio-single #content .panel-header .button-group .back {
+  color: #F18448;
+  background-color: #fff;
+  top: 0px;
+  left: 0px;
+  font-size: 12px;
+  padding: 7px 22px 7px 22px;
+}
+
+.portfolio-single #content .panel-body {
+  display: inline-block;
+  width: 653px;
+  min-height: 700px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: 1px solid #F2F2F2;
+}
+
+.portfolio-single #content .panel-body a.close-modal {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  font-size: 25px;
+  color: #F18448;
+}
+
+.portfolio-single #content .panel-body .portfolio-container {
+  margin-bottom: 64px;
+}
+
+.portfolio-single #content .panel-body .portfolio-container img {
+  max-width: 100%;
+  max-height: 318px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 31px;
+}
+
+.portfolio-single #content .panel-body .portfolio-container .description {
+  color: #A1A1A1;
+  font-size: 12px;
+  max-width: 577px;
+}
+
+.portfolio-single #content .button-right {
+  margin-top: 110px;
+  text-align: right;
+}
+
+.portfolio-single #content .button-right button {
+  height: 30px;
+  min-width: 88px;
+}
+
+.portfolio-single #content .button-right button[type="reset"] {
+  background: #fff;
+  color: #F18448;
 }
 
 .ghost-button {

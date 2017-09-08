@@ -1652,7 +1652,7 @@
                                         <span class="word-count" id="portfolio-image-description1" data-length="300">300</span>
                                     </div>
                                     <div class="presentation-slide">
-                                        <div class="dashed-container">
+                                        <div class="dashed-container uploaded">
                                             <a class="btn remove-slide" href="javascript:;">+</a>
                                             <img class="file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
                                         </div>

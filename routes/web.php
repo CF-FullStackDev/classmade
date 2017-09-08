@@ -35,6 +35,10 @@ Route::get('/transcript-email', function () {
     return view('email/transcript');
 });
 
+Route::get('/portfolio-single', function () {
+    return view('portfolio-single');
+});
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('/');
