@@ -4003,43 +4003,46 @@ body#app-home footer ul > li:last-child:after {
   opacity: 0.2;
 }
 
-.profile-glance div.profile-info .info-container .chatmade-icon {
+.profile-glance div.profile-info .info-container .glance-buttons {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 370px;
+}
+
+.profile-glance div.profile-info .info-container .glance-buttons .chatmade-icon {
   height: 31px;
   width: 31px;
-  position: absolute;
-  top: 31px;
-  right: 180px;
   cursor: pointer;
+  float: right;
+  margin-right: 5px;
 }
 
-.profile-glance div.profile-info .info-container .add-classmade {
-  position: absolute;
-  right: 30px;
-  top: 30px;
+.profile-glance div.profile-info .info-container .glance-buttons .add-classmade {
   font-size: 12px;
   padding: 0px;
   min-width: 140px;
   height: 31px;
+  float: right;
+  margin-right: 5px;
 }
 
-.profile-glance div.profile-info .info-container .request .accept-request {
-  position: absolute;
-  right: 177px;
-  top: 30px;
+.profile-glance div.profile-info .info-container .glance-buttons .accept-request {
   font-size: 12px;
   padding: 0px;
   min-width: 140px;
   height: 31px;
+  float: right;
+  margin-right: 5px;
 }
 
-.profile-glance div.profile-info .info-container .request .delete-request {
-  position: absolute;
-  right: 30px;
-  top: 30px;
+.profile-glance div.profile-info .info-container .glance-buttons .delete-request {
   font-size: 12px;
   padding: 0px;
   min-width: 140px;
   height: 31px;
+  float: right;
+  margin-right: 5px;
 }
 
 .highlight-data-container {

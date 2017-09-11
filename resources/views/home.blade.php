@@ -44,11 +44,11 @@
                             <img src="{{asset('img/badge/problem-solving.png')}}">
                             <img src="{{asset('img/badge/trustworthy.png')}}" class="fade">
                         </div>
-                        <!-- <p class="chatmade-icon"></p> -->
-                        <button class="btn btn-primary add-classmade">Add Classmade</button>
-                        <div class="request">
-                            <button class="btn btn-primary accept-request">Accept Request</button>
+                        <div class="glance-buttons">
                             <button class="btn btn-primary delete-request">Delete Request</button>
+                            <button class="btn btn-primary accept-request">Accept Request</button>
+                            <!-- <button class="btn btn-primary add-classmade">Add Classmade</button>
+                            <p class="chatmade-icon"></p> -->
                         </div>
                     </div>
                 </div>
@@ -127,6 +127,7 @@
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
+                    <button class="heart-icon"></button>
                 </div>
                 <div class="highlight-photo-slick">
                     <div class='highlight-image-container'>
@@ -156,6 +157,7 @@
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
+                    <button class="heart-icon"></button>
                 </div>
                 <iframe width="960" height="420" src="http://youtube.com/embed/yOfT6mlbw30" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -172,6 +174,7 @@
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
+                    <button class="heart-icon"></button>
                 </div>
                 <video preload controls>
                     <source src="{{asset('img/achievement-video.mp4')}}" type="video/mp4"/>

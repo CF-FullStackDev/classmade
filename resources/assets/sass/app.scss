@@ -4150,44 +4150,45 @@ body {
                     }
                 }
 
-                .chatmade-icon{
-                    height: 31px;
-                    width: 31px;
-                    position: absolute;
-                    top: 31px;
-                    right: 180px;
-                    cursor: pointer;
-                }
-
-                .add-classmade {
+                .glance-buttons{
                     position: absolute;
                     right: 30px;
                     top: 30px;
-                    font-size: 12px;
-                    padding: 0px;
-                    min-width: 140px;
-                    height: 31px;
-                }
+                    width: 370px;
 
-                .request{
-                    .accept-request {
-                        position: absolute;
-                        right: 177px;
-                        top: 30px;
-                        font-size: 12px;
-                        padding: 0px;
-                        min-width: 140px;
+                    .chatmade-icon{
                         height: 31px;
+                        width: 31px;
+                        cursor: pointer;
+                        float: right;
+                        margin-right: 5px;
                     }
 
-                    .delete-request {
-                        position: absolute;
-                        right: 30px;
-                        top: 30px;
+                    .add-classmade {
                         font-size: 12px;
                         padding: 0px;
                         min-width: 140px;
                         height: 31px;
+                        float: right;
+                        margin-right: 5px;
+                    }
+
+                    .accept-request {
+                        font-size: 12px;
+                        padding: 0px;
+                        min-width: 140px;
+                        height: 31px;
+                        float: right;
+                        margin-right: 5px;
+                    }
+
+                    .delete-request {                        
+                        font-size: 12px;
+                        padding: 0px;
+                        min-width: 140px;
+                        height: 31px;
+                        float: right;
+                        margin-right: 5px;
                     }
                 }
             }
