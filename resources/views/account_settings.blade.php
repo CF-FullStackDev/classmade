@@ -46,7 +46,7 @@
                                 </a>
                                 <ul class="dropdown-menu notification">
                                     <li class="header">
-                                        <span>Notifaction</span>
+                                        <span>Notification</span>
                                     </li>
                                     <li>
                                         <div class="media">

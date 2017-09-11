@@ -44,8 +44,12 @@
                             <img src="{{asset('img/badge/problem-solving.png')}}">
                             <img src="{{asset('img/badge/trustworthy.png')}}" class="fade">
                         </div>
-                        <p class="chatmade-icon"></p>
+                        <!-- <p class="chatmade-icon"></p> -->
                         <button class="btn btn-primary add-classmade">Add Classmade</button>
+                        <div class="request">
+                            <button class="btn btn-primary accept-request">Accept Request</button>
+                            <button class="btn btn-primary delete-request">Delete Request</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -842,6 +846,7 @@
         </div>
 
         <button class="open-modal btn btn-primary" data-modal="#modal-classmade-profile">Save Classmade Profile</button>
+        <button class="open-modal btn btn-primary" data-modal="#modal-onboarding">Onboarding Modal</button>
         <!-- End of Review -->
 
         <!-- Connections -->
@@ -1874,6 +1879,36 @@
                                     <button type="submit" class="btn btn-primary">Choose</button>
                                 </div>
                             </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-dialog">
+        <div class="modal-body profile-onboarding" id="modal-onboarding">
+            <div class="content">
+                <div class="panel">
+                    <!-- <div class="panel-header">
+                        <span class="title"><i class="bell-icon"></i>Request School</span>
+                    </div> -->
+                    <div class="panel-body">
+                        <div class='onboarding-wrapper'>
+                            <div class="slick-onboarding">
+                                <div class="first-slide">
+                                    <img class="center" src="{{asset('img/verification.png')}}">
+                                    <span class="text-center">Welcome to Classmade, let’s get started!</span>
+                                    <p class="text-center">Classmade is a social media platform for students to express their passion and dedication through their profile, find new opportunities to become professional individuals, establish connection through teamwork, and essentially start their careers in school. </p>
+                                    <button data-slide="2" class="btn center btn-primary ghost-button onboarding-button">Skip</button>
+                                </div>
+                                <div class="second-slide">
+                                    <img class="center" src="{{asset('img/youtube.png')}}">
+                                    <span class="text-center">Welcome to Classmade, let’s get started!</span>
+                                    <p class="text-center">Classmade is a social media platform for students to express their passion and dedication through their profile, find new opportunities to become professional individuals, establish connection through teamwork, and essentially start their careers in school. </p>
+                                    <button class="btn center btn-primary ghost-button onboarding-button close-modal" data-modal="#modal-onboarding">Got it</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

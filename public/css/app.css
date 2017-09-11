@@ -2321,6 +2321,173 @@ body.modal-open {
   font-size: 14px;
 }
 
+.modal-body.profile-onboarding {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  padding: 0;
+  box-shadow: 0 0 4px 0 #D6D6D6;
+  border-radius: 3px;
+  width: 880px;
+  height: 532px;
+  box-shadow: 0 2px 20px 0 #A1A1A1;
+  border-radius: 10px;
+}
+
+.modal-body.profile-onboarding .content {
+  height: 100%;
+}
+
+.modal-body.profile-onboarding .content .panel-body .form-horizontal label {
+  display: block;
+  font-size: 14px;
+  color: #7E7C7C;
+  margin-bottom: 23px;
+}
+
+.modal-body.profile-onboarding .content .panel-body .form-horizontal input {
+  height: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.modal-body.profile-onboarding .content .panel-body .form-horizontal .native-select {
+  width: 100%;
+}
+
+.modal-body.profile-onboarding .content .panel-body .form-horizontal .native-select:after {
+  top: 52px;
+}
+
+.modal-body.profile-onboarding .content .panel-body .form-horizontal .native-select label {
+  font-weight: 500;
+}
+
+.modal-body.profile-onboarding .content .panel-body .form-horizontal .native-select select {
+  width: 100%;
+}
+
+.modal-body.profile-onboarding .content .panel-body .form-horizontal .button-right {
+  margin-top: 15px;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding {
+  height: 532px;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .slick-list {
+  height: 532px;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .first-slide {
+  padding-bottom: 20px;
+  outline: 0;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .first-slide img {
+  margin-bottom: 30px;
+  height: 265px;
+  max-width: 441px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .first-slide span {
+  font-size: 16px;
+  color: #F18448;
+  margin-bottom: 15px;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .first-slide p {
+  font-size: 12px;
+  color: #A1A1A1;
+  text-align: justify;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .first-slide button {
+  min-width: 86px;
+  font-size: 14px;
+  height: 30px;
+  position: relative;
+  bottom: -51px;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .second-slide {
+  padding-bottom: 20px;
+  outline: 0;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .second-slide img {
+  margin-bottom: 30px;
+  height: 265px;
+  max-width: 441px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .second-slide span {
+  font-size: 16px;
+  color: #F18448;
+  margin-bottom: 15px;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .second-slide p {
+  font-size: 12px;
+  color: #A1A1A1;
+  text-align: justify;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .second-slide button {
+  min-width: 86px;
+  font-size: 14px;
+  height: 30px;
+  position: relative;
+  bottom: -51px;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .slick-dots {
+  bottom: 141px;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .slick-dots li {
+  margin: -2px;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .slick-dots li button:before {
+  transition: 0.2s ease-out all;
+  color: #D8D8D8;
+  font-size: 8px;
+  opacity: 1.0;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .slick-dots li button:hover:before {
+  color: #F18448;
+}
+
+.modal-body.profile-onboarding .content .panel-body .onboarding-wrapper .slick-onboarding .slick-dots li.slick-active button:before {
+  color: #F18448;
+}
+
+.modal-body.profile-onboarding .content .button-right {
+  margin-top: 110px;
+  text-align: right;
+}
+
+.modal-body.profile-onboarding .content .button-right button {
+  height: 30px;
+  min-width: 88px;
+  border: 1px solid #F18448;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.modal-body.profile-onboarding .content .button-right button[type="reset"] {
+  background: #fff;
+  color: #F18448;
+  font-size: 14px;
+}
+
 .modal-body .review-content {
   text-align: left;
   border-top: 2px solid #F2F2F2;
@@ -3846,6 +4013,26 @@ body#app-home footer ul > li:last-child:after {
 }
 
 .profile-glance div.profile-info .info-container .add-classmade {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 12px;
+  padding: 0px;
+  min-width: 140px;
+  height: 31px;
+}
+
+.profile-glance div.profile-info .info-container .request .accept-request {
+  position: absolute;
+  right: 177px;
+  top: 30px;
+  font-size: 12px;
+  padding: 0px;
+  min-width: 140px;
+  height: 31px;
+}
+
+.profile-glance div.profile-info .info-container .request .delete-request {
   position: absolute;
   right: 30px;
   top: 30px;

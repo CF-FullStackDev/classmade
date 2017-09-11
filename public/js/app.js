@@ -1010,6 +1010,11 @@ $(function () {
         dots: true
     });
 
+    $('.slick-onboarding').slick({
+        arrows: false,
+        dots: true
+    });
+
     function readURL(input, tar) {
         if (input.files && input.files[0]) {
             // got sth
@@ -1114,6 +1119,12 @@ $(function () {
 
     $(document).on('mouseover', 'option', function (e) {
         $(this).css('background', 'red');
+    });
+
+    $('button[data-slide]').click(function (e) {
+        e.preventDefault();
+        var slideno = $(this).data('slide');
+        $('.slick-onboarding').slick('slickGoTo', slideno - 1);
     });
 });
 
