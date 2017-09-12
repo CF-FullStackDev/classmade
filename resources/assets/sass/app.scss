@@ -6624,6 +6624,32 @@ form{
     color: #F54B5E;
 }
 
+.heart-button{
+    z-index: 1;
+}
+
+.profile-avatar-no-hover{
+    &:after{
+        display: none !important;
+    }
+
+    .profile-hover{
+        display: none !important;
+    }
+
+
+}
+
+.cover-no-hover{
+    &:after{
+        display: none !important;
+    }
+
+    .profile-background-hover{
+        display: none !important;
+    }
+}
+
 // End of Global Forms CSS
 
 @media only screen and (max-device-width: 1024px) {

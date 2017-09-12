@@ -6373,6 +6373,26 @@ form select:focus {
   color: #F54B5E;
 }
 
+.heart-button {
+  z-index: 1;
+}
+
+.profile-avatar-no-hover:after {
+  display: none !important;
+}
+
+.profile-avatar-no-hover .profile-hover {
+  display: none !important;
+}
+
+.cover-no-hover:after {
+  display: none !important;
+}
+
+.cover-no-hover .profile-background-hover {
+  display: none !important;
+}
+
 @media only screen and (max-device-width: 1024px) {
   .login-bg {
     background-attachment: scroll;

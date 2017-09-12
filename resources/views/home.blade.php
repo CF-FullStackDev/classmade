@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="profile-background-container">
+<div id="profile-background-container" class="cover-no-hover">
     <img src="{{asset('img/profile-background.jpg')}}" alt="Profile Cover">
-    <button type="button" class="heart-icon"></button>
+    <button type="button" class="heart-button heart-icon"></button>
     <div class="profile-background-hover open-modal" data-modal="#modal-cover">
         <img src="{{asset('img/icons/camera_icon.png')}}">
         <span>Click to upload Photo</span>
@@ -14,9 +14,9 @@
     <div id="content">
         <div class="panel">
             <div class="profile-glance">
-                <div class="profile-avatar">
+                <div class="profile-avatar profile-avatar-no-hover">
                     <img src="{{asset('img/profile-avatar.png')}}">
-                    <button type="button" class="heart-icon"></button>
+                    <button type="button" class="heart-button heart-icon"></button>
                     <div class="profile-hover open-modal" data-modal="#modal-avatar">
                         <img src="{{asset('img/icons/camera_icon.png')}}">
                         <span>Click to upload Photo</span>
@@ -47,8 +47,8 @@
                         <div class="glance-buttons">
                             <button class="btn btn-primary delete-request">Delete Request</button>
                             <button class="btn btn-primary accept-request">Accept Request</button>
-                            <!-- <button class="btn btn-primary add-classmade">Add Classmade</button>
-                            <p class="chatmade-icon"></p> -->
+                            <!-- <button class="btn btn-primary add-classmade">Add Classmade</button> -->
+                            <p class="chatmade-icon"></p>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
-                    <button class="heart-icon"></button>
+                    <button class="heart-button heart-button heart-icon"></button>
                 </div>
                 <div class="highlight-photo-slick">
                     <div class='highlight-image-container'>
@@ -157,7 +157,7 @@
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
-                    <button class="heart-icon"></button>
+                    <button class="heart-button heart-button heart-icon"></button>
                 </div>
                 <iframe width="960" height="420" src="http://youtube.com/embed/yOfT6mlbw30" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -174,7 +174,7 @@
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
-                    <button class="heart-icon"></button>
+                    <button class="heart-button heart-icon"></button>
                 </div>
                 <video preload controls>
                     <source src="{{asset('img/achievement-video.mp4')}}" type="video/mp4"/>
@@ -912,6 +912,23 @@
                             <div class="connection-button-group">
                                 <i class="btn-favorite favorite"></i>
                                 <button class="btn btn-primary">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="connection-container">
+                        <div class="connection-background-wrapper">
+                            <img src="{{asset('img/profile-background.jpg')}}" class="connection-image">
+                            <span class="name">Celia Dawson</span>
+                            <div class="connection-badge">
+                                <img src="{{asset('img/badge/organised.png')}}">
+                            </div>
+                        </div>
+                        <div class="connection-content">
+                            <img class="connection-profile-image" src="{{asset('img/profile-avatar.png')}}">
+                            <div class="connection-button-group">
+                                <button class="btn btn-primary">Accept Request</button>
+                                <button class="btn btn-primary">Delete Request</button>
                             </div>
                         </div>
                     </div>
