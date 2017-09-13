@@ -35,6 +35,10 @@ Route::get('/transcript-email', function () {
     return view('email/transcript');
 });
 
+Route::get('/authentication-email', function () {
+    return view('email/authentication');
+});
+
 Route::get('/portfolio-single', function () {
     return view('portfolio-single');
 });

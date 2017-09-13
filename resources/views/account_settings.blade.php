@@ -7,7 +7,10 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>Classmade</title>
-
+        <link rel="stylesheet" type="text/css" href="{{ asset('slick-1.6.0/slick/slick.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('slick-1.6.0/slick/slick-theme.css') }}">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="{{ asset('selectize/dist/css/selectize.css') }}"></script>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     </head>
@@ -339,5 +342,7 @@
         </div>
 
     <script src="{{{ asset('js/app.js') }}}"></script>
+    <script type="text/javascript" src="{{ asset('slick-1.6.0/slick/slick.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('selectize/dist/js/standalone/selectize.min.js') }}"></script>
     </body>
 </html>

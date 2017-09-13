@@ -355,9 +355,19 @@ $(function(){
     });
 
     $('button[data-slide]').click(function(e) {
-   e.preventDefault();
-   var slideno = $(this).data('slide');
-   $('.slick-onboarding').slick('slickGoTo', slideno - 1);
- });
+       e.preventDefault();
+       var slideno = $(this).data('slide');
+       $('.slick-onboarding').slick('slickGoTo', slideno - 1);
+     });
 
+    $('.selectize').selectize({
+        delimiter: ',',
+        persist: false,
+        create: function(input) {
+            return {
+                value: input,
+                text: input
+            }
+        }
+    });
 });

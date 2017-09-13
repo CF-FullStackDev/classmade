@@ -14,7 +14,7 @@
     <div id="content">
         <div class="panel">
             <div class="profile-glance">
-                <div class="profile-avatar profile-avatar-no-hover">
+                <div class="profile-avatar">
                     <img src="{{asset('img/profile-avatar.png')}}">
                     <button type="button" class="heart-button heart-icon"></button>
                     <div class="profile-hover open-modal" data-modal="#modal-avatar">

@@ -6266,6 +6266,55 @@ body#app-home footer ul > li:last-child:after {
   color: #F18448;
 }
 
+.selectize {
+  border: 1px solid #ccc;
+  width: 120px;
+  min-height: 30px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #fafafa url(../img/dropdown.png) no-repeat 93% 50%;
+  background-size: 20px;
+  line-height: 30px;
+  background-color: #FFFFFF;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.selectize input {
+  padding: 5px 8px;
+  width: 100%;
+  border: none !important;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+}
+
+.selectize input:focus {
+  outline: none;
+}
+
+.selectize .selectize-input {
+  padding: 5px;
+}
+
+.selectize .selectize-input .item {
+  display: inline-block;
+  border: 1px solid #F18448;
+  color: #F18448;
+  font-size: 14px;
+  padding: 3px 5px 3px 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  height: 20px;
+  line-height: 19px;
+}
+
+.selectize .selectize-input .item:last-child {
+  margin-right: 0px;
+}
+
 .ghost-button {
   border: 1px solid #F18448 !important;
   color: #F18448 !important;

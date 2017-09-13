@@ -1126,6 +1126,17 @@ $(function () {
         var slideno = $(this).data('slide');
         $('.slick-onboarding').slick('slickGoTo', slideno - 1);
     });
+
+    $('.selectize').selectize({
+        delimiter: ',',
+        persist: false,
+        create: function create(input) {
+            return {
+                value: input,
+                text: input
+            };
+        }
+    });
 });
 
 /***/ }),
