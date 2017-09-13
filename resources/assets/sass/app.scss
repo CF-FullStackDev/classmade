@@ -6522,6 +6522,9 @@ body {
 
         .selectize-input{
             padding: 5px;
+            width: 80%;
+            min-height: 28px;
+            box-sizing:border-box;
 
             .item{
                 display: inline-block;
@@ -6533,12 +6536,21 @@ body {
                 margin-right: 5px;
                 margin-bottom: 5px;
                 height: 20px;
-                line-height: 19px;
+                line-height: 13px;
+                box-sizing:border-box;
 
                 &:last-child{
                     margin-right: 0px;
                 }
             }
+
+            .multi{
+                background: none !important;
+            }
+        }
+
+        .selectize-dropdown{
+            display: none !important;
         }
     }
 

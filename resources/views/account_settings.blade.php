@@ -186,7 +186,7 @@
 
                                     <span class="header">Skill</span>
                                     <label>Add Skill</label>
-                                    <div class="account-select" style="width:245px;">
+                                    <div class="selectize" style="width:245px;">
                                         <select name="">
                                             <option value="">-</option>
                                         </select>
@@ -201,7 +201,7 @@
 
                                     <span class="header">Language</span>
                                     <label>Add Language</label>
-                                    <div class="account-select" style="width:245px;">
+                                    <div class="selectize" style="width:245px;">
                                         <select name="">
                                             <option value="">-</option>
                                         </select>

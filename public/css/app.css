@@ -6296,6 +6296,9 @@ body#app-home footer ul > li:last-child:after {
 
 .selectize .selectize-input {
   padding: 5px;
+  width: 80%;
+  min-height: 28px;
+  box-sizing: border-box;
 }
 
 .selectize .selectize-input .item {
@@ -6308,11 +6311,20 @@ body#app-home footer ul > li:last-child:after {
   margin-right: 5px;
   margin-bottom: 5px;
   height: 20px;
-  line-height: 19px;
+  line-height: 13px;
+  box-sizing: border-box;
 }
 
 .selectize .selectize-input .item:last-child {
   margin-right: 0px;
+}
+
+.selectize .selectize-input .multi {
+  background: none !important;
+}
+
+.selectize .selectize-dropdown {
+  display: none !important;
 }
 
 .ghost-button {
