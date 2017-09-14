@@ -1128,6 +1128,7 @@
                                                 <div class="progress" style="width:0%;"></div>
                                             </div>
                                         </div>
+
                                     </div>
                                     <!-- <div class="highlight-placeholder">
                                         <img src="{{asset('img/uploadhighlight.png')}}">
@@ -1563,7 +1564,7 @@
                         <div class="achievement-info">
                             <img src="{{asset('img/achievement-view-pic.png')}}">
                             <div class="description">
-                                The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quic progres Junk MTV quic graced by fox whelps. Bawds jog, flick quartz, vex nymphver a lazy dog. 
+                                The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quic progres Junk MTV quic graced by fox whelps. Bawds jog, flick quartz, vex nymphver a lazy dog.
                             </div>
                         </div>
                     </div>
@@ -1645,4 +1646,3 @@
 
 </div>
 @endsection
-

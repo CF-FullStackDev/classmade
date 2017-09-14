@@ -56,7 +56,7 @@ $(function(){
         e.preventDefault()
         $(this).parent().find('ul').first().toggle();
         $(this).parent().siblings().find('ul').hide(200);
-        $(this).parent().find('ul').mouseleave(function(){
+        $(this).parent().find('ul').mouseleave(function() {
             var thisUI = $(this);
             $('html').click(function(){
                 thisUI.hide();
@@ -249,7 +249,7 @@ $(function(){
         // Clear image container
         $("." + tar).removeAttr('src');
 
-        $.each(input.files, function(index, ff) // loop each image 
+        $.each(input.files, function(index, ff) // loop each image
             {
 
             var reader = new FileReader();
