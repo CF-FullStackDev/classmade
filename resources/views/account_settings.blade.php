@@ -344,5 +344,17 @@
     <script src="{{{ asset('js/app.js') }}}"></script>
     <script type="text/javascript" src="{{ asset('slick-1.6.0/slick/slick.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('selectize/dist/js/standalone/selectize.min.js') }}"></script>
+    <script type="text/javascript">
+        $('.selectize').selectize({
+            delimiter: ',',
+            persist: false,
+            create: function(input) {
+                return {
+                    value: input,
+                    text: input
+                }
+            }
+        });
+    </script>
     </body>
 </html>

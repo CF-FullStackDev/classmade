@@ -43,6 +43,10 @@ Route::get('/portfolio-single', function () {
     return view('portfolio-single');
 });
 
+Route::get('/transcript-single', function () {
+    return view('transcript-single');
+});
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('/');

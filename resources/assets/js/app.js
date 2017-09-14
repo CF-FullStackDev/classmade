@@ -244,7 +244,8 @@ $(function(){
 
     $('.slick-onboarding').slick({
         arrows: false,
-        dots: true
+        dots: true,
+        infinite: false
     });
 
     function readURL(input, tar) {
@@ -317,6 +318,10 @@ $(function(){
         $(this).removeClass('active');
     });
 
+    $(document).on('click','.tooltip-right',function(){
+        $(this).toggleClass('active');
+    });
+
 
     $(document).on('click','.button-dropdown',function(){
         $('.button-dropdown-menu').each(function(){
@@ -359,15 +364,4 @@ $(function(){
        var slideno = $(this).data('slide');
        $('.slick-onboarding').slick('slickGoTo', slideno - 1);
      });
-
-    $('.selectize').selectize({
-        delimiter: ',',
-        persist: false,
-        create: function(input) {
-            return {
-                value: input,
-                text: input
-            }
-        }
-    });
 });

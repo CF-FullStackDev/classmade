@@ -117,6 +117,16 @@ a {
     background-size: contain;
 }
 
+.portfolio-heart-icon {
+    @extend .icon;
+    background: url(../img/icons/heart.png) no-repeat center;
+}
+
+.share-icon {
+    @extend .icon;
+    background: url(../img/icons/share.png) no-repeat center;
+}
+
 .font-extraLight {
     font-family: $font-extraLight;
 }
@@ -2785,6 +2795,31 @@ body.modal-open {
 
                     .appreciate{
                         width: 114px;
+                    }
+                }
+
+                .button-group-other{
+                    display: block !important;
+                    position: relative;
+                    top: 62px;
+                    margin-bottom: 15px;
+                    padding-left: 0px !important;
+
+                    button{
+                        font-size: 12px;
+                        display: inline-block;
+                        position: absolute;
+                        min-width: 62px;
+                        height: 30px;
+
+                    }
+
+                    .portfolio-heart-icon{
+                        cursor: pointer;
+                    }
+
+                    .share-icon{
+                        cursor: pointer;
                     }
                 }
             }
@@ -6218,6 +6253,59 @@ body {
     }
 }
 
+.tooltip-right{
+    position: relative;
+
+    &+.details{
+        transition: 0.3s ease-out all;
+        opacity: 0;
+        position: absolute;
+        top: 74px;
+        left: 41px;
+        background-color: #F2F2F2;
+        border-radius: 5px;
+        height: 35px;
+        line-height: 2px;
+        width: 250px;
+        padding: 20px;
+        box-sizing:border-box;
+        color: #4A90E2;
+        font-size: 12px;
+        text-align: left;
+        z-index: 0;
+
+        &:after, &:before {
+            bottom: 100%;
+            left: 8%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        &:after {
+            border-bottom-color: #F2F2F2;
+            border-width: 9px;
+            margin-left: -9px;
+        }
+
+        &:before {
+            border-bottom-color: #F2F2F2;
+            border-width: 10px;
+            margin-left: -10px;
+        }
+    }
+
+    &.active{
+        &+.details{
+            opacity: 1.0;
+            z-index: 1;
+        }
+    }
+}
+
 .button-dropdown-menu{
     color: #9B9B9B;
     position: absolute;
@@ -6551,6 +6639,96 @@ body {
 
         .selectize-dropdown{
             display: none !important;
+        }
+    }
+
+    .transcript-single {
+        @extend .center;
+        background: #fff;
+        width: 477px;
+        padding: 0;
+        overflow: hidden;
+        height: 470px;
+        position: relative;
+        margin-top: 80px;
+        margin-bottom: 100px;
+        box-shadow: 0 0 4px 0 #D6D6D6;
+
+        .content {
+            margin-top: 10px;
+            padding: 20px 30px;
+
+            .header {
+                border-bottom: 1px solid #D8DADD;
+                display: block;
+                font-size: 18px;
+                color: #7E7C7C;
+                padding-bottom: 15px;
+            }
+
+            label {
+                display: block;
+                color: #7E7C7C;
+                margin-bottom: 10px;
+                margin-top: 20px;
+                font-size: 14px;
+            }
+
+            input {
+                height: 30px;
+                width: 395px;
+                border: 1px solid #DAD2D2;
+                border-radius: 5px;
+                background-color: #FFFFFF;
+                outline: 0;
+                padding: 0 10px;
+            }
+
+            .transcript-upload {
+                height: 30px;
+                width: 395px;
+                border: 1px solid #DAD2D2;
+                border-radius: 5px;
+                background-color: #FFFFFF;
+                outline: 0;
+                padding: 0 10px;
+                font-size: 12px;
+                color: #A1A1A1;
+                position: relative;
+                cursor: pointer;
+
+                span {
+                    display: inline-block;
+                    line-height: 30px;
+                    width: 360px
+                }
+
+                img {
+                    float: right;
+                    height: 15px;
+                    margin-top: 8px;
+                }
+            }
+
+            .btn-panel {
+                text-align: right;
+
+                button {
+                    height: 30px;
+                    min-width: 90px;
+                    font-size: 14px;
+                    margin-top: 38px;
+                }
+            }
+        }
+
+        a.close-modal {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            transform: rotate(315deg);
+            font-size: 25px;
+            color: #F18448
         }
     }
 

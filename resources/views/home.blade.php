@@ -127,8 +127,12 @@
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
+                </div>
+
+               <!--  <div class="panel-buttons">
                     <button class="heart-button heart-button heart-icon"></button>
                 </div>
+ -->
                 <div class="highlight-photo-slick">
                     <div class='highlight-image-container'>
                         <img src="{{asset('img/highlight-data.png')}}">
@@ -148,7 +152,7 @@
 
         <div class="panel section-one">
             <div class="panel-body highlight-data-container highlight-data-container-video">
-                <div class="panel-buttons">
+                <!-- <div class="panel-buttons">
                     <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
                     <div class="details">Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion.</div>
                     <button type="button" class="edit-icon button-dropdown"></button>
@@ -157,6 +161,10 @@
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
+                    <button class="heart-button heart-button heart-icon"></button>
+                </div> -->
+
+                <div class="panel-buttons">
                     <button class="heart-button heart-button heart-icon"></button>
                 </div>
                 <iframe width="960" height="420" src="http://youtube.com/embed/yOfT6mlbw30" frameborder="0" allowfullscreen></iframe>
@@ -174,8 +182,11 @@
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
-                    <button class="heart-button heart-icon"></button>
                 </div>
+
+                <!-- <div class="panel-buttons">
+                    <button class="heart-button heart-icon"></button>
+                </div> -->
                 <video preload controls>
                     <source src="{{asset('img/achievement-video.mp4')}}" type="video/mp4"/>
                 </video>
@@ -1852,8 +1863,10 @@
                             <button class="btn btn-primary unpublish">Unpublish</button>
                             <button class="btn btn-primary ghost-button edit">Edit</button>
                         </div>
-                        <div class="button-group">
-                            <button class="btn btn-primary ghost-button appreciate">Appreciate</button>
+                        <div class="button-group-other">
+                            <span class="portfolio-heart-icon"></span>
+                            <span class="share-icon tooltip-right"></span>
+                            <div class="details">https://invis.io/SJCYFLBV3</div>
                         </div>
                     </div>
                     <div class="panel-body">
