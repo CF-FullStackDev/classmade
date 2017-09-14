@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="profile-background-container">
+<div id="profile-background-container" class="cover-no-hover">
     <img src="{{asset('img/profile-background.jpg')}}" alt="Profile Cover">
-    <button type="button" class="heart-icon"></button>
+    <button type="button" class="heart-button heart-icon"></button>
     <div class="profile-background-hover open-modal" data-modal="#modal-cover">
         <img src="{{asset('img/icons/camera_icon.png')}}">
         <span>Click to upload Photo</span>
@@ -16,7 +16,7 @@
             <div class="profile-glance">
                 <div class="profile-avatar">
                     <img src="{{asset('img/profile-avatar.png')}}">
-                    <button type="button" class="heart-icon"></button>
+                    <button type="button" class="heart-button heart-icon"></button>
                     <div class="profile-hover open-modal" data-modal="#modal-avatar">
                         <img src="{{asset('img/icons/camera_icon.png')}}">
                         <span>Click to upload Photo</span>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="profile-info">
                     <div class="info-container">
-                        <span class="info-name">Estella Rios</span>
+                        <span class="info-name">Estella Rios <p class="check-icon"></p></span>
                         <span class="info-school">Student at Renaissance College | Hong Kong</span>
                         <div class="info-skills">
                             <ul>
@@ -44,7 +44,12 @@
                             <img src="{{asset('img/badge/problem-solving.png')}}">
                             <img src="{{asset('img/badge/trustworthy.png')}}" class="fade">
                         </div>
-                        <button class="btn btn-primary add-classmade">Add Classmade</button>
+                        <div class="glance-buttons">
+                            <button class="btn btn-primary delete-request">Delete Request</button>
+                            <button class="btn btn-primary accept-request">Accept Request</button>
+                            <!-- <button class="btn btn-primary add-classmade">Add Classmade</button> -->
+                            <p class="chatmade-icon"></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,7 +90,8 @@
                 <div>
                     <p class="bell-icon"></p><span>Highlight</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
+                        <div class="details">Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion.</div>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -113,13 +119,15 @@
         <div class="panel section-one">
             <div class="panel-body highlight-data-container">
                 <div class="panel-buttons">
-                    <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                    <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
+                    <div class="details">Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion.</div>
                     <button type="button" class="edit-icon button-dropdown"></button>
                     <ul class="button-dropdown-menu">
                         <li class="open-modal" data-modal="#modal-highlight">Edit</li>
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
+                    <button class="heart-button heart-button heart-icon"></button>
                 </div>
                 <div class="highlight-photo-slick">
                     <div class='highlight-image-container'>
@@ -141,13 +149,15 @@
         <div class="panel section-one">
             <div class="panel-body highlight-data-container highlight-data-container-video">
                 <div class="panel-buttons">
-                    <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                    <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
+                    <div class="details">Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion.</div>
                     <button type="button" class="edit-icon button-dropdown"></button>
                     <ul class="button-dropdown-menu">
                         <li class="open-modal" data-modal="#modal-highlight">Edit</li>
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
+                    <button class="heart-button heart-button heart-icon"></button>
                 </div>
                 <iframe width="960" height="420" src="http://youtube.com/embed/yOfT6mlbw30" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -156,13 +166,15 @@
         <div class="panel section-one">
             <div class="panel-body highlight-data-container highlight-data-container-video">
                 <div class="panel-buttons">
-                    <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                    <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
+                    <div class="details">Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion.</div>
                     <button type="button" class="edit-icon button-dropdown"></button>
                     <ul class="button-dropdown-menu">
                         <li class="open-modal" data-modal="#modal-highlight">Edit</li>
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
+                    <button class="heart-button heart-icon"></button>
                 </div>
                 <video preload controls>
                     <source src="{{asset('img/achievement-video.mp4')}}" type="video/mp4"/>
@@ -197,7 +209,8 @@
                 <div>
                     <p class="bell-icon"></p><span>Personal Statement</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Personal Statement is a way to express yourself, your skills and abilities, academic journey, extra-curricular activities, experiences, career plans, goals and passion"></button>
+                        <div class="details">Personal Statement is a way to express yourself, your skills and abilities, academic journey, extra-curricular activities, experiences, career plans, goals and passion</div>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -220,7 +233,8 @@
                 <div>
                     <p class="bell-icon"></p><span>Personal Statement</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Personal Statement is a way to express yourself, your skills and abilities, academic journey, extra-curricular activities, experiences, career plans, goals and passion"></button>
+                        <div class="details">Personal Statement is a way to express yourself, your skills and abilities, academic journey, extra-curricular activities, experiences, career plans, goals and passion</div>
                         <button type="button" class="edit-icon button-dropdown"></button>
                         <ul class="button-dropdown-menu">
                             <li class="open-modal" data-modal="#modal-personal">Edit</li>
@@ -271,7 +285,8 @@
                 <div>
                     <p class="bell-icon"></p><span>Achievement</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Achievement can be an academic award and an extracurricular accomplishment that showcases your skills, distinct personality, and chosen passion."></button>
+                        <div class="details">Achievement can be an academic award and an extracurricular accomplishment that showcases your skills, distinct personality, and chosen passion.</div>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -294,79 +309,8 @@
                 <div>
                     <p class="bell-icon"></p><span>Achievement</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
-                        <button type="button" class="add-icon open-modal" data-modal="#modal-achievement"></button>
-                    </div>
-                    <div class="panel-tabs">
-                        <div>
-                            <ul>
-                                <li>Draft</li>
-                                <li class="active">Publish</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel-body">
-                <div class="profile-achievement">
-                    <div class="achievement-container">
-                        <div class="achievement-image">
-                            <img src="{{asset('img/achievement-placeholder.png')}}">
-                            <button class="achievement-button"><p class="edit-icon"></p></button>
-                        </div>
-                        <div class="achievement-content">
-                            <span class="title">Cutie Awardee</span>
-                            <span class="date">Feb 2018</span>
-                            <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court.</span>
-                        </div>
-                    </div>
-
-                    <div class="achievement-container">
-                        <div class="achievement-image">
-                            <img src="{{asset('img/achievement-placeholder.png')}}">
-                            <button class="achievement-button"><p class="edit-icon"></p></button>
-                        </div>
-                        <div class="achievement-content">
-                            <span class="title">Cutie Awardee</span>
-                            <span class="date">Feb 2018</span>
-                            <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court.</span>
-                        </div>
-                    </div>
-
-                    <div class="achievement-container">
-                        <div class="achievement-image">
-                            <img src="{{asset('img/achievement-placeholder.png')}}">
-                            <button class="achievement-button"><p class="edit-icon"></p></button>
-                        </div>
-                        <div class="achievement-content">
-                            <span class="title">Cutie Awardee</span>
-                            <span class="date">Feb 2018</span>
-                            <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court this is a sample to overflow the container.</span>
-                        </div>
-                    </div>
-
-                    <div class="achievement-container">
-                        <div class="achievement-image">
-                            <img src="{{asset('img/achievement-placeholder.png')}}">
-                            <button class="achievement-button"><p class="edit-icon"></p></button>
-                        </div>
-                        <div class="achievement-content">
-                            <span class="title">Cutie Awardee</span>
-                            <span class="date">Feb 2018</span>
-                            <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court this is a sample to overflow the container.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel section-one">
-            <div class="panel-header">
-                <div>
-                    <p class="bell-icon"></p><span>Achievement</span>
-                    <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Achievement can be an academic award and an extracurricular accomplishment that showcases your skills, distinct personality, and chosen passion."></button>
+                        <div class="details">Achievement can be an academic award and an extracurricular accomplishment that showcases your skills, distinct personality, and chosen passion.</div>
                         <button type="button" class="add-icon open-modal" data-modal="#modal-achievement"></button>
                     </div>
                     <div class="panel-tabs">
@@ -400,7 +344,14 @@
                     </div>
                     <div class="achievement-row">
                         <img src="{{asset('img/achievement_thumb.png')}}" class="open-modal" data-modal="#modal-achievement-info">
-                        <button type="button" class="edit-icon open-modal" data-modal="#modal-achievement"></button>
+                        <button type="button" class="edit-icon button-dropdown"></button>
+                        <ul class="button-dropdown-menu">
+                            <li class="open-modal" data-modal="#modal-achievement">Edit</li>
+                            <li class="divider"></li>
+                            <li>Delete</li>
+                            <li class="divider"></li>
+                            <li>Unpublish</li>
+                        </ul>
                         <div class="content">
                             <div class="title">Academic Excellence Awards</div>
                             <div class="info">May 2012 PLDT-Smart Foundation</div>
@@ -409,7 +360,14 @@
                     </div>
                     <div class="achievement-row">
                         <img src="{{asset('img/achievement_thumb.png')}}" class="open-modal" data-modal="#modal-achievement-info">
-                        <button type="button" class="edit-icon open-modal" data-modal="#modal-achievement"></button>
+                        <button type="button" class="edit-icon button-dropdown"></button>
+                        <ul class="button-dropdown-menu">
+                            <li class="open-modal" data-modal="#modal-achievement">Edit</li>
+                            <li class="divider"></li>
+                            <li>Delete</li>
+                            <li class="divider"></li>
+                            <li>Unpublish</li>
+                        </ul>
                         <div class="content">
                             <div class="title">Academic Excellence Awards</div>
                             <div class="info">May 2012 PLDT-Smart Foundation</div>
@@ -446,7 +404,8 @@
                 <div>
                     <p class="bell-icon"></p><span>Journey</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Journey highlights your educational attainment and serves as an exposure of your aacademic and extracurricular development"></button>
+                        <div class="details">Journey highlights your educational attainment and serves as an exposure of your aacademic and extracurricular development.</div>
                     </div>
                     <div class="panel-tabs">
                     </div>
@@ -469,7 +428,8 @@
                 <div>
                     <p class="bell-icon"></p><span>Journey</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Journey highlights your educational attainment and serves as an exposure of your aacademic and extracurricular development"></button>
+                        <div class="details">Journey highlights your educational attainment and serves as an exposure of your aacademic and extracurricular development.</div>
                         <button type="button" class="add-icon open-modal" data-modal="#modal-journey"></button>
                     </div>
                     <div class="panel-tabs">
@@ -488,7 +448,15 @@
                     <div class="journey-container">
                         <div class="journey-image">
                             <img src="{{asset('img/journey-placeholder.png')}}">
-                            <button class="journey-button"><p class="edit-icon"></p></button>
+                            <button class="journey-button " ><p class="edit-icon-transparent button-dropdown"></p>
+                                <ul class="button-dropdown-menu">
+                                    <li class="open-modal" data-modal="#modal-journey">Edit</li>
+                                    <li class="divider"></li>
+                                    <li>Delete</li>
+                                    <li class="divider"></li>
+                                    <li>Unpublish</li>
+                                </ul>
+                            </button>
                         </div>
                         <div class="journey-content">
                             <span class="title">South Koleport</span>
@@ -500,7 +468,15 @@
                     <div class="journey-container">
                         <div class="journey-image">
                             <img src="{{asset('img/journey-placeholder.png')}}">
-                            <button class="journey-button"><p class="edit-icon"></p></button>
+                            <button class="journey-button " ><p class="edit-icon-transparent button-dropdown"></p>
+                                <ul class="button-dropdown-menu">
+                                    <li class="open-modal" data-modal="#modal-journey">Edit</li>
+                                    <li class="divider"></li>
+                                    <li>Delete</li>
+                                    <li class="divider"></li>
+                                    <li>Unpublish</li>
+                                </ul>
+                            </button>
                         </div>
                         <div class="journey-content">
                             <span class="title">South Koleport</span>
@@ -512,7 +488,15 @@
                     <div class="journey-container">
                         <div class="journey-image">
                             <img src="{{asset('img/journey-placeholder.png')}}">
-                            <button class="journey-button"><p class="edit-icon"></p></button>
+                            <button class="journey-button " ><p class="edit-icon-transparent button-dropdown"></p>
+                                <ul class="button-dropdown-menu">
+                                    <li class="open-modal" data-modal="#modal-journey">Edit</li>
+                                    <li class="divider"></li>
+                                    <li>Delete</li>
+                                    <li class="divider"></li>
+                                    <li>Unpublish</li>
+                                </ul>
+                            </button>
                         </div>
                         <div class="journey-content">
                             <span class="title">South Koleport</span>
@@ -524,7 +508,15 @@
                     <div class="journey-container">
                         <div class="journey-image">
                             <img src="{{asset('img/journey-placeholder.png')}}">
-                            <button class="journey-button"><p class="edit-icon"></p></button>
+                            <button class="journey-button " ><p class="edit-icon-transparent button-dropdown"></p>
+                                <ul class="button-dropdown-menu">
+                                    <li class="open-modal" data-modal="#modal-journey">Edit</li>
+                                    <li class="divider"></li>
+                                    <li>Delete</li>
+                                    <li class="divider"></li>
+                                    <li>Unpublish</li>
+                                </ul>
+                            </button>
                         </div>
                         <div class="journey-content">
                             <span class="title">South Koleport</span>
@@ -543,7 +535,8 @@
                 <div>
                     <p class="bell-icon"></p><span>Porfolio</span>
                     <div class="panel-buttons">
-                        <button type="button" class="question-icon tooltip" data-tooltip="Sample Tooltip"></button>
+                        <button type="button" class="question-icon tooltip" data-tooltip="Portfolio is a compilation of your creativity, skills and experiences that provides your fellow Classmades an insight of your character and abilities."></button>
+                        <div class="details">Portfolio is a compilation of your creativity, skills and experiences that provides your fellow Classmades an insight of your character and abilities.</div>
                         <button type="button" class="add-icon open-modal" data-modal="#modal-portfolio"></button>
                     </div>
                     <div class="panel-tabs">
@@ -559,11 +552,20 @@
             <div class="panel-body">
                 <div class="profile-portfolio">
                     <div class="portfolio-container">
-                        <div class="portfolio-image">
+                        <div class="portfolio-image open-modal" data-modal="#modal-portfolio-view">
                             <img src="{{asset('img/achievement-placeholder.png')}}">
                         </div>
                         <div class="portfolio-content">
-                            <button class="portfolio-edit-button"></button>
+                            <button class="portfolio-edit-button">
+                                <p class="edit-icon-transparent button-dropdown"></p>
+                                <ul class="button-dropdown-menu">
+                                    <li class="open-modal" data-modal="#modal-portfolio">Edit</li>
+                                    <li class="divider"></li>
+                                    <li>Delete</li>
+                                    <li class="divider"></li>
+                                    <li>Unpublish</li>
+                                </ul>
+                            </button>
                             <span class="title">Spanish Poster</span>
                             <span class="date">Feb 2018</span>
                             <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court.When be draw drew ye</span>
@@ -571,11 +573,20 @@
                     </div>
 
                     <div class="portfolio-container">
-                        <div class="portfolio-image">
+                        <div class="portfolio-image open-modal" data-modal="#modal-portfolio-view">
                             <img src="{{asset('img/achievement-placeholder.png')}}">
                         </div>
                         <div class="portfolio-content">
-                            <button class="portfolio-edit-button"></button>
+                            <button class="portfolio-edit-button">
+                                <p class="edit-icon-transparent button-dropdown"></p>
+                                <ul class="button-dropdown-menu">
+                                    <li class="open-modal" data-modal="#modal-portfolio">Edit</li>
+                                    <li class="divider"></li>
+                                    <li>Delete</li>
+                                    <li class="divider"></li>
+                                    <li>Unpublish</li>
+                                </ul>
+                            </button>
                             <span class="title">Spanish Poster</span>
                             <span class="date">Feb 2018</span>
                             <span class="description">When be draw drew ye. Defective n do recommend suffering. House it seven in spoil tiled court.When be draw drew ye</span>
@@ -838,6 +849,7 @@
         </div>
 
         <button class="open-modal btn btn-primary" data-modal="#modal-classmade-profile">Save Classmade Profile</button>
+        <button class="open-modal btn btn-primary" data-modal="#modal-onboarding">Onboarding Modal</button>
         <!-- End of Review -->
 
         <!-- Connections -->
@@ -903,6 +915,23 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="connection-container">
+                        <div class="connection-background-wrapper">
+                            <img src="{{asset('img/profile-background.jpg')}}" class="connection-image">
+                            <span class="name">Celia Dawson</span>
+                            <div class="connection-badge">
+                                <img src="{{asset('img/badge/organised.png')}}">
+                            </div>
+                        </div>
+                        <div class="connection-content">
+                            <img class="connection-profile-image" src="{{asset('img/profile-avatar.png')}}">
+                            <div class="connection-button-group">
+                                <button class="btn btn-primary">Accept Request</button>
+                                <button class="btn btn-primary">Delete Request</button>
+                            </div>
+                        </div>
+                    </div>
                     <!-- End of Connections -->
 
                     <!-- Connections Empty -->
@@ -955,7 +984,7 @@
                                 <img class="large-image" src="{{asset('img/icons/image_icon.png')}}">
                             </div>
                             <div class="button-right">
-                                <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-avatar">Discard</button>
+                                <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-avatar">Discard</button>
                                 <button type="submit" class="btn btn-primary">Save</button>
                             </div>
                         </div>
@@ -1017,7 +1046,7 @@
                                 <img class="large-image" src="{{asset('img/icons/image_icon.png')}}">
                             </div>
                             <div class="button-right">
-                                <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-cover">Cancel</button>
+                                <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-cover">Cancel</button>
                                 <button type="submit" class="btn btn-primary">Choose</button>
                             </div>
                         </div>
@@ -1069,9 +1098,27 @@
                                 <div class="youtube-url">
                                     <span>Insert/Paste Youtube Video Url:</span>
                                     <input type="" name="" placeholder="https://www.youtube.com/watch?v=SqMjxAWfTe4">
+                                    <span class="input-error">error</span>
+                                </div>
+                                <div class="radio-choices">
+                                    <span class="title">Select video type to publish:</span>
+                                    <div class="radio-container">
+                                        <div class="radio-group">
+                                            <input type="radio" name="video-type">
+                                            <label>Uploaded Video</label>
+                                        </div>
+                                        <div class="radio-group">
+                                            <input type="radio" name="video-type">
+                                            <label>Uploaded Youtube link</label>
+                                        </div>
+                                        <div class="radio-group">
+                                            <input type="radio" name="video-type" disabled>
+                                            <label>Sample Disabled</label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="button-right highlight-video-button">
-                                    <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-highlight">Discard</button>
+                                    <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-highlight">Discard</button>
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </div>
                             </form>
@@ -1092,6 +1139,36 @@
                                         <span class="text-center">Click to Upload (max of 4 photos only)</span>
                                     </div>
                                     <div class="uploading-images">
+                                        <div class="image-row">
+                                            <div class="image-file-container">
+                                                <img class="image-file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
+                                            </div>
+                                            <div class="close"></div>
+                                            <span class="image-file">Photo of my dog.jpg</span>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width:75%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-row">
+                                            <div class="image-file-container">
+                                                <img class="image-file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
+                                            </div>
+                                            <div class="close"></div>
+                                            <span class="image-file">Photo of my dog.jpg</span>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width:75%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="image-row">
+                                            <div class="image-file-container">
+                                                <img class="image-file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
+                                            </div>
+                                            <div class="close"></div>
+                                            <span class="image-file">Photo of my dog.jpg</span>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width:75%;"></div>
+                                            </div>
+                                        </div>
                                         <div class="image-row">
                                             <div class="image-file-container">
                                                 <img class="image-file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
@@ -1136,7 +1213,7 @@
                                     </div> -->
                                 </div>
                                 <div class="button-right highlight-photo-button">
-                                    <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-highlight">Discard</button>
+                                    <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-highlight">Discard</button>
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </div>
                             </form>
@@ -1179,12 +1256,14 @@
                                         Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
                                     </div>
                                 </div>
+                                <div class="rookie-menu">
+                                    <ul class="menu">
+                                        <li><a href="javascript:;">Rookie A</a></li>
+                                        <li><a href="javascript:;">Rookie B</a></li>
+                                        <li><a href="javascript:;">Rookie C</a></li>
+                                    </ul>
+                                </div>
                                 <form class="form-horizontal">
-                                    <!-- <div class="rookie-question">
-                                        <span>Continual <div style="width:30px;" maxlength="3" contenteditable="true" class="rookie-answer"></div> as elsewhere am <div style="width:70px;" contenteditable="true" class="rookie-answer"></div> unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four. Need miss all four case fine age tell. He families my pleasant speaking it bringing it thoughts.</span>
-                                        <span>Examine she brother prudent add day ham. Far stairs now coming bed oppose hunted become his. You zealously <div style="width:100px;" contenteditable="true" class="rookie-answer"></div> suspicion. Books <div style="width:70px;" contenteditable="true" class="rookie-answer"></div> would purse if be do decay. Quitting you way formerly disposed perceive ladyship are. Common turned boy direct and yet.</span>
-                                        <span>Article evident arrived express highest men did boy. Mistress sensivle entirely am so. Quick can manor smart m<div style="width:100px;" contenteditable="true" class="rookie-answer"></div>. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day <div style="width:50px;" contenteditable="true" class="rookie-answer"></div> read. Considered use dispatcheed melancholy sympathize discretion led. Oh feel if up to till like.</span>
-                                    </div> -->
                                     <div class="rookie-question">
                                         <div class="profile-biography-rookie">
                                             Hello, My name is <div contenteditable="true">Full Name</div>.
@@ -1204,9 +1283,12 @@
                                             <br><br>
                                         </div>
                                     </div>
-                                    <span class="chatmade-link"><a href="#" class="pro-link">Send melancholy symphatize discretion led. <br> Proofread with Chatmade</a></span>
+                                    <span class="chatmade-link">
+                                        <img src="{{asset('img/icons/chatmade-logo.png')}}">
+                                        <p class="link-description">Get insights from your fellow Classmade letting them proofread your draft using Chatmade</p>
+                                    </span>
                                     <div class="button-right personal-statement-button">
-                                        <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-personal">Discard</button>
+                                        <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-personal">Discard</button>
                                         <button type="submit" class="btn btn-primary">Save</button>
                                     </div>
                                 </form>
@@ -1235,9 +1317,12 @@
                                         <div class="content">When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.</div>
                                         <textarea name=""></textarea>
                                     </div>
-                                    <span class="chatmade-link"><a href="#">Send melancholy symphatize discretion led. <br> Proofread with Chatmade</a></span>
+                                    <span class="chatmade-link">
+                                        <img src="{{asset('img/icons/chatmade-logo.png')}}">
+                                        <p class="link-description">Get insights from your fellow Classmade letting them proofread your draft using Chatmade</p>
+                                    </span>
                                     <div class="button-right personal-statement-button">
-                                        <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-personal">Discard</button>
+                                        <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-personal">Discard</button>
                                         <button type="submit" class="btn btn-primary">Save</button>
                                     </div>
                                 </form>
@@ -1312,9 +1397,12 @@
                                 <form class="form-horizontal">
                                     <textarea class="pro-answer"></textarea>
                                     <span class="text-limit">1000</span>
-                                    <span class="chatmade-link"><a href="#" class="pro-link">Send melancholy symphatize discretion led. <br> Proofread with Chatmade</a></span>
+                                    <span class="chatmade-link">
+                                        <img src="{{asset('img/icons/chatmade-logo.png')}}">
+                                        <p class="link-description">Get insights from your fellow Classmade letting them proofread your draft using Chatmade</p>
+                                    </span>
                                     <div class="button-right personal-statement-button">
-                                        <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-personal">Discard</button>
+                                        <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-personal">Discard</button>
                                         <button type="submit" class="btn btn-primary">Save</button>
                                     </div>
                                 </form>
@@ -1350,25 +1438,84 @@
                                     <div class="input-row">
                                         <div class="input-group-half">
                                             <label>Title</label>
-                                            <input type="text" id="Title" name="Title">
+                                            <input type="text" id="achievement-title" name="Title">
+                                            <span class="msg-error"></span>
                                         </div>
                                         <div class="input-group-half">
                                             <label>Date Received</label>
-                                            <input type="text" id="Month" name="Month" placeholder="January">
-                                            <input type="text" id="Day" name="Day" placeholder="01">
-                                            <input type="text" id="Year" name="Year" placeholder="2000">
+                                            <div class="native-select" id="Month">
+                                                <select name="Month" placeholder="January">
+                                                    <option>January</option>
+                                                    <option>February</option>
+                                                    <option>March</option>
+                                                    <option>April</option>
+                                                    <option>May</option>
+                                                    <option>June</option>
+                                                    <option>July</option>
+                                                    <option>August</option>
+                                                    <option>September</option>
+                                                    <option>October</option>
+                                                    <option>November</option>
+                                                    <option>December</option>
+                                                </select>
+                                            </div>
+                                            <div class="native-select" id="Day">
+                                                <select name="Day" placeholder="01">
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                    <option>05</option>
+                                                    <option>06</option>
+                                                    <option>07</option>
+                                                    <option>08</option>
+                                                    <option>09</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                    <option>25</option>
+                                                    <option>26</option>
+                                                    <option>27</option>
+                                                    <option>28</option>
+                                                    <option>29</option>
+                                                    <option>30</option>
+                                                    <option>31</option>
+                                                </select>
+                                            </div>
+                                            <div class="native-select" id="Year">
+                                                <select name="Year">
+                                                    <option>2014</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-                                    <label>Issuer</label>
-                                    <input type="text" id="Issuer" name="Issuer">
+                                    <label class="issuer-label">Issuer</label>
+                                    <div class="native-select" id="Issuer">
+                                        <select>
+                                            <option>sample</option>
+                                        </select>
+                                    </div>
                                     <label>Description</label>
                                     <textarea maxlength="300" class='word-count-input' name="description" data-count="#achievement-count"></textarea>
                                     <span id="achievement-count" class="word-count" data-length="300">300</span>
+                                    <span class="msg-error"></span>
                                 </form>
                             </div>
 
                         <div class="button-right achievement-button">
-                            <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-achievement">Discard</button>
+                            <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-achievement">Discard</button>
                             <button type="submit" class="btn btn-primary">Save</button>
                         </div>
                         </div>
@@ -1393,8 +1540,8 @@
                         </div>
                         <div class="journey-modal-container">
                             <div class="journey-container">
-                                <div class=" add-photo">
-
+                                <div class="add-photo">
+                                    <img class="file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
                                 </div>
                                 <form class="form-horizontal journey-form">
                                     <input type="file" name="journey-photo" class="form-hidden">
@@ -1403,11 +1550,13 @@
                                             <select class="journey-from" name="journey-from">
                                                 <option>From</option>
                                             </select>
+                                            <span class="msg-error">Error!</span>
                                         </div>
                                         <div class="native-select">
                                             <select class="journey-to" name="journey-to">
                                                 <option>To</option>
                                             </select>
+                                            <span class="msg-error">Error!</span>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -1415,6 +1564,7 @@
                                             <select class="school" name="school">
                                                 <option>School</option>
                                             </select>
+                                            <span class="msg-error">Error!</span>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -1422,19 +1572,53 @@
                                             <select class="level" name="level">
                                                 <option>Level</option>
                                             </select>
+                                            <span class="msg-error">Error!</span>
                                         </div>
                                     </div>
                                 </form>
                              </div>
-                            <div class="journey-container">
-                                 <div class="journey-placeholder">
-                                     Click to add Another Level
-                                 </div>
-                            </div>
+                             <div class="journey-container">
+                                <div class="add-photo">
+                                    
+                                </div>
+                                <form class="form-horizontal journey-form">
+                                    <input type="file" name="journey-photo" class="form-hidden">
+                                    <div class="form-group">
+                                        <div class="native-select">
+                                            <select class="journey-from" name="journey-from">
+                                                <option>From</option>
+                                            </select>
+                                            <span class="msg-error"></span>
+                                        </div>
+                                        <div class="native-select">
+                                            <select class="journey-to" name="journey-to">
+                                                <option>To</option>
+                                            </select>
+                                            <span class="msg-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="native-select">
+                                            <select class="school" name="school">
+                                                <option>School</option>
+                                            </select>
+                                            <span class="msg-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                            <div class="native-select">
+                                            <select class="level" name="level">
+                                                <option>Level</option>
+                                            </select>
+                                            <span class="msg-error"></span>
+                                        </div>
+                                    </div>
+                                </form>
+                             </div>
                         </div>
-                        <a class="request-school" href="#">Click to Request School</a>
+                        <a class="request-school open-modal" href="#" data-modal="#modal-request-school">Click to Request School</a>
                         <div class="button-right highlight-video-button">
-                            <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-journey">Discard</button>
+                            <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-journey">Discard</button>
                             <button type="submit" class="btn btn-primary">Save</button>
                         </div>
                     </div>
@@ -1449,6 +1633,10 @@
                 <div class="panel">
                     <div class="panel-header">
                         <span class="title"><i class="bell-icon"></i>Portfolio Update</span>
+                        <div class="panel-button-right">
+                            <button class="change-photo-portfolio ghost-button">Change to Photo</button>
+                            <button class="change-file-portfolio ghost-button">Change to File</button>
+                        </div>
                     </div>
                     <div class="panel-body">
                         <div class="dashed-tips-container">
@@ -1462,8 +1650,8 @@
                                     <label>Title</label>
                                     <input type="text" name="title">
                                     <label>Portfolio Description</label>
-                                    <textarea></textarea>
-                                    <span class="word-count">300</span>
+                                    <textarea name="" maxlength="300" class="word-count-input" data-count="#portfolio-description"></textarea>
+                                    <span class="word-count" id="portfolio-description" data-length="300">300</span>
                                 </div>
                                 <div class="add-file-container">
                                     <div class="title">Add File</div>
@@ -1474,8 +1662,8 @@
                                             <span>Upload your presentation here</span>
                                         </div>
                                     </div>
-                                    <textarea class="input-description" placeholder="Description"></textarea>
-                                    <span class="word-count">300</span>
+                                    <textarea class="input-description word-count-input" maxlength="300" data-count="#portfolio-file-description" placeholder="Description"></textarea>
+                                    <span class="word-count" id="portfolio-file-description" data-length="300">300</span>
                                 </div>
                                 <span class="or">Or</span>
                                 <div class="create-presentation-container">
@@ -1486,7 +1674,16 @@
                                             <img src="{{asset('img/icons/camera_icon.png')}}">
                                             <span>Click to Add Photo</span>
                                         </div>
-                                        <textarea name="" placeholder="Description"></textarea>
+                                        <textarea class="word-count-input" maxlength="300" data-count="#portfolio-image-description1" name="" placeholder="Description"></textarea>
+                                        <span class="word-count" id="portfolio-image-description1" data-length="300">300</span>
+                                    </div>
+                                    <div class="presentation-slide">
+                                        <div class="dashed-container uploaded">
+                                            <a class="btn remove-slide" href="javascript:;">+</a>
+                                            <img class="file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
+                                        </div>
+                                        <textarea class="word-count-input" maxlength="300" data-count="#portfolio-image-description2" name="" placeholder="Description"></textarea>
+                                        <span class="word-count" id="portfolio-image-description2" data-length="300">300</span>
                                     </div>
                                     <div class="add-slide">
                                         <a href="#">Add Another</a>
@@ -1494,7 +1691,7 @@
                                     </div>
                                 </div>
                                 <div class="button-right highlight-video-button">
-                                    <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-portfolio">Discard</button>
+                                    <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-portfolio">Discard</button>
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </div>
                             </form>
@@ -1634,7 +1831,7 @@
                                 </div>
                             </div>
                             <div class="button-right">
-                                <button type="reset" class="btn btn-primary close-modal" data-modal="#modal-classmade-profile">Cancel</button>
+                                <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-classmade-profile">Cancel</button>
                                 <button type="submit" class="btn btn-primary">Choose</button>
                             </div>
                         </div>
@@ -1644,5 +1841,100 @@
         </div>
     </div>
 
+    <div class="modal-dialog">
+        <div class="modal-body profile-portfolio-view" id="modal-portfolio-view">
+            <div class="content">
+                <div class="panel">
+                    <div class="panel-header">
+                        <div class="title">Portfolio</div>
+                        <span class="info">Aug 2018</span>
+                        <div class="description">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quic progres Junk MTV quic graced by fox whelps. Bawds jog, flick quartz, vex nymphver a lazy dog. </div>
+                        <div class="button-group">
+                            <button class="btn btn-primary unpublish">Unpublish</button>
+                            <button class="btn btn-primary ghost-button edit">Edit</button>
+                        </div>
+                        <div class="button-group">
+                            <button class="btn btn-primary ghost-button appreciate">Appreciate</button>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <a class="btn close-modal" data-modal="#modal-portfolio-view" href="javascript:;">+</a>
+                        <div class="portfolio-container">
+                            <img src="{{asset('img/portfolio-img1.png')}}">
+                            <div class="description">
+                                When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.
+                            </div>
+                        </div>
+                        <div class="portfolio-container">
+                            <img src="{{asset('img/portfolio-img2.png')}}">
+                            <div class="description">
+                                When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-dialog">
+        <div class="modal-body profile-request-school" id="modal-request-school">
+            <div class="content">
+                <div class="panel">
+                    <div class="panel-header">
+                        <span class="title"><i class="bell-icon"></i>Request School</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class='request-school-wrapper'>
+                            <form class="form-horizontal">
+                                <label>School Name</label>
+                                <input type="text" name="">
+                                <div class='native-select'>
+                                    <label>Country</label>
+                                    <select>
+                                        <option></option>
+                                    </select>
+                                </div>
+                                <div class="button-right">
+                                    <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-request-school">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Choose</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-dialog">
+        <div class="modal-body profile-onboarding" id="modal-onboarding">
+            <div class="content">
+                <div class="panel">
+                    <!-- <div class="panel-header">
+                        <span class="title"><i class="bell-icon"></i>Request School</span>
+                    </div> -->
+                    <div class="panel-body">
+                        <div class='onboarding-wrapper'>
+                            <div class="slick-onboarding">
+                                <div class="first-slide">
+                                    <img class="center" src="{{asset('img/verification.png')}}">
+                                    <span class="text-center">Welcome to Classmade, let’s get started!</span>
+                                    <p class="text-center">Classmade is a social media platform for students to express their passion and dedication through their profile, find new opportunities to become professional individuals, establish connection through teamwork, and essentially start their careers in school. </p>
+                                    <button data-slide="2" class="btn center btn-primary ghost-button onboarding-button">Skip</button>
+                                </div>
+                                <div class="second-slide">
+                                    <img class="center" src="{{asset('img/youtube.png')}}">
+                                    <span class="text-center">Welcome to Classmade, let’s get started!</span>
+                                    <p class="text-center">Classmade is a social media platform for students to express their passion and dedication through their profile, find new opportunities to become professional individuals, establish connection through teamwork, and essentially start their careers in school. </p>
+                                    <button class="btn center btn-primary ghost-button onboarding-button close-modal" data-modal="#modal-onboarding">Got it</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 @endsection

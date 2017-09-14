@@ -49,7 +49,7 @@
                             <ul class="dropdown-menu settings">
                                 <li><a href="{{ url('/account_settings') }}">Account Settings</a></li>
                                 <li><a href="{{ url('/transcript') }}">Transcript</a></li>
-                                <li><a href="#">Share Link PDF</a></li>
+                                <li><a href="#" class="open-modal" data-modal="#modal-classmade-profile">Share Link PDF</a></li>
                                 <li class="divider"></li>
                                 <li><a href="#">Guide</a></li>
                                 <li class="divider"></li>

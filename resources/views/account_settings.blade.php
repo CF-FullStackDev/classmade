@@ -7,7 +7,10 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>Classmade</title>
-
+        <link rel="stylesheet" type="text/css" href="{{ asset('slick-1.6.0/slick/slick.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('slick-1.6.0/slick/slick-theme.css') }}">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="{{ asset('selectize/dist/css/selectize.css') }}"></script>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     </head>
@@ -46,7 +49,7 @@
                                 </a>
                                 <ul class="dropdown-menu notification">
                                     <li class="header">
-                                        <span>Notifaction</span>
+                                        <span>Notification</span>
                                     </li>
                                     <li>
                                         <div class="media">
@@ -138,21 +141,12 @@
                                         <span>Click to add Photo</span>
                                     </div>
 
-                                    <span class="header">Skill</span>
-                                    <label>Add Skill</label>
-                                    <div class="account-select" style="width:245px;">
-                                        <select name="">
-                                            <option value="">-</option>
-                                        </select>
+                                    <div class="account-photo account-photo-uploaded">
+                                        <img class="file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
+                                        <img src="{{asset('img/icons/camera_icon.png')}}">
+                                        <span>Click to add Photo</span>
                                     </div>
 
-                                    <span class="header">Language</span>
-                                    <label>Add Language</label>
-                                    <div class="account-select" style="width:245px;">
-                                        <select name="">
-                                            <option value="">-</option>
-                                        </select>
-                                    </div>
 
                                     <span class="header">Personal Information</span>
                                     <label>Last Name</label>
@@ -190,6 +184,37 @@
                                         </select>
                                     </div>
 
+                                    <span class="header">Skill</span>
+                                    <label>Add Skill</label>
+                                    <div class="account-select" style="width:245px;">
+                                        <select name="">
+                                            <option value="">-</option>
+                                        </select>
+                                    </div>
+                                    <div class="skill-container">
+                                        <div class="skill">Insert Skill</div>
+                                        <div class="skill">Another Skill</div>
+                                        <div class="skill">Long Name Skill</div>
+                                        
+                                    </div>
+                                    <a class="skill-edit edit-icon"></a>
+
+                                    <span class="header">Language</span>
+                                    <label>Add Language</label>
+                                    <div class="account-select" style="width:245px;">
+                                        <select name="">
+                                            <option value="">-</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="language-container">
+                                        <div class="language">Insert Skill</div>
+                                        <div class="language">Another Skill</div>
+                                        <div class="language">Long Name Skill</div>
+                                        
+                                    </div>
+                                    <a class="language-edit edit-icon"></a>
+
                                     <div class="btn-panel">
                                         <button type="submit" class="btn btn-primary">Save</button>
                                     </div>
@@ -215,8 +240,37 @@
                             <div id="tab-journey" class="tab-content">
                                 <span class="header">Journey</span>
                                 <form action="">
+                                     <div class="account-journey">
+                                        <div class="school-img-holder">
+                                            
+                                        </div>
+
+                                        <div class="account-select inline1">
+                                            <select name="">
+                                                <option selected="selected">From</option>
+                                            </select>
+                                        </div>
+                                        <div class="account-select inline2">
+                                            <select name="">
+                                                <option selected="selected">To</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="account-select">
+                                            <select name="">
+                                                <option selected="selected">School</option>
+                                            </select>
+                                        </div>
+                                        <div class="account-select">
+                                            <select name="">
+                                                <option selected="selected">Level</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                     <div class="account-journey">
-                                        <div class="school-img-holder"></div>
+                                        <div class="school-img-holder">
+                                            <img class="file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
+                                        </div>
 
                                         <div class="account-select inline1">
                                             <select name="">
@@ -288,5 +342,7 @@
         </div>
 
     <script src="{{{ asset('js/app.js') }}}"></script>
+    <script type="text/javascript" src="{{ asset('slick-1.6.0/slick/slick.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('selectize/dist/js/standalone/selectize.min.js') }}"></script>
     </body>
 </html>

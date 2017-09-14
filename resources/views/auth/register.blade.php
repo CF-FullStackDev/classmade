@@ -48,7 +48,7 @@
                         <div class="select-default" name="authentication">
                             <select id="authentication-select" name="verification_type" required>
                                 <option value="Student Email" selected>Student Email</option>
-                                <option value="Personal Email">Personal Email</option>
+                                <option value="Student ID">Student ID</option>
                                 <option value="School Authentication Email">School Authentication Email</option>
                             </select>
                         </div>

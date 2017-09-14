@@ -27,6 +27,22 @@ Route::get('/connection', function () {
     return view('connection');
 });
 
+Route::get('/email', function () {
+    return view('email/verification');
+});
+
+Route::get('/transcript-email', function () {
+    return view('email/transcript');
+});
+
+Route::get('/authentication-email', function () {
+    return view('email/authentication');
+});
+
+Route::get('/portfolio-single', function () {
+    return view('portfolio-single');
+});
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('/');
