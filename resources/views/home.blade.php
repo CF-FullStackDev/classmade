@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="profile-background-container" class="cover-no-hover">
-    <img src="{{asset('img/profile-background.jpg')}}" alt="Profile Cover">
+<div id="profile-background-container"><!-- cover-no-hover -->
+    <img src="{{asset('storage/background/'.$user->profile_cover)}}" alt="Profile Cover" id="profile_coverphoto">
     <button type="button" class="heart-button heart-icon"></button>
     <div class="profile-background-hover open-modal" data-modal="#modal-cover">
         <img src="{{asset('img/icons/camera_icon.png')}}">
@@ -15,7 +15,7 @@
         <div class="panel">
             <div class="profile-glance">
                 <div class="profile-avatar">
-                    <img src="{{asset('img/profile-avatar.png')}}">
+                    <img src="{{asset('storage/avatar/'.$user->profile_photo)}}" id="profilephoto">
                     <button type="button" class="heart-button heart-icon"></button>
                     <div class="profile-hover open-modal" data-modal="#modal-avatar">
                         <img src="{{asset('img/icons/camera_icon.png')}}">
@@ -971,21 +971,24 @@
                                     <img src="{{asset('img/journey-placeholder.png')}}">
                                 </div>
                             </div>
-                            <div class="dashed-container profile-photo-upload">
-                                <img src="{{asset('img/icons/image_icon.png')}}">
-                                <span>Upload latest</span>
-                            </div>
-                            <div class="cropper">
-                                <img class="small-image" src="{{asset('img/icons/image_icon.png')}}">
-                                <div class="cropper-zoom-input">
-                                    <div class="cropper-percentage" style="width:100%;"></div>
-                                    <span class="cropper-control"></span>
+                            <form method="post" enctype="multipart/form-data" action="formAvatarPhoto" id="formAvatarPhoto">
+                                {{ csrf_field() }}
+                                <div class="image-editor profile-avatar">
+                                    <input type="file" class="cropit-image-input" hidden>
+                                    <input type="hidden" name="image-data" class="hidden-image-data"/>
+                                    <div class="cropit-preview profile-preview">
+                                        <a href="javascript:;" id="profile-upload-tag">Upload Latest</a>
+                                    </div>
+                                    <div class="image-zoom">
+                                        <img src="{{asset('img/icons/image_icon.png')}}">
+                                        <input type="range" class="cropit-image-zoom-input">
+                                        <img src="{{asset('img/icons/image_icon.png')}}">
+                                    </div>
                                 </div>
-                                <img class="large-image" src="{{asset('img/icons/image_icon.png')}}">
-                            </div>
+                            </form>
                             <div class="button-right">
-                                <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-avatar">Discard</button>
-                                <button type="submit" class="btn btn-primary">Save</button>
+                                <button type="button" class="btn btn-primary ghost-button close-modal" data-modal="#modal-avatar">Discard</button>
+                                <button type="submit" class="btn btn-primary" id="btn-uploadprofile">Save</button>
                             </div>
                         </div>
                     </div>
@@ -1032,22 +1035,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="cover-photo-upload">
-                                <img src="{{asset('img/profile-background-placeholder.png')}}">
-                            </div>
-                            <div class="cropper">
-                                <img class="small-image" src="{{asset('img/icons/image_icon.png')}}">
-                                <div class="cropper-zoom-input">
-                                    <div class="cropper-percentage" style="width:100%;"></div>
-                                    <span class="cropper-control">
-
-                                    </span>
+                            <form method="post" enctype="multipart/form-data" action="formCoverPhoto" id="formCoverPhoto">
+                                {{ csrf_field() }}
+                                <div class="image-editor profile-cover">
+                                    <input type="file" class="cropit-image-input" hidden>
+                                    <input type="hidden" name="image-data" class="hidden-image-data"/>
+                                    <div class="cropit-preview profile-cover-preview">
+                                        <a href="javascript:;" id="profile-cover-upload-tag">Upload Latest</a>
+                                    </div>
+                                    <div class="image-zoom">
+                                        <img src="{{asset('img/icons/image_icon.png')}}">
+                                        <input type="range" class="cropit-image-zoom-input">
+                                        <img src="{{asset('img/icons/image_icon.png')}}">
+                                    </div>
                                 </div>
-                                <img class="large-image" src="{{asset('img/icons/image_icon.png')}}">
-                            </div>
+                            </form>
                             <div class="button-right">
                                 <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-cover">Cancel</button>
-                                <button type="submit" class="btn btn-primary">Choose</button>
+                                <button type="submit" class="btn btn-primary" id="btn-uploadprofilecover">Save</button>
                             </div>
                         </div>
                     </div>
@@ -1579,7 +1584,7 @@
                              </div>
                              <div class="journey-container">
                                 <div class="add-photo">
-                                    
+
                                 </div>
                                 <form class="form-horizontal journey-form">
                                     <input type="file" name="journey-photo" class="form-hidden">

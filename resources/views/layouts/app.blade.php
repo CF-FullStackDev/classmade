@@ -44,7 +44,7 @@
                     <ul class="dropdown-container">
                         <li class="dropdown">
                             <a href="#" class="settings">
-                                <img src="{{asset('img/profile-avatar.png')}}" alt="Profile Menu">
+                                <img src="{{asset('storage/avatar/'.$user->profile_photo)}}" alt="Profile Menu" id="nav_profilephoto">
                             </a>
                             <ul class="dropdown-menu settings">
                                 <li><a href="{{ url('/account_settings') }}">Account Settings</a></li>
@@ -149,6 +149,7 @@
 
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('slick-1.6.0/slick/slick.min.js') }}"></script>
+    <script src="{{ asset('slick-1.6.0/slick/slick.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.cropit.js') }}"></script>
 </body>
 </html>

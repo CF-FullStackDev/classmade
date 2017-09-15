@@ -43,6 +43,9 @@ Route::get('/portfolio-single', function () {
     return view('portfolio-single');
 });
 
+Route::post('formAvatarPhoto', 'HomeController@formAvatarPhoto');
+Route::post('formCoverPhoto', 'HomeController@formCoverPhoto');
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('/');

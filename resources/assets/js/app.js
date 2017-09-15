@@ -52,6 +52,102 @@ $(function(){
         modal_show();
     }
 
+    function getProfilePhoto() {
+        var profilephoto = $('#profilephoto').attr('src');
+        profilephoto = profilephoto.replace( /^.*?([^\/]+)\..+?$/, '$1' );
+        if (profilephoto == 'default') {
+            profilephoto = 'avatar-placeholder';
+        }
+        $('.image-editor.profile-avatar').cropit({
+            imageBackground: true,
+            imageBackgroundBorderWidth: 15,
+            smallImage: 'stretch',
+            imageState: {
+                src: 'storage/avatar/'+profilephoto+'.png',
+            },
+        });
+    }
+
+    function getCoverPhoto() {
+        var coverphoto = $('#profile_coverphoto').attr('src');
+        coverphoto = coverphoto.replace( /^.*?([^\/]+)\..+?$/, '$1' );
+        if (coverphoto == 'default') {
+            coverphoto = 'cover-placeholder';
+        }
+        $('.image-editor.profile-cover').cropit({
+            imageBackground: true,
+            imageBackgroundBorderWidth: 15,
+            smallImage: 'stretch',
+            imageState: {
+                src: 'storage/background/'+coverphoto+'.png',
+            },
+        });
+    }
+
+    getProfilePhoto();
+    getCoverPhoto();
+
+    $(document).on('click', '#profile-upload-tag', function() {
+        $('.image-editor.profile-avatar .cropit-image-input').click();
+    });
+
+    $(document).on('click', '#profile-cover-upload-tag', function() {
+        $('.image-editor.profile-cover .cropit-image-input').click();
+    });
+
+    $(document).on('click', '#btn-uploadprofile', function() {
+        var btn = $(this);
+        $imageCropper = $('.image-editor.profile-avatar');
+        var imageData = $imageCropper.cropit('export');
+        $('.hidden-image-data').val(imageData);
+        var formValue = $(this).serialize();
+        $.ajax({
+            url         : $('#formAvatarPhoto').attr('action'),
+            data        : new FormData($('#formAvatarPhoto')[0]),
+            type        : 'POST',
+            contentType : false,
+            processData : false,
+            beforeSend  : function(){
+                btn.text('Saving');
+                btn.attr('disabled', true);
+            },
+            success     : function(data){
+                btn.html('Save');
+                btn.attr('disabled', false);
+                $('#profilephoto').attr('src', data);
+                $('#nav_profilephoto').attr('src', data);
+                $('.close-modal').click();
+            },
+        });
+        return false;
+    });
+
+    $(document).on('click', '#btn-uploadprofilecover', function() {
+        var btn = $(this);
+        $imageCropper = $('.image-editor.profile-cover');
+        var imageData = $imageCropper.cropit('export');
+        $('.hidden-image-data').val(imageData);
+        var formValue = $(this).serialize();
+        $.ajax({
+            url         : $('#formCoverPhoto').attr('action'),
+            data        : new FormData($('#formCoverPhoto')[0]),
+            type        : 'POST',
+            contentType : false,
+            processData : false,
+            beforeSend  : function(){
+                btn.text('Saving');
+                btn.attr('disabled', true);
+            },
+            success     : function(data){
+                btn.html('Save');
+                btn.attr('disabled', false);
+                $('#profile_coverphoto').attr('src', data);
+                $('.close-modal').click();
+            },
+        });
+        return false;
+    });
+
     $(document).on('click', 'li.dropdown > a', function(e) {
         e.preventDefault()
         $(this).parent().find('ul').first().toggle();
@@ -325,7 +421,7 @@ $(function(){
         $(this).siblings('.button-dropdown-menu').toggleClass('active');
     });
 
-    $(document).on('click','body',function(e){ 
+    $(document).on('click','body',function(e){
         if (!$(e.target).hasClass('button-dropdown')){
             $('.button-dropdown-menu').each(function(){
                 $(this).removeClass('active');
@@ -360,14 +456,14 @@ $(function(){
        $('.slick-onboarding').slick('slickGoTo', slideno - 1);
      });
 
-    $('.selectize').selectize({
-        delimiter: ',',
-        persist: false,
-        create: function(input) {
-            return {
-                value: input,
-                text: input
-            }
-        }
-    });
+    // $('.selectize').selectize({
+    //     delimiter: ',',
+    //     persist: false,
+    //     create: function(input) {
+    //         return {
+    //             value: input,
+    //             text: input
+    //         }
+    //     }
+    // });
 });
