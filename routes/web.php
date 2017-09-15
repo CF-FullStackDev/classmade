@@ -47,6 +47,14 @@ Route::get('/transcript-single', function () {
     return view('transcript-single');
 });
 
+Route::get('/maintenance', function () {
+    return view('maintenance');
+});
+
+Route::get('/404', function () {
+    return view('404');
+});
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('/');

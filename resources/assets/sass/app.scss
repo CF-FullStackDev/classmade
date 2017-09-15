@@ -3807,6 +3807,61 @@ body {
             }
         }
     }
+
+    &#app-other {
+        background-color: #fff !important;
+        
+        footer {
+            clear: both;
+            font-size: 13px;
+            color: #919091;
+            text-align: center;
+            padding-bottom: 50px;
+            margin-top: 100px;
+
+            > div {
+                width: 960px;
+                margin-right: auto;
+                margin-left: auto;
+                padding-top: 20px;
+                border-top: 1px solid $footer-color;
+            }
+
+            ul {
+                font-family: $font-extraLight;
+                list-style-type: none;
+
+                > li {
+                    cursor: pointer;
+                    display: inline;
+                    position: relative;
+
+                    &:after {
+                        content: '';
+                        background-color: $footer-color;
+                        position: absolute;
+                        width: 3px;
+                        height: 3px;
+                        border-radius: 50%;
+                        top: 0;
+                        bottom: 0;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        margin-left: 6px;
+                    }
+
+                    &:before {
+                        content: '';
+                        padding-right: 10px;
+                    }
+
+                    &:last-child:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 #profile-background-container {
@@ -6762,6 +6817,63 @@ body {
             font-size: 25px;
             color: #F18448
         }
+    }
+
+    .maintenance-wrapper{
+
+        img{
+            @extend .center;
+            width: 748px;
+            object-fit:contain;
+        }
+
+        h2{
+            @extend .text-center;
+            color: #7892A9;
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        p{
+            @extend .center;
+            font-size: 16px;
+            font-weight: 500;
+            color: #7892A9;
+            width: 645px;
+            line-height: 19px;
+        }
+    }
+
+    .page-404-wrapper{
+
+        img{
+            @extend .center;
+            width: 748px;
+            height: 538px;
+            object-fit:contain;
+        }
+
+        h2{
+            @extend .text-center;
+            color: #7892A9;
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        p{
+            @extend .center;
+            font-size: 16px;
+            font-weight: 500;
+            color: #7892A9;
+            width: 645px;
+            line-height: 19px;
+        }
+    }
+
+    .classmade-logo-other{
+        margin-top: 53px;
     }
 
 // End of angelo
