@@ -6580,8 +6580,7 @@ body {
         }
     }
 
-    .selectize {
-        border: 1px solid #ccc;
+    .select2 {
         width: 120px;
         min-height: 30px;
         border-radius: 3px;
@@ -6591,7 +6590,7 @@ body {
         line-height: 30px;
         background-color: #FFFFFF;
         display: inline-block;
-        margin-right: 5px;
+        margin-right: 5px;        
         
 
         input {
@@ -6639,6 +6638,39 @@ body {
 
         .selectize-dropdown{
             display: none !important;
+        }
+
+        .selection{
+
+            .select2-selection{
+                min-height: 15px;
+                border-color: #DAD2D2;
+                line-height: 0px;
+
+                .select2-selection__rendered{
+                    min-height: 15px;
+                    padding-bottom: 5px;
+                    box-sizing:border-box;
+
+                    .select2-selection__choice{
+                        background: #fff;
+                        border: 1px solid #F18448;
+                        color: #F18448;
+                        font-size: 14px;
+                        height: 18px;
+                        line-height: 18px;
+                        margin-top: 8px;
+                        position: relative;
+                        padding-right: 16px;
+
+                        .select2-selection__choice__remove{
+                            color: #F18448;
+                            position: absolute;
+                            right: 2px;
+                        }
+                    }
+                }
+            }
         }
     }
 

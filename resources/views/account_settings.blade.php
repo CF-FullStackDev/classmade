@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('slick-1.6.0/slick/slick.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('slick-1.6.0/slick/slick-theme.css') }}">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="text/javascript" src="{{ asset('selectize/dist/css/selectize.css') }}"></script>
+        <link rel="stylesheet" type="text/css" href="{{ asset('select2/dist/css/select2.min.css') }}">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     </head>
@@ -186,24 +186,27 @@
 
                                     <span class="header">Skill</span>
                                     <label>Add Skill</label>
-                                    <div class="selectize" style="width:245px;">
-                                        <select name="">
-                                            <option value="">-</option>
+                                    <div class="">
+                                        <select class="select2" name="sample[]" multiple="multiple" style="width:245px;">
+                                            <option value="">Insert Skill</option>
+                                            <option value="">Another Skill</option>
+                                            <option value="">Long Name Skill</option>
                                         </select>
                                     </div>
                                     <div class="skill-container">
                                         <div class="skill">Insert Skill</div>
                                         <div class="skill">Another Skill</div>
                                         <div class="skill">Long Name Skill</div>
-                                        
                                     </div>
                                     <a class="skill-edit edit-icon"></a>
 
                                     <span class="header">Language</span>
                                     <label>Add Language</label>
-                                    <div class="selectize" style="width:245px;">
-                                        <select name="">
-                                            <option value="">-</option>
+                                    <div class="">
+                                        <select class="select2" name="sample[]" multiple="multiple" style="width:245px;">
+                                            <option value="">Insert Skill</option>
+                                            <option value="">Another Skill</option>
+                                            <option value="">Long Name Skill</option>
                                         </select>
                                     </div>
 
@@ -343,18 +346,9 @@
 
     <script src="{{{ asset('js/app.js') }}}"></script>
     <script type="text/javascript" src="{{ asset('slick-1.6.0/slick/slick.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('selectize/dist/js/standalone/selectize.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('select2/dist/js/select2.full.min.js') }}"></script>
     <script type="text/javascript">
-        $('.selectize').selectize({
-            delimiter: ',',
-            persist: false,
-            create: function(input) {
-                return {
-                    value: input,
-                    text: input
-                }
-            }
-        });
+        $('.select2').select2();
     </script>
     </body>
 </html>

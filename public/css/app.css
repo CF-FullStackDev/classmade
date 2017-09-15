@@ -6349,8 +6349,7 @@ body#app-home footer ul > li:last-child:after {
   color: #F18448;
 }
 
-.selectize {
-  border: 1px solid #ccc;
+.select2 {
   width: 120px;
   min-height: 30px;
   border-radius: 3px;
@@ -6363,7 +6362,7 @@ body#app-home footer ul > li:last-child:after {
   margin-right: 5px;
 }
 
-.selectize input {
+.select2 input {
   padding: 5px 8px;
   width: 100%;
   border: none !important;
@@ -6373,18 +6372,18 @@ body#app-home footer ul > li:last-child:after {
   -webkit-appearance: none;
 }
 
-.selectize input:focus {
+.select2 input:focus {
   outline: none;
 }
 
-.selectize .selectize-input {
+.select2 .selectize-input {
   padding: 5px;
   width: 80%;
   min-height: 28px;
   box-sizing: border-box;
 }
 
-.selectize .selectize-input .item {
+.select2 .selectize-input .item {
   display: inline-block;
   border: 1px solid #F18448;
   color: #F18448;
@@ -6398,16 +6397,46 @@ body#app-home footer ul > li:last-child:after {
   box-sizing: border-box;
 }
 
-.selectize .selectize-input .item:last-child {
+.select2 .selectize-input .item:last-child {
   margin-right: 0px;
 }
 
-.selectize .selectize-input .multi {
+.select2 .selectize-input .multi {
   background: none !important;
 }
 
-.selectize .selectize-dropdown {
+.select2 .selectize-dropdown {
   display: none !important;
+}
+
+.select2 .selection .select2-selection {
+  min-height: 15px;
+  border-color: #DAD2D2;
+  line-height: 0px;
+}
+
+.select2 .selection .select2-selection .select2-selection__rendered {
+  min-height: 15px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.select2 .selection .select2-selection .select2-selection__rendered .select2-selection__choice {
+  background: #fff;
+  border: 1px solid #F18448;
+  color: #F18448;
+  font-size: 14px;
+  height: 18px;
+  line-height: 18px;
+  margin-top: 8px;
+  position: relative;
+  padding-right: 16px;
+}
+
+.select2 .selection .select2-selection .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
+  color: #F18448;
+  position: absolute;
+  right: 2px;
 }
 
 .transcript-single {
