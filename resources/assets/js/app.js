@@ -353,6 +353,7 @@ $(function(){
     $(document).on('mouseleave','.highlight-data-container',function(e){
         $(this).find('.button-dropdown-menu').removeClass('active');
     });
+
     // END OF NEW ANGELO JS
 
     $(document).on('mouseover','option',function(e){
@@ -364,4 +365,9 @@ $(function(){
        var slideno = $(this).data('slide');
        $('.slick-onboarding').slick('slickGoTo', slideno - 1);
      });
+
+    $(document).on('keyup','.bind-input',function(e){
+        var input = $(this).data('input');
+        $(input).val($(this).html());
+    });
 });

@@ -55,6 +55,10 @@ Route::get('/404', function () {
     return view('404');
 });
 
+Route::get('/confirmation', function () {
+    return view('confirmation');
+});
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('/');

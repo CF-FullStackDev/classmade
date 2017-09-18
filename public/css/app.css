@@ -118,7 +118,7 @@ a {
   text-align: center;
 }
 
-.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .journey-form, .highlight-placeholder img, .portfolio-single #content .panel-body .portfolio-container img, .transcript-single, .maintenance-wrapper img, .maintenance-wrapper p, .page-404-wrapper img, .page-404-wrapper p {
+.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .journey-form, .highlight-placeholder img, .portfolio-single #content .panel-body .portfolio-container img, .transcript-single, .maintenance-wrapper img, .maintenance-wrapper p, .page-404-wrapper img, .page-404-wrapper p, .confirmation-wrapper {
   display: block;
   margin: 0 auto;
 }
@@ -1122,7 +1122,11 @@ body.modal-open {
   display: inline;
 }
 
-.modal-body.profile-personal .content .rookie-section .profile-biography-rookie div {
+.modal-body.profile-personal .content .rookie-section .profile-biography-rookie .wrapper {
+  display: inline;
+}
+
+.modal-body.profile-personal .content .rookie-section .profile-biography-rookie .wrapper .answer {
   color: #CD5F26;
   display: inline;
   border-bottom: 1px solid #000000;
@@ -2877,10 +2881,9 @@ ul.dropdown-menu.notification li.header {
 
 ul.dropdown-menu.notification li:not([class='header']) {
   background-color: #EFFAFF;
-  height: 56px;
+  min-height: 56px;
   border-bottom: 0.5px solid #D6D6D6;
   display: block !important;
-  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -6629,6 +6632,56 @@ body#app-other footer ul > li:last-child:after {
 
 .classmade-logo-other {
   margin-top: 53px;
+}
+
+.confirmation-wrapper {
+  width: 583px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  padding: 70px 46px 70px 46px;
+  min-height: 262px;
+  box-sizing: border-box;
+}
+
+.confirmation-wrapper img {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-right: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.confirmation-wrapper .details {
+  float: left;
+  width: 300px;
+}
+
+.confirmation-wrapper .details h2 {
+  color: #7E7C7C;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  display: inline-block;
+}
+
+.confirmation-wrapper .details p {
+  color: #A1A1A1;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 34px;
+}
+
+.confirmation-wrapper .details a {
+  min-width: 120px;
+  font-size: 14px;
+  height: 18px;
+  display: inline-block;
+  padding: 16px 15px 16px 15px;
+  box-sizing: border-box;
+  line-height: 0px;
+  display: inline-block !important;
 }
 
 .ghost-button {

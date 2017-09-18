@@ -1204,11 +1204,14 @@ body.modal-open {
                 .profile-biography-rookie {
                     display: inline;
 
-                    div {
-                        color: #CD5F26;
+                    .wrapper{
                         display: inline;
-                        border-bottom: 1px solid #000000;
-                        outline: 0;
+                        .answer{
+                            color: #CD5F26;
+                            display: inline;
+                            border-bottom: 1px solid #000000;
+                            outline: 0;
+                        }
                     }
                 }
 
@@ -3031,10 +3034,10 @@ ul.dropdown-menu {
 
         li:not([class='header']) {
             background-color: #EFFAFF;
-            height: 56px;
+            min-height: 56px;
             border-bottom: 0.5px solid #D6D6D6;
             display: block !important;
-            white-space: nowrap;
+            // white-space: nowrap;
             cursor: pointer;
 
             &:last-child {
@@ -6874,6 +6877,57 @@ body {
 
     .classmade-logo-other{
         margin-top: 53px;
+    }
+
+    .confirmation-wrapper{
+        @extend .center;
+        width: 583px;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        padding: 70px 46px 70px 46px;
+        min-height: 262px;
+        box-sizing: border-box;
+
+        img{
+            height: 100px;
+            width: 100px;
+            float: left;
+            margin-right: 50px;
+            object-fit:contain;
+        }
+
+        .details{
+            float: left;
+            width: 300px;
+
+            h2{
+                color: #7E7C7C;
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 18px;
+                display: inline-block;
+            }
+
+            p{
+                color: #A1A1A1;
+                font-size: 12px;
+                font-weight: 500;
+                display: inline-block;
+                margin-bottom: 34px;
+            }
+
+            a{
+                min-width: 120px;
+                font-size: 14px;
+                height: 18px;
+                display: inline-block;
+                padding: 16px 15px 16px 15px;
+                box-sizing: border-box;
+                line-height: 0px;
+                display: inline-block !important;
+            }
+
+        }
     }
 
 // End of angelo

@@ -70,6 +70,20 @@
                                 <li class="header">
                                     <span>Notifaction</span>
                                 </li>
+                                 <li>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img src="{{asset('img/profile-avatar.png')}}">
+                                        </div>
+                                        <div class="media-body">
+                                            <span>Angelo liked your photo. Please do check other photos that was liked in the past few days.</span>
+                                            <span class="font-extraLight">July 25 at 2:35pm</span>
+                                        </div>
+                                        <div class="media-right">
+                                            <img src="{{asset('img/profile-avatar.png')}}">
+                                        </div>
+                                    </div>
+                                </li>
                                 <li>
                                     <div class="media">
                                         <div class="media-left">

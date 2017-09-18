@@ -606,6 +606,30 @@
                 </div>
             </div>
         </div>
+
+        <div class="panel section-two">
+            <div class="panel-header">
+                <div>
+                    <p class="bell-icon"></p><span>Portfolio</span>
+                    <div class="panel-buttons">
+                        <button type="button" class="question-icon tooltip" data-tooltip="Journey highlights your educational attainment and serves as an exposure of your aacademic and extracurricular development"></button>
+                        <div class="details">Journey highlights your educational attainment and serves as an exposure of your aacademic and extracurricular development.</div>
+                    </div>
+                    <div class="panel-tabs">
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <div class="profile-journey">
+                    <div class="journey-empty-container">
+                        <img src="{{asset('img/journey.png')}}" style="height:177px;">
+                        <span>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court missed did out use.?</span>
+                        <button type="button" class="btn btn-primary-outline">Add Portfolio</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- End of Porfolio -->
 
         <!-- Review -->
@@ -1276,20 +1300,20 @@
                                 <form class="form-horizontal">
                                     <div class="rookie-question">
                                         <div class="profile-biography-rookie">
-                                            Hello, My name is <div contenteditable="true">Full Name</div>.
-                                            I am a student of <div contenteditable="true">School here</div>
-                                            in <div contenteditable="true">Country here</div>.
-                                            I am currently in Year <div contenteditable="true">?</div>.
-                                            My favourite class is <div contenteditable="true">?</div>,
-                                            in this class we <div contenteditable="true">?</div>.
-                                            The part I like the most about this class is <div contenteditable="true">?</div>.
+                                            Hello, My name is <div class="wrapper"><input type="hidden" id="fullname-A" name=""><div class="answer bind-input" data-input="#fullname-A" contenteditable="true">Full Name</div></div>.
+                                            I am a student of <div class="wrapper"><input type="hidden" id="school-A" name=""><div class="answer bind-input" data-input="#school-A" contenteditable="true">School here</div></div>
+                                            in <div class="wrapper"><input type="hidden" id="country-A" name=""><div class="answer bind-input" data-input="#country-A" contenteditable="true">Country here</div></div>.
+                                            I am currently in Year <div class="wrapper"><input type="hidden" id="year-A" name=""><div class="answer bind-input" data-input="#year-A" contenteditable="true">?</div></div>.
+                                            My favourite class is <div class="wrapper"><input type="hidden" id="class-A" name=""><div class="answer bind-input" data-input="#class-A" contenteditable="true">?</div></div>,
+                                            in this class we <div class="wrapper"><input type="hidden" id="sample" name=""><div class="answer bind-input" data-input="#sample" contenteditable="true">?</div></div>.
+                                            The part I like the most about this class is <div class="wrapper"><input type="hidden" id="sample2" name=""><div class="answer bind-input" data-input="#sample2" contenteditable="true">?</div></div>.
                                             <br><br>
-                                            Other than school something I like to do out of class is <div contenteditable="true">?</div>.
-                                            This is extracurricular activity allows me to <div contenteditable="true">?</div>.
+                                            Other than school something I like to do out of class is <div class="wrapper"><input type="hidden" id="sample3" name=""><div class="answer bind-input" data-input="#sample3" contenteditable="true">?</div></div>.
+                                            This is extracurricular activity allows me to <div class="wrapper"><input type="hidden" id="sample4" name=""><div class="answer bind-input" data-input="#sample4" contenteditable="true">?</div></div>.
                                             <br><br>
-                                            In the close future I want to <div contenteditable="true">?</div>. I will achieve
-                                            that by <div contenteditable="true">?</div>. For the far future I war
-                                            to become a <div contenteditable="true">?</div>.
+                                            In the close future I want to <div class="wrapper"><input type="hidden" id="sample5" name=""><div class="answer bind-input" data-input="#sample5" contenteditable="true">?</div></div>. I will achieve
+                                            that by <div class="wrapper"><input type="hidden" id="sample6" name=""><div class="answer bind-input" data-input="#sample6" contenteditable="true">?</div></div>. For the far future I war
+                                            to become a <div class="wrapper"><input type="hidden" id="sample7" name=""><div class="answer bind-input" data-input="#sample7" contenteditable="true">?</div></div>.
                                             <br><br>
                                         </div>
                                     </div>
