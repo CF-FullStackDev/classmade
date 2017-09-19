@@ -127,8 +127,12 @@
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
+                </div>
+
+               <!--  <div class="panel-buttons">
                     <button class="heart-button heart-button heart-icon"></button>
                 </div>
+ -->
                 <div class="highlight-photo-slick">
                     <div class='highlight-image-container'>
                         <img src="{{asset('img/highlight-data.png')}}">
@@ -148,7 +152,7 @@
 
         <div class="panel section-one">
             <div class="panel-body highlight-data-container highlight-data-container-video">
-                <div class="panel-buttons">
+                <!-- <div class="panel-buttons">
                     <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
                     <div class="details">Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion.</div>
                     <button type="button" class="edit-icon button-dropdown"></button>
@@ -157,6 +161,10 @@
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
+                    <button class="heart-button heart-button heart-icon"></button>
+                </div> -->
+
+                <div class="panel-buttons">
                     <button class="heart-button heart-button heart-icon"></button>
                 </div>
                 <iframe width="960" height="420" src="http://youtube.com/embed/yOfT6mlbw30" frameborder="0" allowfullscreen></iframe>
@@ -174,8 +182,11 @@
                         <li class="divider"></li>
                         <li>Unpublish</li>
                     </ul>
-                    <button class="heart-button heart-icon"></button>
                 </div>
+
+                <!-- <div class="panel-buttons">
+                    <button class="heart-button heart-icon"></button>
+                </div> -->
                 <video preload controls>
                     <source src="{{asset('img/achievement-video.mp4')}}" type="video/mp4"/>
                 </video>
@@ -595,6 +606,30 @@
                 </div>
             </div>
         </div>
+
+        <div class="panel section-two">
+            <div class="panel-header">
+                <div>
+                    <p class="bell-icon"></p><span>Portfolio</span>
+                    <div class="panel-buttons">
+                        <button type="button" class="question-icon tooltip" data-tooltip="Journey highlights your educational attainment and serves as an exposure of your aacademic and extracurricular development"></button>
+                        <div class="details">Journey highlights your educational attainment and serves as an exposure of your aacademic and extracurricular development.</div>
+                    </div>
+                    <div class="panel-tabs">
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <div class="profile-journey">
+                    <div class="journey-empty-container">
+                        <img src="{{asset('img/journey.png')}}" style="height:177px;">
+                        <span>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court missed did out use.?</span>
+                        <button type="button" class="btn btn-primary-outline">Add Portfolio</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- End of Porfolio -->
 
         <!-- Review -->
@@ -850,6 +885,9 @@
 
         <button class="open-modal btn btn-primary" data-modal="#modal-classmade-profile">Save Classmade Profile</button>
         <button class="open-modal btn btn-primary" data-modal="#modal-onboarding">Onboarding Modal</button>
+        <button class="btn btn-primary success-notification">Success Notification</button>
+        <button class="btn btn-primary danger-notification">Danger Notification</button>
+        <button class="btn btn-primary warning-notification">Warning Notification</button>
         <!-- End of Review -->
 
         <!-- Connections -->
@@ -1271,20 +1309,20 @@
                                 <form class="form-horizontal">
                                     <div class="rookie-question">
                                         <div class="profile-biography-rookie">
-                                            Hello, My name is <div contenteditable="true">Full Name</div>.
-                                            I am a student of <div contenteditable="true">School here</div>
-                                            in <div contenteditable="true">Country here</div>.
-                                            I am currently in Year <div contenteditable="true">?</div>.
-                                            My favourite class is <div contenteditable="true">?</div>,
-                                            in this class we <div contenteditable="true">?</div>.
-                                            The part I like the most about this class is <div contenteditable="true">?</div>.
+                                            Hello, My name is <div class="wrapper"><input type="hidden" id="fullname-A" name=""><div class="answer bind-input" data-input="#fullname-A" contenteditable="true">Full Name</div></div>.
+                                            I am a student of <div class="wrapper"><input type="hidden" id="school-A" name=""><div class="answer bind-input" data-input="#school-A" contenteditable="true">School here</div></div>
+                                            in <div class="wrapper"><input type="hidden" id="country-A" name=""><div class="answer bind-input" data-input="#country-A" contenteditable="true">Country here</div></div>.
+                                            I am currently in Year <div class="wrapper"><input type="hidden" id="year-A" name=""><div class="answer bind-input" data-input="#year-A" contenteditable="true">?</div></div>.
+                                            My favourite class is <div class="wrapper"><input type="hidden" id="class-A" name=""><div class="answer bind-input" data-input="#class-A" contenteditable="true">?</div></div>,
+                                            in this class we <div class="wrapper"><input type="hidden" id="sample" name=""><div class="answer bind-input" data-input="#sample" contenteditable="true">?</div></div>.
+                                            The part I like the most about this class is <div class="wrapper"><input type="hidden" id="sample2" name=""><div class="answer bind-input" data-input="#sample2" contenteditable="true">?</div></div>.
                                             <br><br>
-                                            Other than school something I like to do out of class is <div contenteditable="true">?</div>.
-                                            This is extracurricular activity allows me to <div contenteditable="true">?</div>.
+                                            Other than school something I like to do out of class is <div class="wrapper"><input type="hidden" id="sample3" name=""><div class="answer bind-input" data-input="#sample3" contenteditable="true">?</div></div>.
+                                            This is extracurricular activity allows me to <div class="wrapper"><input type="hidden" id="sample4" name=""><div class="answer bind-input" data-input="#sample4" contenteditable="true">?</div></div>.
                                             <br><br>
-                                            In the close future I want to <div contenteditable="true">?</div>. I will achieve
-                                            that by <div contenteditable="true">?</div>. For the far future I war
-                                            to become a <div contenteditable="true">?</div>.
+                                            In the close future I want to <div class="wrapper"><input type="hidden" id="sample5" name=""><div class="answer bind-input" data-input="#sample5" contenteditable="true">?</div></div>. I will achieve
+                                            that by <div class="wrapper"><input type="hidden" id="sample6" name=""><div class="answer bind-input" data-input="#sample6" contenteditable="true">?</div></div>. For the far future I war
+                                            to become a <div class="wrapper"><input type="hidden" id="sample7" name=""><div class="answer bind-input" data-input="#sample7" contenteditable="true">?</div></div>.
                                             <br><br>
                                         </div>
                                     </div>
@@ -1858,8 +1896,10 @@
                             <button class="btn btn-primary unpublish">Unpublish</button>
                             <button class="btn btn-primary ghost-button edit">Edit</button>
                         </div>
-                        <div class="button-group">
-                            <button class="btn btn-primary ghost-button appreciate">Appreciate</button>
+                        <div class="button-group-other">
+                            <span class="portfolio-heart-icon"></span>
+                            <span class="share-icon tooltip-right"></span>
+                            <div class="details">https://invis.io/SJCYFLBV3</div>
                         </div>
                     </div>
                     <div class="panel-body">
@@ -1941,5 +1981,21 @@
             </div>
         </div>
     </div>
+    <div class="notification-container">
+        <div class="notification notification-success">
+            <div class="title">Success!</div>
+            <p class="description">Awesome job! Everythings fine!</p>
+            <span class="notification-close">X</span>
+        </div>
+        <div class="notification notification-danger">
+            <div class="title">Error, something is wrong!</div>
+            <p class="description">There seems to be a problem</p>
+            <span class="notification-close">X</span>
+        </div>
+        <div class="notification notification-warning">
+            <div class="title">Watch out!</div>
+            <p class="description">Are you 100% sure about that?</p>
+            <span class="notification-close">X</span>
+        </div>
+    </div>
 </div>
-@endsection

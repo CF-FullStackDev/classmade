@@ -43,6 +43,22 @@ Route::get('/portfolio-single', function () {
     return view('portfolio-single');
 });
 
+Route::get('/transcript-single', function () {
+    return view('transcript-single');
+});
+
+Route::get('/maintenance', function () {
+    return view('maintenance');
+});
+
+Route::get('/404', function () {
+    return view('404');
+});
+
+Route::get('/confirmation', function () {
+    return view('confirmation');
+});
+
 Route::post('formAvatarPhoto', 'HomeController@formAvatarPhoto');
 Route::post('formCoverPhoto', 'HomeController@formCoverPhoto');
 

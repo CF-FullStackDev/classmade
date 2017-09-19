@@ -1112,7 +1112,8 @@ $(function () {
 
     $('.slick-onboarding').slick({
         arrows: false,
-        dots: true
+        dots: true,
+        infinite: false
     });
 
     function readURL(input, tar) {
@@ -1185,6 +1186,10 @@ $(function () {
         $(this).removeClass('active');
     });
 
+    $(document).on('click', '.tooltip-right', function () {
+        $(this).toggleClass('active');
+    });
+
     $(document).on('click', '.button-dropdown', function () {
         $('.button-dropdown-menu').each(function () {
             $(this).removeClass('active');
@@ -1215,7 +1220,50 @@ $(function () {
     $(document).on('mouseleave', '.highlight-data-container', function (e) {
         $(this).find('.button-dropdown-menu').removeClass('active');
     });
+
     // END OF NEW ANGELO JS
+
+    // CSS FOR Notification
+
+    function ShowNotification(type) {
+        if (type == "success") {
+            $(".notification-success").addClass('active');
+            $('.notification-success').delay(3000).queue(function (next) {
+                $(this).removeClass('active');
+                next();
+            });
+        } else if (type == "danger") {
+            $(".notification-danger").addClass('active');
+            $('.notification-danger').delay(3000).queue(function (next) {
+                $(this).removeClass('active');
+                next();
+            });
+        } else if (type == "warning") {
+            $(".notification-warning").addClass('active');
+            $('.notification-warning').delay(3000).queue(function (next) {
+                $(this).removeClass('active');
+                next();
+            });
+        }
+    }
+
+    $(document).on('click', '.success-notification', function () {
+        ShowNotification("success");
+    });
+
+    $(document).on('click', '.danger-notification', function () {
+        ShowNotification("danger");
+    });
+
+    $(document).on('click', '.warning-notification', function () {
+        ShowNotification("warning");
+    });
+
+    $(document).on('click', '.notification-close', function () {
+        $(this).parents('.notification').removeClass('active');
+    });
+
+    // End of CSS FOR Notification
 
     $(document).on('mouseover', 'option', function (e) {
         $(this).css('background', 'red');
@@ -1227,16 +1275,10 @@ $(function () {
         $('.slick-onboarding').slick('slickGoTo', slideno - 1);
     });
 
-    // $('.selectize').selectize({
-    //     delimiter: ',',
-    //     persist: false,
-    //     create: function(input) {
-    //         return {
-    //             value: input,
-    //             text: input
-    //         }
-    //     }
-    // });
+    $(document).on('keyup', '.bind-input', function (e) {
+        var input = $(this).data('input');
+        $(input).val($(this).html());
+    });
 });
 
 /***/ }),

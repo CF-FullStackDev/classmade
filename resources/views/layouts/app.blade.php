@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('slick-1.6.0/slick/slick.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('slick-1.6.0/slick/slick-theme.css') }}">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('select2/dist/css/select2.min.css') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body id="{{ Auth::guest() ? 'app-login' : 'app-home' }}">
@@ -68,6 +69,20 @@
                             <ul class="dropdown-menu notification">
                                 <li class="header">
                                     <span>Notifaction</span>
+                                </li>
+                                 <li>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img src="{{asset('img/profile-avatar.png')}}">
+                                        </div>
+                                        <div class="media-body">
+                                            <span>Angelo liked your photo. Please do check other photos that was liked in the past few days.</span>
+                                            <span class="font-extraLight">July 25 at 2:35pm</span>
+                                        </div>
+                                        <div class="media-right">
+                                            <img src="{{asset('img/profile-avatar.png')}}">
+                                        </div>
+                                    </div>
                                 </li>
                                 <li>
                                     <div class="media">
@@ -151,5 +166,7 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('slick-1.6.0/slick/slick.min.js') }}"></script>
     <script src="{{ asset('js/jquery.cropit.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('slick-1.6.0/slick/slick.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('select2/dist/js/select2.full.min.js') }}"></script>
 </body>
 </html>
