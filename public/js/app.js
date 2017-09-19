@@ -823,35 +823,39 @@ $(function () {
     }
 
     function getProfilePhoto() {
-        var profilephoto = $('#profilephoto').attr('src');
-        profilephoto = profilephoto.replace(/^.*?([^\/]+)\..+?$/, '$1');
-        if (profilephoto == 'default') {
-            profilephoto = 'avatar-placeholder';
-        }
-        $('.image-editor.profile-avatar').cropit({
-            imageBackground: true,
-            imageBackgroundBorderWidth: 15,
-            smallImage: 'stretch',
-            imageState: {
-                src: 'storage/avatar/' + profilephoto + '.png'
+        try {
+            var profilephoto = $('#profilephoto').attr('src');
+            profilephoto = profilephoto.replace(/^.*?([^\/]+)\..+?$/, '$1');
+            if (profilephoto == 'default') {
+                profilephoto = 'avatar-placeholder';
             }
-        });
+            $('.image-editor.profile-avatar').cropit({
+                imageBackground: true,
+                imageBackgroundBorderWidth: 15,
+                smallImage: 'stretch',
+                imageState: {
+                    src: 'storage/avatar/' + profilephoto + '.png'
+                }
+            });
+        } catch (err) {}
     }
 
     function getCoverPhoto() {
-        var coverphoto = $('#profile_coverphoto').attr('src');
-        coverphoto = coverphoto.replace(/^.*?([^\/]+)\..+?$/, '$1');
-        if (coverphoto == 'default') {
-            coverphoto = 'cover-placeholder';
-        }
-        $('.image-editor.profile-cover').cropit({
-            imageBackground: true,
-            imageBackgroundBorderWidth: 15,
-            smallImage: 'stretch',
-            imageState: {
-                src: 'storage/background/' + coverphoto + '.png'
+        try {
+            var coverphoto = $('#profile_coverphoto').attr('src');
+            coverphoto = coverphoto.replace(/^.*?([^\/]+)\..+?$/, '$1');
+            if (coverphoto == 'default') {
+                coverphoto = 'cover-placeholder';
             }
-        });
+            $('.image-editor.profile-cover').cropit({
+                imageBackground: true,
+                imageBackgroundBorderWidth: 15,
+                smallImage: 'stretch',
+                imageState: {
+                    src: 'storage/background/' + coverphoto + '.png'
+                }
+            });
+        } catch (err) {}
     }
 
     getProfilePhoto();
@@ -29249,7 +29253,7 @@ process.umask = function() { return 0; };
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {/*!
- * Vue.js v2.4.3
+ * Vue.js v2.4.4
  * (c) 2014-2017 Evan You
  * Released under the MIT License.
  */
@@ -33974,7 +33978,7 @@ Object.defineProperty(Vue$3.prototype, '$ssrContext', {
   }
 });
 
-Vue$3.version = '2.4.3';
+Vue$3.version = '2.4.4';
 
 /*  */
 
