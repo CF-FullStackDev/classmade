@@ -885,6 +885,9 @@
 
         <button class="open-modal btn btn-primary" data-modal="#modal-classmade-profile">Save Classmade Profile</button>
         <button class="open-modal btn btn-primary" data-modal="#modal-onboarding">Onboarding Modal</button>
+        <button class="btn btn-primary success-notification">Success Notification</button>
+        <button class="btn btn-primary danger-notification">Danger Notification</button>
+        <button class="btn btn-primary warning-notification">Warning Notification</button>
         <!-- End of Review -->
 
         <!-- Connections -->
@@ -1972,6 +1975,23 @@
             </div>
         </div>
     </div>
+
+    <div class="notification-container">
+        <div class="notification notification-success">
+            <div class="title">Success!</div>
+            <p class="description">Awesome job! Everythings fine!</p>
+            <span class="notification-close">X</span>
+        </div>
+        <div class="notification notification-danger">
+            <div class="title">Error, something is wrong!</div>
+            <p class="description">There seems to be a problem</p>
+            <span class="notification-close">X</span>
+        </div>
+        <div class="notification notification-warning">
+            <div class="title">Watch out!</div>
+            <p class="description">Are you 100% sure about that?</p>
+            <span class="notification-close">X</span>
+        </div>
+    </div>
 </div>
 @endsection
-
