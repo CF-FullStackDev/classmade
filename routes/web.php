@@ -61,6 +61,7 @@ Route::get('/confirmation', function () {
 
 Route::post('formAvatarPhoto', 'HomeController@formAvatarPhoto');
 Route::post('formCoverPhoto', 'HomeController@formCoverPhoto');
+Route::get('pdf', 'HomeController@pdfdownload');
 
 Auth::routes();
 

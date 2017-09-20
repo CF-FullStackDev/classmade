@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Artisan;
 use App\User, App\Profile;
+use PDF;
 use Auth;
 
 class HomeController extends Controller
@@ -19,6 +20,12 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+    }
+
+    public function pdfdownload(){
+        $data = [];
+        $pdf = PDF::loadView('pdf.pdftemplate1');
+        return $pdf->download('sample.pdf');
     }
 
     /**
