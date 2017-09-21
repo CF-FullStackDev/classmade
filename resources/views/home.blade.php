@@ -888,7 +888,7 @@
         <button class="btn btn-primary success-notification">Success Notification</button>
         <button class="btn btn-primary danger-notification">Danger Notification</button>
         <button class="btn btn-primary warning-notification">Warning Notification</button>
-        <a class="btn btn-primary" href="http://localhost/classmade/public/pdf" style="display: inline-block;margin-top: 15px;text-align:center;height: 0px;padding: 25px 30px 25px 30px;line-height: 0px;">PDF</button>
+        <a class="btn btn-primary" href="http://localhost/classmade/public/pdf" style="display: inline-block;margin-top: 15px;text-align:center;height: 0px;padding: 25px 30px 25px 30px;line-height: 0px;">PDF</a>
         <!-- End of Review -->
 
         <!-- Connections -->
@@ -1796,7 +1796,7 @@
     <div class="modal-dialog">
         <div class="modal-body profile-achievement-info" id="modal-achievement-info">
             <div class="content">
-                <div class="panel">
+                <div class="panel" style="height: 100%;">
                     <div class="panel-header">
                         <span class="title">Academic Excellence Awards</span>
                         <span class="info">May 2012 PLDT-Smart Foundation</span>

@@ -300,7 +300,7 @@
 			<div style="width: 100%;height: 237px;background-image: url({{ asset('img/journey-placeholder.png') }});background-size: cover;background-position: center center;background-repeat: no-repeat;position: absolute;"></div>
 			<img src="" class="elements">
 			<img src="{{asset('img/pdf/1IntroHello.png')}}" class="intro">
-			<img src="{{asset('storage/avatar/')}}" class="avatar">
+			<img src="{{asset('img/profile-avatar.png')}}" class="avatar">
             <span class="name">Angelo bantiling</span>
             <span class="school">Student at UP</span>
 		</div>

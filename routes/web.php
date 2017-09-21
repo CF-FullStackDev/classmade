@@ -55,6 +55,14 @@ Route::get('/404', function () {
     return view('404');
 });
 
+Route::get('/pdf-view', function () {
+    return view('pdf.pdftemplate1');
+});
+
+Route::get('/pdf-view2', function () {
+    return view('pdf.pdftemplate2');
+});
+
 Route::get('/confirmation', function () {
     return view('confirmation');
 });

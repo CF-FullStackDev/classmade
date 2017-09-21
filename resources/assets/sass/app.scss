@@ -2351,6 +2351,10 @@ body.modal-open {
         .content {
             display: inline;
 
+            .panel{
+                height: 100% !important;
+            }
+
             .panel-header{
 
                 padding: 30px 4% 0px 4%;
