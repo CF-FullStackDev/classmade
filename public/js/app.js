@@ -1279,6 +1279,29 @@ $(function () {
         var input = $(this).data('input');
         $(input).val($(this).html());
     });
+
+    $(document).on('keyup', '.input-search > input[type="text"]', function (e) {
+        var length = $(this).val().length;
+
+        if (length > 0) {
+            $(".input-search-list").addClass('active');
+        } else {
+            $(".input-search-list").removeClass('active');
+        }
+    });
+
+    $(document).on('focus', '.input-search > input[type="text"]', function (e) {
+        $(this).addClass('active');
+    });
+
+    $(document).on('focusout', '.input-search > input[type="text"]', function (e) {
+        $(this).removeClass('active');
+        $(".input-search-list").removeClass('active');
+    });
+
+    try {
+        $('.scrollbar-design').scrollbar();
+    } catch (err) {}
 });
 
 /***/ }),

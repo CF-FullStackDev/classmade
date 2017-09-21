@@ -41,6 +41,16 @@
                     <div class="input-search">
                         <input type="text" name="" value="" placeholder="search">
                         <div class="input-icon-search"></div>
+                        <ul class="input-search-list scrollbar-design scroll-content">
+                            <li><a href="#"><img src="{{asset('img/profile-avatar.png')}}"><span>Kate Strickland</span></a></li>
+                            <li><a href="#"><img src="{{asset('img/profile-avatar.png')}}"><span>Kate landstrick shrek fiona</span></a></li>
+                            <li><a href="#"><img src="{{asset('img/profile-avatar.png')}}"><span>Kate landstrick shrek fiona</span></a></li>
+                            <li><a href="#"><img src="{{asset('img/profile-avatar.png')}}"><span>Kate landstrick shrek fiona</span></a></li>
+                            <li><a href="#"><img src="{{asset('img/profile-avatar.png')}}"><span>Kate landstrick shrek fiona</span></a></li>
+                            <li><a href="#"><img src="{{asset('img/profile-avatar.png')}}"><span>Sample 1</span></a></li>
+                            <li><a href="#"><img src="{{asset('img/profile-avatar.png')}}"><span>Sample 2</span></a></li>
+                            
+                        </ul>
                     </div>
                     <ul class="dropdown-container">
                         <li class="dropdown">
@@ -168,5 +178,6 @@
     <script src="{{ asset('js/jquery.cropit.js') }}"></script>
     <script type="text/javascript" src="{{ asset('slick-1.6.0/slick/slick.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('select2/dist/js/select2.full.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.scrollbar.js') }}"></script>
 </body>
 </html>
