@@ -248,23 +248,23 @@
                                             
                                         </div>
 
-                                        <div class="account-select inline1">
+                                        <div class="account-select select2-max-width inline1">
                                             <select name="">
                                                 <option selected="selected">From</option>
                                             </select>
                                         </div>
-                                        <div class="account-select inline2">
+                                        <div class="account-select select2-max-width inline2">
                                             <select name="">
                                                 <option selected="selected">To</option>
                                             </select>
                                         </div>
 
-                                        <div class="account-select">
+                                        <div class="account-select select2-max-width">
                                             <select name="">
                                                 <option selected="selected">School</option>
                                             </select>
                                         </div>
-                                        <div class="account-select">
+                                        <div class="account-select select2-max-width">
                                             <select name="">
                                                 <option selected="selected">Level</option>
                                             </select>
@@ -275,23 +275,23 @@
                                             <img class="file-uploaded" src="{{asset('img/journey-placeholder.png')}}">
                                         </div>
 
-                                        <div class="account-select inline1">
+                                        <div class="account-select select2-max-width inline1">
                                             <select name="">
                                                 <option selected="selected">From</option>
                                             </select>
                                         </div>
-                                        <div class="account-select inline2">
+                                        <div class="account-select select2-max-width inline2">
                                             <select name="">
                                                 <option selected="selected">To</option>
                                             </select>
                                         </div>
 
-                                        <div class="account-select">
+                                        <div class="account-select select2-max-width">
                                             <select name="">
                                                 <option selected="selected">School</option>
                                             </select>
                                         </div>
-                                        <div class="account-select">
+                                        <div class="account-select select2-max-width">
                                             <select name="">
                                                 <option selected="selected">Level</option>
                                             </select>

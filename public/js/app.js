@@ -1302,6 +1302,12 @@ $(function () {
     try {
         $('.scrollbar-design').scrollbar();
     } catch (err) {}
+
+    try {
+        $('select').select2({
+            minimumResultsForSearch: Infinity
+        });
+    } catch (err) {}
 });
 
 /***/ }),

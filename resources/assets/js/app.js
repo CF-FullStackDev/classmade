@@ -547,4 +547,13 @@ $(function(){
     catch(err){
         
     }
+
+    try{
+        $('select').select2({
+            minimumResultsForSearch: Infinity
+        });
+    }
+    catch(err){
+        
+    }
 });

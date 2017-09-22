@@ -1604,6 +1604,10 @@ body.modal-open {
   top: 9px;
 }
 
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal .native-select#Month .select2 {
+  margin-right: 0px;
+}
+
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-form .form-horizontal .native-select#Month select {
   height: 100%;
   width: 109px !important;
@@ -3332,18 +3336,18 @@ ul.dropdown-menu.notification li:not([class='header']) .media .media-right img {
 }
 
 .panel.account-content .panel-body .account-journey .account-select {
-  width: 97%;
+  width: 99%;
   margin-bottom: 25px;
 }
 
 .panel.account-content .panel-body .account-journey .account-select.inline1 {
-  width: 133px;
+  width: 138px;
   display: inline-block;
   margin-right: 9px;
 }
 
 .panel.account-content .panel-body .account-journey .account-select.inline2 {
-  width: 133px;
+  width: 137px;
   display: inline-block;
   margin-right: 0px;
   margin-left: 9px;
@@ -3397,12 +3401,10 @@ ul.dropdown-menu.notification li:not([class='header']) .media .media-right img {
 }
 
 .panel.account-content .panel-body .account-select {
-  border: 1px solid #ccc;
   width: 120px;
   height: 30px;
   border-radius: 3px;
   overflow: hidden;
-  background: #fafafa url(../img/dropdown.png) no-repeat 93% 50%;
   background-size: 20px;
   line-height: 30px;
   background-color: #FFFFFF;
@@ -5568,21 +5570,6 @@ body#app-other footer ul > li:last-child:after {
           appearance: none;
 }
 
-.form-horizontal .native-select:after {
-  content: '';
-  background: url("../img/dropdown.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  font-family: 'FontAwesome';
-  width: 20px;
-  height: 12px;
-  position: absolute;
-  top: 13px;
-  right: 9px;
-  pointer-events: none;
-  color: #7e7c7c;
-}
-
 .form-horizontal .select-group label {
   display: block;
   font-weight: bold;
@@ -5896,10 +5883,12 @@ body#app-other footer ul > li:last-child:after {
 
 .journey-form {
   width: 300px;
+  margin-right: 0px;
 }
 
 .journey-form .native-select .journey-from {
   width: 140px;
+  margin-right: 15px;
 }
 
 .journey-form .native-select .journey-to {
@@ -7110,6 +7099,14 @@ body#app-other footer ul > li:last-child:after {
   font-size: 12px;
   font-weight: 500;
   color: #A0A0A0;
+}
+
+.select2-results ul.select2-results__option li.select2-results__option--highlighted[aria-selected] {
+  background-color: red !important;
+}
+
+.select2-max-width .select2 {
+  width: 100% !important;
 }
 
 .scrollbar-design {
