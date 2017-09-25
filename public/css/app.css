@@ -6325,7 +6325,7 @@ body#app-other footer ul > li:last-child:after {
   border-radius: 5px;
   height: 35px;
   line-height: 2px;
-  width: 250px;
+  min-width: 250px;
   padding: 20px;
   box-sizing: border-box;
   color: #4A90E2;
