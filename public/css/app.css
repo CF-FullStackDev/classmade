@@ -113,12 +113,12 @@ a {
   display: none !important;
 }
 
-.text-center, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo span, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .or, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container span, .maintenance-wrapper h2, .page-404-wrapper h2 {
+.text-center, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo span, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .or, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container span, .maintenance-wrapper h2, .page-404-wrapper h2, .pending-connection-placeholder span {
   display: block;
   text-align: center;
 }
 
-.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .journey-form, .highlight-placeholder img, .portfolio-single #content .panel-body .portfolio-container img, .transcript-single, .maintenance-wrapper img, .maintenance-wrapper p, .page-404-wrapper img, .page-404-wrapper p, .confirmation-wrapper {
+.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .journey-form, .highlight-placeholder img, .portfolio-single #content .panel-body .portfolio-container img, .transcript-single, .maintenance-wrapper img, .maintenance-wrapper p, .page-404-wrapper img, .page-404-wrapper p, .confirmation-wrapper, .pending-connection-placeholder img {
   display: block;
   margin: 0 auto;
 }
@@ -1698,7 +1698,7 @@ body.modal-open {
   padding: 0;
   box-shadow: 0 0 4px 0 #D6D6D6;
   border-radius: 3px;
-  width: 900px;
+  width: 523px;
   height: 500px;
 }
 
@@ -1719,15 +1719,15 @@ body.modal-open {
   display: inline-block;
   width: 100%;
   padding-left: 40px;
-  margin-top: 72px;
+  margin-top: 52px;
 }
 
 .modal-body.profile-journey .content .journey-modal-container .journey-container {
-  width: 37%;
+  width: 70%;
   margin-right: 5%;
   padding: 20px;
   background: #fff;
-  min-height: 391px;
+  min-height: 356px;
   display: inline-block;
   float: left;
   margin-bottom: 25px;
@@ -1742,18 +1742,17 @@ body.modal-open {
   background-color: #D8DADD;
   color: #F18448;
   text-align: center;
-  width: 266px;
+  width: 295px;
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 0px 25px 0px;
   cursor: pointer;
 }
 
 .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo .file-uploaded {
   width: 100%;
-  height: 170px;
+  height: 119px;
   position: relative;
-  top: -25px;
+  top: 0px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1812,8 +1811,9 @@ body.modal-open {
 
 .modal-body.profile-journey .content .request-school {
   margin-top: 0px;
-  margin-left: 5%;
+  margin-left: 9%;
   color: #F18448;
+  font-size: 14px;
 }
 
 .modal-body.profile-portfolio {
@@ -5462,17 +5462,16 @@ body#app-other footer ul > li:last-child:after {
   margin-bottom: 15px;
   background-color: #F4F9FF;
   position: relative;
-  border: 1px dashed #4A90E2;
+  border: 1px solid #4A90E2;
+  border-radius: 5px;
 }
 
 .dashed-tips-container .icon, .dashed-tips-container .bell-icon, .dashed-tips-container .notif-icon, .dashed-tips-container .chat-icon, .dashed-tips-container .add-icon, .dashed-tips-container .edit-icon, .dashed-tips-container .edit-icon-transparent, .dashed-tips-container .question-icon, .dashed-tips-container .heart-icon, .dashed-tips-container .chatmade-icon, .dashed-tips-container .check-icon, .dashed-tips-container .portfolio-heart-icon, .dashed-tips-container .share-icon, .dashed-tips-container .plus-icon {
   position: absolute;
-  border-radius: 50px;
-  border: 3px solid #4A90E2;
   height: 60px;
   width: 60px;
-  left: 17px;
-  top: 19px;
+  left: 34px;
+  top: 22px;
 }
 
 .dashed-tips-container .icon span, .dashed-tips-container .bell-icon span, .dashed-tips-container .notif-icon span, .dashed-tips-container .chat-icon span, .dashed-tips-container .add-icon span, .dashed-tips-container .edit-icon span, .dashed-tips-container .edit-icon-transparent span, .dashed-tips-container .question-icon span, .dashed-tips-container .heart-icon span, .dashed-tips-container .chatmade-icon span, .dashed-tips-container .check-icon span, .dashed-tips-container .portfolio-heart-icon span, .dashed-tips-container .share-icon span, .dashed-tips-container .plus-icon span {
@@ -5887,13 +5886,15 @@ body#app-other footer ul > li:last-child:after {
 }
 
 .journey-form .native-select .journey-from {
-  width: 140px;
-  margin-right: 15px;
+  width: 145px;
+}
+
+.journey-form .native-select .journey-from .select2 {
+  margin-right: 15px !important;
 }
 
 .journey-form .native-select .journey-to {
-  width: 140px;
-  margin-left: 10px;
+  width: 145px;
 }
 
 .journey-form .native-select .school {
@@ -7107,6 +7108,38 @@ body#app-other footer ul > li:last-child:after {
 
 .select2-max-width .select2 {
   width: 100% !important;
+}
+
+.forgot-password-form {
+  margin-top: 135px;
+}
+
+.forgot-password-form .forgot-password-buttons {
+  margin-top: 50px;
+  text-align: right;
+}
+
+.forgot-password-form .forgot-password-buttons .send-reset {
+  font-size: 14px;
+  min-width: 152px;
+  padding: 8px 24px;
+}
+
+.forgot-password-form .forgot-password-buttons .cancel {
+  font-size: 14px;
+  padding: 8px 24px;
+}
+
+.pending-connection-placeholder img {
+  margin-top: 79px;
+}
+
+.pending-connection-placeholder span {
+  margin-top: 32px;
+  margin-bottom: 80px;
+  color: #A1A1A1;
+  font-size: 12px;
+  padding-left: 65px;
 }
 
 .scrollbar-design {

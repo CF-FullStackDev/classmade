@@ -1800,7 +1800,7 @@ body.modal-open {
         padding: 0;
         box-shadow: 0 0 4px 0 #D6D6D6;
         border-radius: 3px;
-        width: 900px;
+        width: 523px;
         height: 500px;
 
         .content{
@@ -1823,14 +1823,14 @@ body.modal-open {
                 display: inline-block;
                 width: 100%;
                 padding-left: 40px;
-                margin-top: 72px;
+                margin-top: 52px;
 
                 .journey-container{
-                    width: 37%;
+                    width: 70%;
                     margin-right: 5%;
                     padding: 20px;
                     background: #fff;
-                    min-height: 391px;
+                    min-height: 356px;
                     display: inline-block;
                     float: left;
                     margin-bottom: 25px;
@@ -1846,17 +1846,17 @@ body.modal-open {
                         background-color: #D8DADD;
                         color: $primary-color;
                         text-align: center;
-                        width: 266px;
+                        width: 295px;
                         height: 120px;
                         margin-bottom: 30px;
-                        padding: 25px 0px 25px 0px;
+                        // padding: 25px 0px 25px 0px;
                         cursor: pointer;
 
                         .file-uploaded{
                             width: 100%;
-                            height: 170px;
+                            height: 119px;
                             position: relative;
-                            top: -25px;
+                            top: 0px;
                             object-fit: cover;
                         }
 
@@ -1925,8 +1925,9 @@ body.modal-open {
 
             .request-school{
                 margin-top: 0px;
-                margin-left: 5%;
+                margin-left: 9%;
                 color: $primary-color;
+                font-size: 14px;
             }
         }
     }
@@ -5634,16 +5635,17 @@ body {
     margin-bottom: 15px;
     background-color: #F4F9FF;
     position: relative;
-    border: 1px dashed #4A90E2;
+    border: 1px solid #4A90E2;
+    border-radius: 5px;
 
     .icon {
         position: absolute;
-        border-radius: 50px;
-        border: 3px solid #4A90E2;
+        // border-radius: 50px;
+        // border: 3px solid #4A90E2;
         height: 60px;
         width: 60px;
-        left: 17px;
-        top: 19px;
+        left: 34px;
+        top: 22px;
 
         span {
             font-size: 45px;
@@ -6069,12 +6071,14 @@ body {
 
     .native-select {
         .journey-from {
-            width: 140px;
-            margin-right: 15px;
+            width: 145px;
+            
+            .select2{
+                margin-right: 15px !important;
+            }
         }
         .journey-to {
-            width: 140px;
-            margin-left: 10px;
+            width: 145px;
         }
         .school {
             width: 295px;
@@ -7380,6 +7384,41 @@ body {
         
         .select2{
             width: 100% !important;
+        }
+    }
+
+    .forgot-password-form{
+        margin-top: 135px;
+
+        .forgot-password-buttons{
+            margin-top: 50px;
+            text-align: right;
+
+            .send-reset{
+                font-size: 14px;
+                min-width: 152px;
+                padding: 8px 24px;
+            }
+
+            .cancel{
+                font-size: 14px;
+                padding: 8px 24px;
+            }
+        }
+    }
+
+    .pending-connection-placeholder{
+        img{
+            @extend .center;
+            margin-top: 79px;
+        }
+        span{
+            @extend .text-center;
+            margin-top: 32px;
+            margin-bottom: 80px;
+            color: #A1A1A1;
+            font-size: 12px;
+            padding-left: 65px;
         }
     }
 

@@ -187,36 +187,36 @@
                                     <span class="header">Skill</span>
                                     <label>Add Skill</label>
                                     <div class="">
-                                        <select class="select2" name="sample[]" multiple="multiple" style="width:245px;">
+                                        <select class="select2" name="sample[]" multiple="multiple" style="width:100%;">
                                             <option value="">Insert Skill</option>
                                             <option value="">Another Skill</option>
                                             <option value="">Long Name Skill</option>
                                         </select>
                                     </div>
-                                    <div class="skill-container">
+                                   <!--  <div class="skill-container">
                                         <div class="skill">Insert Skill</div>
                                         <div class="skill">Another Skill</div>
                                         <div class="skill">Long Name Skill</div>
-                                    </div>
-                                    <a class="skill-edit edit-icon"></a>
+                                    </div> -->
+                                    <!-- <a class="skill-edit edit-icon"></a> -->
 
                                     <span class="header">Language</span>
                                     <label>Add Language</label>
                                     <div class="">
-                                        <select class="select2" name="sample[]" multiple="multiple" style="width:245px;">
+                                        <select class="select2" name="sample[]" multiple="multiple" style="width:100%;">
                                             <option value="">Insert Skill</option>
                                             <option value="">Another Skill</option>
                                             <option value="">Long Name Skill</option>
                                         </select>
                                     </div>
 
-                                    <div class="language-container">
+                                  <!--   <div class="language-container">
                                         <div class="language">Insert Skill</div>
                                         <div class="language">Another Skill</div>
                                         <div class="language">Long Name Skill</div>
                                         
-                                    </div>
-                                    <a class="language-edit edit-icon"></a>
+                                    </div> -->
+                                    <!-- <a class="language-edit edit-icon"></a> -->
 
                                     <div class="btn-panel">
                                         <button type="submit" class="btn btn-primary">Save</button>

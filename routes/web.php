@@ -67,6 +67,14 @@ Route::get('/confirmation', function () {
     return view('confirmation');
 });
 
+Route::get('/forgot-password-template', function () {
+    return view('email/forgot-password');
+});
+
+Route::get('/forgotpassword', function () {
+    return view('forgotpassword');
+});
+
 Route::post('formAvatarPhoto', 'HomeController@formAvatarPhoto');
 Route::post('formCoverPhoto', 'HomeController@formCoverPhoto');
 Route::get('pdf', 'HomeController@pdfdownload');

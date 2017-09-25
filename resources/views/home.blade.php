@@ -1000,7 +1000,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="dashed-tips-container">
-                            <div class="icon"><span>i</span></div>
+                            <div class="icon"><img src="{{asset('img/icons/tips.png')}}"></div>
                             <div class="title">Some Tips</div>
                             <div class="content">
                                 Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
@@ -1050,7 +1050,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="dashed-tips-container">
-                            <div class="icon"><span>i</span></div>
+                            <div class="icon"><img src="{{asset('img/icons/tips.png')}}"></div>
                             <div class="title">Some Tips</div>
                             <div class="content">
                                 Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
@@ -1121,7 +1121,7 @@
                             <form class="form-horizontal">
                                 <input type="file" class="form-hidden" name="">
                                 <div class="dashed-tips-container">
-                                    <div class="icon"><span>i</span></div>
+                                    <div class="icon"><img src="{{asset('img/icons/tips.png')}}"></div>
                                     <div class="title">Some Tips</div>
                                     <div class="content">
                                         Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
@@ -1176,7 +1176,7 @@
                             <form class="form-horizontal">
                                 <input type="file" class="form-hidden" name="">
                                 <div class="dashed-tips-container">
-                                    <div class="icon"><span>i</span></div>
+                                    <div class="icon"><img src="{{asset('img/icons/tips.png')}}"></div>
                                     <div class="title">Some Tips</div>
                                     <div class="content">
                                         Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
@@ -1283,7 +1283,7 @@
                     <div class="panel-body">
                         <div class="personal-statement-form">
                             <div class="dashed-tips-container">
-                                <div class="icon"><span>i</span></div>
+                                <div class="icon"><img src="{{asset('img/icons/tips.png')}}"></div>
                                 <div class="title">Personal Statement Tips</div>
                                 <div class="content">
                                     Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
@@ -1296,10 +1296,10 @@
                                     <li><a id="pro-link" href="#">Pro</a></li>
                                 </ul>
                                 <span class="menu-line"></span>
-                            </div>
+                            </div>f
                             <div class="rookie-section">
                                 <div class="dashed-tips-container">
-                                    <div class="icon"><span>i</span></div>
+                                    <div class="icon"><img src="{{asset('img/icons/tips.png')}}"></div>
                                     <div class="title">Rookie Tips</div>
                                     <div class="content">
                                         Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
@@ -1344,7 +1344,7 @@
                             </div>
                             <div class="intermediate-section">
                                 <div class="dashed-tips-container">
-                                    <div class="icon"><span>i</span></div>
+                                    <div class="icon"><img src="{{asset('img/icons/tips.png')}}"></div>
                                     <div class="title">Intermediate Tips</div>
                                     <div class="content">
                                         Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
@@ -1378,7 +1378,7 @@
                             </div>
                             <div class="pro-section">
                                 <div class="dashed-tips-container">
-                                    <div class="icon"><span>i</span></div>
+                                    <div class="icon"><img src="{{asset('img/icons/tips.png')}}"></div>
                                     <div class="title">Pro Tips</div>
                                     <div class="content">
                                         Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
@@ -1472,7 +1472,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="dashed-tips-container">
-                            <div class="icon"><span>i</span></div>
+                            <div class="icon"><img src="{{asset('img/icons/tips.png')}}"></div>
                             <div class="title">Some Tips</div>
                             When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.
                         </div>
@@ -1583,7 +1583,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="dashed-tips-container">
-                            <div class="icon"><span>i</span></div>
+                            <div class="icon"><img src="{{asset('img/icons/tips.png')}}"></div>
                             <div class="title">Some Tips</div>
                             When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.
                         </div>
@@ -1626,44 +1626,7 @@
                                     </div>
                                 </form>
                              </div>
-                             <div class="journey-container">
-                                <div class="add-photo">
-
-                                </div>
-                                <form class="form-horizontal journey-form">
-                                    <input type="file" name="journey-photo" class="form-hidden">
-                                    <div class="form-group">
-                                        <div class="native-select">
-                                            <select class="journey-from" name="journey-from">
-                                                <option>From</option>
-                                            </select>
-                                            <span class="msg-error"></span>
-                                        </div>
-                                        <div class="native-select">
-                                            <select class="journey-to" name="journey-to">
-                                                <option>To</option>
-                                            </select>
-                                            <span class="msg-error"></span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="native-select">
-                                            <select class="school" name="school">
-                                                <option>School</option>
-                                            </select>
-                                            <span class="msg-error"></span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                            <div class="native-select">
-                                            <select class="level" name="level">
-                                                <option>Level</option>
-                                            </select>
-                                            <span class="msg-error"></span>
-                                        </div>
-                                    </div>
-                                </form>
-                             </div>
+                             
                         </div>
                         <a class="request-school open-modal" href="#" data-modal="#modal-request-school">Click to Request School</a>
                         <div class="button-right highlight-video-button">
@@ -1689,7 +1652,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="dashed-tips-container">
-                            <div class="icon"><span>i</span></div>
+                            <div class="icon"><img src="{{asset('img/icons/tips.png')}}"></div>
                             <div class="title">Some Tips</div>
                             When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.
                         </div>
@@ -1828,7 +1791,7 @@
                     </div>
                     <div class="panel-body">
                         <div class="dashed-tips-container">
-                            <div class="icon"><span>i</span></div>
+                            <div class="icon"><img src="{{asset('img/icons/tips.png')}}"></div>
                             <div class="title">Some Tips</div>
                             <div class="content">
                                 Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.

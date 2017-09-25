@@ -110,7 +110,7 @@
                 </div>
             </nav>
 
-            <div id="container" style="margin-top:150px;">
+            <div id="container">
                 <div id="content">
                     <div class="panel">
                         <div class="panel-header">
@@ -181,12 +181,19 @@
                                 </li>
                             </ul>
                             <!-- End of Send -->
+
+                            <div class="panel-body profile-connection-container">
+                                <div class="pending-connection-placeholder">
+                                    <img src="{{asset('img/empty-connection.png')}}">
+                                    <span>no request yet</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-
+            
             <footer>
                 <div>
                     <ul>
