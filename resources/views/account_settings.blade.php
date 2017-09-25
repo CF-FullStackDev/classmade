@@ -134,7 +134,7 @@
                                     <div class="dashed-tips-container">
                                         <div class="icon"><span>i</span></div>
                                         <div class="title">Some Tips</div>
-                                        When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.
+                                        Input your first and last name to allow your fellow classmades to find you easily, brand yourself professionally and build credibility in your online presence. But remember that Classmade is a platform to build professional online presence so refrain from using fake names.
                                     </div>
                                     <div class="account-photo">
                                         <img src="{{asset('img/icons/camera_icon.png')}}">

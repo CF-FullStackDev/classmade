@@ -849,7 +849,7 @@
                 <div class="dashed-tips-container">
                     <div class="icon"><span>i</span></div>
                     <div class="title">Some Tips</div>
-                    When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.
+                    Want to commend your fellow Classmade for a job well done? Show your appreciation by giving them a review with a badge to go along with it. Create a healthy comradeship and help your fellow Classmade identify what they can improve on in everything they do.
                 </div>
 
                 <div class="review-form-container">
@@ -888,7 +888,7 @@
         <button class="btn btn-primary success-notification">Success Notification</button>
         <button class="btn btn-primary danger-notification">Danger Notification</button>
         <button class="btn btn-primary warning-notification">Warning Notification</button>
-        <a class="btn btn-primary" href="http://localhost/classmade/public/pdf" style="display: inline-block;margin-top: 15px;text-align:center;height: 0px;padding: 25px 30px 25px 30px;line-height: 0px;">PDF</a>
+        <a class="btn btn-primary" href="http://localhost/classmade/public/pdfdownload" style="display: inline-block;margin-top: 15px;text-align:center;height: 0px;padding: 25px 30px 25px 30px;line-height: 0px;">PDF</a>
         <!-- End of Review -->
 
         <!-- Connections -->
@@ -1119,7 +1119,7 @@
                                     <div class="icon"><span>i</span></div>
                                     <div class="title">Some Tips</div>
                                     <div class="content">
-                                        Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
+                                        If you want to make your profile more interesting, you can present your ideas through a video and plug it into the Classmade community. You can either upload your own or insert a link to your video to create an impressive and unique look. 
                                     </div>
                                 </div>
                                  <div class="dashed-container highlight-video-upload">
@@ -1174,7 +1174,7 @@
                                     <div class="icon"><span>i</span></div>
                                     <div class="title">Some Tips</div>
                                     <div class="content">
-                                        Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
+                                        They say a picture is worth a thousand words. Express yourself without having to say anything by simply uploading a maximum of (4) photos highlighting your interests, hobbies, achievements, and passion.
                                     </div>
                                 </div>
                                 <div class="highlight-photo-upload-container">
@@ -1281,7 +1281,7 @@
                                 <div class="icon"><span>i</span></div>
                                 <div class="title">Personal Statement Tips</div>
                                 <div class="content">
-                                    Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
+                                    Narrate your story by creating a personal statement that accounts who you are, your interests, experiences, milestones, passion, and how you plan to pursure your goals. Below are three formats applicable for particular grade levels and carefully written to meet each one of your writing needs.
                                 </div>
                             </div>
                             <div class="personal-statement-level">
@@ -1297,7 +1297,7 @@
                                     <div class="icon"><span>i</span></div>
                                     <div class="title">Rookie Tips</div>
                                     <div class="content">
-                                        Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
+                                        Are you new to this? We are here to help! Here is an easy-to-use templated personal statement that lets you tell your own story by simply specifying information to fill each blank in order to complete the statement.
                                     </div>
                                 </div>
                                 <div class="rookie-menu">
@@ -1342,7 +1342,7 @@
                                     <div class="icon"><span>i</span></div>
                                     <div class="title">Intermediate Tips</div>
                                     <div class="content">
-                                        Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
+                                        Have all the contents you need but don't know where to start? Present your ideas using this preformatted template that allows you to craft a comprehensive personal statement without writing from scratch.
                                     </div>
                                 </div>
                                 <form class="form-horizontal">
@@ -1376,7 +1376,7 @@
                                     <div class="icon"><span>i</span></div>
                                     <div class="title">Pro Tips</div>
                                     <div class="content">
-                                        Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
+                                        Already have a personal statement but still needs improvement? Here are some guide questions you can use to refine your personal statement to fully express your thoughts and define your personality.
                                     </div>
                                 </div>
                                 <div class="staff-picked-profiles">
@@ -1469,7 +1469,7 @@
                         <div class="dashed-tips-container">
                             <div class="icon"><span>i</span></div>
                             <div class="title">Some Tips</div>
-                            When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.
+                            Success is a reflection of one's hardwork but remember that it isn't limited to just academic achievement. It also include extracurricular accomplishments that defines your interest, passion or anything that you are proud of. Upload your own or choose from our gallery of icons that suits your interest.
                         </div>
                         <div class="achievement-modal-container">
                             <div class="dashed-container achievement-photo upload-image" id="achievement-photo-fileto" data-input="#achievement-photo-file">
@@ -1580,7 +1580,7 @@
                         <div class="dashed-tips-container">
                             <div class="icon"><span>i</span></div>
                             <div class="title">Some Tips</div>
-                            When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.
+                            Education is a narration of a one's growth and development. Share your academic journey with your fellow Classmades by adding a school to your profile from our list.  If your school is not on the list, you can sign the request form or setup a temporary profile for your school and we'll authenticate it for you.
                         </div>
                         <div class="journey-modal-container">
                             <div class="journey-container">
@@ -1686,7 +1686,7 @@
                         <div class="dashed-tips-container">
                             <div class="icon"><span>i</span></div>
                             <div class="title">Some Tips</div>
-                            When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travelling he or on. Snug give made at spot or late that mr.
+                            Do you have a creative work you want to showcase, an article you want to publish, or a school project you are proud of? Present the breadth of your work in the Classmade community by highlighting your skills and abilities through your work. Use our presentation builder or upload your own PDF/video project for the community to know of your work and why you stand out.
                         </div>
                         <div class="portfolio-container">
                             <form class="form-horizontal">
@@ -1699,7 +1699,7 @@
                                 </div>
                                 <div class="add-file-container">
                                     <div class="title">Add File</div>
-                                    <span class="description">Continual delighted as elsewhere am convinced unfeeling.</span>
+                                    <span class="description">Showcase your best works in a snap by uploading your photos, videos, animated GIFs and PDFs. Flaunt your works and be in the spotlight!</span>
                                     <div class="dashed-container upload-presentation">
                                         <div class="upload-wrapper">
                                             <img src="{{asset('img/icons/upload_icon.png')}}">
@@ -1712,7 +1712,7 @@
                                 <span class="or">Or</span>
                                 <div class="create-presentation-container">
                                     <div class="title">Create Presentation</div>
-                                    <span class="description">Continual delighted as elsewhere am convinced unfeeling.</span>
+                                    <span class="description">Organize your works using our Classmade Presentation Builder. You can express your character and customize designs with our multiple gallery of themes to suit your own preferences in creating a unique body of your masterpiece. Choose what floats your boat!</span>
                                     <div class="presentation-slide">
                                         <div class="dashed-container">
                                             <img src="{{asset('img/icons/camera_icon.png')}}">
@@ -1826,7 +1826,7 @@
                             <div class="icon"><span>i</span></div>
                             <div class="title">Some Tips</div>
                             <div class="content">
-                                Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
+                                Save your profile to PDF for higher education application, internships, professional work, as a portfolio, etc. We have preformatted themes for you to choose which suits your character. Review every information on your Classmade account to make sure that you are comfortably sharing your details in the online world.
                             </div>
                         </div>
                         <div class="cover-photo">

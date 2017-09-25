@@ -12,9 +12,14 @@
 <div class="login-panel">
     <div class="content">
         <span>Connect with your classmates, teachers, and<br> schools all over the world on Classmade</span>
-        <p>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister </p>
+        <p> Discover and connect with your fellow students from all over the world with Classmade. </p>
+        <p> Join the global community that unites students and the professional world to create a collaborative and engaging community. </p>
         <img src="{{asset('img/login-section.png')}}">
-        <span>Join Go Join. Now join in.<br>Share your potfolio connect with your classmates and many more</span>
+        <!-- <span>Join Go Join. Now join in.<br>Share your potfolio connect with your classmates and many more</span> -->
+        <span>Express yourself today.</span>
+        <p>Share your story and the passion that defines your personality to your fellow Classmades!</p>
+        <p>Explore a world dedicated to students and discover new opportunities to help you grow as professional individuals.</p>
+        <br>
         <a href="{{ route('register') }}" style=""><button class="btn btn-primary">Sign up</button></a>
     </div>
 </div>
