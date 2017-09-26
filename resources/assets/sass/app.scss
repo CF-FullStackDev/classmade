@@ -4527,8 +4527,33 @@ body {
 .highlight-data-container {
     padding: 0 !important;
     height: 420px;
-    overflow: hidden;
+    // overflow: hidden;
     position: relative;
+
+    .ytp-title-text{
+        display: none !important;
+    }
+
+    .highlight-status{
+        position: absolute;
+        background: url('../img/wrapper.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 90px;
+        z-index: 3;
+        padding: 11px;
+        left: -16px;
+        top: 15px;
+        overflow: hidden;
+
+        span{
+            @extend .text-center;
+            position: relative;
+            top: -6px;
+            color: #fff;
+            font-size: 14px;
+        }
+    }
 
     .panel-buttons {
         position: absolute;
@@ -4598,12 +4623,36 @@ body {
     }
 }
 
+.personal-statement-status{
+    float: right;
+    position: relative;
+    width: 90px;
+    z-index: 3;
+    padding: 3px 3px 3px 3px;
+    top: -25px;
+    overflow: hidden;
+    background-color: #F18448;
+    box-shadow: 0 3px 2px 0 #D8DADD;
+
+    span{
+        @extend .text-center;
+        position: relative;
+        top: 0px;
+        color: #fff;
+        font-size: 14px;
+    }
+}
+
 .profile-statement {
+    position: relative;
+    clear: both;
 
     .statement-empty-container {
         @extend .profile-empty-container;
         margin-bottom: 30px;
     }
+
+    
 
     .statement-container {
         padding: 0 20px;
@@ -4703,6 +4752,28 @@ body {
         display: inline-block;
         vertical-align: top;
         box-shadow: 0 0 4px 0 #DAD2D2;
+        position: relative;
+
+        .journey-status{
+            position: absolute;
+            background: url('../img/wrapper.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 90px;
+            z-index: 3;
+            padding: 11px;
+            left: -16px;
+            top: 15px;
+            overflow: hidden;
+
+            span{
+                @extend .text-center;
+                position: relative;
+                top: -6px;
+                color: #fff;
+                font-size: 14px;
+            }
+        }
 
         &:nth-child(3n) {
             margin-right: 0;
@@ -4773,6 +4844,27 @@ body {
         vertical-align: top;
         position: relative;
         box-shadow: 0 0 4px 0 #DAD2D2;
+
+        .portfolio-status{
+            position: absolute;
+            background: url('../img/wrapper.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 90px;
+            z-index: 3;
+            padding: 11px;
+            left: -16px;
+            top: 15px;
+            overflow: hidden;
+
+            span{
+                @extend .text-center;
+                position: relative;
+                top: -6px;
+                color: #fff;
+                font-size: 14px;
+            }
+        }
 
         &:nth-child(2n) {
             margin-right: 0;
@@ -6391,6 +6483,26 @@ body {
             cursor: pointer;
             width: 50px;
             height: 50px;
+        }
+
+        .achievement-status{
+            position: absolute;
+            width: 90px;
+            z-index: 3;
+            padding: 3px 3px 3px 3px;
+            right: 37px;
+            top: 3px;
+            overflow: hidden;
+            background-color: #F18448;
+            box-shadow: 0 3px 2px 0 #D8DADD;
+
+            span{
+                @extend .text-center;
+                position: relative;
+                top: 0px;
+                color: #fff;
+                font-size: 14px;
+            }
         }
 
         .edit-icon{

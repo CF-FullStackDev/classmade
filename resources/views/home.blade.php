@@ -118,6 +118,9 @@
 
         <div class="panel section-one">
             <div class="panel-body highlight-data-container">
+                <div class="highlight-status">
+                    <span>Published</span>
+                </div>
                 <div class="panel-buttons">
                     <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
                     <div class="details">Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion.</div>
@@ -152,6 +155,9 @@
 
         <div class="panel section-one">
             <div class="panel-body highlight-data-container highlight-data-container-video">
+                <div class="highlight-status">
+                    <span>Published</span>
+                </div>
                 <!-- <div class="panel-buttons">
                     <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
                     <div class="details">Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion.</div>
@@ -173,6 +179,9 @@
 
         <div class="panel section-one">
             <div class="panel-body highlight-data-container highlight-data-container-video">
+                <div class="highlight-status">
+                    <span>Published</span>
+                </div>
                 <div class="panel-buttons">
                     <button type="button" class="question-icon tooltip" data-tooltip="Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion."></button>
                     <div class="details">Highlight can be a series of photos or a video that represents your interests, hobbies, achievements, and passion.</div>
@@ -259,6 +268,9 @@
             </div>
 
             <div class="panel-body">
+                <div class="personal-statement-status">
+                    <span>Published</span>
+                </div>
                 <div class="profile-statement">
                     <div class="statement-container">
                         When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister others marked fat missed did out use. Alteration possession dispatched collecting instrument travellin
@@ -339,6 +351,9 @@
                 <div class="achievement-horizontal">
                     <div class="achievement-row">
                         <img src="{{asset('img/achievement_thumb.png')}}" class="open-modal" data-modal="#modal-achievement-info">
+                        <div class="achievement-status">
+                            <span>Published</span>
+                        </div>
                         <button type="button" class="edit-icon button-dropdown"></button>
                         <ul class="button-dropdown-menu">
                             <li class="open-modal" data-modal="#modal-achievement">Edit</li>
@@ -355,6 +370,9 @@
                     </div>
                     <div class="achievement-row">
                         <img src="{{asset('img/achievement_thumb.png')}}" class="open-modal" data-modal="#modal-achievement-info">
+                        <div class="achievement-status">
+                            <span>Published</span>
+                        </div>
                         <button type="button" class="edit-icon button-dropdown"></button>
                         <ul class="button-dropdown-menu">
                             <li class="open-modal" data-modal="#modal-achievement">Edit</li>
@@ -457,6 +475,9 @@
             <div class="panel-body">
                 <div class="profile-journey">
                     <div class="journey-container">
+                        <div class="journey-status">
+                            <span>Published</span>
+                        </div>
                         <div class="journey-image">
                             <img src="{{asset('img/journey-placeholder.png')}}">
                             <button class="journey-button " ><p class="edit-icon-transparent button-dropdown"></p>
@@ -477,6 +498,9 @@
                     </div>
 
                     <div class="journey-container">
+                        <div class="journey-status">
+                            <span>Published</span>
+                        </div>
                         <div class="journey-image">
                             <img src="{{asset('img/journey-placeholder.png')}}">
                             <button class="journey-button " ><p class="edit-icon-transparent button-dropdown"></p>
@@ -563,6 +587,9 @@
             <div class="panel-body">
                 <div class="profile-portfolio">
                     <div class="portfolio-container">
+                        <div class="portfolio-status">
+                            <span>Published</span>
+                        </div>
                         <div class="portfolio-image open-modal" data-modal="#modal-portfolio-view">
                             <img src="{{asset('img/achievement-placeholder.png')}}">
                         </div>

@@ -113,7 +113,7 @@ a {
   display: none !important;
 }
 
-.text-center, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo span, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .or, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container span, .maintenance-wrapper h2, .page-404-wrapper h2, .pending-connection-placeholder span {
+.text-center, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo span, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .or, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container span, .highlight-data-container .highlight-status span, .personal-statement-status span, .profile-journey .journey-container .journey-status span, .profile-portfolio .portfolio-container .portfolio-status span, .achievement-horizontal .achievement-row .achievement-status span, .maintenance-wrapper h2, .page-404-wrapper h2, .pending-connection-placeholder span {
   display: block;
   text-align: center;
 }
@@ -3385,10 +3385,6 @@ ul.dropdown-menu.notification li:not([class='header']) .media .media-right img {
   padding: 0 10px;
 }
 
-.panel.account-content .panel-body input.select2-search__field{
-  padding: 0;
-}
-
 .panel.account-content .panel-body input.birthday-date {
   width: 20px;
   text-align: center;
@@ -4380,8 +4376,31 @@ body#app-other footer ul > li:last-child:after {
 .highlight-data-container {
   padding: 0 !important;
   height: 420px;
-  overflow: hidden;
   position: relative;
+}
+
+.highlight-data-container .ytp-title-text {
+  display: none !important;
+}
+
+.highlight-data-container .highlight-status {
+  position: absolute;
+  background: url("../img/wrapper.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 90px;
+  z-index: 3;
+  padding: 11px;
+  left: -16px;
+  top: 15px;
+  overflow: hidden;
+}
+
+.highlight-data-container .highlight-status span {
+  position: relative;
+  top: -6px;
+  color: #fff;
+  font-size: 14px;
 }
 
 .highlight-data-container .panel-buttons {
@@ -4448,6 +4467,30 @@ body#app-other footer ul > li:last-child:after {
   min-width: 110px;
   margin-bottom: 0;
   font-size: 12px;
+}
+
+.personal-statement-status {
+  float: right;
+  position: relative;
+  width: 90px;
+  z-index: 3;
+  padding: 3px 3px 3px 3px;
+  top: -25px;
+  overflow: hidden;
+  background-color: #F18448;
+  box-shadow: 0 3px 2px 0 #D8DADD;
+}
+
+.personal-statement-status span {
+  position: relative;
+  top: 0px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.profile-statement {
+  position: relative;
+  clear: both;
 }
 
 .profile-statement .statement-empty-container {
@@ -4546,6 +4589,27 @@ body#app-other footer ul > li:last-child:after {
   display: inline-block;
   vertical-align: top;
   box-shadow: 0 0 4px 0 #DAD2D2;
+  position: relative;
+}
+
+.profile-journey .journey-container .journey-status {
+  position: absolute;
+  background: url("../img/wrapper.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 90px;
+  z-index: 3;
+  padding: 11px;
+  left: -16px;
+  top: 15px;
+  overflow: hidden;
+}
+
+.profile-journey .journey-container .journey-status span {
+  position: relative;
+  top: -6px;
+  color: #fff;
+  font-size: 14px;
 }
 
 .profile-journey .journey-container:nth-child(3n) {
@@ -4615,6 +4679,26 @@ body#app-other footer ul > li:last-child:after {
   vertical-align: top;
   position: relative;
   box-shadow: 0 0 4px 0 #DAD2D2;
+}
+
+.profile-portfolio .portfolio-container .portfolio-status {
+  position: absolute;
+  background: url("../img/wrapper.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 90px;
+  z-index: 3;
+  padding: 11px;
+  left: -16px;
+  top: 15px;
+  overflow: hidden;
+}
+
+.profile-portfolio .portfolio-container .portfolio-status span {
+  position: relative;
+  top: -6px;
+  color: #fff;
+  font-size: 14px;
 }
 
 .profile-portfolio .portfolio-container:nth-child(2n) {
@@ -6170,6 +6254,25 @@ body#app-other footer ul > li:last-child:after {
   height: 50px;
 }
 
+.achievement-horizontal .achievement-row .achievement-status {
+  position: absolute;
+  width: 90px;
+  z-index: 3;
+  padding: 3px 3px 3px 3px;
+  right: 37px;
+  top: 3px;
+  overflow: hidden;
+  background-color: #F18448;
+  box-shadow: 0 3px 2px 0 #D8DADD;
+}
+
+.achievement-horizontal .achievement-row .achievement-status span {
+  position: relative;
+  top: 0px;
+  color: #fff;
+  font-size: 14px;
+}
+
 .achievement-horizontal .achievement-row .edit-icon {
   border: none;
   position: absolute;
@@ -6326,22 +6429,17 @@ body#app-other footer ul > li:last-child:after {
   position: absolute;
   top: 74px;
   left: 41px;
+  background-color: #F2F2F2;
+  border-radius: 5px;
+  height: 35px;
   line-height: 2px;
   min-width: 250px;
+  padding: 20px;
   box-sizing: border-box;
+  color: #4A90E2;
   font-size: 12px;
   text-align: left;
   z-index: 0;
-  width: 250px;
-}
-
-.tooltip-right + .details input {
-  border: none;
-  padding: 15px;
-  background-color: #F2F2F2;
-  color: #4A90E2;
-  width: 100%;
-  border-radius: 5px;
 }
 
 .tooltip-right + .details:after, .tooltip-right + .details:before {
