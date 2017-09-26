@@ -56,7 +56,7 @@ Route::get('/404', function () {
 });
 
 Route::get('/pdf-view', function () {
-    return view('pdf.pdftemplate1');
+    return view('pdf.cultural.pdftemplate1');
 });
 
 Route::get('/pdf-view2', function () {
