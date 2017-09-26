@@ -523,8 +523,8 @@ $(function(){
 
     $(document).on('keyup','.input-search > input[type="text"]',function(e){
         var length = $(this).val().length;
-
-        if (length > 0){
+        
+        if (length > 0 && $(this).siblings( ".input-search-list" ).length){
             $(".input-search-list").addClass('active');
         }
         else{
