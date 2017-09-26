@@ -1868,7 +1868,9 @@
                         <div class="button-group-other">
                             <span class="portfolio-heart-icon"></span>
                             <span class="share-icon tooltip-right"></span>
-                            <div class="details">https://invis.io/SJCYFLBV3</div>
+                            <div class="details">
+                                <input type="text" value="https://invis.io/SJCYFLBV3" disabled />
+                            </div>
                         </div>
                     </div>
                     <div class="panel-body">
