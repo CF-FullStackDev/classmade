@@ -4127,8 +4127,12 @@ body {
         }
 
         span {
-            font-size: 18px;
-            color: #F18448;
+            font-size: 14px;
+            color: #fff;
+
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 
@@ -4364,12 +4368,16 @@ body {
                     display: block;
                     width: 50px;
                     object-fit: cover;
-                    margin-bottom: 5px;
+                    margin-bottom: 15px;
                 }
 
                 span {
                     font-size: 14px;
-                    color: #F18448;
+                    color: #fff;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
 
@@ -6240,7 +6248,7 @@ body {
             left: 0px;
             bottom: 0px;
             right: 0px;
-            background: rgba(0,0,0,0.4);
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);
             opacity: 0;
             transition:0.3s ease-out all;
         }
@@ -6256,7 +6264,7 @@ body {
 
         &:hover{
             &:after{
-                opacity: 1.0;
+                opacity: 0.5;
             }
             .profile-hover{
                 opacity: 1.0;
@@ -6277,7 +6285,7 @@ body {
             height: 460px;
             top: 0px;
             left: 0px;
-            background: rgba(0,0,0,0.3);
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);
             opacity: 0;
             transition:0.3s ease-out all;
     }
@@ -6293,7 +6301,7 @@ body {
 
     &:hover{
         &:after{
-            opacity: 1.0;
+            opacity: 0.5;
         }
         .profile-background-hover{
             transform: translateY(0px);

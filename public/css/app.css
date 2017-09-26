@@ -1018,7 +1018,7 @@ body.modal-open {
   background: #F18448;
   margin: 0 auto;
   position: relative !important;
-  top: -3px !important;
+  top: 2px !important;
   left: 2px !important;
 }
 
@@ -3209,6 +3209,10 @@ ul.dropdown-menu.notification li:not([class='header']) .media .media-right img {
   display: inherit;
 }
 
+.panel.account-content .panel-bodyinput.select2-search__field {
+  padding: 0;
+}
+
 .panel.account-content .panel-body .header {
   font-size: 18px;
   font-weight: 600;
@@ -3977,8 +3981,12 @@ body#app-other footer ul > li:last-child:after {
 }
 
 #profile-background-container .profile-background-hover span {
-  font-size: 18px;
-  color: #F18448;
+  font-size: 14px;
+  color: #fff;
+}
+
+#profile-background-container .profile-background-hover span:hover {
+  text-decoration: underline;
 }
 
 #profile-background-container > img {
@@ -4221,12 +4229,16 @@ body#app-other footer ul > li:last-child:after {
   width: 50px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .profile-glance div.profile-avatar .profile-hover span {
   font-size: 14px;
-  color: #F18448;
+  color: #fff;
+}
+
+.profile-glance div.profile-avatar .profile-hover span:hover {
+  text-decoration: underline;
 }
 
 .profile-glance div.profile-avatar > img {
@@ -6037,7 +6049,7 @@ body#app-other footer ul > li:last-child:after {
   left: 0px;
   bottom: 0px;
   right: 0px;
-  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(180deg, transparent 0%, #000000 100%);
   opacity: 0;
   transition: 0.3s ease-out all;
 }
@@ -6053,7 +6065,7 @@ body#app-other footer ul > li:last-child:after {
 }
 
 .profile-glance .profile-avatar:hover:after {
-  opacity: 1.0;
+  opacity: 0.5;
 }
 
 .profile-glance .profile-avatar:hover .profile-hover {
@@ -6070,7 +6082,7 @@ body#app-other footer ul > li:last-child:after {
   height: 460px;
   top: 0px;
   left: 0px;
-  background: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(180deg, transparent 0%, #000000 100%);
   opacity: 0;
   transition: 0.3s ease-out all;
 }
@@ -6086,7 +6098,7 @@ body#app-other footer ul > li:last-child:after {
 }
 
 #profile-background-container:hover:after {
-  opacity: 1.0;
+  opacity: 0.5;
 }
 
 #profile-background-container:hover .profile-background-hover {
@@ -6429,17 +6441,13 @@ body#app-other footer ul > li:last-child:after {
   position: absolute;
   top: 74px;
   left: 41px;
-  background-color: #F2F2F2;
-  border-radius: 5px;
-  height: 35px;
   line-height: 2px;
   min-width: 250px;
-  padding: 20px;
   box-sizing: border-box;
-  color: #4A90E2;
   font-size: 12px;
   text-align: left;
   z-index: 0;
+  width: 250px;
 }
 
 .tooltip-right + .details:after, .tooltip-right + .details:before {
@@ -6463,6 +6471,15 @@ body#app-other footer ul > li:last-child:after {
   border-bottom-color: #F2F2F2;
   border-width: 10px;
   margin-left: -10px;
+}
+
+.tooltip-right + .detailsinput {
+  border: none;
+  padding: 15px;
+  background-color: #F2F2F2;
+  color: #4A90E2;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .tooltip-right.active + .details {
