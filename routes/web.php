@@ -75,6 +75,10 @@ Route::get('/forgotpassword', function () {
     return view('forgotpassword');
 });
 
+Route::get('/changepassword', function () {
+    return view('changepassword');
+});
+
 Route::post('formAvatarPhoto', 'HomeController@formAvatarPhoto');
 Route::post('formCoverPhoto', 'HomeController@formCoverPhoto');
 Route::get('pdf', 'HomeController@pdfdownload');

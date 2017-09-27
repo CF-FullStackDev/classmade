@@ -390,7 +390,8 @@ $(function(){
         var input = this;
         if ($(input).hasClass('upload-image-input')){
             var container = $(input).data('container');
-            $(container).html('<img class="file-upload">');
+            $(container).html('<img class="file-upload"><div class="achievement-wrapper"><span class="select-photo">Select Photo</span><span class="or">or</span><div class="upload-photo upload-image" data-input="#achievement-photo-file"><div class="upload-hover-icon"></div><span>Upload Photo</span></div></div>');
+            $(".achievement-photo").addClass('achievement-wrapper-hover');
             readURL(input,'file-upload');
         }
     });

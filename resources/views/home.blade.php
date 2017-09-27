@@ -2,10 +2,11 @@
 
 @section('content')
 <div id="profile-background-container"><!-- cover-no-hover -->
+    <div class="close"><span class="close-hover-icon"></span></div>
     <img src="{{asset('storage/background/'.$user->profile_cover)}}" alt="Profile Cover" id="profile_coverphoto">
     <button type="button" class="heart-button heart-icon"></button>
     <div class="profile-background-hover open-modal" data-modal="#modal-cover">
-        <img src="{{asset('img/icons/camera_icon.png')}}">
+        <img src="{{asset('img/icons/camera_icon_white.png')}}">
         <span>Click to upload Photo</span>
     </div>
 </div>
@@ -15,10 +16,11 @@
         <div class="panel">
             <div class="profile-glance">
                 <div class="profile-avatar">
+                    <div class="close"><span class="close-hover-icon"></span></div>
                     <img src="{{asset('storage/avatar/'.$user->profile_photo)}}" id="profilephoto">
                     <button type="button" class="heart-button heart-icon"></button>
                     <div class="profile-hover open-modal" data-modal="#modal-avatar">
-                        <img src="{{asset('img/icons/camera_icon.png')}}">
+                        <img src="{{asset('img/icons/camera_icon_white.png')}}">
                         <span>Click to upload Photo</span>
                     </div>
                 </div>
@@ -572,7 +574,7 @@
                     <div class="panel-buttons">
                         <button type="button" class="question-icon tooltip" data-tooltip="Portfolio is a compilation of your creativity, skills and experiences that provides your fellow Classmades an insight of your character and abilities."></button>
                         <div class="details">Portfolio is a compilation of your creativity, skills and experiences that provides your fellow Classmades an insight of your character and abilities.</div>
-                        <button type="button" class="add-icon open-modal" data-modal="#modal-portfolio"></button>
+                        <button type=b"utton" class="add-icon open-modal" data-modal="#modal-portfolio"></button>
                     </div>
                     <div class="panel-tabs">
                         <div>
@@ -1504,9 +1506,17 @@
                             Success is a reflection of one's hardwork but remember that it isn't limited to just academic achievement. It also include extracurricular accomplishments that defines your interest, passion or anything that you are proud of. Upload your own or choose from our gallery of icons that suits your interest.
                         </div>
                         <div class="achievement-modal-container">
-                            <div class="dashed-container achievement-photo upload-image" id="achievement-photo-fileto" data-input="#achievement-photo-file">
-                                <img src="{{asset('img/icons/camera_icon.png')}}">
-                                <span>Click to Add Photo</span>
+                            <div class="dashed-container achievement-photo" id="achievement-photo-fileto" >
+                                <!-- <img src="{{asset('img/icons/camera_icon.png')}}">
+                                <span>Click to Add Photo</span> -->
+                                <div class="achievement-wrapper">
+                                    <span class="select-photo open-modal" data-modal="#modal-add-photo">Select Photo</span>
+                                    <span class="or">or</span>
+                                    <div class="upload-photo upload-image" data-input="#achievement-photo-file">
+                                        <div class="upload-icon"></div>
+                                        <span>Upload Photo</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="achievement-form">
                                 <form class="form-horizontal">
@@ -1951,27 +1961,60 @@
     </div>
 
     <div class="modal-dialog">
-        <div class="modal-body profile-onboarding" id="modal-onboarding">
+        <div class="modal-body profile-add-photo" id="modal-add-photo">
             <div class="content">
                 <div class="panel">
-                    <!-- <div class="panel-header">
-                        <span class="title"><i class="bell-icon"></i>Request School</span>
-                    </div> -->
+                    <div class="panel-header">
+                        <span class="title"><i class="bell-icon"></i>Add Photo</span>
+                    </div>
                     <div class="panel-body">
-                        <div class='onboarding-wrapper'>
-                            <div class="slick-onboarding">
-                                <div class="first-slide">
-                                    <img class="center" src="{{asset('img/verification.png')}}">
-                                    <span class="text-center">Welcome to Classmade, let’s get started!</span>
-                                    <p class="text-center">Classmade is a social media platform for students to express their passion and dedication through their profile, find new opportunities to become professional individuals, establish connection through teamwork, and essentially start their careers in school. </p>
-                                    <button data-slide="2" class="btn center btn-primary ghost-button onboarding-button">Skip</button>
+                        <div class="dashed-tips-container">
+                            <div class="icon"><img src="{{asset('img/icons/tips.png')}}"></div>
+                            <div class="title">Some Tips</div>
+                            <div class="content">
+                                Continual delighted as elsewhere am convinced unfeeling. Introduced stimulated attachment no by projection. To loud lady whom my mile sold four.
+                            </div>
+                        </div>
+                        <div class="cover-photo">
+                            <div class="cover-template">
+                                <span>Choose from below:</span>
+                                <ul class="menu">
+                                    <li><a href="#">Art</a></li>
+                                    <li><a href="#">Sports</a></li>
+                                    <li><a href="#">Math</a></li>
+                                    <li><a href="#">Academic</a></li>
+                                    <li><a href="#">Science</a></li>
+                                    <li><a href="#">Lifestyle</a></li>
+                                </ul>
+                                <div class="template-images">
+                                    <form class="form-horizontal">
+                                        <div class="image-container">
+                                            <img src="{{asset('img/profile-background-sample.png')}}">
+                                            <div class="radio-group">
+                                                <input type="radio" name="sample[]">
+                                            </div>
+                                        </div>
+                                        <div class="image-container">
+                                            <img src="{{asset('img/profile-background-sample.png')}}">
+                                            <div class="radio-group">
+                                                <input type="radio" name="sample[]">
+                                            </div>
+                                        </div>
+                                        <div class="image-container">
+                                            <img src="{{asset('img/profile-background-sample.png')}}">
+                                            <div class="radio-group">
+                                                <input type="radio" name="sample[]">
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="second-slide">
-                                    <img class="center" src="{{asset('img/youtube.png')}}">
-                                    <span class="text-center">Welcome to Classmade, let’s get started!</span>
-                                    <p class="text-center">Classmade is a social media platform for students to express their passion and dedication through their profile, find new opportunities to become professional individuals, establish connection through teamwork, and essentially start their careers in school. </p>
-                                    <button class="btn center btn-primary ghost-button onboarding-button close-modal" data-modal="#modal-onboarding">Got it</button>
-                                </div>
+                            </div>
+                            <form method="post" enctype="multipart/form-data" action="formCoverPhoto" id="formCoverPhoto">
+                                {{ csrf_field() }}
+                                
+                            </form>
+                            <div class="button-right">
+                                <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-add-photo">Discard</button>
                             </div>
                         </div>
                     </div>
@@ -1979,6 +2022,7 @@
             </div>
         </div>
     </div>
+
     <div class="notification-container">
         <div class="notification notification-success">
             <div class="title">Success!</div>

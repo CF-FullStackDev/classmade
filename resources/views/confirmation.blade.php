@@ -33,19 +33,6 @@
                 </div>
             </div>
 
-            <footer>
-                <div>
-                    <ul>
-                        <li>Privacy</li>
-                        <li>Terms</li>
-                        <li>Advertising</li>
-                        <li>Ad Choices</li>
-                        <li>Cookies</li>
-                        <li>Classmade @2017</li>
-                    </ul>
-                </div>
-            </footer>
-
         </div>
 
     <script src="{{{ asset('js/app.js') }}}"></script>

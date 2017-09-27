@@ -33,7 +33,7 @@ a {
   color: inherit;
 }
 
-.icon, .bell-icon, .notif-icon, .chat-icon, .add-icon, .edit-icon, .edit-icon-transparent, .question-icon, .heart-icon, .chatmade-icon, .check-icon, .portfolio-heart-icon, .share-icon, .plus-icon {
+.icon, .bell-icon, .notif-icon, .chat-icon, .add-icon, .edit-icon, .edit-icon-transparent, .question-icon, .heart-icon, .chatmade-icon, .check-icon, .portfolio-heart-icon, .share-icon, .upload-icon, .upload-hover-icon, .close-hover-icon, .plus-icon {
   height: 35px;
   width: 35px;
   display: inline-block;
@@ -97,6 +97,21 @@ a {
   background: url(../img/icons/share.png) no-repeat center;
 }
 
+.upload-icon {
+  background: url(../img/icons/uploadorange.png) no-repeat center;
+  background-size: contain;
+}
+
+.upload-hover-icon {
+  background: url(../img/icons/upload.png) no-repeat center;
+  background-size: contain;
+}
+
+.close-hover-icon {
+  background: url(../img/icons/close-hover.png) no-repeat center;
+  background-size: contain;
+}
+
 .font-extraLight {
   font-family: WorkSansExtraLight, sans-serif;
 }
@@ -118,7 +133,7 @@ a {
   text-align: center;
 }
 
-.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .journey-form, .highlight-placeholder img, .portfolio-single #content .panel-body .portfolio-container img, .transcript-single, .maintenance-wrapper img, .maintenance-wrapper p, .page-404-wrapper img, .page-404-wrapper p, .confirmation-wrapper, .pending-connection-placeholder img {
+.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .upload-photo, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .journey-form, .highlight-placeholder img, .portfolio-single #content .panel-body .portfolio-container img, .transcript-single, .maintenance-wrapper img, .maintenance-wrapper p, .page-404-wrapper img, .page-404-wrapper p, .confirmation-wrapper, .pending-connection-placeholder img, .change-password {
   display: block;
   margin: 0 auto;
 }
@@ -879,6 +894,196 @@ body.modal-open {
   color: #F18448;
 }
 
+.modal-body.profile-add-photo {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  padding: 0;
+  box-shadow: 0 0 4px 0 #D6D6D6;
+  border-radius: 3px;
+  width: 900px;
+  height: 500px;
+}
+
+.modal-body.profile-add-photo .content .panel-header {
+  padding: 30px 4% 0px 4%;
+  box-sizing: border-box;
+}
+
+.modal-body.profile-add-photo .content .panel-header:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #f2f2f2;
+}
+
+.modal-body.profile-add-photo .content .cover-template {
+  margin-top: 42px;
+}
+
+.modal-body.profile-add-photo .content .cover-template span {
+  color: #7E7C7C;
+  font-size: 14px;
+}
+
+.modal-body.profile-add-photo .content .cover-template .menu {
+  float: right;
+  list-style: none;
+}
+
+.modal-body.profile-add-photo .content .cover-template .menu li {
+  display: inline-block;
+  border-right: 1px solid #7E7C7C;
+}
+
+.modal-body.profile-add-photo .content .cover-template .menu li a {
+  color: #7E7C7C;
+  margin-right: 17px;
+  margin-left: 17px;
+  font-size: 14px;
+}
+
+.modal-body.profile-add-photo .content .cover-template .menu li a:hover {
+  color: #F18448;
+}
+
+.modal-body.profile-add-photo .content .cover-template .menu li:last-child {
+  border-right: none;
+}
+
+.modal-body.profile-add-photo .content .cover-template .menu li:last-child a {
+  margin-right: 17px;
+}
+
+.modal-body.profile-add-photo .content .cover-template .menu li:first-child a {
+  margin-left: 0px;
+}
+
+.modal-body.profile-add-photo .content .template-images {
+  margin-top: 22px;
+}
+
+.modal-body.profile-add-photo .content .template-images .image-container {
+  width: 32%;
+  display: inline-block;
+  margin-right: 1.3%;
+  cursor: pointer;
+  position: relative;
+}
+
+.modal-body.profile-add-photo .content .template-images .image-container:after {
+  content: '';
+  background: linear-gradient(180deg, rgba(87, 87, 87, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.modal-body.profile-add-photo .content .template-images .image-container:last-child {
+  margin-right: 0px;
+}
+
+.modal-body.profile-add-photo .content .template-images .image-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.modal-body.profile-add-photo .content .template-images .image-container .radio-group {
+  display: inline-block;
+  margin-right: 31px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+}
+
+.modal-body.profile-add-photo .content .template-images .image-container .radio-group input[type="radio"] {
+  background: #fff;
+  width: 17px !important;
+  height: 17px !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 2px solid #fff;
+  border-radius: 50px !important;
+  outline: 0;
+  padding: 0px !important;
+  background: transparent;
+}
+
+.modal-body.profile-add-photo .content .template-images .image-container .radio-group input[type="radio"]:hover {
+  border: 2px solid #A1A1A1;
+}
+
+.modal-body.profile-add-photo .content .template-images .image-container .radio-group input[type="radio"]:checked {
+  border-color: #F18448;
+  background: #fff;
+}
+
+.modal-body.profile-add-photo .content .template-images .image-container .radio-group input[type="radio"]:checked:after {
+  content: '';
+  display: inline-block;
+  height: 9px !important;
+  width: 9px !important;
+  border-radius: 50px !important;
+  background: #F18448;
+  margin: 0 auto;
+  position: relative !important;
+  top: 2px !important;
+  left: 2px !important;
+}
+
+.modal-body.profile-add-photo .content .template-images .image-container .radio-group input[type="radio"]:disabled {
+  border-color: #F2F2F2;
+}
+
+.modal-body.profile-add-photo .content .template-images .image-container .radio-group input[type="radio"]:disabled:hover {
+  border-color: #F2F2F2;
+}
+
+.modal-body.profile-add-photo .content .template-images .image-container .radio-group input[type="radio"]:disabled:after {
+  content: '';
+  display: none;
+}
+
+@-moz-document url-prefix() {
+  .modal-body.profile-add-photo .content .template-images .image-container .radio-group input[type="radio"]:checked:after {
+    top: -6px !important;
+    left: 2px !important;
+  }
+}
+
+.modal-body.profile-add-photo .content .template-images .image-container .radio-group label {
+  float: left;
+  font-size: 14px;
+  color: #A1A1A1;
+}
+
+.modal-body.profile-add-photo .content .template-images .image-container .radio-group:last-child {
+  margin-right: 0px;
+}
+
+.modal-body.profile-add-photo .content .button-right {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.modal-body.profile-add-photo .content .button-right button {
+  height: 30px;
+  min-width: 88px;
+}
+
+.modal-body.profile-add-photo .content .button-right button[type="reset"] {
+  background: #fff;
+  color: #F18448;
+  font-size: 14px;
+}
+
 .modal-body.profile-highlight {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -1526,19 +1731,131 @@ body.modal-open {
   display: inline-block;
   height: 262px;
   width: 263px;
-  cursor: pointer;
   position: relative;
+  background: #fff !important;
 }
 
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo.image-uploaded {
   border: 1px solid #A1A1A1;
 }
 
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper {
+  margin-top: 82px;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .select-photo {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .select-photo:hover {
+  text-decoration: underline;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .or {
+  font-size: 12px;
+  color: #A1A1A1;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  position: relative;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .upload-photo {
+  width: 155px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px dashed #F18448;
+  position: relative;
+  cursor: pointer;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .upload-photo .upload-icon {
+  position: relative;
+  top: 5px;
+  height: 3px;
+  width: 5px;
+  padding: 8px 21px;
+  display: inline-block;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .upload-photo .upload-hover-icon {
+  position: relative;
+  top: 5px;
+  height: 3px;
+  width: 5px;
+  padding: 8px 21px;
+  display: inline-block;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .upload-photo span {
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  right: 14px;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .upload-photo span:hover {
+  text-decoration: underline;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo.achievement-wrapper-hover .achievement-wrapper {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  transition: 0.3s ease-out all;
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  left: 26%;
+  top: 6%;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo.achievement-wrapper-hover .achievement-wrapper .select-photo {
+  color: #fff !important;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo.achievement-wrapper-hover .achievement-wrapper .or {
+  color: #fff !important;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo.achievement-wrapper-hover .achievement-wrapper .upload-photo {
+  border-color: #fff;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo.achievement-wrapper-hover .achievement-wrapper .upload-photo span {
+  color: #fff !important;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo.achievement-wrapper-hover:after {
+  content: '';
+  transition: 0.3s ease-out all;
+  display: inline-block;
+  width: 102%;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  height: 102%;
+  background: linear-gradient(180deg, transparent 0%, #000000 100%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo.achievement-wrapper-hover:hover:after {
+  opacity: 0.8;
+}
+
+.modal-body.profile-achievement .content .achievement-modal-container .achievement-photo.achievement-wrapper-hover:hover .achievement-wrapper {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1.0;
+}
+
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img {
   height: 38px;
   width: 50px;
-  margin-bottom: 12px;
-  margin-top: 106px;
 }
 
 .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo span {
@@ -5566,7 +5883,7 @@ body#app-other footer ul > li:last-child:after {
   border-radius: 5px;
 }
 
-.dashed-tips-container .icon, .dashed-tips-container .bell-icon, .dashed-tips-container .notif-icon, .dashed-tips-container .chat-icon, .dashed-tips-container .add-icon, .dashed-tips-container .edit-icon, .dashed-tips-container .edit-icon-transparent, .dashed-tips-container .question-icon, .dashed-tips-container .heart-icon, .dashed-tips-container .chatmade-icon, .dashed-tips-container .check-icon, .dashed-tips-container .portfolio-heart-icon, .dashed-tips-container .share-icon, .dashed-tips-container .plus-icon {
+.dashed-tips-container .icon, .dashed-tips-container .bell-icon, .dashed-tips-container .notif-icon, .dashed-tips-container .chat-icon, .dashed-tips-container .add-icon, .dashed-tips-container .edit-icon, .dashed-tips-container .edit-icon-transparent, .dashed-tips-container .question-icon, .dashed-tips-container .heart-icon, .dashed-tips-container .chatmade-icon, .dashed-tips-container .check-icon, .dashed-tips-container .portfolio-heart-icon, .dashed-tips-container .share-icon, .dashed-tips-container .upload-icon, .dashed-tips-container .upload-hover-icon, .dashed-tips-container .close-hover-icon, .dashed-tips-container .plus-icon {
   position: absolute;
   height: 60px;
   width: 60px;
@@ -5574,7 +5891,7 @@ body#app-other footer ul > li:last-child:after {
   top: 22px;
 }
 
-.dashed-tips-container .icon span, .dashed-tips-container .bell-icon span, .dashed-tips-container .notif-icon span, .dashed-tips-container .chat-icon span, .dashed-tips-container .add-icon span, .dashed-tips-container .edit-icon span, .dashed-tips-container .edit-icon-transparent span, .dashed-tips-container .question-icon span, .dashed-tips-container .heart-icon span, .dashed-tips-container .chatmade-icon span, .dashed-tips-container .check-icon span, .dashed-tips-container .portfolio-heart-icon span, .dashed-tips-container .share-icon span, .dashed-tips-container .plus-icon span {
+.dashed-tips-container .icon span, .dashed-tips-container .bell-icon span, .dashed-tips-container .notif-icon span, .dashed-tips-container .chat-icon span, .dashed-tips-container .add-icon span, .dashed-tips-container .edit-icon span, .dashed-tips-container .edit-icon-transparent span, .dashed-tips-container .question-icon span, .dashed-tips-container .heart-icon span, .dashed-tips-container .chatmade-icon span, .dashed-tips-container .check-icon span, .dashed-tips-container .portfolio-heart-icon span, .dashed-tips-container .share-icon span, .dashed-tips-container .upload-icon span, .dashed-tips-container .upload-hover-icon span, .dashed-tips-container .close-hover-icon span, .dashed-tips-container .plus-icon span {
   font-size: 45px;
   display: block;
   text-align: center;
@@ -6041,6 +6358,24 @@ body#app-other footer ul > li:last-child:after {
   color: #fff;
 }
 
+.profile-glance .profile-avatar .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  transition: 0.3s ease-out all;
+  transition-delay: 0.1s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.profile-glance .profile-avatar .close .close-hover-icon {
+  height: 20px;
+  width: 20px;
+}
+
 .profile-glance .profile-avatar:after {
   content: '';
   display: inline-block;
@@ -6064,14 +6399,38 @@ body#app-other footer ul > li:last-child:after {
   transition-delay: 0.1s;
 }
 
+.profile-glance .profile-avatar:hover .close {
+  opacity: 1.0;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
 .profile-glance .profile-avatar:hover:after {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .profile-glance .profile-avatar:hover .profile-hover {
   opacity: 1.0;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
+}
+
+#profile-background-container .close {
+  position: absolute;
+  top: 37px;
+  right: 80px;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  transition: 0.3s ease-out all;
+  transition-delay: 0.1s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+#profile-background-container .close .close-hover-icon {
+  height: 20px;
+  width: 20px;
 }
 
 #profile-background-container:after {
@@ -6097,8 +6456,14 @@ body#app-other footer ul > li:last-child:after {
   transition-delay: 0.1s;
 }
 
+#profile-background-container:hover .close {
+  opacity: 1.0;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
 #profile-background-container:hover:after {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 #profile-background-container:hover .profile-background-hover {
@@ -6318,7 +6683,7 @@ body#app-other footer ul > li:last-child:after {
 }
 
 .form-horizontal .input-row .input-group-half {
-  width: 45%;
+  width: 47%;
   margin-right: 3%;
   float: left;
 }
@@ -6329,7 +6694,7 @@ body#app-other footer ul > li:last-child:after {
 }
 
 .form-horizontal .input-row .input-group-half input {
-  width: 85% !important;
+  width: 95% !important;
 }
 
 .video-uploading {
@@ -7264,6 +7629,105 @@ body#app-other footer ul > li:last-child:after {
   color: #A1A1A1;
   font-size: 12px;
   padding-left: 65px;
+}
+
+.change-password {
+  background: #fff;
+  width: 477px;
+  padding: 0;
+  overflow: hidden;
+  min-height: 370px;
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  box-shadow: 0 0 4px 0 #D6D6D6;
+}
+
+.change-password .content {
+  margin-top: 10px;
+  padding: 20px 30px;
+}
+
+.change-password .content .header {
+  border-bottom: 2px solid #f2f2f2;
+  display: block;
+  font-size: 18px;
+  color: #7E7C7C;
+  padding-bottom: 35px;
+}
+
+.change-password .content label {
+  display: block;
+  color: #7E7C7C;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.change-password .content label:first-child {
+  margin-top: 45px;
+}
+
+.change-password .content input {
+  height: 30px;
+  width: 395px;
+  border: 1px solid #DAD2D2;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  outline: 0;
+  padding: 0 10px;
+  margin-bottom: 5px;
+}
+
+.change-password .content .msg-error {
+  margin-bottom: 20px;
+}
+
+.change-password .content .transcript-upload {
+  height: 30px;
+  width: 395px;
+  border: 1px solid #DAD2D2;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  outline: 0;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #A1A1A1;
+  position: relative;
+  cursor: pointer;
+}
+
+.change-password .content .transcript-upload span {
+  display: inline-block;
+  line-height: 30px;
+  width: 360px;
+}
+
+.change-password .content .transcript-upload img {
+  float: right;
+  height: 15px;
+  margin-top: 8px;
+}
+
+.change-password .content .btn-panel {
+  text-align: right;
+}
+
+.change-password .content .btn-panel button {
+  height: 30px;
+  min-width: 90px;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.change-password a.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  font-size: 25px;
+  color: #F18448;
 }
 
 .scrollbar-design {
