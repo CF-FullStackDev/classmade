@@ -133,7 +133,7 @@ a {
   text-align: center;
 }
 
-.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .upload-photo, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .journey-form, .highlight-placeholder img, .portfolio-single #content .panel-body .portfolio-container img, .transcript-single, .maintenance-wrapper img, .maintenance-wrapper p, .page-404-wrapper img, .page-404-wrapper p, .confirmation-wrapper, .pending-connection-placeholder img, .change-password {
+.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .upload-photo, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .profile-highlight .highlight-empty-data .highlight-container img, .journey-form, .highlight-placeholder img, .portfolio-single #content .panel-body .portfolio-container img, .transcript-single, .maintenance-wrapper img, .maintenance-wrapper p, .page-404-wrapper img, .page-404-wrapper p, .confirmation-wrapper, .pending-connection-placeholder img, .change-password {
   display: block;
   margin: 0 auto;
 }
@@ -4493,12 +4493,13 @@ body#app-other footer ul > li:last-child:after {
 }
 
 .profile-empty-container img, .profile-highlight .highlight-empty-container img, .profile-statement .statement-empty-container img, .profile-achievement .achievement-empty-container img, .profile-journey .journey-empty-container img {
-  width: 422px;
+  height: 174px;
+  width: 280px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .profile-empty-container span, .profile-highlight .highlight-empty-container span, .profile-statement .statement-empty-container span, .profile-achievement .achievement-empty-container span, .profile-journey .journey-empty-container span {
@@ -4785,8 +4786,10 @@ body#app-other footer ul > li:last-child:after {
 }
 
 .profile-highlight .highlight-empty-data .highlight-container img {
-  width: 100%;
-  height: 185px;
+  width: 205px;
+  height: 156px;
+  -o-object-fit: contain;
+     object-fit: contain;
   display: block;
   margin-bottom: 30px;
 }
@@ -5104,6 +5107,14 @@ body#app-other footer ul > li:last-child:after {
   margin-bottom: 50px;
 }
 
+.profile-connection .connection-empty-container img {
+  height: 184px;
+  width: 269px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 15px;
+}
+
 .profile-connection .connection-empty-container span {
   font-size: 12px;
   color: #8F8F8E;
@@ -5370,6 +5381,14 @@ body#app-other footer ul > li:last-child:after {
   font-weight: 500;
   color: #A1A1A1;
   display: block;
+}
+
+.profile-review .review-empty-container img {
+  height: 149px;
+  width: 149px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 30px;
 }
 
 .profile-review .review-container {

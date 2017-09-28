@@ -11,13 +11,13 @@
 			margin:0px;
 		}
 		.pdf-container{
-			background-image: url('{{asset('img/pdf/Cultural-1.jpg')}}');
+			background-image: url('{{asset('img/pdf/Cultural-3.jpg')}}');
 			width: 1020px;
 			height: 1430px;
 			background-size: contain;
 			background-repeat: no-repeat;
 		}
-		.background-cover{
+		/*.background-cover{
 			height: 338px;
 			width: 927px;
 			border-top-left-radius: 0px;
@@ -28,8 +28,8 @@
 			background: #fff;
 			z-index: 0;
 		}
-
-		.background-cover img{
+*/
+		/*.background-cover img{
 			object-fit: cover;
 			height: 344px;
 			width: 927px;
@@ -39,7 +39,7 @@
 			border-radius: 50px;
 			border-top-left-radius: 0px;
 			border-top-right-radius: 0px;
-		}
+		}*/
 
 		.profile-photo{
 			position: absolute;

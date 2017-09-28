@@ -11,13 +11,13 @@
 			margin:0px;
 		}
 		.pdf-container{
-			background-image: url('{{asset('img/pdf/Cultural-1.jpg')}}');
+			background-image: url('{{asset('img/pdf/Cultural-2.jpg')}}');
 			width: 1020px;
 			height: 1430px;
 			background-size: contain;
 			background-repeat: no-repeat;
 		}
-		.background-cover{
+		/*.background-cover{
 			height: 338px;
 			width: 927px;
 			border-top-left-radius: 0px;
@@ -39,9 +39,9 @@
 			border-radius: 50px;
 			border-top-left-radius: 0px;
 			border-top-right-radius: 0px;
-		}
+		}*/
 
-		.profile-photo{
+		/*.profile-photo{
 			position: absolute;
 			top: 131px;
     		left: 64px;
@@ -123,7 +123,7 @@
 			background: #fff;
 			width: 240px;
 			padding: 10px 10px 10px 10px;
-		}
+		}*/
 		.skill-list{
 			position: absolute;
 		    top: 474px;
@@ -176,7 +176,7 @@
 </head>
 <body>
 	<div class="pdf-container">
-		<div class="background-cover">
+		<!-- <div class="background-cover">
 			<img src="{{asset('img/journey-placeholder.png')}}">
 		</div>
 		<div class="profile-photo">
@@ -186,7 +186,7 @@
 		<span class="school">Student at the school of the future</span>
 		<span class="telephone">+63915000000</span>
 		<span class="email">go.alex@school.edu</span>
-		<span class="classmade-link">portfolio.classmade.com/go.alex</span>
+		<span class="classmade-link">portfolio.classmade.com/go.alex</span> -->
 		<ul class="skill-list">
 			<li>1. Data Analysis</li>
 			<li>2. Data Research</li>
