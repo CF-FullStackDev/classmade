@@ -104,12 +104,12 @@
 
                     <div class="highlight-empty-data">
                         <div class="highlight-container">
-                            <img src="{{asset('img/highlight-photo.png')}}">
+                            <img src="{{asset('img/final/photo.png')}}">
                             <button type="button" id="highlight-photo-button" class="btn btn-primary-outline open-modal" data-modal="#modal-highlight">Upload Photo</button>
                         </div>
                         <span class="divider">OR</span>
                         <div class="highlight-container">
-                            <img src="{{asset('img/highlight-video.png')}}">
+                            <img src="{{asset('img/final/video.png')}}">
                             <button type="button" id="highlight-video-button" class="btn btn-primary-outline open-modal" data-modal="#modal-highlight">Upload Video</button>
                         </div>
                     </div>
@@ -218,7 +218,7 @@
             <div class="panel-body">
                 <div class="profile-statement">
                     <div class="statement-empty-container">
-                        <img src="{{asset('img/personal-statement.png')}}">
+                        <img src="{{asset('img/final/personalstatement.png')}}">
                         <span>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court missed did out use.?</span>
                         <button type="button" class="btn btn-primary-outline">chatmade</button>
                     </div>
@@ -242,7 +242,7 @@
             <div class="panel-body">
                 <div class="profile-statement">
                     <div class="statement-empty-container">
-                        <img src="{{asset('img/personal-statement.png')}}">
+                        <img src="{{asset('img/final/personalstatement.png')}}">
                         <span>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court missed did out use.?</span>
                         <button type="button" class="btn btn-primary-outline">Add Statement</button>
                     </div>
@@ -297,7 +297,7 @@
             <div class="panel-body">
                 <div class="profile-achievement">
                     <div class="achievement-empty-container">
-                        <img src="{{asset('img/achievement.png')}}">
+                        <img src="{{asset('img/final/achievementui.png')}}">
                         <span>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court missed did out use.?</span>
                         <button type="button" class="btn btn-primary-outline">chatmade</button>
                     </div>
@@ -321,7 +321,7 @@
             <div class="panel-body">
                 <div class="profile-achievement">
                     <div class="achievement-empty-container">
-                        <img src="{{asset('img/achievement.png')}}">
+                        <img src="{{asset('img/final/achievementui.png')}}">
                         <span>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court missed did out use.?</span>
                         <button type="button" class="btn btn-primary-outline">Add Achievement</button>
                     </div>
@@ -423,7 +423,7 @@
             <div class="panel-body">
                 <div class="profile-journey">
                     <div class="journey-empty-container">
-                        <img src="{{asset('img/journey.png')}}" style="height:177px;">
+                        <img src="{{asset('img/final/journeyui.png')}}" style="height:177px;">
                         <span>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court missed did out use.?</span>
                     </div>
                 </div>
@@ -446,7 +446,7 @@
             <div class="panel-body">
                 <div class="profile-journey">
                     <div class="journey-empty-container">
-                        <img src="{{asset('img/journey.png')}}" style="height:177px;">
+                        <img src="{{asset('img/final/journeyui.png')}}" style="height:177px;">
                         <span>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court missed did out use.?</span>
                         <button type="button" class="btn btn-primary-outline">Add Journey</button>
                     </div>
@@ -652,7 +652,7 @@
             <div class="panel-body">
                 <div class="profile-journey">
                     <div class="journey-empty-container">
-                        <img src="{{asset('img/journey.png')}}" style="height:177px;">
+                        <img src="{{asset('img/final/portfolioui.png')}}" style="height:177px;">
                         <span>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court missed did out use.?</span>
                         <button type="button" class="btn btn-primary-outline">Add Portfolio</button>
                     </div>
@@ -801,7 +801,7 @@
 
                     <!-- Empty Data -->
                     <div class="review-empty-container">
-                        <img src="{{asset('img/review-top-empty.png')}}">
+                        <img src="{{asset('img/final/top-review.png')}}">
                         <span>Your top reviews will be shown here. select your top reviews<br>from different classmate reviews</span>
                     </div>
                     <!-- End of Empty -->
@@ -855,7 +855,7 @@
 
                         <!-- Empty Data -->
                         <div class="review-empty-container">
-                            <img src="{{asset('img/review-empty.png')}}">
+                            <img src="{{asset('img/final/other-review.png')}}">
                             <span>Your reviews will be shown here. Tell your classmates to review <br> you as a person so people will know how great you are bimb.</span>
                         </div>
                         <!-- End of Empty -->
@@ -1009,7 +1009,7 @@
 
                     <!-- Connections Empty -->
                     <div class="connection-empty-container">
-                        <img src="{{asset('img/journey.png')}}">
+                        <img src="{{asset('img/final/connection.png')}}">
                         <span>You have no connection yet. You have no connection.<br> Add your classmates by searching them in the search within connection bar.</span>
                     </div>
                     <!-- End of Empty -->

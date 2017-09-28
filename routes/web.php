@@ -56,7 +56,7 @@ Route::get('/404', function () {
 });
 
 Route::get('/pdf-view', function () {
-    return view('pdf.cultural.pdftemplate1');
+    return view('pdf.cultural.pdftemplate2');
 });
 
 Route::get('/pdf-view2', function () {
@@ -77,6 +77,10 @@ Route::get('/forgotpassword', function () {
 
 Route::get('/changepassword', function () {
     return view('changepassword');
+});
+
+Route::get('/tutorial', function () {
+    return view('video-tutorial');
 });
 
 Route::post('formAvatarPhoto', 'HomeController@formAvatarPhoto');
