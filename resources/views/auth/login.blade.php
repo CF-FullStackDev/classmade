@@ -44,9 +44,10 @@
                     <span class="sub-text">By signing in, you agree to our Terms of Use.</span>
                 </form>
             </div>
-            <img src="{{asset('img/login-modal.png')}}">
+            <img src="{{asset('img/login_image.png')}}">
+            <img class="half-circle" src="{{asset('img/login_half_circle.png')}}">
         </div>
-        <a class="btn close-modal" data-modal="#modal-login" href="#">+</a>
+        <!-- <a class="btn close-modal" data-modal="#modal-login" href="#">+</a> -->
     </div>
 </div>
 @endsection

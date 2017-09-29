@@ -1020,7 +1020,6 @@ body.modal-open {
                     width: 32%;
                     display: inline-block;
                     margin-right: 1.3%;
-                    cursor: pointer;
                     position: relative;
 
                     &:after{
@@ -1039,7 +1038,8 @@ body.modal-open {
                     }
 
                     img {
-                        object-fit:cover;
+                        object-fit:contain;
+                        height: 124px;
                         width: 100%;
                     }
 
@@ -1061,6 +1061,7 @@ body.modal-open {
                                 outline: 0;
                                 padding:0px !important;
                                 background: transparent;
+                                cursor: pointer;
 
                                 &:hover{
                                     border: 2px solid #A1A1A1;
@@ -1150,7 +1151,7 @@ body.modal-open {
         box-shadow: 0 0 4px 0 #D6D6D6;
         border-radius: 3px;
         width: 900px;
-        height: 500px;
+        min-height: 500px;
 
         .content{
 
@@ -2278,7 +2279,7 @@ body.modal-open {
         box-shadow: 0 0 4px 0 #D6D6D6;
         border-radius: 3px;
         width: 900px;
-        height: 500px;
+        min-height: 500px;
 
         .content {
             .panel-header{
@@ -2359,8 +2360,8 @@ body.modal-open {
                         }
 
                         .word-count{
-                            position: absolute;
-                            right: 0px;
+                            float: right;
+                            margin-right: 19px;
                             color: #A1A1A1;
                             font-size: 12px;
                             margin-top: 10px;
@@ -3504,7 +3505,7 @@ ul.dropdown-menu {
     z-index: 999;
     background-color: #FFFFFF;
     border-radius: 3px;
-    border: 0.2px solid #E5E5E5;
+    border: 1px solid #E5E5E5;
     font-size: 12px;
     padding: 8px 10px;
     right: -10px;
@@ -4171,18 +4172,21 @@ form {
 body {
     &#app-login {
         .modal-body {
-            width: 670px;
             padding: 0;
             overflow: hidden;
-            height: 429px;
+            height: 452px;  
+            width: 853px;
             position: relative;
             margin-top: 100px;
             margin-bottom: 100px;
+            background: url('../img/final/login.png');
 
             .login-panel {
                 display: inline-block;
                 padding: 40px;
                 padding-right: 0px;
+                width: 333px;
+                height: 452px;
 
                 .header {
                     font-size: 18px;
@@ -4272,8 +4276,9 @@ body {
             }
 
             img {
-                width: 299px;
-                object-fit: cover;
+                width: 480px;
+                height: 452px;
+                object-fit: contain;
                 float: right;
             }
         }
@@ -5848,7 +5853,10 @@ body {
         margin-bottom: 50px;
 
         img {
-            object-fit: cover;
+            object-fit: contain;
+            height: 152px;  
+            width: 156px;
+            margin-bottom: 15px;
         }
 
         span {
@@ -6299,6 +6307,12 @@ body {
                 font-size: 14px;
                 width: 270px;
             }
+        }
+
+        .topic-name{
+            padding: 6px 10px !important;
+            margin-top: 20px;
+            width: 291px;
         }
 
         textarea {
@@ -7138,7 +7152,7 @@ body {
     z-index: 999;
     background-color: #FFFFFF;
     border-radius: 3px;
-    border: 0.2px solid #E5E5E5;
+    border: 1px solid #E5E5E5;
     font-size: 12px;
     padding: 8px 10px;
     right: -8px;
@@ -8049,6 +8063,52 @@ body {
             font-size: 25px;
             color: #F18448;
         }
+    }
+
+    .toggle{
+        width: 28px;
+        height: 12px;
+        border-radius: 20px;
+        background-color: #D8DADD;
+        position: relative;
+        transition: 0.2s linear all;
+        cursor: pointer;
+
+        .toggle-switch{
+            transition: 0.2s linear all;
+            box-sizing: border-box;
+            border:1px solid #D8DADD;
+            border-radius: 50px;
+            background: #fff;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 12px;   
+            width: 12px;
+            display: inline-block;
+        }
+
+        &.active{
+            background-color: #F18448;
+
+            .toggle-switch{
+                transform: translateX(16px);
+                border:1px solid #F18448;
+            }
+        }
+    }
+
+    .toggle-float{
+        float: right;
+    }
+
+    .half-circle{
+        float: none;
+        position: absolute;
+        bottom: 63px;
+        left: 0px;
+        height: 90px !important;
+        width: 73px !important;
     }
 
 // End of angelo
