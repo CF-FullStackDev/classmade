@@ -7113,7 +7113,7 @@ body {
             margin-left: -10px;
         }
 
-        &input{
+        input{
             border: none;
             padding: 15px;
             background-color: #F2F2F2;
@@ -7852,9 +7852,11 @@ body {
         position: absolute;
         width: 95%;
         max-height: 225px;
+        left: -9999px;
 
         &.active{
             opacity: 1.0;
+            left: 0;
         }
 
         li{
