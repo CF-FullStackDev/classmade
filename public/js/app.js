@@ -1152,8 +1152,13 @@ $(function () {
         var input = this;
         if ($(input).hasClass('upload-image-input')) {
             var container = $(input).data('container');
-            $(container).html('<img class="file-upload"><div class="achievement-wrapper"><span class="select-photo">Select Photo</span><span class="or">or</span><div class="upload-photo upload-image" data-input="#achievement-photo-file"><div class="upload-hover-icon"></div><span>Upload Photo</span></div></div>');
-            $(".achievement-photo").addClass('achievement-wrapper-hover');
+            if ($(input).val().length > 0) {
+                $(container).html('<img class="file-upload"><div class="achievement-wrapper"><span class="select-photo open-modal" data-modal="#modal-add-photo">Select Photo</span><span class="or">or</span><div class="upload-photo upload-image" data-input="#achievement-photo-file"><div class="upload-hover-icon"></div><span>Upload Photo</span></div></div>');
+                $(".achievement-photo").addClass('achievement-wrapper-hover');
+            } else {
+                $(container).html('<div class="achievement-wrapper"><span class="select-photo open-modal" data-modal="#modal-add-photo">Select Photo</span><span class="or">or</span><div class="upload-photo upload-image" data-input="#achievement-photo-file"><div class="upload-icon"></div><span>Upload Photo</span></div></div>');
+                $(".achievement-photo").removeClass('achievement-wrapper-hover');
+            }
             readURL(input, 'file-upload');
         }
     });
@@ -1309,6 +1314,10 @@ $(function () {
             minimumResultsForSearch: Infinity
         });
     } catch (err) {}
+
+    $(document).on('click', '#guide-toggle', function () {
+        $(this).toggleClass('active');
+    });
 });
 
 /***/ }),

@@ -62,7 +62,12 @@
                                 <li><a href="{{ url('/transcript') }}">Transcript</a></li>
                                 <li><a href="#" class="open-modal" data-modal="#modal-classmade-profile">Share Link PDF</a></li>
                                 <li class="divider"></li>
-                                <li><a href="#">Guide</a></li>
+                                <li>
+                                    <a href="#">Guide</a>
+                                    <div id="guide-toggle" class="toggle toggle-float">
+                                        <div class="toggle-switch"></div>
+                                    </div>
+                                </li>
                                 <li class="divider"></li>
                                 <li><a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Sign Out</a></li>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

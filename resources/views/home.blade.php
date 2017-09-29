@@ -79,7 +79,7 @@
                 <div class="profile-highlight">
 
                     <div class="highlight-empty-container">
-                        <img src="{{asset('img/highlight.png')}}">
+                        <img src="{{asset('img/final/highlight.png')}}">
                         <span>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court missed did out use.?</span>
                     </div>
 
@@ -858,6 +858,11 @@
                             <img src="{{asset('img/final/other-review.png')}}">
                             <span>Your reviews will be shown here. Tell your classmates to review <br> you as a person so people will know how great you are bimb.</span>
                         </div>
+
+                        <div class="review-empty-container">
+                            <img src="{{asset('img/final/review.png')}}">
+                            <span>Your project reviews will be shown here.<br> projects reviews from chatmade</span>
+                        </div>
                         <!-- End of Empty -->
 
                     </div>
@@ -890,7 +895,7 @@
                                 <option value="Milestone">Projects</option>
                             </select>
                         </div>
-                        <input type="text" name="topic-name" placeholder="Topic Name">
+                        <input type="text" class="topic-name" name="topic-name" placeholder="Topic Name">
                         <span>Select Badge</span>
                         <input type="hidden" name="badges">
                         <div class="badges">
@@ -949,7 +954,6 @@
             </div>
             <div class="panel-body">
                 <div class="profile-connection">
-
                     <!-- Connections Data -->
                     <div class="connection-container">
                         <div class="connection-background-wrapper">
@@ -1045,7 +1049,7 @@
                                 </div>
                             </div>
                             <form method="post" enctype="multipart/form-data" action="formAvatarPhoto" id="formAvatarPhoto">
-                                {{ csrf_field() }}
+                                
                                 <div class="image-editor profile-avatar">
                                     <input type="file" class="cropit-image-input" hidden>
                                     <input type="hidden" name="image-data" class="hidden-image-data"/>
@@ -1109,7 +1113,7 @@
                                 </div>
                             </div>
                             <form method="post" enctype="multipart/form-data" action="formCoverPhoto" id="formCoverPhoto">
-                                {{ csrf_field() }}
+                                
                                 <div class="image-editor profile-cover">
                                     <input type="file" class="cropit-image-input" hidden>
                                     <input type="hidden" name="image-data" class="hidden-image-data"/>
@@ -1979,7 +1983,7 @@
                             <div class="cover-template">
                                 <span>Choose from below:</span>
                                 <ul class="menu">
-                                    <li><a href="#">Art</a></li>
+                                    <li><a href="#">Active</a></li>
                                     <li><a href="#">Sports</a></li>
                                     <li><a href="#">Math</a></li>
                                     <li><a href="#">Academic</a></li>
@@ -1988,29 +1992,137 @@
                                 </ul>
                                 <div class="template-images">
                                     <form class="form-horizontal">
-                                        <div class="image-container">
-                                            <img src="{{asset('img/profile-background-sample.png')}}">
-                                            <div class="radio-group">
-                                                <input type="radio" name="sample[]">
+                                        <div class="active-container">
+                                            <div class="image-container">
+                                                <img src="{{asset('img/achievement/active/Achievement-Active.jpg')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                            <div class="image-container">
+                                                <img src="{{asset('img/profile-background-sample.png')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                            <div class="image-container">
+                                                <img src="{{asset('img/profile-background-sample.png')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="image-container">
-                                            <img src="{{asset('img/profile-background-sample.png')}}">
-                                            <div class="radio-group">
-                                                <input type="radio" name="sample[]">
+
+                                        <div class="sports-container">
+                                            <div class="image-container">
+                                                <img src="{{asset('img/achievement/active/Achievement-Active.jpg')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                            <div class="image-container">
+                                                <img src="{{asset('img/profile-background-sample.png')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                            <div class="image-container">
+                                                <img src="{{asset('img/profile-background-sample.png')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="image-container">
-                                            <img src="{{asset('img/profile-background-sample.png')}}">
-                                            <div class="radio-group">
-                                                <input type="radio" name="sample[]">
+
+                                        <div class="math-container">
+                                            <div class="image-container">
+                                                <img src="{{asset('img/profile-background-sample.png')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                            <div class="image-container">
+                                                <img src="{{asset('img/profile-background-sample.png')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                            <div class="image-container">
+                                                <img src="{{asset('img/profile-background-sample.png')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
                                             </div>
                                         </div>
+
+                                        <div class="academic-container">
+                                            <div class="image-container">
+                                                <img src="{{asset('img/achievement/artistic/Achievement-Artistic.jpg')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                            <div class="image-container">
+                                                <img src="{{asset('img/profile-background-sample.png')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                            <div class="image-container">
+                                                <img src="{{asset('img/profile-background-sample.png')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="science-container">
+                                            <div class="image-container">
+                                                <img src="{{asset('img/achievement/discovery/Achievement-Discovery.jpg')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                            <div class="image-container">
+                                                <img src="{{asset('img/profile-background-sample.png')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                            <div class="image-container">
+                                                <img src="{{asset('img/profile-background-sample.png')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="lifestyle-container">
+                                            <div class="image-container">
+                                                <img src="{{asset('img/achievement/lifestyle/Achievement-Lifestyle.jpg')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                            <div class="image-container">
+                                                <img src="{{asset('img/profile-background-sample.png')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                            <div class="image-container">
+                                                <img src="{{asset('img/profile-background-sample.png')}}">
+                                                <div class="radio-group">
+                                                    <input type="radio" name="sample[]">
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </form>
                                 </div>
                             </div>
                             <form method="post" enctype="multipart/form-data" action="formCoverPhoto" id="formCoverPhoto">
-                                {{ csrf_field() }}
+                                
                                 
                             </form>
                             <div class="button-right">

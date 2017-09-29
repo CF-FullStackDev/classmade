@@ -180,7 +180,7 @@
 
                                 <!-- Empty Data -->
                                 <div class="profile-review-empty">
-                                    <img src="{{asset('img/review-empty.png')}}">
+                                    <img src="{{asset('img/final/empty-review.png')}}">
                                     <span>No reviews yet</span>
                                 </div>
                                 <!-- End of Empty -->
