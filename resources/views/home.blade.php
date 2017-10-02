@@ -1113,7 +1113,7 @@
                                 </div>
                             </div>
                             <form method="post" enctype="multipart/form-data" action="formCoverPhoto" id="formCoverPhoto">
-                                
+                                {{ csrf_field() }}
                                 <div class="image-editor profile-cover">
                                     <input type="file" class="cropit-image-input" hidden>
                                     <input type="hidden" name="image-data" class="hidden-image-data"/>
@@ -2122,8 +2122,7 @@
                                 </div>
                             </div>
                             <form method="post" enctype="multipart/form-data" action="formCoverPhoto" id="formCoverPhoto">
-                                
-                                
+                            {{ csrf_field() }}
                             </form>
                             <div class="button-right">
                                 <button type="reset" class="btn btn-primary ghost-button close-modal" data-modal="#modal-add-photo">Discard</button>
