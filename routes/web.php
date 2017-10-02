@@ -59,8 +59,8 @@ Route::get('/pdf-view', function () {
     return view('pdf.cultural.pdftemplate2');
 });
 
-Route::get('/pdf-view2', function () {
-    return view('pdf.pdftemplate2');
+Route::get('/pdf/{category?}/{template?}', function ($category = 'default', $template = 'pdftemplate1') {
+    return view('pdf.'.$category.'.'.$template);
 });
 
 Route::get('/confirmation', function () {
@@ -105,7 +105,8 @@ Route::get('/demo/connection', function () {
 
 Route::post('formAvatarPhoto', 'HomeController@formAvatarPhoto');
 Route::post('formCoverPhoto', 'HomeController@formCoverPhoto');
-Route::get('pdf', 'HomeController@pdfdownload');
+Route::get('pdf-dl/{category?}/{template?}', ['uses' =>'HomeController@pdfdownload']);
+;
 
 Auth::routes();
 
