@@ -128,7 +128,7 @@ a {
   display: none !important;
 }
 
-.text-center, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo span, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .or, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container span, .highlight-data-container .highlight-status span, .personal-statement-status span, .profile-journey .journey-container .journey-status span, .profile-portfolio .portfolio-container .portfolio-status span, .achievement-horizontal .achievement-row .achievement-status span, .maintenance-wrapper h2, .page-404-wrapper h2, .pending-connection-placeholder span {
+.text-center, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo span, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .or, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container span, .highlight-data-container .highlight-status span, .personal-statement-status span, .profile-journey .journey-container .journey-status span, .profile-portfolio .portfolio-container .portfolio-status span, .achievement-horizontal .achievement-row .achievement-status span, .maintenance-wrapper h2, .page-404-wrapper h2, .pending-connection-placeholder span, .demo-alert {
   display: block;
   text-align: center;
 }
@@ -968,6 +968,7 @@ body.modal-open {
   width: 32%;
   display: inline-block;
   margin-right: 1.3%;
+  cursor: pointer;
   position: relative;
 }
 
@@ -987,9 +988,8 @@ body.modal-open {
 }
 
 .modal-body.profile-add-photo .content .template-images .image-container img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: 124px;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -1014,7 +1014,6 @@ body.modal-open {
   outline: 0;
   padding: 0px !important;
   background: transparent;
-  cursor: pointer;
 }
 
 .modal-body.profile-add-photo .content .template-images .image-container .radio-group input[type="radio"]:hover {
@@ -1093,7 +1092,7 @@ body.modal-open {
   box-shadow: 0 0 4px 0 #D6D6D6;
   border-radius: 3px;
   width: 900px;
-  min-height: 500px;
+  height: 500px;
 }
 
 .modal-body.profile-highlight .content .panel-header {
@@ -2142,7 +2141,7 @@ body.modal-open {
   box-shadow: 0 0 4px 0 #D6D6D6;
   border-radius: 3px;
   width: 900px;
-  min-height: 500px;
+  height: 500px;
 }
 
 .modal-body.profile-portfolio .content .panel-header {
@@ -2213,8 +2212,8 @@ body.modal-open {
 }
 
 .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .half-container .word-count {
-  float: right;
-  margin-right: 19px;
+  position: absolute;
+  right: 0px;
   color: #A1A1A1;
   font-size: 12px;
   margin-top: 10px;
@@ -4004,22 +4003,19 @@ form.form-default input[type="file"] {
 }
 
 body#app-login .modal-body {
+  width: 670px;
   padding: 0;
   overflow: hidden;
-  height: 452px;
-  width: 853px;
+  height: 429px;
   position: relative;
   margin-top: 100px;
   margin-bottom: 100px;
-  background: url("../img/final/login.png");
 }
 
 body#app-login .modal-body .login-panel {
   display: inline-block;
   padding: 40px;
   padding-right: 0px;
-  width: 333px;
-  height: 452px;
 }
 
 body#app-login .modal-body .login-panel .header {
@@ -4110,10 +4106,9 @@ body#app-login .modal-body a.close-modal {
 }
 
 body#app-login .modal-body img {
-  width: 480px;
-  height: 452px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 299px;
+  -o-object-fit: cover;
+     object-fit: cover;
   float: right;
 }
 
@@ -4724,7 +4719,7 @@ body#app-other footer ul > li:last-child:after {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 90px;
-  z-index: 3;
+  z-index: 0;
   padding: 11px;
   left: -16px;
   top: 15px;
@@ -4791,11 +4786,8 @@ body#app-other footer ul > li:last-child:after {
 }
 
 .profile-highlight .highlight-empty-data .highlight-container img {
-  width: 205px;
   height: 156px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  display: block;
+  width: 205px;
   margin-bottom: 30px;
 }
 
@@ -4810,7 +4802,7 @@ body#app-other footer ul > li:last-child:after {
   float: right;
   position: relative;
   width: 90px;
-  z-index: 3;
+  z-index: 0;
   padding: 3px 3px 3px 3px;
   top: -25px;
   overflow: hidden;
@@ -4935,7 +4927,7 @@ body#app-other footer ul > li:last-child:after {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 90px;
-  z-index: 3;
+  z-index: 1;
   padding: 11px;
   left: -16px;
   top: 15px;
@@ -5112,18 +5104,18 @@ body#app-other footer ul > li:last-child:after {
   margin-bottom: 50px;
 }
 
-.profile-connection .connection-empty-container img {
-  height: 184px;
-  width: 269px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin-bottom: 15px;
-}
-
 .profile-connection .connection-empty-container span {
   font-size: 12px;
   color: #8F8F8E;
   display: block;
+}
+
+.profile-connection .connection-empty-container img {
+  margin-bottom: 15px;
+  height: 174px;
+  width: 280px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .profile-connection .connection-container {
@@ -5389,11 +5381,11 @@ body#app-other footer ul > li:last-child:after {
 }
 
 .profile-review .review-empty-container img {
-  height: 149px;
-  width: 149px;
+  height: 174px;
+  width: 280px;
+  margin-bottom: 15px;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-bottom: 30px;
 }
 
 .profile-review .review-container {
@@ -5663,11 +5655,8 @@ body#app-other footer ul > li:last-child:after {
 }
 
 .profile-review-container .profile-review-empty img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: 152px;
-  width: 156px;
-  margin-bottom: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .profile-review-container .profile-review-empty span {
@@ -6066,6 +6055,7 @@ body#app-other footer ul > li:last-child:after {
 .review-form-container .form-horizontal input {
   width: 480px;
   font-size: 14px;
+  margin-top: 15px;
 }
 
 .review-form-container .form-horizontal .badges {
@@ -6095,12 +6085,6 @@ body#app-other footer ul > li:last-child:after {
   display: inline-block;
   font-size: 14px;
   width: 270px;
-}
-
-.review-form-container .form-horizontal .topic-name {
-  padding: 6px 10px !important;
-  margin-top: 20px;
-  width: 291px;
 }
 
 .review-form-container .form-horizontal textarea {
@@ -6667,7 +6651,7 @@ body#app-other footer ul > li:last-child:after {
 .achievement-horizontal .achievement-row .achievement-status {
   position: absolute;
   width: 90px;
-  z-index: 3;
+  z-index: 0;
   padding: 3px 3px 3px 3px;
   right: 37px;
   top: 3px;
@@ -7574,14 +7558,14 @@ body#app-other footer ul > li:last-child:after {
   margin-right: 13px;
   margin-top: 9px;
   list-style: none;
-  opacity: 0;
+  display: none;
   position: absolute;
   width: 95%;
   max-height: 225px;
 }
 
 .input-search-list.active {
-  opacity: 1.0;
+  display: block;
 }
 
 .input-search-list li {
@@ -7763,51 +7747,26 @@ body#app-other footer ul > li:last-child:after {
   color: #F18448;
 }
 
-.toggle {
-  width: 28px;
-  height: 12px;
-  border-radius: 20px;
-  background-color: #D8DADD;
-  position: relative;
-  transition: 0.2s linear all;
-  cursor: pointer;
-}
-
-.toggle .toggle-switch {
-  transition: 0.2s linear all;
-  box-sizing: border-box;
-  border: 1px solid #D8DADD;
-  border-radius: 50px;
-  background: #fff;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 12px;
-  width: 12px;
-  display: inline-block;
-}
-
-.toggle.active {
+.demo-alert {
   background-color: #F18448;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 5px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
 }
 
-.toggle.active .toggle-switch {
-  -webkit-transform: translateX(16px);
-          transform: translateX(16px);
-  border: 1px solid #F18448;
+.demo-nav {
+  top: 30px;
 }
 
-.toggle-float {
-  float: right;
-}
-
-.half-circle {
-  float: none;
-  position: absolute;
-  bottom: 63px;
-  left: 0px;
-  height: 90px !important;
-  width: 73px !important;
+.profile-background-demo {
+  margin-top: 80px !important;
 }
 
 .scrollbar-design {
