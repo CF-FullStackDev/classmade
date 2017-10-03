@@ -83,6 +83,26 @@ Route::get('/tutorial', function () {
     return view('video-tutorial');
 });
 
+Route::get('/demo', function () {
+    return view('demo.demo');
+});
+
+Route::get('/demo/account_settings', function () {
+    return view('demo.account_settings');
+});
+
+Route::get('/demo/transcript', function () {
+    return view('demo.transcript');
+});
+
+Route::get('/demo/review', function () {
+    return view('demo.review');
+});
+
+Route::get('/demo/connection', function () {
+    return view('demo.connection');
+});
+
 Route::post('formAvatarPhoto', 'HomeController@formAvatarPhoto');
 Route::post('formCoverPhoto', 'HomeController@formCoverPhoto');
 Route::get('pdf', 'HomeController@pdfdownload');

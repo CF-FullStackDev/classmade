@@ -176,7 +176,7 @@
 </head>
 <body>
 	<div class="pdf-container">
-		<!-- <div class="background-cover">
+		<div class="background-cover">
 			<img src="{{asset('img/journey-placeholder.png')}}">
 		</div>
 		<div class="profile-photo">
@@ -186,7 +186,7 @@
 		<span class="school">Student at the school of the future</span>
 		<span class="telephone">+63915000000</span>
 		<span class="email">go.alex@school.edu</span>
-		<span class="classmade-link">portfolio.classmade.com/go.alex</span> -->
+		<span class="classmade-link">portfolio.classmade.com/go.alex</span>
 		<ul class="skill-list">
 			<li>1. Data Analysis</li>
 			<li>2. Data Research</li>
