@@ -58,6 +58,15 @@ a {
     vertical-align: middle;
 }
 
+.nav-icon{
+    position: relative;
+    bottom: 2px;
+    height: 18px;
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .bell-icon {
     @extend .icon;
     background: url(../img/icons/bell.svg) no-repeat center;
@@ -145,6 +154,60 @@ a {
     background-size: contain;
 }
 
+.connection-nav-icon{
+    @extend .nav-icon;
+    height: 18px;
+    background: url(../img/final/icons/connectionnav.png) no-repeat center;
+    background-size: contain;
+}
+
+.connection-nav-icon-active{
+    @extend .nav-icon;
+    background: url(../img/final/icons/connectionselec.png) no-repeat center;
+    background-size: contain;
+}
+
+.portfolio-nav-icon{
+    @extend .nav-icon;
+    background: url(../img/final/icons/portfolio.png) no-repeat center;
+    background-size: contain;
+}
+
+.portfolio-nav-icon-active{
+    @extend .nav-icon;
+    background: url(../img/final/icons/portfolioselec.png) no-repeat center;
+    background-size: contain;
+}
+
+.profile-nav-icon{
+    @extend .nav-icon;
+    background: url(../img/final/icons/profile.png) no-repeat center;
+    background-size: contain;
+}
+
+.profile-nav-icon-active{
+    @extend .nav-icon;
+    background: url(../img/final/icons/profileselect.png) no-repeat center;
+    background-size: contain;
+}
+
+.review-nav-icon{
+    @extend .nav-icon;
+    background: url(../img/final/icons/reviewnav.png) no-repeat center;
+    background-size: contain;
+}
+
+.review-nav-icon-active{
+    @extend .nav-icon;
+    background: url(../img/final/icons/reviewselect.png) no-repeat center;
+    background-size: contain;
+}
+
+.review-nav-icon-active{
+    @extend .nav-icon;
+    background: url(../img/final/icons/reviewselect.png) no-repeat center;
+    background-size: contain;
+}
 
 .font-extraLight {
     font-family: $font-extraLight;
@@ -4887,7 +4950,7 @@ body {
         background-repeat: no-repeat;
         background-size: 100% 100%;
         width: 90px;
-        z-index: 0;
+        z-index: 1;
         padding: 11px;
         left: -16px;
         top: 15px;
@@ -8068,6 +8131,181 @@ body {
 
     .profile-background-demo{
         margin-top: 80px !important;
+    }
+
+    .white-background{
+        background-color: #fff;
+    }
+
+    .blue-background{
+        background-color: #4CB3D4;
+    }
+
+    .login-video-panel{
+        @extend .center;
+        max-width: 1110px;
+        padding: 130px 15px;
+        min-height: 579px;
+        box-sizing: border-box;
+
+        .text-content{
+            float: left;
+            display: inline-block;
+
+            span{
+                float: left;
+                width: 293px;
+                color: #6D6666;
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 33px;
+                clear: both;
+            }
+
+            p{
+                width: 342px;
+                color: #7E7C7C;
+                font-size: 14px;
+            }
+
+        }
+
+        video{
+            float: right;
+            width: 575px;
+            height: 328px;
+            border: 1px solid #e1e1e1;
+        }
+    }
+
+    .signup-panel{
+        @extend .center;
+        position: relative;
+        box-sizing: border-box;
+        max-width: 1110px;
+        padding: 50px 0px 0px 96px;
+        min-height: 371px;
+        box-sizing: border-box;
+
+        .content{
+            width: 253px;
+            float: left;
+
+            span{
+                color: #FFFFFF;
+                font-size: 18px;
+                font-weight: 500;
+                float: left;
+                margin-top: 70px;
+                margin-bottom: 50px;
+            }
+
+            a{
+                padding: 10px 20px;
+                min-width: 88px;
+                font-size: 14px;
+            }
+        }
+
+        img{
+            width: 651px;
+            height: 328px;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+    }
+
+    .demo-tutorial-panel{
+        @extend .center;
+        position: relative;
+        box-sizing: border-box;
+        max-width: 1110px;
+        padding: 76px 165px 119px 165px;
+        min-height: 623px;
+        box-sizing: border-box;
+
+        .panel{
+            width: 293px;
+
+            img{
+                @extend .center;
+                height: 177px;
+                width: 220px;
+                object-fit: contain;
+                margin-bottom: 33px;
+            }
+
+            span{
+                @extend .text-center;
+                color: #6D6666;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+
+            p{
+                color: #7E7C7C;
+                font-size: 14px;
+                margin-bottom: 37px;
+            }
+
+            a{
+                @extend .center;
+                text-align: center;
+                width: 153px;
+                height: 30px;
+                line-height: 29px;
+                padding: 0px 5px 0px 5px;
+                font-size: 14px;
+            }
+
+            &.left-panel{
+                float: left;
+            }
+
+            &.right-panel{
+                float: right;
+            }
+        }
+
+        .title{
+            @extend .text-center;
+            color: #6D6666;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+    }
+
+    .video-bg{
+        @extend .background-cover;
+        position: relative;
+        min-height: 95vh;
+
+        video{
+            position: relative;
+            width: 100%;
+            // min-height: 100%;
+            // width: auto;
+            // height: auto;
+            z-index: -100;
+            top: 4px;
+        }
+
+        &:after{
+            content:'';
+            background: linear-gradient(180deg, rgba(87,87,87,0.5) 0%, rgba(0,0,0,0.5) 100%);
+            opacity: 0.5;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .caption{
+            z-index: 1;
+        }
     }
 
 // End of angelo

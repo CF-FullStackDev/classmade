@@ -40,6 +40,15 @@ a {
   vertical-align: middle;
 }
 
+.nav-icon, .connection-nav-icon, .connection-nav-icon-active, .portfolio-nav-icon, .portfolio-nav-icon-active, .profile-nav-icon, .profile-nav-icon-active, .review-nav-icon, .review-nav-icon-active {
+  position: relative;
+  bottom: 2px;
+  height: 18px;
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .bell-icon {
   background: url(../img/icons/bell.svg) no-repeat center;
 }
@@ -112,6 +121,52 @@ a {
   background-size: contain;
 }
 
+.connection-nav-icon {
+  height: 18px;
+  background: url(../img/final/icons/connectionnav.png) no-repeat center;
+  background-size: contain;
+}
+
+.connection-nav-icon-active {
+  background: url(../img/final/icons/connectionselec.png) no-repeat center;
+  background-size: contain;
+}
+
+.portfolio-nav-icon {
+  background: url(../img/final/icons/portfolio.png) no-repeat center;
+  background-size: contain;
+}
+
+.portfolio-nav-icon-active {
+  background: url(../img/final/icons/portfolioselec.png) no-repeat center;
+  background-size: contain;
+}
+
+.profile-nav-icon {
+  background: url(../img/final/icons/profile.png) no-repeat center;
+  background-size: contain;
+}
+
+.profile-nav-icon-active {
+  background: url(../img/final/icons/profileselect.png) no-repeat center;
+  background-size: contain;
+}
+
+.review-nav-icon {
+  background: url(../img/final/icons/reviewnav.png) no-repeat center;
+  background-size: contain;
+}
+
+.review-nav-icon-active {
+  background: url(../img/final/icons/reviewselect.png) no-repeat center;
+  background-size: contain;
+}
+
+.review-nav-icon-active {
+  background: url(../img/final/icons/reviewselect.png) no-repeat center;
+  background-size: contain;
+}
+
 .font-extraLight {
   font-family: WorkSansExtraLight, sans-serif;
 }
@@ -128,12 +183,12 @@ a {
   display: none !important;
 }
 
-.text-center, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo span, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .or, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container span, .highlight-data-container .highlight-status span, .personal-statement-status span, .profile-journey .journey-container .journey-status span, .profile-portfolio .portfolio-container .portfolio-status span, .achievement-horizontal .achievement-row .achievement-status span, .maintenance-wrapper h2, .page-404-wrapper h2, .pending-connection-placeholder span, .demo-alert {
+.text-center, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo span, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .or, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container span, .highlight-data-container .highlight-status span, .personal-statement-status span, .profile-journey .journey-container .journey-status span, .profile-portfolio .portfolio-container .portfolio-status span, .achievement-horizontal .achievement-row .achievement-status span, .maintenance-wrapper h2, .page-404-wrapper h2, .pending-connection-placeholder span, .demo-alert, .demo-tutorial-panel .panel span, .demo-tutorial-panel .title {
   display: block;
   text-align: center;
 }
 
-.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .upload-photo, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .profile-highlight .highlight-empty-data .highlight-container img, .journey-form, .highlight-placeholder img, .portfolio-single #content .panel-body .portfolio-container img, .transcript-single, .maintenance-wrapper img, .maintenance-wrapper p, .page-404-wrapper img, .page-404-wrapper p, .confirmation-wrapper, .pending-connection-placeholder img, .change-password {
+.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .upload-photo, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .profile-highlight .highlight-empty-data .highlight-container img, .journey-form, .highlight-placeholder img, .portfolio-single #content .panel-body .portfolio-container img, .transcript-single, .maintenance-wrapper img, .maintenance-wrapper p, .page-404-wrapper img, .page-404-wrapper p, .confirmation-wrapper, .pending-connection-placeholder img, .change-password, .login-video-panel, .signup-panel, .demo-tutorial-panel, .demo-tutorial-panel .panel img, .demo-tutorial-panel .panel a {
   display: block;
   margin: 0 auto;
 }
@@ -162,7 +217,7 @@ a {
           justify-content: center;
 }
 
-.background-cover, #login-container .login-bg {
+.background-cover, #login-container .login-bg, .video-bg {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -4719,7 +4774,7 @@ body#app-other footer ul > li:last-child:after {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 90px;
-  z-index: 0;
+  z-index: 1;
   padding: 11px;
   left: -16px;
   top: 15px;
@@ -7767,6 +7822,170 @@ body#app-other footer ul > li:last-child:after {
 
 .profile-background-demo {
   margin-top: 80px !important;
+}
+
+.white-background {
+  background-color: #fff;
+}
+
+.blue-background {
+  background-color: #4CB3D4;
+}
+
+.login-video-panel {
+  max-width: 1110px;
+  padding: 130px 15px;
+  min-height: 579px;
+  box-sizing: border-box;
+}
+
+.login-video-panel .text-content {
+  float: left;
+  display: inline-block;
+}
+
+.login-video-panel .text-content span {
+  float: left;
+  width: 293px;
+  color: #6D6666;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 33px;
+  clear: both;
+}
+
+.login-video-panel .text-content p {
+  width: 342px;
+  color: #7E7C7C;
+  font-size: 14px;
+}
+
+.login-video-panel video {
+  float: right;
+  width: 575px;
+  height: 328px;
+  border: 1px solid #e1e1e1;
+}
+
+.signup-panel {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 1110px;
+  padding: 50px 0px 0px 96px;
+  min-height: 371px;
+  box-sizing: border-box;
+}
+
+.signup-panel .content {
+  width: 253px;
+  float: left;
+}
+
+.signup-panel .content span {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+  float: left;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.signup-panel .content a {
+  padding: 10px 20px;
+  min-width: 88px;
+  font-size: 14px;
+}
+
+.signup-panel img {
+  width: 651px;
+  height: 328px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.demo-tutorial-panel {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 1110px;
+  padding: 76px 165px 119px 165px;
+  min-height: 623px;
+  box-sizing: border-box;
+}
+
+.demo-tutorial-panel .panel {
+  width: 293px;
+}
+
+.demo-tutorial-panel .panel img {
+  height: 177px;
+  width: 220px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 33px;
+}
+
+.demo-tutorial-panel .panel span {
+  color: #6D6666;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.demo-tutorial-panel .panel p {
+  color: #7E7C7C;
+  font-size: 14px;
+  margin-bottom: 37px;
+}
+
+.demo-tutorial-panel .panel a {
+  text-align: center;
+  width: 153px;
+  height: 30px;
+  line-height: 29px;
+  padding: 0px 5px 0px 5px;
+  font-size: 14px;
+}
+
+.demo-tutorial-panel .panel.left-panel {
+  float: left;
+}
+
+.demo-tutorial-panel .panel.right-panel {
+  float: right;
+}
+
+.demo-tutorial-panel .title {
+  color: #6D6666;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.video-bg {
+  position: relative;
+  min-height: 95vh;
+}
+
+.video-bg video {
+  position: relative;
+  width: 100%;
+  z-index: -100;
+  top: 4px;
+}
+
+.video-bg:after {
+  content: '';
+  background: linear-gradient(180deg, rgba(87, 87, 87, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.video-bg .caption {
+  z-index: 1;
 }
 
 .scrollbar-design {
