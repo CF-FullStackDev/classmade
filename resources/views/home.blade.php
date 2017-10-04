@@ -59,10 +59,10 @@
 
         <div class="panel profile-tabs">
             <ul style="list-style-type: none;font-size:18px;">
-                <li class="target-section" data-id="one"><a href="javascript:;" class="active"><i class="bell-icon"></i> Profile</a></li>
-                <li class="target-section" data-id="two"><a href="javascript:;"><i class="bell-icon"></i> Portfolio</a></li>
-                <li class="target-section" data-id="three"><a href="javascript:;"><i class="bell-icon"></i> Review</a></li>
-                <li class="target-section" data-id="four"><a href="javascript:;"><i class="bell-icon"></i> Connections</a></li>
+                <li class="target-section" data-id="one"><a href="javascript:;" class="active"><i class="profile-nav-icon-active"></i> Profile</a></li>
+                <li class="target-section" data-id="two"><a href="javascript:;"><i class="portfolio-nav-icon"></i> Portfolio</a></li>
+                <li class="target-section" data-id="three"><a href="javascript:;"><i class="review-nav-icon"></i> Review</a></li>
+                <li class="target-section" data-id="four"><a href="javascript:;"><i class="connection-nav-icon"></i> Connections</a></li>
             </ul>
         </div>
 
