@@ -3272,6 +3272,34 @@ body.modal-open {
         }
     }
 
+    &.profile-video {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        position: relative;
+        padding: 0;
+        box-shadow: 0 0 4px 0 #D6D6D6;
+        border-radius: 3px;
+        width: 881px;
+        height: 475px;
+        box-shadow: 0 2px 20px 0 #A1A1A1;
+        border-radius: 10px;
+
+        .content {
+            height: 100%;
+
+            .video-wrapper{
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+
+                video{
+                    width: 881px;
+                    height: 475px;
+                }
+            }
+        }
+    }
+
     .review-content {
                 text-align: left;
                 border-top: 2px solid #F2F2F2;
@@ -8308,6 +8336,87 @@ body {
         }
     }
 
+    .tutorial-wrapper{
+        position:relative;
+        margin-top: 50px;
+        min-height: 1000px;
+        background-color: #F18448;
+        padding: 120px 97px 120px 97px;
+        color: #fff;
+
+        .tutorial-group{
+            
+            .title{
+                @extend .text-center;
+
+                &:after{
+                    @extend .center;
+                    content:'';
+                    display: block;
+                    width: 25%;
+                    background-color: #fff;
+                    height: 1px;
+                    margin-top: 31px;
+                    margin-bottom: 49px;
+                }
+            }
+
+            .video-container{
+                @extend .center;
+                width: 888px;
+
+                .video{
+                    width: 358px;
+                    // min-width: 358px;
+                    display: inline-block;
+                    margin-right: 18%;
+
+                    &:nth-child(2n){
+                        margin-right: 0px;
+                    }
+
+                    img{
+                        width: 100%;
+                        object-fit:contain;
+                        margin-bottom: 36px;
+                        cursor: pointer;
+                    }
+
+                    span{
+                        @extend .text-center;
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-bottom: 27px;
+                    }
+
+                    ul{
+                        list-style: none;
+                        margin-bottom: 41px;
+
+                        li{
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+
+                    button{
+                        @extend .center;
+                        width: 129px;
+                        height: 30px;
+                        margin-bottom: 102px;
+                        border: 1px solid #fff;
+
+                        &:hover{
+                            background:#fff;
+                            color: $primary-color;
+                            border-color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 // End of angelo
 
 //Scrollbar
@@ -8484,6 +8593,8 @@ body {
         }
     }
 }
+
+
 
 // Global Forms CSS
 

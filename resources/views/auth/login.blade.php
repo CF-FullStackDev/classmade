@@ -56,7 +56,7 @@
             <img src="{{asset('img/final/tutorial-login.png')}}">
             <span>tutorial video</span>
             <p>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court. Sister </p>
-            <a href="javascript:;" class="btn btn-primary ghost-button">go to site tutorial</a>
+            <a href="{{url('/tutorial')}}" class="btn btn-primary ghost-button">go to site tutorial</a>
         </div>
     </div>
 </section>
