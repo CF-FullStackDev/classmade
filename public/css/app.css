@@ -183,12 +183,12 @@ a {
   display: none !important;
 }
 
-.text-center, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo span, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .or, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container span, .highlight-data-container .highlight-status span, .personal-statement-status span, .profile-journey .journey-container .journey-status span, .profile-portfolio .portfolio-container .portfolio-status span, .achievement-horizontal .achievement-row .achievement-status span, .maintenance-wrapper h2, .page-404-wrapper h2, .pending-connection-placeholder span, .demo-alert, .demo-tutorial-panel .panel span, .demo-tutorial-panel .title {
+.text-center, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo span, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .or, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container span, .highlight-data-container .highlight-status span, .personal-statement-status span, .profile-journey .journey-container .journey-status span, .profile-portfolio .portfolio-container .portfolio-status span, .achievement-horizontal .achievement-row .achievement-status span, .maintenance-wrapper h2, .page-404-wrapper h2, .pending-connection-placeholder span, .demo-alert, .demo-tutorial-panel .panel span, .demo-tutorial-panel .title, .tutorial-wrapper .tutorial-group .title, .tutorial-wrapper .tutorial-group .video-container .video span {
   display: block;
   text-align: center;
 }
 
-.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .upload-photo, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .profile-highlight .highlight-empty-data .highlight-container img, .journey-form, .highlight-placeholder img, .portfolio-single #content .panel-body .portfolio-container img, .transcript-single, .maintenance-wrapper img, .maintenance-wrapper p, .page-404-wrapper img, .page-404-wrapper p, .confirmation-wrapper, .pending-connection-placeholder img, .change-password, .login-video-panel, .signup-panel, .demo-tutorial-panel, .demo-tutorial-panel .panel img, .demo-tutorial-panel .panel a {
+.center, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload img, .modal-body.profile-highlight .content .highlight-video .highlight-video-upload span, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .highlight-photo-upload img, .modal-body.profile-highlight .content .highlight-photo .highlight-photo-upload-container .uploading-images .image-file-container .image-file-placeholder, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo .achievement-wrapper .upload-photo, .modal-body.profile-achievement .content .achievement-modal-container .achievement-photo img, .modal-body.profile-journey .content .journey-modal-container .journey-container .add-photo, .modal-body.profile-journey .content .journey-placeholder, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .add-file-container .upload-presentation .upload-wrapper, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .presentation-slide .dashed-container img, .modal-body.profile-portfolio .content .portfolio-container .form-horizontal .create-presentation-container .add-slide .add-button .plus-icon, .modal-body.profile-portfolio-view .content .panel-body .portfolio-container img, .profile-highlight .highlight-empty-data .highlight-container img, .journey-form, .highlight-placeholder img, .portfolio-single #content .panel-body .portfolio-container img, .transcript-single, .maintenance-wrapper img, .maintenance-wrapper p, .page-404-wrapper img, .page-404-wrapper p, .confirmation-wrapper, .pending-connection-placeholder img, .change-password, .login-video-panel, .signup-panel, .demo-tutorial-panel, .demo-tutorial-panel .panel img, .demo-tutorial-panel .panel a, .tutorial-wrapper .tutorial-group .title:after, .tutorial-wrapper .tutorial-group .video-container, .tutorial-wrapper .tutorial-group .video-container .video button {
   display: block;
   margin: 0 auto;
 }
@@ -3091,6 +3091,34 @@ body.modal-open {
   background: #fff;
   color: #F18448;
   font-size: 14px;
+}
+
+.modal-body.profile-video {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  padding: 0;
+  box-shadow: 0 0 4px 0 #D6D6D6;
+  border-radius: 3px;
+  width: 881px;
+  height: 475px;
+  box-shadow: 0 2px 20px 0 #A1A1A1;
+  border-radius: 10px;
+}
+
+.modal-body.profile-video .content {
+  height: 100%;
+}
+
+.modal-body.profile-video .content .video-wrapper {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-body.profile-video .content .video-wrapper video {
+  width: 881px;
+  height: 475px;
 }
 
 .modal-body .review-content {
@@ -7986,6 +8014,76 @@ body#app-other footer ul > li:last-child:after {
 
 .video-bg .caption {
   z-index: 1;
+}
+
+.tutorial-wrapper {
+  position: relative;
+  margin-top: 50px;
+  min-height: 1000px;
+  background-color: #F18448;
+  padding: 120px 97px 120px 97px;
+  color: #fff;
+}
+
+.tutorial-wrapper .tutorial-group .title:after {
+  content: '';
+  display: block;
+  width: 25%;
+  background-color: #fff;
+  height: 1px;
+  margin-top: 31px;
+  margin-bottom: 49px;
+}
+
+.tutorial-wrapper .tutorial-group .video-container {
+  width: 888px;
+}
+
+.tutorial-wrapper .tutorial-group .video-container .video {
+  width: 358px;
+  display: inline-block;
+  margin-right: 18%;
+}
+
+.tutorial-wrapper .tutorial-group .video-container .video:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.tutorial-wrapper .tutorial-group .video-container .video img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 36px;
+  cursor: pointer;
+}
+
+.tutorial-wrapper .tutorial-group .video-container .video span {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 27px;
+}
+
+.tutorial-wrapper .tutorial-group .video-container .video ul {
+  list-style: none;
+  margin-bottom: 41px;
+}
+
+.tutorial-wrapper .tutorial-group .video-container .video ul li {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.tutorial-wrapper .tutorial-group .video-container .video button {
+  width: 129px;
+  height: 30px;
+  margin-bottom: 102px;
+  border: 1px solid #fff;
+}
+
+.tutorial-wrapper .tutorial-group .video-container .video button:hover {
+  background: #fff;
+  color: #F18448;
+  border-color: #F18448;
 }
 
 .scrollbar-design {

@@ -80,7 +80,7 @@ Route::get('/changepassword', function () {
 });
 
 Route::get('/tutorial', function () {
-    return view('video-tutorial');
+    return view('tutorial');
 });
 
 Route::get('/demo', function () {

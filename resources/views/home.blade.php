@@ -917,17 +917,19 @@
             </div>
         </div>
 
-        <button class="open-modal btn btn-primary" data-modal="#modal-classmade-profile">Save Classmade Profile</button>
-        <button class="open-modal btn btn-primary" data-modal="#modal-onboarding">Onboarding Modal</button>
-        <button class="btn btn-primary success-notification">Success Notification</button>
-        <button class="btn btn-primary danger-notification">Danger Notification</button>
-        <button class="btn btn-primary warning-notification">Warning Notification</button>
-        <a class="btn btn-primary" href="http://localhost/classmade/public/pdf" style="display: inline-block;margin-top: 15px;text-align:center;height: 0px;padding: 25px 30px 25px 30px;line-height: 0px;">PDF</a>
-        <select class="" style="width: 250px;">
-            <option>asd</option>
-            <option>qwe</option>
-            <option>xzc</option>
-        </select>
+        <div style="display: none">
+            <button class="open-modal btn btn-primary" data-modal="#modal-classmade-profile">Save Classmade Profile</button>
+            <button class="open-modal btn btn-primary" data-modal="#modal-onboarding">Onboarding Modal</button>
+            <button class="btn btn-primary success-notification">Success Notification</button>
+            <button class="btn btn-primary danger-notification">Danger Notification</button>
+            <button class="btn btn-primary warning-notification">Warning Notification</button>
+            <a class="btn btn-primary" href="http://localhost/classmade/public/pdf" style="display: inline-block;margin-top: 15px;text-align:center;height: 0px;padding: 25px 30px 25px 30px;line-height: 0px;">PDF</a>
+            <select class="" style="width: 250px;">
+                <option>asd</option>
+                <option>qwe</option>
+                <option>xzc</option>
+            </select>
+        </div>
         <!-- End of Review -->
 
         <!-- Connections -->
