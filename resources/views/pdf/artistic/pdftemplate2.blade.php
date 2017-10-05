@@ -23,8 +23,8 @@
     	}
 
     	.container {
-    		width: 1020px;
-    		display: inline-table;
+    		width: 1015px;
+    		height: 1435px;
     		background: url(http://localhost/classmade/public/img/pdf/artistic/pdf2.jpg) no-repeat;
     		background-size: contain;
     	}
@@ -70,12 +70,15 @@
     	}
 
     	.journey {
-    		padding-top: 60px;
+    		padding-top: 50px;
     		height: 218px;
     	}
     	
     	.journey ul li span.title {
     		font-size: 1.2em;
+    	}
+    	.journey ul li span.info {
+    		font-size: .9em;
     	}
     	.journey ul li span.level {
     		margin-left: 105px;

@@ -19,7 +19,6 @@
 
     	.container{
     		width: 1020px;
-    		margin: 0px auto;
     	}
 
     	.header {
@@ -152,17 +151,17 @@
 	  	<section style="padding: 15px 0 0 90px">
 	  		<table width="100%">
   				<tr>
-  					<td width="33%">
+  					<td width="34%">
   						Elementary School <br />
   						Elementary-High School <br />
   						June '96 - March '08
   					</td>
-  					<td width="33%">
+  					<td width="35%">
   						Woodridge School <br />
   						Highschool <br />
   						June '08 - March 09'
   					</td>
-  					<td width="33%">
+  					<td width="31%">
   						Statefields <br />
   						High School <br />
   						June '08 - March 09'

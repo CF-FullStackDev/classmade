@@ -7,29 +7,28 @@
 	<style>
 
 		@font-face {
-            font-family: 'Oxygen', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
             src: url('http://fonts.googleapis.com/css?family=Oxygen:400,300,700');
         }
 
     	html, body, table {
     		margin: 0px;
-            font-family: 'Oxygen', sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
 			color: #043241;
     	}
-
-		.container{
-		 	position: relative;
-		}
 
 		.left{
 			float: left;
 		}
 
-		.profile{
-			width: 992px;
+		.container{
+			width: 1020px;
+			height: 1425px;
+			background: url('{{asset('img/pdf/active/pdf1.jpg')}}') no-repeat;
+			background-size: cover;
 		}
 		.header{
-			height: 270px;
+			height: 326px;
 			background: #043241;
 			display: block;
 			position: relative;
@@ -50,10 +49,10 @@
 			display: inline;
 		}
 		.header .avatar {
-			height: 270px;
-		    width: 270px;
+			height: 326px;
+		    width: 326px;
 		    position: relative;
-		    margin: 0 0 0 -25px;
+		    margin: 0 0 0 -28px;
 		    -webkit-transform: skew(-10deg);
 		    -moz-transform: skew(-10deg);
 		    -o-transform: skew(-10deg);
@@ -63,23 +62,13 @@
 		}
 		
 		.header .avatar .img {
-			height: 270px;
-		    width: 270px;
+			height: 326px;
+		    width: 326px;
 		    position: absolute;
-		    left: 25px;
+		    left: 29px;
 		    -webkit-transform: skew(10deg);
 		    -moz-transform: skew(10deg);
 		    -o-transform: skew(10deg);
-		}
-
-		.content{
-			background: url('{{asset('img/pdf/active/pdf1.jpg')}}') no-repeat;
-			background-position: 100%;
-			height: 100%;
-    		width: 100%;
-		    min-height: 1100px;
-		    background-size: cover;
-		    background-position: 0px -318px;
 		}
 
 		.content .sidebar section {
@@ -99,12 +88,25 @@
 		}
 		.content section.achievement li{
 			margin-bottom: 19px;
+			position: relative;
 		}
+
+		.content section.achievement ul{
+			background: #fff;
+		}
+		.content section.achievement li::before{
+    		content: '\2022';
+  			color: #d35626;
+  			font-size: 2.5em;
+  			position: absolute;
+  			top: -13px;
+    		left: -23px;
+    	}
 
 		.profile-link {
 			position: absolute;
-		    bottom: 92px;
-		    left: 70px;
+		    top: 0;
+    		left: 67px;
 		    color: #fff;
 		    font-size: 22px;
 		    letter-spacing: 1px;
@@ -113,8 +115,8 @@
 	</style>
 </head>
 <body>
-	<div class="profile">
-	  <header class="header" style="background: url(http://localhost/classmade/public/img/profile-background-placeholder.png);">
+	<div class="container">
+	  <header class="header" style="background: url(http://localhost/classmade/public/img/profile-background-placeholder.png) no-repeat; background-size: cover;">
 		<div class="avatar left">
 			<div class="img" style="background: url(http://localhost/classmade/public/img/profile-avatar.png); background-size: contain;"></div>
 		</div>
@@ -124,7 +126,7 @@
 		</div>
 	  </header>
 	  <div class="content">
-	  	<div class="sidebar container left" style="width: 35%">
+	  	<div class="sidebar left" style="width: 35%">
 	  		<section class="personal" style="padding-top: 152px; margin: 0">
 		  		<ul>
 		  			<li>+639178000000</li>
@@ -140,7 +142,7 @@
 		  			<li>Graphic Design</li>
 		  		</ul>
 	  		</section>
-	  		<section class="achievement" style="margin-top: 86px; padding-left: 90px;">
+	  		<section class="achievement" style="margin-top: 105px; padding-left: 98px;">
 		  		<ul>
 		  			<li>
 		  				Best in Attendance <br/>
@@ -156,7 +158,7 @@
 		  			</li>
 		  		</ul>
 	  		</section>
-	  		<section style="margin-top: 290px;">
+	  		<section style="position: relative;">
 	  			<span class="profile-link">johnsodonline</span>
 	  		</section>
 	  	</div>
@@ -168,7 +170,7 @@
 
 	  			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
 	  		</section>
-	  		<section style="margin-top: 33px;">
+	  		<section style="margin-top: 60px;">
 	  			<table>
 	  				<tr>
 	  					<td style="padding-left: 55px">
