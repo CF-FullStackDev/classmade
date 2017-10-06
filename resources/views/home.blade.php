@@ -81,6 +81,7 @@
                     <div class="highlight-empty-container">
                         <img src="{{asset('img/final/highlight.png')}}">
                         <span>When be draw drew ye. Defective in do recommend suffering. House it seven in spoil tiled court missed did out use.?</span>
+                        <!-- <img src="{{ asset('img/final/')}}" alt=""> -->
                     </div>
 
                 </div>
@@ -917,7 +918,7 @@
             </div>
         </div>
 
-        <div style="display: none">
+        <div style="display: inline-block">
             <button class="open-modal btn btn-primary" data-modal="#modal-classmade-profile">Save Classmade Profile</button>
             <button class="open-modal btn btn-primary" data-modal="#modal-onboarding">Onboarding Modal</button>
             <button class="btn btn-primary success-notification">Success Notification</button>
@@ -1349,9 +1350,9 @@
                                 </div>
                                 <form class="form-horizontal">
                                     <div class="rookie-question">
-                                        <div class="profile-biography-rookie">
-                                            Hello, My name is <div class="wrapper"><input type="hidden" id="fullname-A" name=""><div class="answer bind-input" data-input="#fullname-A" contenteditable="true">Full Name</div></div>.
-                                            I am a student of <div class="wrapper"><input type="hidden" id="school-A" name=""><div class="answer bind-input" data-input="#school-A" contenteditable="true">School here</div></div>
+                                        <div class="profile-biography-rookie" id="rookie-1">
+                                            Hi, My name is <div class="wrapper"><input type="hidden" id="fullname-A" name=""><div maxlength="50" class="answer bind-input" data-input="#fullname-A" contenteditable="true">Insert Name</div></div>.
+                                            I am a student of <div class="wrapper"><input type="hidden" id="school-A" name=""><div class="answer bind-input" data-input="#school-A" contenteditable="true">Insert Location</div></div>
                                             in <div class="wrapper"><input type="hidden" id="country-A" name=""><div class="answer bind-input" data-input="#country-A" contenteditable="true">Country here</div></div>.
                                             I am currently in Year <div class="wrapper"><input type="hidden" id="year-A" name=""><div class="answer bind-input" data-input="#year-A" contenteditable="true">?</div></div>.
                                             My favourite class is <div class="wrapper"><input type="hidden" id="class-A" name=""><div class="answer bind-input" data-input="#class-A" contenteditable="true">?</div></div>,

@@ -26,10 +26,13 @@
             <span>Connect with your classmates, teachers, and schools all over the world on Classmade</span>
             <p> Discover and connect with your fellow students from all over the world with Classmade. </p>
         </div>
-        <video width="320" height="240" controls>
-          <source src="{{ url('videos/cm-introvid-draft6.mp4') }}" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
+        <div class="video-player">
+            <img class="video-play" src="{{asset('img/final/icons/play.png')}}" alt="">
+            <video width="320" height="240" controls>
+              <source src="{{ url('videos/cm-introvid-draft6.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
 </section>
 

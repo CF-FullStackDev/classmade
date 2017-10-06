@@ -118,13 +118,16 @@
         </div>
 
         <div class="modal-dialog">
-            <div class="modal-body #modal-video" id="modal-video">
+            <div class="modal-body profile-video" id="modal-video">
                 <div class="content">
                     <div class="video-wrapper">
-                        <video width="672px" height="429px" controls>
-                          <source src="{{ url('videos/cm-introvid-draft6.mp4') }}" type="video/mp4">
+                        <div class="video-player">
+                            <img class="video-play" src="{{asset('img/final/icons/play.png')}}" alt="">
+                            <video width="320" height="240" controls>
+                              <source src="{{ url('videos/cm-introvid-draft6.mp4') }}" type="video/mp4">
                             Your browser does not support the video tag.
-                        </video>
+                            </video>
+                        </div>
                     </div>
                 </div>
                 <!-- <a class="btn btn-primary close-modal" data-modal="#modal-login" href="#">+</a> -->

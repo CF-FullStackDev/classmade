@@ -1596,13 +1596,14 @@ body.modal-open {
 }
 
 .modal-body.profile-personal .content .rookie-section .profile-biography-rookie .wrapper {
-  display: inline;
+  display: inline-block;
+  min-width: 10px;
+  border-bottom: 1px solid #000;
 }
 
 .modal-body.profile-personal .content .rookie-section .profile-biography-rookie .wrapper .answer {
   color: #CD5F26;
-  display: inline;
-  border-bottom: 1px solid #000000;
+  display: inline-block;
   outline: 0;
 }
 
@@ -3113,12 +3114,23 @@ body.modal-open {
 .modal-body.profile-video .content .video-wrapper {
   display: inline-block;
   height: 100%;
-  width: 100%;
+}
+
+.modal-body.profile-video .content .video-wrapper .video-play {
+  left: 288px;
+  top: 147px;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  float: none;
+  width: auto !important;
+  -o-object-fit: none;
+     object-fit: none;
 }
 
 .modal-body.profile-video .content .video-wrapper video {
-  width: 881px;
-  height: 475px;
+  height: 100%;
+  width: 100%;
 }
 
 .modal-body .review-content {
@@ -7888,11 +7900,18 @@ body#app-other footer ul > li:last-child:after {
   font-size: 14px;
 }
 
-.login-video-panel video {
+.login-video-panel .video-player {
   float: right;
   width: 575px;
   height: 328px;
   border: 1px solid #e1e1e1;
+}
+
+.login-video-panel .video-player .video-play {
+  left: 252px;
+  top: 105px;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .signup-panel {
@@ -7991,7 +8010,7 @@ body#app-other footer ul > li:last-child:after {
 
 .video-bg {
   position: relative;
-  min-height: 95vh;
+  min-height: 88vh;
 }
 
 .video-bg video {
@@ -7999,6 +8018,8 @@ body#app-other footer ul > li:last-child:after {
   width: 100%;
   z-index: -100;
   top: 4px;
+  border: 1px solid #F2F2F2;
+  background-color: #FFFFFF;
 }
 
 .video-bg:after {
@@ -8084,6 +8105,22 @@ body#app-other footer ul > li:last-child:after {
   background: #fff;
   color: #F18448;
   border-color: #F18448;
+}
+
+.video-player {
+  position: relative;
+  height: 100%;
+}
+
+.video-player video {
+  height: 100%;
+  width: 100%;
+}
+
+.video-player .video-play {
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 .scrollbar-design {

@@ -1318,6 +1318,41 @@ $(function () {
     $(document).on('click', '#guide-toggle', function () {
         $(this).toggleClass('active');
     });
+
+    $(document).on('click', '.video-player', function () {
+        var video = $(this).children('video')[0];
+        var play = $(this).children('.video-play');
+        video.play();
+        $(play).hide();
+    });
+
+    $(document).on('pause', 'video', function () {
+        var play = $(this).siblings('.video-play');
+        alert('asd');
+    });
+
+    $(document).on('play', 'video', function () {
+        var play = $(this).siblings('.video-play');
+        $(play).hide();
+    });
+
+    $(document).on('keypress keydown paste', '.answer', function (event) {
+
+        if (event.keyCode === 10 || event.keyCode === 13) {
+            event.preventDefault();
+        } else if ($(this).html().length >= 50 && event.keyCode != 8) {
+            event.preventDefault();
+        }
+    });
+
+    $(document).on('click', '.answer', function (event) {
+
+        if (event.keyCode === 10 || event.keyCode === 13) {
+            event.preventDefault();
+        } else if ($(this).html().length >= 50 && event.keyCode != 8) {
+            event.preventDefault();
+        }
+    });
 });
 
 /***/ }),

@@ -1698,11 +1698,13 @@ body.modal-open {
                     display: inline;
 
                     .wrapper{
-                        display: inline;
+                        display: inline-block;
+                        min-width: 10px;
+                        border-bottom: 1px solid #000;
+
                         .answer{
                             color: #CD5F26;
-                            display: inline;
-                            border-bottom: 1px solid #000000;
+                            display: inline-block;
                             outline: 0;
                         }
                     }
@@ -3290,11 +3292,21 @@ body.modal-open {
             .video-wrapper{
                 display: inline-block;
                 height: 100%;
-                width: 100%;
+
+                .video-play{
+                    left: 288px;
+                    top: 147px;
+                    cursor: pointer;
+                    z-index: 1;
+                    position: absolute;
+                    float: none;
+                    width: auto !important;
+                    object-fit: none;
+                }
 
                 video{
-                    width: 881px;
-                    height: 475px;
+                    height: 100%;
+                    width: 100%;
                 }
             }
         }
@@ -8198,11 +8210,18 @@ body {
 
         }
 
-        video{
+        .video-player{
             float: right;
             width: 575px;
             height: 328px;
             border: 1px solid #e1e1e1;
+
+            .video-play{
+                left: 252px;
+                top: 105px;
+                cursor: pointer;
+                z-index: 1;
+            }
         }
     }
 
@@ -8308,16 +8327,15 @@ body {
     .video-bg{
         @extend .background-cover;
         position: relative;
-        min-height: 95vh;
+        min-height: 88vh;
 
         video{
             position: relative;
             width: 100%;
-            // min-height: 100%;
-            // width: auto;
-            // height: auto;
             z-index: -100;
             top: 4px;
+            border: 1px solid #F2F2F2;
+            background-color: #FFFFFF;
         }
 
         &:after{
@@ -8414,6 +8432,22 @@ body {
                     }
                 }
             }
+        }
+    }
+
+    .video-player{
+        position: relative;
+        height: 100%;
+
+        video{
+            height: 100%;
+            width: 100%;
+        }
+
+        .video-play{
+            position: absolute;
+            left: 0px;
+            top: 0px;
         }
     }
 
