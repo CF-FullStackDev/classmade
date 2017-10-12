@@ -22,9 +22,9 @@ class HomeController extends Controller
         $this->middleware('auth');
     }
 
-    public function pdfdownload(){
+    public function pdfdownload($category = "default", $template = "pdftemplate1"){
         $data = [];
-        $pdf = PDF::loadView('pdf.cultural.pdftemplate2');
+        $pdf = PDF::loadView('pdf.'.$category.'.'.$template);
         return $pdf->setOption('disable-smart-shrinking',true)->setOption('zoom','0.78')->setOption('margin-top','0')->setOption('margin-bottom','0')->setOption('margin-right','0')->setOption('margin-left','0')->download('sample.pdf');
     }
 
